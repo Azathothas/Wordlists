@@ -1,0 +1,133 @@
+name: 💾 Fetch || ⏫ Update Wordlists 📙
+#MAX_RUNTIME: ~ 10 mins
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 */12 * * *"  # Every 2 Hrs
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    permissions:
+      contents: write
+      
+    steps:        
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          path: main  
+
+      - name: Install Coreutils
+        run: |
+          # Presets
+          set -x ; set +e
+          #--------------#
+          sudo apt update -y
+          sudo apt install coreutils curl dos2unix git jq moreutils wget -y
+          # Do again, sometimes fails
+          sudo apt install coreutils curl dos2unix git jq moreutils wget -y
+          pip install ansi2txt
+        continue-on-error: true
+
+      - name: Install eget
+        run: |
+          # Presets
+          set -x ; set +e
+          #--------------#
+          # eget for bins
+          sudo wget "https://raw.githubusercontent.com/Azathothas/Toolpacks/main/x86_64/eget" -O "/usr/local/bin/eget"
+          sudo chmod +xwr "/usr/local/bin/eget"
+
+      - name: Install Deps for Wordium
+        run: |
+          # Presets
+          set -x ; set +e
+          #--------------#
+          #anew
+          sudo eget "https://raw.githubusercontent.com/Azathothas/Toolpacks/main/x86_64/anew" --to "/usr/local/bin/anew"
+          anew -h
+        continue-on-error: true
+
+      - name: Setup Env
+        run: |
+          # Create Output Dir
+          mkdir -p "$GITHUB_WORKSPACE/main/Logs"
+
+      - name: Run Wordium
+        run: |
+          # Presets
+          set -x ; set +e
+          #--------------#
+          #Install
+          sudo curl -qflSL "https://raw.githubusercontent.com/Azathothas/Arsenal/main/wordium/wordium.sh" -o "/usr/local/bin/wordium"
+          sudo chmod +xwr "/usr/local/bin/wordium"
+          #Run
+          #wordium --wordlist-dir /tmp/Wordlists | tee "/tmp/wordium.log"
+          #Run again for logs & stats
+          #wordium --wordlist-dir /tmp/Wordlists | tee "/tmp/wordium_stat.log"
+          wordium --wordlist-dir $GITHUB_WORKSPACE/main/Wordlists | tee "/tmp/wordium.log"
+          cat "/tmp/wordium.log" | ansi2txt > "$GITHUB_WORKSPACE/main/Logs/wordium.log"
+          cat "/tmp/wordium.log" | ansi2txt | grep -A999999 "➼Updated Wordlists:" > "/tmp/wordium_stat.txt"
+        continue-on-error: true
+
+      # - name: Anew Wordlists
+      #   run: |
+      #      # Presets
+      #      set -x ; set +e
+      #      #--------------#
+      #      cat "/tmp/Wordlists/x_api.txt" | anew -q "$GITHUB_WORKSPACE/main/x_api.txt"
+      #      cat "/tmp/Wordlists/x_api_tiny.txt" | anew -q "$GITHUB_WORKSPACE/main/x_api_tiny.txt"
+      #      cat "/tmp/Wordlists/x_dns.txt" | anew -q "$GITHUB_WORKSPACE/main/x_dns.txt"
+      #      cat "/tmp/Wordlists/x_dns_tiny.txt" | anew -q "$GITHUB_WORKSPACE/main/x_dns_tiny.txt"
+      #      cat "/tmp/Wordlists/x_lhf_large.txt" | anew -q "$GITHUB_WORKSPACE/main/x_lhf_large.txt"
+      #      cat "/tmp/Wordlists/x_lhf_mid.txt" | anew -q "$GITHUB_WORKSPACE/main/x_lhf_mid.txt"
+      #      cat "/tmp/Wordlists/x_lhf_mini.txt" | anew -q "$GITHUB_WORKSPACE/main/x_lhf_mini.txt"
+      #      cat "/tmp/Wordlists/x_massive.txt" | anew -q "$GITHUB_WORKSPACE/main/x_massive.txt"
+      #      cat "/tmp/Wordlists/x_mini.txt" | anew -q "$GITHUB_WORKSPACE/main/x_mini.txt"
+
+      - name: Dos2Unix Everything
+        run: |
+          cd "$GITHUB_WORKSPACE/main"
+          find . -type f -exec dos2unix {} \;
+        continue-on-error: true
+        
+      - name: Update README.md
+        run: |
+           # Presets
+           set -x ; set +e
+           #--------------#
+           cd "$GITHUB_WORKSPACE/main"
+           cat ./INFO.md > ./README.md
+           echo -e "" >> ./README.md 
+           echo '---' >> ./README.md
+           echo '```console' >> ./README.md
+           echo -e "" >> ./README.md
+           echo -e "--> METADATA" >> ./README.md
+           /bin/bash -c 'PS4="$ "; cat /tmp/wordium_stat.txt '&>> ./README.md
+           echo -e "" >> ./README.md
+           echo -e '```\n' >> ./README.md
+           echo -e "" >> ./README.md
+           echo '---' >> ./README.md
+           echo -e "" >> ./README.md                   
+        working-directory: main
+        continue-on-error: true
+
+      - name: Get DateTime
+        run: |
+          # Date Time
+          NEPALI_TIME=$(TZ='Asia/Kathmandu' date +'%Y-%m-%d (%I:%M:%S %p)')
+          echo "NEPALI_TIME=$NEPALI_TIME" >> $GITHUB_ENV
+
+      - name: Git Pull
+        run: |
+           cd "$GITHUB_WORKSPACE/main" && git pull origin main
+        continue-on-error: true
+        
+      - uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          repository: ./main        
+          commit_user_name: Azathothas # defaults to "github-actions[bot]"
+          commit_user_email: AjamX101@gmail.com # defaults to "41898282+github-actions[bot]@users.noreply.github.com"
+          commit_message: "✅ Fetch latest Wordlists 📙 <-- ${{ env.NEPALI_TIME }} ⌚"
+          #push_options: '--force'
