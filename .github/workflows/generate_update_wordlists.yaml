@@ -55,7 +55,7 @@ jobs:
            set -x ; set +e
            #--------------#       
            # Del all Dirs
-           find "$GITHUB_WORKSPACE/main" -maxdepth 1 -type d ! -name '.git*' ! -name 'main' ! -name '*Logs*' -exec rm -rf {} \; 2>/dev/null
+           find "$GITHUB_WORKSPACE/main" -maxdepth 1 -type d ! -name '.git*' ! -name 'main' ! -name '*Logs*' ! -name '*Perma*' -exec rm -rf {} \; 2>/dev/null
         continue-on-error: true  
         
       - name: Setup Env
@@ -81,6 +81,15 @@ jobs:
           cat "/tmp/wordium.log" | ansi2txt | grep -A999999 "➼Updated Wordlists:" > "/tmp/wordium_stat.txt"
         continue-on-error: true
 
+      - name: Clean Cloned Repos (II)
+        run: |
+           # Presets
+           set -x ; set +e
+           #--------------#       
+           # Del all Dirs
+           find "$GITHUB_WORKSPACE/main" -maxdepth 1 -type d ! -name '.git*' ! -name 'main' ! -name '*Logs*' ! -name '*Perma*' -exec rm -rf {} \; 2>/dev/null
+        continue-on-error: true  
+
       - name: Dos2Unix Everything
         run: |
           # Presets
@@ -88,16 +97,7 @@ jobs:
           #--------------#        
           cd "$GITHUB_WORKSPACE/main"
           find . -type f -name '*.txt' -exec dos2unix {} \;
-        continue-on-error: true
-
-      - name: Clean Cloned Repos (II)
-        run: |
-           # Presets
-           set -x ; set +e
-           #--------------#       
-           # Del all Dirs
-           find "$GITHUB_WORKSPACE/main" -maxdepth 1 -type d ! -name '.git*' ! -name 'main' ! -name '*Logs*' -exec rm -rf {} \; 2>/dev/null
-        continue-on-error: true        
+        continue-on-error: true      
         
       - name: Update README.md
         run: |
