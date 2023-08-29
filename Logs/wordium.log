@@ -1,0 +1,91 @@
+
+        ╭┳╮
+╭┳┳┳━┳┳┳╯┣╋┳┳━━╮
+┃W┃O┃R╭┫D┃I┃U┃M┃
+╰━━┻━┻╯╰━┻┻━┻┻┻╯
+
+➼ Specified Wordlist Directory: /home/runner/work/Wordlists/Wordlists/main/Wordlists
+
+Detected platform: linux_amd64
+Latest Version: 1.3.3
+Downloading https://github.com/zyedidia/eget/releases/download/v1.3.3/eget-1.3.3-linux_amd64.tar.gz
+eget-1.3.3-linux_amd64/eget
+Eget has been downloaded to the current directory.
+You can run it with:
+./eget
+✗ Error: /home/runner/work/Wordlists/Wordlists/main/Wordlists/bbFuzzing.txt/bbFuzzing.txt not found
+Reinstalling....
+
+✗ Error: /home/runner/work/Wordlists/Wordlists/main/Wordlists/bbFuzzing.txt not found
+This will take quite some time (If first run)
+Depending on your internet, it may take upto 1 hr
+Just let your terminal be!
+No Git (.git) folder found in /home/runner/work/Wordlists/Wordlists/main/Wordlists or its parent directories!
+Proceeding with git clone
+
+Updating /home/runner/work/Wordlists/Wordlists/main/Wordlists/bbFuzzing.txt to @latest
+ⓘ Already @latest
+Updating /home/runner/work/Wordlists/Wordlists/main/Wordlists/fuzz.txt to @latest
+ⓘ Already @latest
+Updating /home/runner/work/Wordlists/Wordlists/main/Wordlists/hfuzz to @latest
+ⓘ Already @latest
+Updating /home/runner/work/Wordlists/Wordlists/main/Wordlists/leaky-paths to @latest
+ⓘ Already @latest
+Updating /home/runner/work/Wordlists/Wordlists/main/Wordlists/OneListForAll to @latest
+ⓘ Already @latest
+Updating /home/runner/work/Wordlists/Wordlists/main/Wordlists/WordList to @latest
+ⓘ Already @latest
+
+➼ Fetching & Updating <-- Bo0oM/fuzz.txt
+➼ x_lhf_mini.txt  : 157
+➼ x_lhf_mid.txt  : 5234
+
+➼ Fetching & Updating <-- reewardius/bbFuzzing.txt
+➼ x_lhf_mini.txt  : 2568
+➼ x_lhf_mid.txt   : 24081
+➼ x_lhf_large.txt  : 81556
+
+➼ Fetching & Updating <-- thehlopster/hfuzz
+➼ x_lhf_mini.txt  : 322
+➼ x-lhf-large.tx  : 3903
+
+➼ Fetching & Updating <-- ayoubfathi/leaky-paths
+➼ x_lhf_mini.txt  : 1434
+
+➼ Fetching & Updating <-- Six2dez/OneListForAll
+➼ x_lhf_mini.txt  : 0
+➼ x_lhf_large.txt  : 53521
+➼ x_massive.txt  : 763311
+
+➼ Fetching & Updating <-- rix4uni/WordList
+➼ x_lhf_mini.txt  : 1754 , 0
+➼ x_lhf_mid.txt  : 264
+➼ x_lhf_large.txt  : 11600
+➼ x_massive.txt  : 11470
+
+➼ New Additions 
+➼ x_lhf_mini.txt  : 6235
+➼ x_lhf_mid.txt   : 14609
+➼ x_lhf_large.txt : 6888
+➼ x_massive.txt   : 69382
+
+➼ Generating x_api.txt 
+➼ Newly added: 69619
+
+➼ Generating x_dns.txt 
+➼ Newly added: 57778
+
+➼ Generating x_mini.txt 
+➼ Newly added: 13885
+
+➼Updated Wordlists:
+➼ x_api.txt       : 69619 /home/runner/work/Wordlists/Wordlists/main/Wordlists/x_api.txt
+➼ x_api_tiny.txt  : 19058 /home/runner/work/Wordlists/Wordlists/main/Wordlists/x_api_tiny.txt
+➼ x_dns.txt       : 57778 /home/runner/work/Wordlists/Wordlists/main/Wordlists/x_dns.txt
+➼ x_dns_tiny.txt  : 15425 /home/runner/work/Wordlists/Wordlists/main/Wordlists/x_dns_tiny.txt
+➼ x_mini.txt      : 13885 /home/runner/work/Wordlists/Wordlists/main/Wordlists/x_mini.txt
+➼ x_lhf_mini.txt  : 22010 /home/runner/work/Wordlists/Wordlists/main/Wordlists/x_lhf_mini.txt
+➼ x_lhf_mid.txt   : 44188 /home/runner/work/Wordlists/Wordlists/main/Wordlists/x_lhf_mid.txt
+➼ x_lhf_large.txt : 157468 /home/runner/work/Wordlists/Wordlists/main/Wordlists/x_lhf_large.txt
+➼ x_massive.txt   : 844163 /home/runner/work/Wordlists/Wordlists/main/Wordlists/x_massive.txt
+
