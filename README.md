@@ -30,15 +30,15 @@
 
 --> METADATA
 ➼Updated Wordlists:
-➼ x_api.txt       : 69619 /home/runner/work/Wordlists/Wordlists/main/Wordlists/x_api.txt
-➼ x_api_tiny.txt  : 19058 /home/runner/work/Wordlists/Wordlists/main/Wordlists/x_api_tiny.txt
-➼ x_dns.txt       : 57778 /home/runner/work/Wordlists/Wordlists/main/Wordlists/x_dns.txt
-➼ x_dns_tiny.txt  : 15425 /home/runner/work/Wordlists/Wordlists/main/Wordlists/x_dns_tiny.txt
-➼ x_mini.txt      : 13885 /home/runner/work/Wordlists/Wordlists/main/Wordlists/x_mini.txt
-➼ x_lhf_mini.txt  : 22010 /home/runner/work/Wordlists/Wordlists/main/Wordlists/x_lhf_mini.txt
-➼ x_lhf_mid.txt   : 44188 /home/runner/work/Wordlists/Wordlists/main/Wordlists/x_lhf_mid.txt
-➼ x_lhf_large.txt : 157468 /home/runner/work/Wordlists/Wordlists/main/Wordlists/x_lhf_large.txt
-➼ x_massive.txt   : 844163 /home/runner/work/Wordlists/Wordlists/main/Wordlists/x_massive.txt
+➼ x_api.txt       : 69619 /home/runner/work/Wordlists/Wordlists/main/x_api.txt
+➼ x_api_tiny.txt  : 19058 /home/runner/work/Wordlists/Wordlists/main/x_api_tiny.txt
+➼ x_dns.txt       : 57778 /home/runner/work/Wordlists/Wordlists/main/x_dns.txt
+➼ x_dns_tiny.txt  : 15425 /home/runner/work/Wordlists/Wordlists/main/x_dns_tiny.txt
+➼ x_mini.txt      : 13885 /home/runner/work/Wordlists/Wordlists/main/x_mini.txt
+➼ x_lhf_mini.txt  : 22010 /home/runner/work/Wordlists/Wordlists/main/x_lhf_mini.txt
+➼ x_lhf_mid.txt   : 44188 /home/runner/work/Wordlists/Wordlists/main/x_lhf_mid.txt
+➼ x_lhf_large.txt : 157468 /home/runner/work/Wordlists/Wordlists/main/x_lhf_large.txt
+➼ x_massive.txt   : 844163 /home/runner/work/Wordlists/Wordlists/main/x_massive.txt
 
 
 ```
