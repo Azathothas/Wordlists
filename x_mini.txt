@@ -144,6 +144,7 @@ ${idfwbonavigation}.xml
 .%2e/%2e%2e/%2e%2e/%2e%2e/etc/passwd
 .%2e/.%2e/.%2e/.%2e/.%2e/.%2e/.%2e/.%2e/.%2e/.%2e/.%2e/.%2e/.%2e/.%2e/var/www/html/index.html
 .%5C%5C./.%5C%5C./.%5C%5C./.%5C%5C./.%5C%5C./.%5C%5C./etc/passwd
+.%EXT%
 .*org/login
 .-
 .-511-gl
@@ -166,7 +167,9 @@ ${idfwbonavigation}.xml
 ..%255c..%255c..%255c..%255c..%255c../winnt/repair/sam
 ..%255c..%255c..%255c..%255c..%255c../winnt/repair/sam._
 ..%255c..%255c..%255c..%255cwinnt/system32/cmd.exe?/c+dir
+..%2F..%2F..%2F%2F..%2F..%2Fetc/passwd
 ..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2Fwindows%2Fwin.ini
+..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2Fetc%2Fpasswd
 ..%2F..%2F..%2F..%2F..%2F../windows/repair/sam
 ..%2F..%2F..%2F..%2F..%2F../winnt/repair/sam
 ..%2F..%2F..%2F..%2F..%2F../winnt/repair/sam._
@@ -199,6 +202,7 @@ ${idfwbonavigation}.xml
 ..../..../..../....//etc/passwd
 ..../..../....//etc/passwd
 ..../....//etc/passwd
+....//....//etc/passwd
 ....//etc/passwd
 ....4.2.1....json
 .../.../...
@@ -234,6 +238,8 @@ ${idfwbonavigation}.xml
 ../../../../apache/logs/access.log
 ../../../../apache/logs/error.log
 ../../../../etc/passwd
+../../../../etc/shadow
+../../../../etc/shadow%00
 ../../../../logs/access.log
 ../../../../logs/error.log
 ../../../../pswd
@@ -248,6 +254,9 @@ ${idfwbonavigation}.xml
 ../../../apache/logs/access.log
 ../../../apache/logs/error.log
 ../../../etc/passwd
+../../../etc/passwd%00
+../../../etc/shadow
+../../../etc/shadow%00
 ../../../logs/access.log
 ../../../logs/error.log
 ../../.htaccess
@@ -262,6 +271,9 @@ ${idfwbonavigation}.xml
 ../../boot.ini
 ../../data/config/microsrv.cfg
 ../../etc/passwd
+../../etc/passwd%00
+../../etc/shadow
+../../etc/shadow%00
 ../../logs/access.log
 ../../logs/error.log
 ../../proc
@@ -322,6 +334,10 @@ ${idfwbonavigation}.xml
 ../config.php
 ../console
 ../etc/passwd
+../etc/passwd%00
+../etc/shadow
+../etc/shadow%00
+../google.com
 ../html
 ../install.php
 ../logs/access.log
@@ -672,6 +688,7 @@ ${idfwbonavigation}.xml
 .Dockerfile
 .EAR
 .EXE
+.Env
 .FBCIndex
 .FCKEditor
 .FileMaker-cli-history
@@ -772,6 +789,7 @@ ${idfwbonavigation}.xml
 .Z
 .ZIP
 .Zip
+.\\./.\\./.\\./.\\./.\\./.\\./etc/passwd
 ._%
 ._Top.php
 ._advanced.cfm
@@ -893,6 +911,7 @@ ${idfwbonavigation}.xml
 .admin
 .admin.php
 .admin/
+.admin/.git/config
 .admin;-aspx
 .adminer.jsf.swp
 .adminer.jsp.swp
@@ -1411,6 +1430,7 @@ ${idfwbonavigation}.xml
 .c9
 .c9/
 .c9/metadata/environment/.env
+.c99.php
 .c9revisions
 .c9revisions/
 .ca
@@ -2102,6 +2122,7 @@ ${idfwbonavigation}.xml
 .docker-options-production
 .docker-options-staging
 .docker-options-testing
+.docker.dev
 .docker/
 .docker/.dockercfg
 .docker/.dockerignore
@@ -2388,6 +2409,7 @@ ${idfwbonavigation}.xml
 .env.development.js
 .env.development.json
 .env.development.local
+.env.development.local.env-example
 .env.development.properties
 .env.development.sample
 .env.development.toml
@@ -2406,6 +2428,7 @@ ${idfwbonavigation}.xml
 .env.example
 .env.example.local
 .env.example.template
+.env.exampleenv.js.env.php
 .env.example~
 .env.fortify
 .env.fortify.production
@@ -2868,6 +2891,7 @@ ${idfwbonavigation}.xml
 .git-crypt
 .git-rewrite
 .git-rewrite/
+.git-rewrite/git-service
 .git-secret
 .git-secret-ignore
 .git-secret-repository.gpg
@@ -2886,9 +2910,12 @@ ${idfwbonavigation}.xml
 .git.json
 .git.php
 .git/
+.git/*
+.git//
 .git/COMMIT_EDITMSG
 .git/FETCH_HEAD
 .git/HEAD
+.git/HEAD~
 .git/MERGE_HEAD
 .git/MERGE_MSG
 .git/ORIG_HEAD
@@ -2899,6 +2926,7 @@ ${idfwbonavigation}.xml
 .git/commit_editmsg
 .git/config
 .git/configf
+.git/config~
 .git/credentials
 .git/description
 .git/fetch_head
@@ -2913,13 +2941,21 @@ ${idfwbonavigation}.xml
 .git/hooks/post-merge
 .git/hooks/post-update
 .git/hooks/pre-applypatch
+.git/hooks/pre-applypatch.sample
 .git/hooks/pre-commit
+.git/hooks/pre-commit.sample
 .git/hooks/pre-push
+.git/hooks/pre-push.sample
 .git/hooks/pre-rebase
+.git/hooks/pre-rebase.sample
 .git/hooks/pre-receive
+.git/hooks/pre-receive.sample
 .git/hooks/prepare-commit-msg
+.git/hooks/prepare-commit-msg.sample
 .git/hooks/update
+.git/hooks/update.sample
 .git/index
+.git/index of
 .git/info
 .git/info/
 .git/info/attributes
@@ -2930,6 +2966,7 @@ ${idfwbonavigation}.xml
 .git/logs/HEAD
 .git/logs/head
 .git/logs/refs
+.git/logs/refs/head/master
 .git/logs/refs/heads
 .git/logs/refs/heads/master
 .git/logs/refs/remotes
@@ -2937,6 +2974,7 @@ ${idfwbonavigation}.xml
 .git/logs/refs/remotes/origin/HEAD
 .git/logs/refs/remotes/origin/head
 .git/logs/refs/remotes/origin/master
+.git/logs/refs/stash
 .git/objects
 .git/objects/
 .git/objects/info/packs
@@ -2952,6 +2990,7 @@ ${idfwbonavigation}.xml
 .git/refs/remotes/origin/HEAD
 .git/refs/remotes/origin/head
 .git/refs/remotes/origin/master
+.git/refs/stash
 .git/refs/tags
 .git2
 .git2/
@@ -3491,6 +3530,7 @@ ${idfwbonavigation}.xml
 .ht.router.php
 .ht_wsr.txt
 .hta
+.hta/admin.asp
 .htaccess
 .htaccess-backup
 .htaccess-dev
@@ -5279,6 +5319,7 @@ ${idfwbonavigation}.xml
 .sec
 .sec.cfm
 .secret
+.secret.php
 .secret.properties
 .secret_token
 .secrets

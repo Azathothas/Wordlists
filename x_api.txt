@@ -1241,6 +1241,7 @@ API-Testing.aspx
 API.ashx
 API.aspx
 API.php
+API/
 API/DW/Dwplugin/SystemLabel/SiteConfig.htm
 API/DW/Dwplugin/TemplateManage/login_site.htm
 API/DW/Dwplugin/TemplateManage/manage_site.htm
@@ -2036,6 +2037,7 @@ Billboard_ReadBrowseFilter
 Billboard_Update
 BingSiteAuth.xml
 Bio
+Biographies.%EXT%
 Biographies.html
 Biography.aspx
 Bios
@@ -2818,6 +2820,7 @@ ClickServerInputDialogButton
 ClickTradeItem
 ClientAccessPolicy.xml
 ClientApi
+ClientApi/
 ClientWS
 ClienteApiClima.php
 CloseAccountBag
@@ -4588,6 +4591,7 @@ GraphicObject.php
 GraphicSoftBrokenLine.php
 GraphicTextRun.php
 Graphics
+Graphics/
 GraphicsMagick.php
 GraphicsState.php
 Graphics_Proof_Request.php
@@ -5740,6 +5744,8 @@ LV_422808_0
 LV_422808_1
 LV_422809_0
 LV_422809_1
+LabelsJSON
+LabelsJSON.%EXT%
 LabelsJSON.jsp
 LandingPage
 Language
@@ -9763,6 +9769,8 @@ ReleaseBuffer
 ReleasePet
 ReleaseScriptRawBuffer
 ReloadUI
+ReloadXML
+ReloadXML.%EXT%
 ReloadXML.aspx
 ReloadXML.aspx.vb
 Reloadxml.aspx
@@ -9815,11 +9823,13 @@ RestApi
 RestInteraction
 RestaurantInfo.aspx
 RestaurantMenu.aspx
+Restaurants
 RestaurantsForSale.aspx
 Restore
 Restrain/
 Restrict
 RestrictCursor
+Restricted
 RestrictedUseDealer.aspx
 Restriction.php
 Result
@@ -11457,7 +11467,10 @@ Users/Default/AppData/Local/Microsoft/Windows/Shell/DefaultLayouts.xml
 Utilities
 UtilityExpenseMgmt
 V
+V1
 V1.php
+V2
+V2.%EXT%
 V2.php
 V2/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
 V20103.jsp
@@ -11477,8 +11490,10 @@ V20163.jsp
 V20164.jsp
 V20172.jsp
 V2A_XHTML/admin/admin.php
+V3
 V3.php
 V3ComExample.asp
+V4
 VALIDATION
 VALIDATIONS
 VALUE
@@ -12390,6 +12405,7 @@ XMLFiles
 XMLFlatDataLoad.class.php
 XMLHttpRequest
 XMLImporter
+XMLImporter/
 XMLItemSearch.aspx
 XMLLeaf.php
 XMLNavMove
@@ -12418,6 +12434,7 @@ XmLWK
 Xml
 Xml Tools 2.4.8 Unicode.zip
 Xml.php
+Xml/
 XmlConfig
 XmlContent.php
 XmlDSig.php
@@ -12522,6 +12539,7 @@ _efka_json_mainNews.asp
 _error_docs
 _errordocs
 _ex
+_framework/blazor.boot.json
 _getJsonTopMenu.php
 _global.xml
 _graphics
@@ -14192,6 +14210,7 @@ animeopensearch.xml
 animumodatas.xml
 anisearch.xml
 anketa_zapis
+anketa_zapis.%EXT%
 anketa_zapis.php
 anketv3/anket.asp
 anlcv1
@@ -14532,6 +14551,7 @@ api-w
 api-x
 api-y
 api-z
+api.%EXT%
 api../server-status
 api.admin.mars.com-web.log
 api.admin.mars.com-web.log.2020-06-02
@@ -19452,6 +19472,7 @@ azkrasa.xml
 azr94v2hh21g
 azr94v2hh2l
 azr94v2hh2lg
+azr94v2hh2lg/
 azr94v2hh2lgbbkk
 azrailphp_v1.0.php
 azure-config.json
@@ -23717,6 +23738,7 @@ compare
 compare_regions.xml
 compare_table.xml
 compare_v3
+compare_v3.%EXT%
 compare_v3.php
 comparison.xml
 compass.xml
@@ -24713,6 +24735,7 @@ contrib.v1
 contrib.v2
 contribapi
 contribute
+contribute.json
 contribv1
 contribv2
 control
@@ -27825,6 +27848,7 @@ dev2.stg
 dev2.test
 dev2.v1
 dev2.v2
+dev2/
 dev20
 dev2010
 dev21
@@ -29897,6 +29921,7 @@ env2
 env20
 env3
 env4
+env40x40
 env_vars.json
 env_vars.xml
 envapi
@@ -33347,6 +33372,7 @@ granulebardog.xml
 graph
 graph-generator.php
 graph-sdk/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+graph.%EXT%
 graph.aspx
 graph.cfm
 graph.class.php
@@ -33356,6 +33382,7 @@ graph.jsp
 graph.php
 graph.txt
 graph.xqy
+graph/
 graph/item
 graph2.php
 graph3.php
@@ -37273,6 +37300,7 @@ jpgraph-2
 jpgraph-2.2
 jpgraph-2.3.3
 jpgraph.php
+jpgraph/
 jpgraph_antispam-digits.php
 jpgraph_antispam.php
 jpgraph_bar.php
@@ -37600,6 +37628,7 @@ json-w
 json-x
 json-y
 json-z
+json.%EXT%
 json.LoginMemberInfo.php
 json.api
 json.api.php
@@ -37645,6 +37674,7 @@ json.v1
 json.v2
 json.vitezaTrafic.php
 json.vitezaTraficDrumuri.php
+json/
 json/iread
 json/isc
 json/search/people
@@ -41727,6 +41757,7 @@ magic
 magisk-v18.0.zip
 magnews_api.php
 magnifier_xml
+magnifier_xml.%EXT%
 magnifier_xml.php
 magpie/restrict
 mahara-api
@@ -45134,6 +45165,7 @@ nunit.framework.xml
 nusoap
 nusoap-0
 nusoap.php
+nusoap/
 nusoaplib
 nusoapmime.php
 nutrition.json
@@ -45412,6 +45444,7 @@ offlinev1
 offlinev2
 ofind1.xml
 ofinterest
+ofinterest.%EXT%
 ofinterest.aspx
 ogl
 ogn-nextgen-navbar.xml
@@ -47659,6 +47692,7 @@ phpmailerv1
 phpmailerv2
 phpmd.xml
 phpmv2
+phpmv2/
 phpmv2/index.php
 phpmyadmin
 phpmyadmin-api
@@ -52265,6 +52299,7 @@ pvi8v1wg.php
 pvt.json
 pw
 pw_api
+pw_api.%EXT%
 pw_api.asp
 pw_api.aspx
 pw_api.jsf
@@ -54305,6 +54340,7 @@ restaurants-details.php
 restaurants.json
 restaurants.oregonlive.com
 restaurants.php
+restaurants/
 restaurants/*action=srch
 restaurants/menus
 restaurants/search
@@ -57887,12 +57923,14 @@ sitemap_sv.xml
 sitemap_wap.xml
 sitemap_xml
 sitemap_xml.cfm
+sitemap_xml/
 sitemapi0
 sitemapi1
 sitemapi2
 sitemapi3
 sitemapi4
 sitemapindex
+sitemapindex.%EXT%
 sitemapindex.xml
 sitemapindex.xml</pre></body></html>
 sitemapother.xml
@@ -57901,6 +57939,7 @@ sitemaps.xml
 sitemapspal.xml
 sitemapxml
 sitemapxml-old
+sitemapxml-old.%EXT%
 sitemapxml-old.jsp
 sitemapxml.php
 sitemapxml.xml
@@ -58657,6 +58696,7 @@ soap-wsdl.xml
 soap-x
 soap-y
 soap-z
+soap.%EXT%
 soap.api
 soap.beep
 soap.beeps
@@ -64386,6 +64426,7 @@ v1-w
 v1-x
 v1-y
 v1-z
+v1.%EXT%
 v1.0
 v1.0/
 v1.0/swagger-ui.html
@@ -65623,6 +65664,7 @@ v2xmlc
 v2xmlc.php
 v2ybs4hj.php
 v3
+v3.%EXT%
 v3.0/swagger-ui.html
 v3.01
 v3.02
@@ -71045,6 +71087,7 @@ xml-w
 xml-x
 xml-y
 xml-z
+xml.%EXT%
 xml.api
 xml.asp
 xml.aspx
@@ -71450,6 +71493,7 @@ xmlfile
 xmlfile.xml
 xmlfile2
 xmlfiles
+xmlfiles/
 xmlflash
 xmlform.js
 xmlfotos
@@ -71749,6 +71793,7 @@ xmlservices
 xmlservices/E_book.php
 xmlset
 xmlsitemap
+xmlsitemap.%EXT%
 xmlsitemap.php
 xmlsitemapgenerator.php
 xmlsitemaps
