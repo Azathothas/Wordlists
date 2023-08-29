@@ -9,21 +9,25 @@
 ✗ Error: /home/runner/work/Wordlists/Wordlists/main/bbFuzzing.txt/bbFuzzing.txt not found
 Reinstalling....
 
-✗ Error: /home/runner/work/Wordlists/Wordlists/main/fuzz.txt/fuzz.txt not found
-Reinstalling....
+✗ Error: /home/runner/work/Wordlists/Wordlists/main/bbFuzzing.txt not found
+This will take quite some time (If first run)
+Depending on your internet, it may take upto 1 hr
+Just let your terminal be!
+No Git (.git) folder found in /home/runner/work/Wordlists/Wordlists/main or its parent directories!
+Proceeding with git clone
 
-✗ Error: /home/runner/work/Wordlists/Wordlists/main/hfuzz/hfuzz.txt not found
-Reinstalling....
-
-✗ Error: /home/runner/work/Wordlists/Wordlists/main/leaky-paths/leaky-paths.txt not found
-Reinstalling....
-
-✗ Error: /home/runner/work/Wordlists/Wordlists/main/OneListForAll/onelistforallmicro.txt not found
-Reinstalling....
-
-✗ Error: /home/runner/work/Wordlists/Wordlists/main/WordList/onelistforall.txt not found
-Reinstalling....
-
+Updating /home/runner/work/Wordlists/Wordlists/main/bbFuzzing.txt to @latest
+ⓘ Already @latest
+Updating /home/runner/work/Wordlists/Wordlists/main/fuzz.txt to @latest
+ⓘ Already @latest
+Updating /home/runner/work/Wordlists/Wordlists/main/hfuzz to @latest
+ⓘ Already @latest
+Updating /home/runner/work/Wordlists/Wordlists/main/leaky-paths to @latest
+ⓘ Already @latest
+Updating /home/runner/work/Wordlists/Wordlists/main/OneListForAll to @latest
+ⓘ Already @latest
+Updating /home/runner/work/Wordlists/Wordlists/main/WordList to @latest
+ⓘ Already @latest
 
 ➼ Fetching & Updating <-- Bo0oM/fuzz.txt
 ➼ x_lhf_mini.txt  : 0
@@ -36,7 +40,7 @@ Reinstalling....
 
 ➼ Fetching & Updating <-- thehlopster/hfuzz
 ➼ x_lhf_mini.txt  : 0
-➼ x-lhf-large.tx  : 0
+➼ x-lhf-large.txt  : 0
 
 ➼ Fetching & Updating <-- ayoubfathi/leaky-paths
 ➼ x_lhf_mini.txt  : 0
