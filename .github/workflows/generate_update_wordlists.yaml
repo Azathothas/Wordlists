@@ -1,10 +1,11 @@
 name: 💾 Fetch || ⏫ Update Wordlists 📙
-#MAX_RUNTIME: ~ 10 mins
+#MAX_RUNTIME: ~ 05-10 mins
 
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 */12 * * *"  # Every 2 Hrs
+    - cron: "15 23 * * *"  # ( 11:15 PM UTC --> 05:00 AM Morning )
+    
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -90,6 +91,14 @@ jobs:
            find "$GITHUB_WORKSPACE/main" -maxdepth 1 -type d ! -name '.git*' ! -name 'main' ! -name '*Logs*' ! -name '*Misc*' -exec rm -rf {} \; 2>/dev/null
         continue-on-error: true  
 
+      - name: Sort Misc
+        run: |
+          # Presets
+          set -x ; set +e
+          #--------------#        
+          cd "$GITHUB_WORKSPACE/main"
+          find ./Misc -type f -name '*.txt' -exec sort -u {} -o {} \;
+          
       - name: Dos2Unix Everything
         run: |
           # Presets
