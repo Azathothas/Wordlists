@@ -71,7 +71,7 @@ curl -qfsSLJO "https://raw.githubusercontent.com/Azathothas/Wordlists/main/Misc/
 wget -q "https://raw.githubusercontent.com/Azathothas/Wordlists/main/Misc/ports_top_20k.txt"
 ```
 ---
-### Methodology
+### Methodology : [![💾 Fetch || ⏫ Update Wordlists 📙](https://github.com/Azathothas/Wordlists/actions/workflows/generate_update_wordlists.yaml/badge.svg)](https://github.com/Azathothas/Wordlists/actions/workflows/generate_update_wordlists.yaml)
 > ```bash
 > Use Wordium and fetch default Wordlists
 >  wordium: 'https://github.com/Azathothas/Arsenal/tree/main/wordium'
