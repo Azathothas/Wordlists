@@ -19056,3 +19056,16 @@ zupdate
 {0}.1.json
 ||d
 ~gzqbyr/php_docs/phpBB/add_name.zip/
+
+api/graphql/v1
+express-graphql
+graphql-console
+graphql-devtools
+graphql/graphql-playground
+graphql-playground
+graphql/v1
+laravel-graphql-playground
+portal-graphql
+query-explorer
+query-laravel
+sphinx-graphiql
