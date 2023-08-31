@@ -337,6 +337,7 @@ ${idfwbonavigation}.xml
 .idea/replstate.xml
 .idea/runConfigurations.xml
 .idea/runconfigurations.xml
+.idea/scopes/java.xml
 .idea/scopes/scope_settings.xml
 .idea/sqlDataSources.xml
 .idea/sqldatasources.xml
@@ -454,6 +455,7 @@ ${idfwbonavigation}.xml
 .secrets
 .semaphore/semaphore.yaml
 .sequelizerc.json
+.settings/language.settings.xml
 .settings/org.eclipse.wst.common.project.facet.core.xml
 .settings/rules.json
 .settings/rules.json?auth=FIREBASE_SECRET
@@ -12913,6 +12915,7 @@ account.json
 account.v1
 account.v2
 account.xml
+account/api/account
 accountBalance
 accountHolder
 accountId
@@ -14480,6 +14483,8 @@ api-m
 api-management.cfg
 api-mboss-service-656bd7bbdc-8mx4k
 api-media_top.asp
+api-metric
+api-metrics
 api-monitoring.json
 api-n
 api-namespace-d7dbf977d-64rd8
@@ -14505,6 +14510,7 @@ api-quick-start
 api-r
 api-rate-limiting.json
 api-reference
+api-references
 api-request-validation.json
 api-request.log
 api-response-validation.json
@@ -14966,6 +14972,8 @@ api/*
 api/.env
 api/.env 
 api/.git/config
+api/.htaccess
+api/.htpasswd
 api/.js
 api/.json
 api/.ts
@@ -14977,6 +14985,8 @@ api/1.0/.git
 api/1.0/migration
 api/1/.git
 api/1/databases
+api/1/devices/1/snapshot
+api/1/devices/2/snapshot
 api/1/docs
 api/10
 api/18
@@ -14985,6 +14995,8 @@ api/2
 api/2.0
 api/2.0/.git
 api/2/.git
+api/2/devices/1/snapshot
+api/2/devices/2/snapshot
 api/2/docs
 api/2/explore
 api/2/explore/
@@ -14993,6 +15005,8 @@ api/3
 api/3.0
 api/3.0/.git
 api/3/.git
+api/3/devices/1/snapshot
+api/3/devices/2/snapshot
 api/3/docs
 api/4
 api/5
@@ -15371,6 +15385,7 @@ api/konglog/oam
 api/konglog/scenario
 api/konglog/servmgmt
 api/konglog/user
+api/l10n/index
 api/last
 api/latest
 api/liferay
@@ -15443,8 +15458,15 @@ api/opentsdb/version
 api/operations
 api/order
 api/orders
+api/org/1
+api/org/2
+api/org/3
+api/orgs/1
+api/orgs/2
+api/orgs/3
 api/otp/verify
 api/owner
+api/package.json
 api/package_search/v4/documentation
 api/pages
 api/parameters
@@ -15474,6 +15496,7 @@ api/project/info
 api/properties
 api/providers
 api/proxy
+api/proxy.php
 api/proxy?url=
 api/public
 api/public/
@@ -15492,6 +15515,9 @@ api/reg
 api/register
 api/reload
 api/reminders.delete
+api/reports/1
+api/reports/2
+api/reports/3
 api/request
 api/resend_confirm
 api/resetPassword
@@ -15529,6 +15555,7 @@ api/search.json
 api/search/suggestions
 api/search/v0/table
 api/security
+api/server
 api/server_status
 api/servers
 api/service
@@ -15548,6 +15575,7 @@ api/settings/setting-isauthenticationenabled
 api/settings/values
 api/share
 api/sign-up
+api/signature
 api/signup
 api/silence/clear
 api/silence/get
@@ -15608,15 +15636,18 @@ api/swagger/index.html
 api/swagger/static/index.html
 api/swagger/swagger
 api/swagger/swagger-ui.html
+api/swagger/swagger.json
 api/swagger/ui/index
 api/swagger_doc.json
 api/swaggerui/swagger.json
 api/swaggerui/swagger.yaml
 api/sys
 api/system
+api/system/db_migration_status
 api/system/deviceinfo
 api/system/info
 api/system/logo
+api/system/status
 api/systems/details      
 api/t
 api/team.accessLogs
@@ -15667,6 +15698,7 @@ api/userrolelist/systemRoles?require-cfg.js
 api/users
 api/users.json
 api/users/*
+api/users/account
 api/users/all
 api/users/current
 api/users/info
@@ -15685,6 +15717,10 @@ api/v0.1/predictions
 api/v1
 api/v1.0
 api/v1.0/.git
+api/v1.0/.json
+api/v1.0/reg
+api/v1.0/register
+api/v1.0/swagger/swagger.json
 api/v1.1
 api/v1.10
 api/v1.2
@@ -15696,8 +15732,10 @@ api/v1.7
 api/v1.8
 api/v1.9
 api/v1/
+api/v1/.env
 api/v1/.git
 api/v1/.git/config
+api/v1/.json
 api/v1/App/user
 api/v1/about
 api/v1/access/share
@@ -15823,6 +15861,8 @@ api/v1/delta/order
 api/v1/delta/userAssets
 api/v1/delta/userassets
 api/v1/details
+api/v1/devices
+api/v1/devices/snapshot
 api/v1/digitalone-cnl-facebook/is-churn
 api/v1/digitalone-cnl-facebook/post-token
 api/v1/directors
@@ -15873,6 +15913,8 @@ api/v1/history/history
 api/v1/image_proxy
 api/v1/import/clients
 api/v1/index.html
+api/v1/index/.env
+api/v1/index/.git/config
 api/v1/info
 api/v1/internal/users/1
 api/v1/inventory
@@ -15954,6 +15996,8 @@ api/v1/oa
 api/v1/omni-attendance
 api/v1/orders
 api/v1/orders/1
+api/v1/org/1
+api/v1/orgs/1
 api/v1/p2p-server
 api/v1/p2p-server/no-auth
 api/v1/partners
@@ -16027,6 +16071,8 @@ api/v1/profile
 api/v1/profile/1
 api/v1/promotions
 api/v1/protected
+api/v1/proxy
+api/v1/proxy.php
 api/v1/proxy_success
 api/v1/proxy_timeout
 api/v1/qbridge
@@ -16043,7 +16089,9 @@ api/v1/register
 api/v1/registration
 api/v1/registry
 api/v1/remark
+api/v1/report/1
 api/v1/reports
+api/v1/reports/1
 api/v1/repositories
 api/v1/reset-password
 api/v1/resetPassword/admin
@@ -16065,6 +16113,7 @@ api/v1/seats
 api/v1/secret
 api/v1/secrets
 api/v1/series
+api/v1/server
 api/v1/serviceaccounts
 api/v1/services
 api/v1/session
@@ -16072,6 +16121,7 @@ api/v1/sessions/current
 api/v1/setting
 api/v1/settings
 api/v1/sign-up
+api/v1/signature
 api/v1/signup
 api/v1/sites.json
 api/v1/sms-sender
@@ -16103,6 +16153,7 @@ api/v1/swagger-ui/swagger.yaml
 api/v1/swagger.json
 api/v1/swagger.yaml
 api/v1/swagger/
+api/v1/swagger/swagger.json
 api/v1/swan/knowledge
 api/v1/swan/sensitive
 api/v1/system
@@ -16114,6 +16165,9 @@ api/v1/tam-client
 api/v1/targets
 api/v1/terms
 api/v1/tickets
+api/v1/tickets/1.json
+api/v1/tickets/2.json
+api/v1/tickets/3.json
 api/v1/timelapse
 api/v1/todo-task
 api/v1/token
@@ -16174,6 +16228,7 @@ api/v1/venues
 api/v1/video
 api/v1/videos
 api/v1/visits
+api/v1/wc.db
 api/v1/webinars
 api/v1/wishlist
 api/v1/withdrawals
@@ -16195,12 +16250,16 @@ api/v1beta1
 api/v2
 api/v2.0
 api/v2.0/.git
+api/v2.0/.json
 api/v2.0/configuration
 api/v2.0/health
 api/v2.0/preference
 api/v2.0/projects
+api/v2.0/reg
+api/v2.0/register
 api/v2.0/search
 api/v2.0/statistics
+api/v2.0/swagger/swagger.json
 api/v2.0/systeminfo
 api/v2.0/users
 api/v2.1
@@ -16214,8 +16273,11 @@ api/v2.7
 api/v2.8
 api/v2.9
 api/v2/
+api/v2/.env
 api/v2/.git
 api/v2/.git/config
+api/v2/.json
+api/v2/account
 api/v2/account.json
 api/v2/accounts
 api/v2/accounts.json
@@ -16238,6 +16300,8 @@ api/v2/current_user/owner
 api/v2/current_user/owner/
 api/v2/dashboard
 api/v2/dashboard/
+api/v2/devices
+api/v2/devices/snapshot
 api/v2/displays
 api/v2/docs
 api/v2/event
@@ -16248,6 +16312,8 @@ api/v2/graphql
 api/v2/health
 api/v2/helpdesk/discover
 api/v2/index.html
+api/v2/index/.env
+api/v2/index/.git/config
 api/v2/internal/users/1
 api/v2/ip.json
 api/v2/jobs
@@ -16255,19 +16321,27 @@ api/v2/link
 api/v2/login
 api/v2/management
 api/v2/me
+api/v2/org/2
+api/v2/orgs/2
 api/v2/page
 api/v2/pages
 api/v2/playground
 api/v2/profile/1
+api/v2/proxy
+api/v2/proxy.php
 api/v2/pub
 api/v2/public/feeds.json
 api/v2/reg
 api/v2/register
+api/v2/report/2
+api/v2/reports/2
 api/v2/resetPassword/admin
 api/v2/resetPassword/administrator
 api/v2/resetPassword/test
 api/v2/resetPwd
+api/v2/server
 api/v2/sign-up
+api/v2/signature
 api/v2/signup
 api/v2/spans
 api/v2/swagger
@@ -16277,6 +16351,7 @@ api/v2/swagger-ui.json
 api/v2/swagger.json
 api/v2/swagger.yaml
 api/v2/swagger/
+api/v2/swagger/swagger.json
 api/v2/system
 api/v2/system/
 api/v2/system/feed
@@ -16284,7 +16359,12 @@ api/v2/system/feed/
 api/v2/system/stock
 api/v2/system/stock/
 api/v2/tickets
+api/v2/tickets.json
 api/v2/tickets.json?page=2
+api/v2/tickets/1.json
+api/v2/tickets/2.json
+api/v2/tickets/3.json
+api/v2/token
 api/v2/track
 api/v2/user/all
 api/v2/user/list
@@ -16297,9 +16377,14 @@ api/v2/users/list
 api/v2/users/me
 api/v2/verification/create
 api/v2/verification/financer
+api/v2/wc.db
 api/v3
 api/v3.0
 api/v3.0/.git
+api/v3.0/.json
+api/v3.0/reg
+api/v3.0/register
+api/v3.0/swagger/swagger.json
 api/v3.1
 api/v3.10
 api/v3.2
@@ -16311,8 +16396,11 @@ api/v3.7
 api/v3.8
 api/v3.9
 api/v3/
+api/v3/.env
 api/v3/.git
 api/v3/.git/config
+api/v3/.json
+api/v3/account
 api/v3/account.json
 api/v3/accounts.json
 api/v3/actuator/dump
@@ -16321,23 +16409,35 @@ api/v3/api-docs
 api/v3/apidocs
 api/v3/config.json
 api/v3/config/.git/config
+api/v3/devices
+api/v3/devices/snapshot
 api/v3/docs
 api/v3/graphiql
 api/v3/graphql
+api/v3/index/.env
+api/v3/index/.git/config
 api/v3/internal/users/1
 api/v3/login
 api/v3/me
 api/v3/orders/1
 api/v3/orders?id=1
+api/v3/org/3
+api/v3/orgs/3
 api/v3/playground
 api/v3/profile/1
+api/v3/proxy
+api/v3/proxy.php
 api/v3/reg
 api/v3/register
+api/v3/report/3
+api/v3/reports/3
 api/v3/resetPassword/admin
 api/v3/resetPassword/administrator
 api/v3/resetPassword/test
 api/v3/resetPwd
+api/v3/server
 api/v3/sign-up
+api/v3/signature
 api/v3/signup
 api/v3/swagger
 api/v3/swagger-ui
@@ -16345,10 +16445,16 @@ api/v3/swagger-ui.html
 api/v3/swagger-ui.json
 api/v3/swagger.json
 api/v3/swagger.yaml
+api/v3/swagger/swagger.json
+api/v3/tickets/1.json
+api/v3/tickets/2.json
+api/v3/tickets/3.json
+api/v3/token
 api/v3/user/profile/1
 api/v3/user/register
 api/v3/users
 api/v3/users.json
+api/v3/wc.db
 api/v4
 api/v4.0
 api/v4.1
@@ -16447,6 +16553,7 @@ api/videos
 api/view
 api/views.publish
 api/wallet
+api/wc.db
 api/web/account
 api/web/invite
 api/web/kiosk
@@ -18726,8 +18833,13 @@ apps/xmlapi/templates/layout.php
 appsapi
 appsecrets.json
 appselection.view.xml
+appsettings.Dev.json
 appsettings.Development.json
+appsettings.Devs.json
 appsettings.Local.json
+appsettings.Pilot.json
+appsettings.Prod.json
+appsettings.Produ.json
 appsettings.Production.json
 appsettings.Staging.json
 appsettings.Test.json
@@ -19370,6 +19482,7 @@ avail
 availability_product.xml
 available
 avapi
+avatar.json.backup
 avatar_title.xml
 avatars
 average.xml
@@ -19704,6 +19817,7 @@ babycenter_skin.xml
 back
 back-up
 back.xml
+back/package.json
 backbone-dependencies.json
 backbone-dependencies.xml
 backbone.config.json
@@ -19732,6 +19846,7 @@ backend/admin/user/user-menu.json
 backend/admin/user/user.json
 backend/admin/user/users.json
 backend/core/info.xml
+backend/package.json
 backendapi
 backendv1
 backendv2
@@ -20107,6 +20222,7 @@ bce-finance-api-594bfcc684-5lhps
 bchphysiciandata.xml
 bcvsrates.xml
 bd
+bd.json
 bd_opensearch.xml
 bdata
 bdd_xml
@@ -20505,6 +20621,7 @@ blahdocs
 blank
 blank.xml
 blankespapier
+blazor.boot.json
 bleach-capitulos
 bleapi.js
 blend()
@@ -24002,6 +24119,8 @@ config.json.asp
 config.json.aspx
 config.json.bak
 config.json.cfm
+config.json.dist
+config.json.example
 config.json.jsf
 config.json.jsp
 config.json.php
@@ -24050,6 +24169,7 @@ config/creds.json
 config/dashboard-statistics.xml
 config/database.json
 config/db.json
+config/db.json.backup
 config/db.xml
 config/default.json
 config/deployment_config.xml
@@ -24186,6 +24306,8 @@ config/parameters_test.yaml
 config/policy_config.json
 config/pom.xml
 config/production.json
+config/properties.json
+config/props.json
 config/psi+/profiles/default/accounts.xml
 config/push_config.json
 config/push_config.xml
@@ -26820,6 +26942,7 @@ data.v2
 data.xml
 data/credentials.json
 data/json/config.json
+data/koha-conf.xml
 data/login.json
 data/other/authorization.xml
 data/settings.xml+
@@ -27064,6 +27187,7 @@ db-config.cfg.xml
 db-config.config.xml
 db-config.json
 db-config.xml
+db-full.json
 db-v1
 db-v2
 db.api
@@ -27077,6 +27201,7 @@ db.datatypes.sqlite.xml
 db.datatypes.sybase.xml
 db.datatypes.xml
 db.json
+db.json.backup
 db.json.gz
 db.properties.xml
 db.table.session.xml
@@ -27124,6 +27249,7 @@ dbc_en.xml
 dbconfig.json
 dbconfig.xml
 dbeaver-data-sources.xml
+dbfull.json
 dbg
 dbgraphic.php
 dbi
@@ -29010,6 +29136,12 @@ dump/admin/metadata.json
 dump/admin/system.xml
 dump/metadata.json
 dump/system.xml
+dump2021.json
+dump2021.xml
+dump2022.json
+dump2022.xml
+dump2023.json
+dump2023.xml
 dumpapi
 dumpenv
 dumper.json
@@ -31076,6 +31208,7 @@ file.json.php
 file.v1
 file.v2
 file.xml
+file/package.json
 file_id
 file_list.xml
 file_upload.json
@@ -31110,6 +31243,7 @@ files/docs/docs.checksum
 files/download/WEB-INF/users/admin.xml
 files/joomla.xml
 files/kietuv4/hit.php
+files/package.json
 files_assets.xml
 files_images.xml
 files_images_books.xml
@@ -32028,6 +32162,7 @@ front.api
 front.v1
 front.v2
 front.xml
+front/package.json
 frontApi.asp
 front_api.jsp
 front_images.xml
@@ -32049,6 +32184,7 @@ frontend.api
 frontend.v1
 frontend.v2
 frontend.xml
+frontend/package.json
 frontend/x/fantastico/includes/xml.php
 frontendapi
 frontendapi.do
@@ -32125,6 +32261,7 @@ ftsearch.xml
 fulfill
 full
 fullScreen()
+full_db.json
 full_menu_json.ashx
 fullscreen.xml
 fun
@@ -33110,6 +33247,7 @@ gitlab-v2
 gitlab.api
 gitlab.v1
 gitlab.v2
+gitlab.xml
 gitlab_api_private_token
 gitlabapi
 gitlabapi.js
@@ -35633,6 +35771,7 @@ index-2_core.xml
 index-2_messages_el.xml
 index-2_messages_en.xml
 index-2_skin.xml
+index-old.json
 index-pattern.json
 index-recentlegislation.xml
 index-slider-json.php
@@ -35647,6 +35786,8 @@ index.home-page.xml
 index.id.xml
 index.json
 index.json.php
+index.json1
+index.json2
 index.jsontml
 index.metadata.json
 index.php/api
@@ -35669,13 +35810,18 @@ index.xmltml
 index.zh.xml
 index/api/config
 index1
+index1.json
 index1.xml
 index10.xml
 index1_core.xml
 index1_messages_ko.xml
 index1_skin.xml
 index2
+index2.json
 index3
+index3.json
+index4.json
+index5.json
 indexApi.php
 indexMySqltoXML.php
 indexSuccess.xml.php
@@ -37679,6 +37825,7 @@ json/iread
 json/isc
 json/search/people
 json/teaser/wsfy
+json/version
 json01
 json02
 json03
@@ -37689,6 +37836,7 @@ json07
 json08
 json09
 json1
+json1.js
 json10
 json11
 json12
@@ -37700,6 +37848,7 @@ json17
 json18
 json19
 json2
+json2.js
 json20
 json3
 json4
@@ -38857,6 +39006,7 @@ kobitto_messages_ja.xml
 kobitto_skin.xml
 kobpromotions.xml
 kocpromotions.xml
+koha-conf.xml
 koi8r.xml
 koi8u.xml
 kok.xml
@@ -41452,6 +41602,10 @@ logs/api.log
 logs/dump.json
 logs/error_log.json
 logs/kube-apiserver.log
+logs/webapi
+logs/webapi-.log
+logs/webapi.log
+logs/webapi.logs
 logsapi
 logsv1
 logsv2
@@ -46804,6 +46958,7 @@ package.template.xml
 package.v1
 package.v2
 package.xml
+package/package.json
 package2.xml
 packageapi
 packagelist.xml
@@ -50851,6 +51006,8 @@ portal.api
 portal.v1
 portal.v2
 portal.xml
+portal/api/uploads/1
+portal/api/uploads/1/content
 portal/apis/aggrecate_js.cgi
 portal/docs
 portal/wp-includes/wlwmanifest.xml
@@ -51720,6 +51877,8 @@ prod.v2
 prod.xml
 prod_api.txt
 prodapi
+prods.json
+producation.json
 produce
 produce_zone_xml.php
 producers
@@ -51968,6 +52127,7 @@ propiedades_resultados_json.php
 proprietary_analysis_v3.csv
 proprietary_sales_data_v2.csv
 proprietary_technology_v2.xlsx
+props.json
 proquizv2b/my_account.php
 proscenium360.xml
 proscenium360_core.xml
@@ -55176,6 +55336,7 @@ s3-redirect.json
 s3-transfer-acceleration.json
 s3-versioning.json
 s3-website.json
+s3.json
 s3.xml
 s3_access_controls.json
 s3_access_controls.xml
@@ -55627,6 +55788,7 @@ science
 science/outlinejson
 scipio-opensearch.xml
 scooter-rentals.json
+scopes/java.xml
 scoreapi.js
 scores.json
 scp-api
@@ -59935,6 +60097,7 @@ static/api/v3/swagger.yaml
 static/charts/.xml
 static/data/thirdgames.json
 static/js/lang_json_cn.js
+static/package.json
 static/swagger-ui/index.html
 static/swagger.json
 static_configs.yml
@@ -60951,6 +61114,7 @@ swagger/swagger
 swagger/swagger-ui.htm
 swagger/swagger-ui.html
 swagger/swagger-ui.js
+swagger/swagger.json
 swagger/ui
 swagger/ui/index
 swagger/ui/index#/Admin
@@ -61337,6 +61501,7 @@ system_volumes.xml
 system_web
 systemapi
 systemcode.xml
+systemd-creds.xml
 systemid
 systemstatus.xml
 systemv1
@@ -61660,6 +61825,7 @@ target/cucumber.json
 targetnearestenemy
 targetnearestfriend
 targets
+targets.json
 tarief-t11a.xml
 tarief-t11n.xml
 tarief-t12a.xml
@@ -64201,6 +64367,7 @@ users.map.xml
 users.v1
 users.v2
 users.xml
+users/.json
 users/ammargraph
 users/api
 users/complaintdocs/command.php
@@ -65430,6 +65597,7 @@ v2/api2/publicity/getstats
 v2/api2/savedsearches/getsavedsearches
 v2/apidocs
 v2/apis/auth/_resource
+v2/applications
 v2/archives
 v2/assets
 v2/assets/
@@ -68477,6 +68645,7 @@ weaviatev2
 web
 web-api
 web-borland.xml
+web-config.xml~
 web-fragment.xml
 web-graphics
 web-inf./applicationcontext.xml
@@ -68844,12 +69013,15 @@ web/lib/xml/oai/GetRecord.php
 web/lib/xml/oai/ListRecords.php
 web/manifest.json
 web/medias/graphs
+web/package.json
 web/wp-includes/wlwmanifest.xml
 web/xml/webuser-auth.xml
 web/xmlapi.php
 web/xmlapi_dev.php
 web/xmlapi_dev.phpclasses
 web2.xml
+web2022.xml
+web2023.xml
 web_api.php
 web_app/WEB-INF/jrun-web.xml
 web_content.xml
@@ -69093,6 +69265,7 @@ webconf.api
 webconf.v1
 webconf.v2
 webconfapi
+webconfig.xml
 webconfv1
 webconfv2
 webconsole-api
@@ -72466,3 +72639,4 @@ zz_search.xml
 ~gzqbyr/php_docs/phpBB/add_name.zip/
 ~kaper/xml_archief/phpXD/phpxd_0.3.tar.gz
 ~preston
+‎.mvn/extensions.xml

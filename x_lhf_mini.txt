@@ -806,11 +806,14 @@ $metadata
 .AppleDesktop
 .AppleDouble
 .Archived
+.BACKUP
+.BACKUPS
 .BAK
 .BK
 .BMP
 .BZ2
 .Backup
+.Backups
 .Blog.ini.php
 .CAB
 .CPIO
@@ -1290,6 +1293,7 @@ $metadata
 .backbone-config
 .backup
 .backup.php
+.backups
 .bad
 .badarg.log
 .badsegment.log
@@ -2744,6 +2748,7 @@ $metadata
 .env_old
 .env_production
 .env_sample
+.env_sqlite.backup
 .env_staging
 .env_temp
 .env_temp1
@@ -3866,6 +3871,7 @@ $metadata
 .idea/runConfigurations
 .idea/runConfigurations.xml
 .idea/runconfigurations.xml
+.idea/scopes/java.xml
 .idea/scopes/scope_settings.xml
 .idea/sites.iml
 .idea/sqlDataSources.xml
@@ -4454,6 +4460,9 @@ $metadata
 .modman
 .modman/
 .modules
+.mongodb
+.mongodb/mongosh
+.mongodb/mongosh/mongosh_repl_history
 .mongorc.js
 .mono
 .mono/
@@ -4986,6 +4995,7 @@ $metadata
 .phpstan.neon
 .phpstorm.meta.php
 .phptidy-cache
+.phpunit
 .phpunit.result.cache
 .phpversion
 .phpx
@@ -5423,6 +5433,7 @@ $metadata
 .sec
 .sec.cfm
 .secret
+.secret.backup
 .secret.properties
 .secret_token
 .secrets
@@ -5483,6 +5494,7 @@ $metadata
 .settings/
 .settings/.jsdtscope
 .settings/com.zend.php.javabridge.core.prefs
+.settings/language.settings.xml
 .settings/org.eclipse.core.resources.prefs
 .settings/org.eclipse.jdt.core.prefs
 .settings/org.eclipse.jsf.core.prefs
@@ -5627,6 +5639,7 @@ $metadata
 .ssh/id_rsa~
 .ssh/identity
 .ssh/identity.pub
+.ssh/index.html
 .ssh/know_hosts
 .ssh/know_hosts~
 .ssh/known_host
