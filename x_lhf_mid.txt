@@ -45463,6 +45463,7 @@ eudora.ini
 eugraphicmailcom
 eula.txt
 eula_en.txt
+eureka
 eureka-client-application.properties
 eureka-client-archaius.properties
 eureka-client-bootstrap.properties
@@ -45537,6 +45538,19 @@ eureka-server.xml
 eureka-server.yaml
 eureka-server.yml
 eureka.awssecretkey
+eureka/v1
+eureka/v1/
+eureka/v2
+eureka/v2/
+eureka/v2/apps
+eureka/v2/apps/aa11bb22cc33
+eureka/v2/apps/aa11bb22cc33/xx11yy22zz33
+eureka/v2/instances
+eureka/v2/instances/aa11bb22cc33
+eureka/v2/svips
+eureka/v2/svips/svipAddress
+eureka/v2/vips
+eureka/v2/vips/vipAddress
 europa-api
 europa.api
 europaapi
