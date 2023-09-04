@@ -1,24 +1,3 @@
-bgp/peers
-cgroup-dump-metadata
-cluster/nodes
-config
-debuginfo
-fqdn/cache
-fqdn/names
-healthz
-identity
-identity/endpoints
-ip
-lrp
-map
-node/ids
-policy
-policy/selectors
-prefilter
-recorder
-recorder/masks
-service
-statedb/dump
 !
 !.gitignore
 !.htaccess
@@ -15732,6 +15711,7 @@ beta/.git/config
 bg
 bgadmin
 bgoldd/.env
+bgp/peers
 bi_udc
 bic
 bicq.sql
@@ -16580,6 +16560,7 @@ cgis/
 cgishell.pl
 cgistart?page=single
 cgroup
+cgroup-dump-metadata
 ch
 ch2-mytodo/.env
 ch6-mytodo/.env
@@ -16906,6 +16887,7 @@ club_admin.%EXT%
 club_admin.php
 cluster
 cluster/cluster
+cluster/nodes
 clusterrollout
 clusters
 cm
@@ -18807,6 +18789,7 @@ debugger.php
 debugger.test.php
 debugging
 debughandler
+debuginfo
 debugplugin.php
 dec
 decide
@@ -20585,6 +20568,8 @@ fpadmin/
 fpdf
 fpsample
 fpsample/
+fqdn/cache
+fqdn/names
 fr
 fr.yml
 fr_FR
@@ -21564,6 +21549,7 @@ idbc
 idc.sql
 identifier
 identity
+identity/endpoints
 identityguardselfservice
 identityguardselfservice/
 identityguardselfservice/images/favicon.ico
@@ -23294,6 +23280,7 @@ lowercase
 loyalty/
 lpt1
 lpt2
+lrp
 ls
 lsapi_admin.conf
 lsapi_auth.conf
@@ -24572,6 +24559,7 @@ node/10
 node/1?_format=hal_json
 node/add/
 node/details.json
+node/ids
 node_1.log
 node_info
 node_info.json
@@ -26112,6 +26100,7 @@ poker
 pol
 policies
 policy
+policy/selectors
 politics
 poll
 poll.%EXT%
@@ -26233,6 +26222,7 @@ prediction
 preferences
 preferences.properties
 prefetch.txt
+prefilter
 prefix
 preinit.sh
 preload
@@ -26921,6 +26911,8 @@ recommend.%EXT%
 recommend.php
 recommended/
 record
+recorder
+recorder/masks
 records
 recover
 recoverpassword
@@ -28964,6 +28956,7 @@ stat.jsp?cmd=chcp+437+%7c+dir
 stat/
 state
 state.sql
+statedb/dump
 stateless
 statenameserver.exe.config
 states

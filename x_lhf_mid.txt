@@ -27502,6 +27502,7 @@ bgadmin
 bgitem.png.ashx
 bgitemsv.png.ashx
 bgoldd/.env
+bgp/peers
 bi-api
 bi.api
 bi_udc
@@ -29989,6 +29990,7 @@ cgomesh.js
 cgrapher.js
 cgraphql
 cgroup
+cgroup-dump-metadata
 ch
 ch2-mytodo/.env
 ch6-mytodo/.env
@@ -31298,6 +31300,7 @@ cluster.properties
 cluster.xml
 cluster.yaml
 cluster/cluster
+cluster/nodes
 clusterapi
 clusterrole.yaml
 clusterrole.yml
@@ -40880,6 +40883,7 @@ debugging_scripts.ps1
 debugging_scripts.sh
 debugging_scripts.xml
 debughandler
+debuginfo
 debuglog.js
 debuglogger.conf
 debugplugin.php
@@ -47103,6 +47107,8 @@ fpm-status
 fpm.conf
 fpsample
 fpsample/
+fqdn/cache
+fqdn/names
 fr
 fr-api
 fr.api
@@ -51187,6 +51193,7 @@ identity-pools.json
 identity.key
 identity.yaml
 identity.yml
+identity/endpoints
 identity/envelope
 identity_and_access_management
 identity_management_configs.bat
@@ -57820,6 +57827,7 @@ lpt.api
 lpt1
 lpt2
 lptapi
+lrp
 ls
 lsapi_admin.conf
 lsapi_auth.conf
@@ -61497,6 +61505,7 @@ node/10
 node/1?_format=hal_json
 node/add/
 node/details.json
+node/ids
 nodeMonitors.xml
 nodeMonitors.xml.backup
 node_1.log
@@ -65791,6 +65800,7 @@ policy.json
 policy.xml
 policy.yaml
 policy.yml
+policy/selectors
 policyapi
 policyconfig.aspx
 policyconfig.jsf
@@ -66175,6 +66185,7 @@ preferences.properties
 preferences.xml
 preferencesapi
 prefetch.txt
+prefilter
 prefix
 prefs-api
 prefs.api
@@ -68390,6 +68401,8 @@ reconfigure.php
 reconfigure.sh
 recopickapi.do
 record
+recorder
+recorder/masks
 recording-api
 recording.api
 recordingapi
@@ -75508,6 +75521,7 @@ state-dump.log
 state-management.xml
 state.sql
 state/
+statedb/dump
 statefulset.yaml
 statefulset.yml
 statefulsets.yaml
