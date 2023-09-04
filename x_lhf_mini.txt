@@ -1,3 +1,17 @@
+eureka
+eureka/v1
+eureka/v1/
+eureka/v2
+eureka/v2/
+eureka/v2/apps
+eureka/v2/apps/aa11bb22cc33
+eureka/v2/apps/aa11bb22cc33/xx11yy22zz33
+eureka/v2/instances
+eureka/v2/instances/aa11bb22cc33
+eureka/v2/vips
+eureka/v2/vips/vipAddress
+eureka/v2/svips
+eureka/v2/svips/svipAddress
 !
 !.gitignore
 !.htaccess
