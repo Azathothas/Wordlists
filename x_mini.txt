@@ -6240,6 +6240,7 @@ ${idfwbonavigation}.xml
 .well-known/nodeinfo
 .well-known/oauth-authorization-server
 .well-known/openid-configuration
+.well-known/openid-configuration/
 .well-known/openid-configuration/jwks
 .well-known/openorg
 .well-known/openpgpkey
