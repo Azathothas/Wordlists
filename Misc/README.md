@@ -17,6 +17,7 @@
 > > ```
 - #### User-Agents
 > > Main Source: https://github.com/EIGHTFINITE/top-user-agents/blob/main/index.json
+> > Alt: https://github.com/HyperBeats/User-Agent-List
 > - [**Chrome**](https://chromereleases.googleblog.com/)
 > ---
 > ```bash
