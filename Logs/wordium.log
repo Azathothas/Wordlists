@@ -60,16 +60,16 @@ Updating /home/runner/work/Wordlists/Wordlists/main/WordList to @latest
 ➼ x_lhf_mini.txt  : 0
 ➼ x_lhf_mid.txt   : 0
 ➼ x_lhf_large.txt : 0
-➼ x_massive.txt   : 20146
+➼ x_massive.txt   : 0
 
 ➼ Generating x_api.txt 
-➼ Newly added: 2786
+➼ Newly added: 0
 
 ➼ Generating x_dns.txt 
 ➼ Newly added: 0
 
 ➼ Generating x_mini.txt 
-➼ Newly added: 12
+➼ Newly added: 0
 
 ➼Updated Wordlists:
 ➼ x_api.txt       : 75755 /home/runner/work/Wordlists/Wordlists/main/x_api.txt
