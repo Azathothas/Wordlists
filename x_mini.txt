@@ -420,6 +420,7 @@ ${idfwbonavigation}.xml
 ./..//etc/passwd
 ./../proc
 ././.htaccess
+./.exec 
 .//
 .//..///etc/passwd
 .//WEB-INF
@@ -431,6 +432,7 @@ ${idfwbonavigation}.xml
 ./admin/.
 ./admin/.bak
 ./config.sh
+./g.flags 
 ./run.sh
 ./web-inf/web.xml
 .0
@@ -1898,6 +1900,7 @@ ${idfwbonavigation}.xml
 .contact
 .contact.php
 .contactemail
+.container-fluid 
 .content
 .content.php
 .context-results
@@ -2043,6 +2046,7 @@ ${idfwbonavigation}.xml
 .debug.env
 .debug.php.marks
 .default
+.default 
 .default.php
 .del
 .delete
@@ -2651,6 +2655,7 @@ ${idfwbonavigation}.xml
 .eslintignore-js
 .eslintignore.js
 .eslintrc
+.eslintrc 
 .eslintrc-config.js
 .eslintrc-ignore.js
 .eslintrc.back.js
@@ -3850,6 +3855,7 @@ ${idfwbonavigation}.xml
 .info
 .info.html
 .info.php
+.info/ 
 .ini
 .ini.NEWCONFIGPOSSIBLYBROKEN
 .ini.bak
@@ -4209,6 +4215,7 @@ ${idfwbonavigation}.xml
 .login_conf
 .logout
 .logs
+.lp
 .lsoverride
 .lst
 .ltr
@@ -4462,6 +4469,7 @@ ${idfwbonavigation}.xml
 .nano_macros
 .nano_save
 .nano_syntax
+.navbar-collapse 
 .navigation
 .navigation/
 .nb-gradle
@@ -5463,8 +5471,11 @@ ${idfwbonavigation}.xml
 .solc
 .sonar
 .sonar-project.properties
+.sonar/sonar-scanner.zip 
+.sonar/sonar-secret.txt
 .sonarcloud.properties
 .source
+.source 
 .source.php.bak
 .sp
 .spacemacs
@@ -6240,6 +6251,7 @@ ${idfwbonavigation}.xml
 .well-known/nodeinfo
 .well-known/oauth-authorization-server
 .well-known/openid-configuration
+.well-known/openid-configuration 
 .well-known/openid-configuration/
 .well-known/openid-configuration/jwks
 .well-known/openorg
