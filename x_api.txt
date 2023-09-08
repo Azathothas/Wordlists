@@ -16492,6 +16492,8 @@ api/response
 api/responses
 api/rest
 api/rest/v1
+api/rest/v2/cql
+api/rest/v2/schemas/keyspaces
 api/restv1
 api/revenuebystar/getrevenuebystar
 api/router/name
@@ -16834,9 +16836,11 @@ api/v1/actuator/dump
 api/v1/actuator/heapdump
 api/v1/admin
 api/v1/admin.json
+api/v1/admin/tsdb/snapshot
 api/v1/alarm-center
 api/v1/albums
 api/v1/alert
+api/v1/alertmanagers
 api/v1/alerts
 api/v1/alerts/1
 api/v1/amazon-pay-accounts
@@ -16918,6 +16922,10 @@ api/v1/data
 api/v1/data-static
 api/v1/database.json
 api/v1/database/1
+api/v1/datapoints
+api/v1/datapoints/query
+api/v1/datapoints/query/tags
+api/v1/datapoints/query?query=[encoded_JSON]
 api/v1/debits
 api/v1/debug
 api/v1/delta/deviceCatalog/deviceTypes
@@ -16958,6 +16966,7 @@ api/v1/fac/
 api/v1/faqs
 api/v1/fc/bot
 api/v1/fc/init
+api/v1/features
 api/v1/feedback
 api/v1/files
 api/v1/filters
@@ -16979,10 +16988,12 @@ api/v1/fsc
 api/v1/geoip
 api/v1/gift-cards
 api/v1/google-pay-accounts
+api/v1/graph?q=42
 api/v1/graphiql
 api/v1/graphql
 api/v1/guides
 api/v1/health
+api/v1/health/status
 api/v1/healthz
 api/v1/help
 api/v1/history/history
@@ -17035,6 +17046,7 @@ api/v1/message
 api/v1/messages
 api/v1/messages/1
 api/v1/metadata
+api/v1/metricnames
 api/v1/metrics
 api/v1/monitoring/accounts
 api/v1/monitoring/address-check
@@ -17086,6 +17098,7 @@ api/v1/orders
 api/v1/orders/1
 api/v1/org/1
 api/v1/orgs/1
+api/v1/otlp/v1/metrics
 api/v1/p2p-server
 api/v1/p2p-server/no-auth
 api/v1/partners
@@ -17177,6 +17190,7 @@ api/v1/quotes
 api/v1/rating
 api/v1/ratings
 api/v1/ratings/1
+api/v1/read
 api/v1/referrals
 api/v1/reg
 api/v1/register
@@ -17200,6 +17214,7 @@ api/v1/reviews
 api/v1/reviews/1
 api/v1/rewards
 api/v1/roles
+api/v1/rollups
 api/v1/rule/test/grafana 
 api/v1/rules
 api/v1/savefile
@@ -17227,13 +17242,16 @@ api/v1/speakers
 api/v1/stat
 api/v1/stats
 api/v1/status
+api/v1/status/buildinfo
 api/v1/status/config
 api/v1/status/flags
 api/v1/status/label/<label_name>
 api/v1/status/metadata
 api/v1/status/rules
+api/v1/status/runtimeinfo
 api/v1/status/tsdb
 api/v1/status/tsdb/rules
+api/v1/status/walreplay
 api/v1/studios
 api/v1/submissions
 api/v1/subscribe
@@ -17261,6 +17279,7 @@ api/v1/tags
 api/v1/tam
 api/v1/tam-client
 api/v1/targets
+api/v1/targets/metadata
 api/v1/terms
 api/v1/tickets
 api/v1/tickets/1.json
@@ -17327,6 +17346,7 @@ api/v1/users/all
 api/v1/users/current
 api/v1/users/list
 api/v1/venues
+api/v1/version
 api/v1/video
 api/v1/videos
 api/v1/visits
@@ -17440,6 +17460,7 @@ api/v2/link
 api/v2/login
 api/v2/management
 api/v2/me
+api/v2/metrics/ingest
 api/v2/org/2
 api/v2/orgs/2
 api/v2/page
@@ -28893,6 +28914,7 @@ datalist_home.xml
 datalist_slide.xml
 datamanager/api/v2/dataset/ 
 datapipeline.cfg
+datapoints/query?query=[encoded_JSON]
 datarest.js
 datarestore
 dataset-api
@@ -48880,6 +48902,7 @@ other_ref.xml
 otherapi.js
 otherlinks.xml
 others
+otlp/v1/metrics
 otonijkerk-os.xml
 otp-sv.json.php
 otrosproductos.xml
@@ -67726,6 +67749,7 @@ v1/add-bank
 v1/add-beneficiary
 v1/add-card
 v1/addresses 
+v1/admin/tsdb/snapshot
 v1/ads
 v1/agent/members
 v1/agent/metrics
@@ -67734,6 +67758,7 @@ v1/agent/monitor
 v1/agent/self
 v1/agent/service/register
 v1/agent/services
+v1/alertmanagers
 v1/altair
 v1/analytics/events
 v1/api
@@ -67947,6 +67972,10 @@ v1/data/tanuja/tanuja/getpetbyid
 v1/data/testsamartha/testsamartha/Genres
 v1/data/testsamartha/testsamartha/genres
 v1/data/vikasssssh/vikasssssh/vikram
+v1/datapoints
+v1/datapoints/query
+v1/datapoints/query/tags
+v1/datapoints/query?query=[encoded_JSON]
 v1/dealers 
 v1/default.asp
 v1/delete-bank
@@ -67976,6 +68005,7 @@ v1/event/permission
 v1/events
 v1/explorer
 v1/faqs 
+v1/features
 v1/feedbacks 
 v1/files
 v1/filters
@@ -68004,6 +68034,7 @@ v1/graphql/schema.xml
 v1/graphql/schema.yaml
 v1/guides
 v1/health
+v1/health/status
 v1/history/history
 v1/i
 v1/identify
@@ -68046,7 +68077,9 @@ v1/merchant/user
 v1/merchant/verify-pass-code
 v1/merchant/verify-ticket
 v1/messages
+v1/metadata
 v1/metric
+v1/metricnames
 v1/metrics
 v1/midtrans
 v1/mmapi<br>
@@ -68071,6 +68104,7 @@ v1/open
 v1/operator/license
 v1/operator/segment
 v1/ordered-vehicles 
+v1/otlp/v1/metrics
 v1/p
 v1/pageview
 v1/parcels/cancel
@@ -68123,6 +68157,7 @@ v1/rejection_reasons
 v1/reports 
 v1/request-as-agent
 v1/resources
+v1/rollups
 v1/routes 
 v1/search-merchant
 v1/search-merchant/
@@ -68145,8 +68180,14 @@ v1/sites.json
 v1/sms
 v1/sms/query/send/lists
 v1/stat
+v1/status/buildinfo
+v1/status/config
+v1/status/flags
 v1/status/leader
 v1/status/peers
+v1/status/runtimeinfo
+v1/status/tsdb
+v1/status/walreplay
 v1/stejas101/stejas101/buslogarpit
 v1/stejas101/stejas101/ternaryrecursive12
 v1/stejas101/stejas101/working2
@@ -68233,6 +68274,8 @@ v1/sys/wrapping/unwrap
 v1/sys/wrapping/wrap
 v1/system/list
 v1/t
+v1/targets
+v1/targets/metadata
 v1/teams
 v1/telematics-data 
 v1/termsofuse 
@@ -68284,6 +68327,7 @@ v1/usma6
 v1/vehicle-documents 
 v1/vehicle-groups 
 v1/vehicles 
+v1/version
 v1/vikash/vikash/malarcheck213
 v1/visits
 v1/widgets
