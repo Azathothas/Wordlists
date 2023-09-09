@@ -7,7 +7,7 @@ on:
     - cron: "15 23 * * *"  # ( 11:15 PM UTC --> 05:00 AM Morning )
     
 jobs:
-  build:
+  generate:
     runs-on: ubuntu-latest
     
     permissions:
@@ -91,15 +91,25 @@ jobs:
            find "$GITHUB_WORKSPACE/main" -maxdepth 1 -type d ! -name '.git*' ! -name 'main' ! -name '*Logs*' ! -name '*Misc*' -exec rm -rf {} \; 2>/dev/null
         continue-on-error: true  
 
-      - name: Anew || Sort Misc
+      - name: Enrichments (Anew || Sort Misc)
         run: |
           # Presets
           set -x ; set +e
           #--------------#        
           #anew things
+          #APIs
+          cat "$GITHUB_WORKSPACE/main/Misc/api_docs.txt" | anew -q "$GITHUB_WORKSPACE/main/x_api_tiny.txt"
+          cat "$GITHUB_WORKSPACE/main/Misc/graphql_paths.txt" | anew -q "$GITHUB_WORKSPACE/main/x_api_tiny.txt"
+          #LHFs
+          cat "$GITHUB_WORKSPACE/main/Misc/api_docs.txt" | anew -q "$GITHUB_WORKSPACE/main/x_lhf_mini.txt"
+          cat "$GITHUB_WORKSPACE/main/Misc/graphql_paths.txt" | anew -q "$GITHUB_WORKSPACE/main/x_lhf_mini.txt"
+          #Ports
           cat "$GITHUB_WORKSPACE/main/Misc/ports_sussy.txt" | anew -q "$GITHUB_WORKSPACE/main/Misc/ports_top_20k.txt"
           #Sort
           cd "$GITHUB_WORKSPACE/main"
+          #Main
+          find . -maxdepth 1 -type f -name '*.txt' -exec sort -u {} -o {} \;
+          #Misc
           find ./Misc -type f -name '*.txt' -exec sort -u {} -o {} \;
           
       - name: Dos2Unix Everything
