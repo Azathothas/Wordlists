@@ -14585,6 +14585,7 @@ api-docs/swagger-ui.html
 api-docs/swagger.json
 api-docs/swagger.yaml
 api-docs/v1/openapi.json
+api-docs/v1/openapi.yaml
 api-docsopenapi.json
 api-docsv1/openapi.json
 api-documentation.json
@@ -30664,6 +30665,7 @@ documents-v2
 documents.api
 documents.v1
 documents.v2
+documents/swagger.json
 documentsapi
 documentsv1
 documentsv2
@@ -35718,6 +35720,7 @@ graphql/ws
 graphql?query
 graphql_docs
 graphql_documentation
+graphqlapi
 graphqldocs
 graphqldocumentation
 graphqlir.js
@@ -38325,6 +38328,7 @@ internal.v1
 internal.v2
 internal/docs
 internal/non-amd/rest-service.js 
+internal/swagger
 internal_api.php
 internal_audit_v2.csv
 internalapi
@@ -48105,11 +48109,20 @@ openapi.jsp
 openapi.php
 openapi.yaml
 openapi/
+openapidemo
 openapidocs.cfm
+openapigw
+openapipqa
 openapiproxy.aspx
 openapiproxy.jsf
 openapiproxy.jsp
 openapiproxy.php
+openapiqalv
+openapiqastg
+openapis
+openapisdev
+openapisqa
+openapistest
 openapp
 openauto/xml_zone_data.php
 openauto_full_v1.6.3/admin/listuser.php
@@ -57238,6 +57251,7 @@ restc
 restcare
 restd
 restdev
+restdocs
 reste
 reste.js
 resteasy.jar
@@ -58490,6 +58504,7 @@ schema.graphql
 schema.json
 schema.wadl
 schema.xml
+schema/swagger-ui
 schema_id
 schemaapiexample.cfm
 schemaid
@@ -62320,9 +62335,11 @@ spec.json
 spec.xml
 spec/swagger-ui.html
 spec/swagger.json
+spec2.json
 spec3.json
 spec3.yaml
 spec3.yml
+spec4.json
 special
 special-api
 special-top.xml
@@ -63831,6 +63848,7 @@ swagger-h
 swagger-headers.json
 swagger-i
 swagger-j
+swagger-js/index.js
 swagger-js/index.js 
 swagger-json
 swagger-k
@@ -66672,6 +66690,7 @@ uat2020
 uat2021
 uat2022
 uat2023
+uatopenapi
 ub-do-katalog-plus.xml
 ub.xml
 ube-apiserver-audit.log
@@ -67763,6 +67782,7 @@ v1/altair
 v1/analytics/events
 v1/api
 v1/api-docs
+v1/api-docs/v1/swagger.json
 v1/api/
 v1/api/device/playinfo
 v1/api/device/playinfo/
@@ -71551,6 +71571,7 @@ w3c
 w3c-public-lists.xml
 w3c/p3p.xml
 w_busca_rapida.php
+wadl
 wadl.cfm
 wadl2ani
 wadl2bmp
@@ -71707,6 +71728,7 @@ wazov2
 wb_out.xml
 wbapi
 wbc_en.xml
+wbiswagger
 wbxml.js
 wc_vt.xml
 wc_vt_core.xml
