@@ -1,4 +1,9 @@
 prod-configurator
+stg-configurator
+dev-configurator
+adm-configurator
+admin-configurator
+qa-configurator
 0
 001
 002
