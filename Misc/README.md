@@ -138,6 +138,18 @@
 > - [**FFUF**](https://github.com/ffuf/ffuf#usage)
 > ```bash
 >  !# Install
->    sudo curl -qfsSL "https://raw.githubusercontent.com/Azathothas/Toolpacks/main/x86_64/ffuf" -o "/usr/local/bin/ffuf" && sudo chmod +xwr "/usr/local/bin/ffuf"
+>   sudo curl -qfsSL "https://raw.githubusercontent.com/Azathothas/Toolpacks/main/x86_64/ffuf" -o "/usr/local/bin/ffuf" && sudo chmod +xwr "/usr/local/bin/ffuf"
+> 
+>  !# Fuzz
 >  ffuf
+> 
+> ```
+> - [**GoBuster**](https://github.com/OJ/gobuster#vhost-mode)
+> ```bash
+>  !# Install
+>   sudo curl -qfsSL "https://raw.githubusercontent.com/Azathothas/Toolpacks/main/x86_64/gobuster" -o "/usr/local/bin/gobuster" && sudo chmod +xwr "/usr/local/bin/gobuster"
+> 
+>  !# Fuzz
+>   gobuster
+> 
 > ```
