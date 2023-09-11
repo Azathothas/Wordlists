@@ -48,3 +48,36 @@
 > jq -r '.[]' <(curl -qfsSL "https://raw.githubusercontent.com/EIGHTFINITE/top-user-agents/main/index.json") | grep -i 'mac' | grep -i 'safari' | sort -u | tail -n 1
 > ```
 > ---
+- #### vHosts
+> > ```bash
+> > Subdomains --> Just Hostnames without [http|https] PreFixes
+> > ```
+> 1. Expanding Source [(dsieve)](https://github.com/trickest/dsieve)
+> ```bash
+> !# Install dsieve
+>  sudo curl -qfsSL "https://raw.githubusercontent.com/Azathothas/Toolpacks/main/x86_64/dsieve" -o "/usr/local/bin/dsieve" && sudo chmod +xwr "/usr/local/bin/dsieve"
+> !# Separate into levels [Level 2 --> main domain + all it's subdomains]
+>  dsieve -if "subdomains.txt" -f 2: | anew -q "subdomains.txt"
+> ```
+> 2. Generating Initial Wordlist [(tok)](https://github.com/tomnomnom/hacks/tree/master/tok)
+> ```bash
+> #Separate by dots(.) | dash (-) | Underscores (_) And Filter Numerics
+>  sed 's/[._-]/\n/g' "subdomains.txt" | tr -s '\n' | grep '^[[:alpha:]]\+$' | anew -q "/tmp/vhosts_wordlist.txt"
+> #With Tok
+>  cat "subdomains.txt" | tok | anew -q "/tmp/vhosts_wordlist.txt"
+> ```
+> 3. Merge & Sort
+> ```bash
+> !# With x_dns_tiny.txt [Recommended] : https://github.com/Azathothas/Wordlists/blob/main/x_dns_tiny.txt
+>   wget -qO- "https://raw.githubusercontent.com/Azathothas/Wordlists/main/x_dns_tiny.txt" | anew -q "/tmp/vhosts_wordlist.txt"
+> 
+> !# with x_dns.txt [Huge] : https://github.com/Azathothas/Wordlists/blob/main/x_dns.txt
+>   wget -qO- "https://raw.githubusercontent.com/Azathothas/Wordlists/main/x_dns.txt" | anew -q "/tmp/vhosts_wordlist.txt"
+>
+> !# Sort
+>   sort -u "/tmp/vhosts_wordlist.txt" -o "/tmp/vhosts_wordlist.txt"
+>   wc -l < "/tmp/vhosts_wordlist.txt"
+> ```
+> 4. Generate Final Wordlist
+> 
+> 6. 
