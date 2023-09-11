@@ -1,5 +1,6 @@
 - #### [Index]()
 > - [**API Paths**](https://github.com/Azathothas/Wordlists/blob/main/Misc/README.md#api-paths)
+> - [**DNS**(Subdomains)]()
 > - [**User-Agents**](https://github.com/Azathothas/Wordlists/blob/main/Misc/README.md#user-agents)
 > - [**vHosts**](https://github.com/Azathothas/Wordlists/blob/main/Misc/README.md#vhosts)
 ---
@@ -51,6 +52,21 @@
 > > swagroutes "/tmp/kubernetes_api.json" | grep -iv "{" | awk '{print $2}' | grep -oE '\/[^\ ]+' | sed 's/^\///' | anew x_api_tiny.txt | wc -l
 > > swagroutes "/tmp/kubernetes_api.json" | grep -iv "{" | awk '{print $2}' | grep -oE '\/[^\ ]+' | sed 's/^\///' | anew x_lhf_mini.txt | wc -l
 > > ```
+---
+- #### DNS (Subdomains)
+> - Sources
+> > - https://github.com/yosriady/awesome-api-devtools
+> > - https://github.com/ligurio/awesome-ci
+> > - https://github.com/rootsongjc/awesome-cloud-native
+> > - https://github.com/crazy-canux/awesome-monitoring
+> > - https://github.com/awesome-selfhosted/awesome-selfhosted
+> > - https://github.com/anaibol/awesome-serverless
+> > - https://github.com/Atarity/deploy-your-own-saas
+> > - 
+> > ```bash
+> > $placeholder to programmatically extract all tech names to add into x_dns
+> > ```
+--- 
 - #### User-Agents
 > > Main Source: https://github.com/EIGHTFINITE/top-user-agents/blob/main/index.json
 > > Alt: https://github.com/HyperBeats/User-Agent-List
