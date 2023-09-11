@@ -1,3 +1,8 @@
+- #### [Index]()
+> - [**API Paths**](https://github.com/Azathothas/Wordlists/blob/main/Misc/README.md#api-paths)
+> - [**User-Agents**](https://github.com/Azathothas/Wordlists/blob/main/Misc/README.md#user-agents)
+> - [**vHosts**](https://github.com/Azathothas/Wordlists/blob/main/Misc/README.md#vhosts)
+---
 - #### API Paths
 > - [**OpenAPI Spec (JSON | YAML)**](https://editor.swagger.io/)
 > ```bash
