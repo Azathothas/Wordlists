@@ -1,3 +1,4 @@
+prod-configurator
 0
 001
 002
