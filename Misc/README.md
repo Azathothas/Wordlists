@@ -126,7 +126,7 @@
 > > 
 > > !# Get words from subdomains
 > > !# You could also use subdomains_dead.txt (Those that got resolved but aren't alive) to reduce the output
-> >  sed 's/[._-]/\n/g' "subdomains.txt" | tr -s '\n' | grep '^[[:alpha:]]\+$' | anew "/tmp/comb_in.txt"
+> >  sed 's/[._-]/\n/g' "subdomains.txt" | tr -s '\n' | grep '^[[:alpha:]]\+$' | anew -q "/tmp/comb_in.txt"
 > > 
 > > !# Using `-` as a separator, Generate
 > >  comb --separator="-" "/tmp/comb_in.txt" "/tmp/comb_in.txt" > "/tmp/comb_out.txt"
@@ -175,30 +175,43 @@
 > >  wc -l < "/tmp/vhosts_wordlist.txt"
 > > 
 > > ```
+> > - Clean Wordlist (Optional) [Not Recommended]
+> > ```bash
+> > !# If you wordlist is too large, you can optionally remove all words that have numerics (digits)
+> >  sed -e 's/[^[:alpha:]]//g; /^[[:space:]]*$/d' -i "/tmp/vhosts_wordlist.txt"
+> > !# sort
+> >  sort -u "/tmp/vhosts_wordlist.txt" -o "/tmp/vhosts_wordlist.txt"
+> >  wc -l < "/tmp/vhosts_wordlist.txt"
+> > ```
+> > ---
 > - [**Feroxbuster**](https://epi052.github.io/feroxbuster-docs/docs/)
 > ```bash
 >  !# Install @latest
 >   sudo curl -qfsSL "https://raw.githubusercontent.com/Azathothas/Toolpacks/main/x86_64/feroxbuster" -o "/usr/local/bin/feroxbuster" && sudo chmod +xwr "/usr/local/bin/feroxbuster"
 >
 >  !# Fuzz
->  feroxbuster
+>  feroxbuster currently can't do vHOST fuzzing
+>  !# See: https://github.com/epi052/feroxbuster/issues/242
 > 
 > ```
-> - [**FFUF**](https://github.com/ffuf/ffuf#usage)
+> - [**FFUF**](https://github.com/ffuf/ffuf#usage) [NOT RECOMMENDED]
 > ```bash
 >  !# Install
 >   sudo curl -qfsSL "https://raw.githubusercontent.com/Azathothas/Toolpacks/main/x86_64/ffuf" -o "/usr/local/bin/ffuf" && sudo chmod +xwr "/usr/local/bin/ffuf"
 > 
->  !# Fuzz
->  ffuf
+>  !# Fuzz, use optional filters (-mc | -fc | -ms etc as you see fit)
+>    ffuf -H "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" -w "/tmp/vhosts_wordlist.txt" -H "Host: FUZZ.$DOMAIN.TLD" -u "https://$host_or_ip"
 > 
 > ```
-> - [**GoBuster**](https://github.com/OJ/gobuster#vhost-mode)
+> - [**GoBuster**](https://github.com/OJ/gobuster#vhost-mode) [RECOMMENDED]
 > ```bash
 >  !# Install
 >   sudo curl -qfsSL "https://raw.githubusercontent.com/Azathothas/Toolpacks/main/x86_64/gobuster" -o "/usr/local/bin/gobuster" && sudo chmod +xwr "/usr/local/bin/gobuster"
 > 
 >  !# Fuzz
->   gobuster
+>  !# Note: You must NOT Pass the complete url
+>  !# Example: Complete URL: https://vhost.api.dev-stg.example.com
+>  !# Then GOBUSTER_URL: https://api.dev-stg.example.com [ We Removed the actual vHOST as that's where we want to FUZZ]
+>  gobuster vhost --useragent "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" --no-tls-validation --append-domain --wordlist "/tmp/vhosts_wordlist.txt" --url "GOBUSTER_URL_NOT_COMPLETE_URL"
 > 
 > ```
