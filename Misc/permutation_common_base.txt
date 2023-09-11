@@ -1,0 +1,17 @@
+test
+qa
+prod
+stg
+staging
+admin
+api
+git
+dev
+go
+new
+old
+uat
+central
+cloud
+console
+auth
