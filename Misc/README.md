@@ -4,12 +4,43 @@
 > - [**vHosts**](https://github.com/Azathothas/Wordlists/blob/main/Misc/README.md#vhosts)
 ---
 - #### API Paths
+> ---
+> - [**Application.wadl**](https://eclipse-ee4j.github.io/jersey.github.io/documentation/latest/wadl.html)
+> ```bash
+> !# Install wadl-dumper: https://github.com/dwisiswant0/wadl-dumper
+>  sudo curl -qfsSL "https://raw.githubusercontent.com/Azathothas/Toolpacks/main/x86_64/wadl-dumper" -o "/usr/local/bin/wadl-dumper" && sudo chmod +xwr "/usr/local/bin/wadl-dumper"
+> !# wadl-dumper also accepts direct urls: --input "https://example.com/app.wadl"
+> !# Extract FUZZABLE Paths
+> wadl-dumper --input "/path/to/specs.wadl" 
+> !# Extract FUZZABLE Paths with $BASE_URL
+> wadl-dumper --input "/path/to/specs.wadl" --show-base
+> !# Get ALL Base_URLs+PATH || Replace {$} with `test` & httpx (use -fc 401,403 etc to filter by Status Code)
+> wadl-dumper --input "/path/to/specs.wadl" --show-base --replace test | httpx -silent -include-response --json |  jq . | less
+> ```
+> ---
 > - [**OpenAPI Spec (JSON | YAML)**](https://editor.swagger.io/)
+> > ---
+> > - [**SwagRoutes**](https://github.com/amalmurali47/swagroutes)
 > ```bash
 > !# Using SwagRoutes: https://github.com/amalmurali47/swagroutes
 >  pip install swagroutes
-> !# Extract FUZZABLE Paths
+> !# Extract $METHOD + $PATH
+>  swagroutes "/path/to/specs"
+> !# Extract $METHOD + $PATH + $QUERIES ($PARAMS)
+> swagroutes "/path/to/specs" --include-params
+> !# Extract FUZZABLE Paths for wordlist
 > swagroutes "/path/to/specs" | grep -iv "{" | awk '{print $2}' | grep -oE '\/[^\ ]+' | sed 's/^\///' 
+> !# Pass to HTTPx (the trailing slash `/` at the end of $domain.tld is REQUIRED)
+> swagroutes "/path/to/specs" --include-params | grep -iv "{" | awk '{print $2}' | grep -oE '\/[^\ ]+' | sed 's/^\///' | sed 's|^|https://$domain.tld/|' | httpx -silent -include-response --json |  jq . | less
+> ```
+> > ---
+> > - [**CherryBomb**](blst-security/cherrybomb)
+> ```bash 
+> !# Only Works if schema perfectly matches openapi v3 or greater
+> !# Install
+> sudo curl -qfsSL "https://raw.githubusercontent.com/Azathothas/Toolpacks/main/x86_64/cherrybomb" -o "/usr/local/bin/cherrybomb" && sudo chmod +xwr "/usr/local/bin/cherrybomb"
+> !# Passive Mode
+> cherrybomb --file  "/path/to/specs" --profile passive
 > ```
 > ---
 > > - [**Kubernetes**](https://github.com/kubernetes/kubernetes/)
