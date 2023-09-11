@@ -66,8 +66,30 @@
 > #With Tok
 >  cat "subdomains.txt" | tok | anew -q "/tmp/vhosts_wordlist.txt"
 > ```
+> > - Generate a combined wordlist [(comb)](https://github.com/tomnomnom/hacks/tree/master/comb) (Optional) 
+> > ```bash
+> > !# Note: The vhosts wordlist is increased exponentially, so if initial list is 1000, then result will be (1000 X 1000 = 1,000,000)
+> > !# Hence, only use this as last resort.
+> > !# Instead of all subdomains,
+> > !# You could also use subdomains_dead.txt (Those that got resolved but aren't alive) to reduce the output
+> > 
+> > !# Install Comb
+> >  sudo curl -qfsSL "https://raw.githubusercontent.com/Azathothas/Toolpacks/main/x86_64/comb" -o "/usr/local/bin/comb" && sudo chmod +xwr "/usr/local/bin/comb"
+> > 
+> > !# Get words from subdomains
+> > !# You could also use subdomains_dead.txt (Those that got resolved but aren't alive) to reduce the output
+> >  sed 's/[._-]/\n/g' "subdomains.txt" | tr -s '\n' | grep '^[[:alpha:]]\+$' | anew "/tmp/comb_in.txt"
+> > 
+> > !# Using `-` as a separator, Generate
+> >  comb --separator="-" "/tmp/comb_in.txt" "/tmp/comb_in.txt" > "/tmp/comb_out.txt"
+> > 
+> > !# Merge & Sort
+> >  cat "/tmp/comb_out.txt" | anew -q "/tmp/vhosts_wordlist.txt"
+> > ```
 > 3. Merge & Sort
 > ```bash
+> !# You may want to skip this, especially if you used comb to generate permutations
+> 
 > !# With x_dns_tiny.txt [Recommended] : https://github.com/Azathothas/Wordlists/blob/main/x_dns_tiny.txt
 >   wget -qO- "https://raw.githubusercontent.com/Azathothas/Wordlists/main/x_dns_tiny.txt" | anew -q "/tmp/vhosts_wordlist.txt"
 > 
@@ -78,6 +100,4 @@
 >   sort -u "/tmp/vhosts_wordlist.txt" -o "/tmp/vhosts_wordlist.txt"
 >   wc -l < "/tmp/vhosts_wordlist.txt"
 > ```
-> 4. Generate Final Wordlist
-> 
-> 6. 
+> 4. Fuzz
