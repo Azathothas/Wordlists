@@ -1,6 +1,6 @@
 - #### [Index]()
 > - [**API Paths**](https://github.com/Azathothas/Wordlists/blob/main/Misc/README.md#api-paths)
-> - [**DNS**(Subdomains)]()
+> - [**DNS**(Subdomains)](https://github.com/Azathothas/Wordlists/blob/main/Misc/README.md#dns-subdomains)
 > - [**User-Agents**](https://github.com/Azathothas/Wordlists/blob/main/Misc/README.md#user-agents)
 > - [**vHosts**](https://github.com/Azathothas/Wordlists/blob/main/Misc/README.md#vhosts)
 ---
