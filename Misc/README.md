@@ -66,7 +66,8 @@
 > #With Tok
 >  cat "subdomains.txt" | tok | anew -q "/tmp/vhosts_wordlist.txt"
 > ```
-> > - Generate a combined wordlist [(comb)](https://github.com/tomnomnom/hacks/tree/master/comb) (Optional) 
+> > ---
+> > - Generate a Combined Wordlist [(comb)](https://github.com/tomnomnom/hacks/tree/master/comb) (Optional) 
 > > ```bash
 > > !# Note: The vhosts wordlist is increased exponentially, so if initial list is 1000, then result will be (1000 X 1000 = 1,000,000)
 > > !# Hence, only use this as last resort.
@@ -86,6 +87,7 @@
 > > !# Merge & Sort
 > >  cat "/tmp/comb_out.txt" | anew -q "/tmp/vhosts_wordlist.txt"
 > > ```
+> > ---
 > 3. Merge & Sort
 > ```bash
 > !# You may want to skip this, especially if you used comb to generate permutations
@@ -100,4 +102,42 @@
 >   sort -u "/tmp/vhosts_wordlist.txt" -o "/tmp/vhosts_wordlist.txt"
 >   wc -l < "/tmp/vhosts_wordlist.txt"
 > ```
+> ---
 > 4. Fuzz
+> > ---
+> > - Generate a Target Specific Wordlist [(mgwls)](https://github.com/trickest/mgwls) (Optional)
+> > ```bash
+> > !# Install
+> >  sudo curl -qfsSL "https://raw.githubusercontent.com/Azathothas/Toolpacks/main/x86_64/mgwls" -o "/usr/local/bin/mgwls" && sudo chmod +xwr "/usr/local/bin/mgwls"
+> >
+> > !# Put Individual Words from your subdomain in a text file
+> > !# Example: prod-dev-config.admin.example.com
+> > !# Words: prod, dev, config, admin, example, com
+> >  echo "$domain.tld" | sed 's/[._-]/\n/g' | tr -s '\n' | tee "/tmp/mgwls_in.txt"
+> > !# You can crawl the domain and add your own words to "/tmp/mgwls_in.txt"
+> > !# You can also something like: https://github.com/d4rckh/gorilla
+> > !# or CEWL: https://github.com/digininja/CeWL
+> > 
+> > !# Generate
+> >  mgwls -l "/tmp/mgwls_in.txt" -r "/tmp/vhosts_wordlist.txt" -delimiter "-" | anew -q  "/tmp/vhosts_wordlist.txt"
+> >
+> > !# Sort
+> >  sort -u "/tmp/vhosts_wordlist.txt" -o "/tmp/vhosts_wordlist.txt"
+> >  wc -l < "/tmp/vhosts_wordlist.txt"
+> > 
+> > ```
+> - [**Feroxbuster**](https://epi052.github.io/feroxbuster-docs/docs/)
+> ```bash
+>  !# Install @latest
+>   sudo curl -qfsSL "https://raw.githubusercontent.com/Azathothas/Toolpacks/main/x86_64/feroxbuster" -o "/usr/local/bin/feroxbuster" && sudo chmod +xwr "/usr/local/bin/feroxbuster"
+>
+>  !# Fuzz
+>  feroxbuster
+> 
+> ```
+> - [**FFUF**](https://github.com/ffuf/ffuf#usage)
+> ```bash
+>  !# Install
+>    sudo curl -qfsSL "https://raw.githubusercontent.com/Azathothas/Toolpacks/main/x86_64/ffuf" -o "/usr/local/bin/ffuf" && sudo chmod +xwr "/usr/local/bin/ffuf"
+>  ffuf
+> ```
