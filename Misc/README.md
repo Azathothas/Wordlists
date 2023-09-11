@@ -184,7 +184,7 @@
 > >  wc -l < "/tmp/vhosts_wordlist.txt"
 > > ```
 > > ---
-> - [**Feroxbuster**](https://epi052.github.io/feroxbuster-docs/docs/)
+> - [**Feroxbuster**](https://epi052.github.io/feroxbuster-docs/docs/) [NOT SUPPORTED]
 > ```bash
 >  !# Install @latest
 >   sudo curl -qfsSL "https://raw.githubusercontent.com/Azathothas/Toolpacks/main/x86_64/feroxbuster" -o "/usr/local/bin/feroxbuster" && sudo chmod +xwr "/usr/local/bin/feroxbuster"
