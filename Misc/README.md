@@ -147,6 +147,7 @@
 > >  echo "$domain.tld" | sed 's/[._-]/\n/g' | tr -s '\n' | tee "/tmp/mgwls_in.txt"
 > > !# You can crawl the domain and add your own words to "/tmp/mgwls_in.txt"
 > > !# You can also something like: https://github.com/d4rckh/gorilla
+> > !# sudo curl -qfsSL "https://raw.githubusercontent.com/Azathothas/Toolpacks/main/x86_64/gorilla" -o "/usr/local/bin/gorilla" && sudo chmod +xwr "/usr/local/bin/gorilla"
 > > !# or CEWL: https://github.com/digininja/CeWL
 > > 
 > > !# Generate
