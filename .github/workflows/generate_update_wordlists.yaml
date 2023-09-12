@@ -100,6 +100,11 @@ jobs:
           #APIs
           cat "$GITHUB_WORKSPACE/main/Misc/api_docs.txt" 2>/dev/null | anew -q "$GITHUB_WORKSPACE/main/x_api_tiny.txt" 2>/dev/null
           cat "$GITHUB_WORKSPACE/main/Misc/graphql_paths.txt" 2>/dev/null | anew -q "$GITHUB_WORKSPACE/main/x_api_tiny.txt" 2>/dev/null
+          #English Words
+          wget --quiet "https://raw.githubusercontent.com/dwyl/english-words/master/words_alpha.txt" -O "/tmp/english_words_alpha.txt"
+          cat "/tmp/english_words_alpha.txt" | anew -q "$GITHUB_WORKSPACE/main/Misc/english_words_alpha.txt"
+          wget --quiet "https://raw.githubusercontent.com/dwyl/english-words/master/words.txt" -O "/tmp/english_words_alpha_numerics.txt"
+          cat "/tmp/english_words_alpha_numerics.txt" | anew -q "$GITHUB_WORKSPACE/main/Misc/english_words_alpha_numerics.txt"
           #IIS
           cat "$GITHUB_WORKSPACE/main/Misc/IIS/extensions_top_dots.txt" 2>/dev/null | anew -q "/tmp/extensions_all_dots.txt" 2>/dev/null
           cat "$GITHUB_WORKSPACE/main/Misc/IIS/extensions_top_no_dots.txt" 2>/dev/null | anew -q "/tmp/extensions_top_no_dots.txt" 2>/dev/null
