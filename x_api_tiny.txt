@@ -4,6 +4,17 @@
 # Look at the result codes in the headers - 403 likely mean the dir exists, 404  means not. It takes an ISAPI filter for IIS to return 404's for 403s.
 &&
 *img/managers/docs/
+ServiceCenter
+lifetimeapi/rest/v2
+environments/
+deployments/
+environments/dbconnection/permissionlevels/
+environments/blockedipaddresses/
+modules/
+roles/
+roles/permissionlevels/
+teams/
+users/
 -/healthy
 -/ready
 ..assetsearch.json?query=*&start=0&limit=10&random=123
