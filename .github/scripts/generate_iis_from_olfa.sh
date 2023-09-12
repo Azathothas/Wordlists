@@ -32,7 +32,6 @@
 #Filters: anything starting with a dot or *, or has + % ~ In Name
 #       : .txt & .html files
 #From "./onelistforall.txt"
-cat "/tmp/iis_mid.txt" | anew -q "/tmp/iis_large.txt"
 grep -i '.accdb$\|.accdr$\|.asar$\|.asax$\|.ash$\|.ashx$\|.asmx$\|.asp$\|.aspx$\|.axd$\|.bat$\|.bin$\|.cnf$\|.conf$\|.config$\|.csv$\|.dat$\|.dll$\|.doc$\|.docm$\|.docx$\|.eml$\|.eps$\|.evt$\|.evtx$\|.html$\|.ini$\|.iso$\|.jar$\|.log$\|.mas$\|.msi$\|.potm$\|.ppsm$\|.ppsx$\|.pptx$\|.rar$\|.rtf$\|.sldm$\|.sldx$\|.sys$\|.tmp$\|.txt$\|.wadl$\|.wbk$\|.wks$\|.wsdl$\|.xlsm$\|.xltm$\|.xml$\|.xps$\|.zip$' "./onelistforall.txt" | grep -iv '.txt$\|.html$' | sed 's/^http\(\|s\):\/\///g' | grep -vE '^\.|[+%~]|^\*' | sed 's/^\///' | sed -e 's/[^[:alpha:]]//g; /^[[:space:]]*$/d' | sort -u -o "/tmp/iis_large.txt"
 #Fetch from origin
  cat "$GITHUB_WORKSPACE/main/Misc/IIS/iis_mid.txt" | anew -q "/tmp/iis_large.txt"
