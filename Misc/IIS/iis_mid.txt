@@ -1,4 +1,5 @@
 *.axd
+azathothas.aspx
 -translations.txt
 ._machine.config
 ._web.config
