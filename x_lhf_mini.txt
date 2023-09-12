@@ -1,5 +1,16 @@
 !
 !.gitignore
+ServiceCenter
+lifetimeapi/rest/v2
+environments/
+deployments/
+environments/dbconnection/permissionlevels/
+environments/blockedipaddresses/
+modules/
+roles/
+roles/permissionlevels/
+teams/
+users/
 !.htaccess
 !.htpasswd
 !_archives
