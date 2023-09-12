@@ -16983,7 +16983,9 @@ Store-balance
 Store-id
 Store-standing
 StoreDB/
+StoreInfo
 StorePoint
+StoreRank
 Store_balance
 Store_id
 Store_standing

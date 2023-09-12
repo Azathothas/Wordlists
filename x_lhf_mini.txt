@@ -1,5 +1,3 @@
-StoreInfo
-StoreRank
 !
 !.gitignore
 !.htaccess
@@ -10335,7 +10333,9 @@ Store
 Store-balance
 Store-id
 Store-standing
+StoreInfo
 StorePoint
+StoreRank
 Store_balance
 Store_id
 Store_standing
