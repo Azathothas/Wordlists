@@ -98,19 +98,22 @@ jobs:
           #--------------#        
           #anew things
           #APIs
-          cat "$GITHUB_WORKSPACE/main/Misc/api_docs.txt" | anew -q "$GITHUB_WORKSPACE/main/x_api_tiny.txt"
-          cat "$GITHUB_WORKSPACE/main/Misc/graphql_paths.txt" | anew -q "$GITHUB_WORKSPACE/main/x_api_tiny.txt"
+          cat "$GITHUB_WORKSPACE/main/Misc/api_docs.txt" 2>/dev/null | anew -q "$GITHUB_WORKSPACE/main/x_api_tiny.txt" 2>/dev/null
+          cat "$GITHUB_WORKSPACE/main/Misc/graphql_paths.txt" 2>/dev/null | anew -q "$GITHUB_WORKSPACE/main/x_api_tiny.txt" 2>/dev/null
+          #IIS
+          cat "$GITHUB_WORKSPACE/main/Misc/IIS/iis_mini.txt" 2>/dev/null | anew -q "/tmp/iis_mid.txt" 2>/dev/null
+          cat "$GITHUB_WORKSPACE/main/Misc/IIS/iis_mid.txt" 2>/dev/null | anew -q "/tmp/iis_large.txt" 2>/dev/null
           #LHFs
-          cat "$GITHUB_WORKSPACE/main/Misc/api_docs.txt" | anew -q "$GITHUB_WORKSPACE/main/x_lhf_mini.txt"
-          cat "$GITHUB_WORKSPACE/main/Misc/graphql_paths.txt" | anew -q "$GITHUB_WORKSPACE/main/x_lhf_mini.txt"
+          cat "$GITHUB_WORKSPACE/main/Misc/api_docs.txt" 2>/dev/null | anew -q "$GITHUB_WORKSPACE/main/x_lhf_mini.txt" 2>/dev/null
+          cat "$GITHUB_WORKSPACE/main/Misc/graphql_paths.txt" 2>/dev/null | anew -q "$GITHUB_WORKSPACE/main/x_lhf_mini.txt" 2>/dev/null
           #Ports
-          cat "$GITHUB_WORKSPACE/main/Misc/ports_sussy.txt" | anew -q "$GITHUB_WORKSPACE/main/Misc/ports_top_20k.txt"
+          cat "$GITHUB_WORKSPACE/main/Misc/ports_sussy.txt" 2>/dev/null | anew -q "$GITHUB_WORKSPACE/main/Misc/ports_top_20k.txt" 2>/dev/null
           #Sort
           cd "$GITHUB_WORKSPACE/main"
           #Main
-          find . -maxdepth 1 -type f -name '*.txt' -exec sort -u {} -o {} \;
+          find . -maxdepth 1 -type f -name '*.txt' -exec sort -u {} -o {} \; 2>/dev/null
           #Misc
-          find ./Misc -type f -name '*.txt' -exec sort -u {} -o {} \;
+          find ./Misc -type f -name '*.txt' -exec sort -u {} -o {} \; 2>/dev/null
           
       - name: Dos2Unix Everything
         run: |
