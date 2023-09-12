@@ -95782,6 +95782,7 @@ syslog.d
 syslog/
 syslogd.conf
 sysmgmt/2015/bmc/info"  # Firmware Version and other info (iDRAC9
+sysmon
 sysop-api
 sysop.api
 sysopapi

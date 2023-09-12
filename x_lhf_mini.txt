@@ -12,7 +12,6 @@
 !ut
 #
 #.htaccess#
-sysmon
 #?
 $metadata
 %-
@@ -30472,6 +30471,7 @@ sysinfo.txt
 syslog
 syslog/
 sysmgmt/2015/bmc/info"  # Firmware Version and other info (iDRAC9
+sysmon
 sysstat
 sysstat/
 system
