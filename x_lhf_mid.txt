@@ -16825,6 +16825,7 @@ ServerList.xml
 Server_with_db/.env
 Service
 Service24.js 
+ServiceCenter
 ServiceContracts.js 
 ServiceFabricBackup/
 ServiceHistory
@@ -50208,6 +50209,7 @@ deploymentconfig.yaml
 deploymentmanager.yaml
 deploymentparameters.json
 deployments.yaml
+deployments/
 deployments/firebase/functions/.npmrc
 deploymenttriggerconfig.yaml
 depmod.sh
@@ -54677,11 +54679,14 @@ environments
 environments 
 environments.json
 environments.yaml
+environments/
 environments/ 
 environments/* 
 environments/:uuid 
 environments/:uuid/apps 
 environments/:uuid/edit 
+environments/blockedipaddresses/
+environments/dbconnection/permissionlevels/
 environments/dev/common/config/main-local.php
 environments/environment 
 environments/local/.env
@@ -70169,6 +70174,7 @@ liferay-portlet.xml
 liferay.log
 liferay/
 lifestyle
+lifetimeapi/rest/v2
 lift-standard.config
 ligatus/api
 light.exe.config
@@ -86785,12 +86791,14 @@ roles.env
 roles.json
 roles.yaml
 roles.yml
+roles/
 roles/ 
 roles/create 
 roles/crud/ 
 roles/fetch/ 
 roles/fetch/0 
 roles/master/ 
+roles/permissionlevels/
 roles/role_name/defaults/main.yaml
 roles/role_name/defaults/main.yml
 roles/role_name/handlers/main.yaml

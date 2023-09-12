@@ -1,16 +1,5 @@
 !
 !.gitignore
-ServiceCenter
-lifetimeapi/rest/v2
-environments/
-deployments/
-environments/dbconnection/permissionlevels/
-environments/blockedipaddresses/
-modules/
-roles/
-roles/permissionlevels/
-teams/
-users/
 !.htaccess
 !.htpasswd
 !_archives
@@ -10269,6 +10258,7 @@ ServerList.cfg
 ServerList.xml
 Server_with_db/.env
 Service
+ServiceCenter
 ServiceFabricBackup/
 ServiceHistory
 Services
@@ -19183,6 +19173,7 @@ deployaddons.sh
 deployapi.js
 deployment
 deployment-config.json
+deployments/
 deployments/firebase/functions/.npmrc
 depmod.sh
 deposit
@@ -20065,6 +20056,9 @@ environment
 environment.js
 environment.rb
 environment.sh
+environments/
+environments/blockedipaddresses/
+environments/dbconnection/permissionlevels/
 environments/local/.env
 environments/production/.env
 ep
@@ -23394,6 +23388,7 @@ liferay
 liferay.log
 liferay/
 lifestyle
+lifetimeapi/rest/v2
 lighthammer
 lighttpd.access.log
 lighttpd.error.log
@@ -27991,6 +27986,8 @@ robots/.env
 rocketmq-ons-api
 rolememberships.sql
 roles
+roles/
+roles/permissionlevels/
 rollups
 rongji/admin/
 room
@@ -30605,6 +30602,7 @@ te_admin
 tea.sql
 team
 team/
+teams/
 teamsapi.js
 teardown.sh
 teardown.sql
