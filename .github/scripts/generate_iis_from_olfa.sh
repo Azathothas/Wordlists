@@ -13,6 +13,8 @@
 #---------------------------------------------------------------------------------#
 #Clone OneListForAll
  pushd "$(mktemp -d)" && git clone "https://github.com/six2dez/OneListForAll" && cd OneListForAll
+#Generate OneForAll
+ bash "./olfa.sh"
 #------------# 
 #Generate Mid
 #Extensions: https://github.com/Azathothas/Wordlists/blob/main/Misc/IIS/extensions_all_dots.txt
