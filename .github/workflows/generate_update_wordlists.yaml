@@ -103,8 +103,8 @@ jobs:
           #IIS
           cat "$GITHUB_WORKSPACE/main/Misc/IIS/extensions_top_dots.txt" 2>/dev/null | anew -q "/tmp/extensions_all_dots.txt" 2>/dev/null
           cat "$GITHUB_WORKSPACE/main/Misc/IIS/extensions_top_no_dots.txt" 2>/dev/null | anew -q "/tmp/extensions_top_no_dots.txt" 2>/dev/null
-          cat "$GITHUB_WORKSPACE/main/Misc/IIS/iis_mini.txt" 2>/dev/null | anew -q "/tmp/iis_mid.txt" 2>/dev/null
-          cat "$GITHUB_WORKSPACE/main/Misc/IIS/iis_mid.txt" 2>/dev/null | anew -q "/tmp/iis_large.txt" 2>/dev/null
+          cat "$GITHUB_WORKSPACE/main/Misc/IIS/iis_mini.txt" 2>/dev/null | anew -q "$GITHUB_WORKSPACE/main/Misc/IIS/iis_mid.txt" 2>/dev/null
+          cat "$GITHUB_WORKSPACE/main/Misc/IIS/iis_mid.txt" 2>/dev/null | anew -q "$GITHUB_WORKSPACE/main/Misc/IIS/iis_large.txt" 2>/dev/null
           #LHFs
           cat "$GITHUB_WORKSPACE/main/Misc/api_docs.txt" 2>/dev/null | anew -q "$GITHUB_WORKSPACE/main/x_lhf_mini.txt" 2>/dev/null
           cat "$GITHUB_WORKSPACE/main/Misc/graphql_paths.txt" 2>/dev/null | anew -q "$GITHUB_WORKSPACE/main/x_lhf_mini.txt" 2>/dev/null
