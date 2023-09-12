@@ -1,3 +1,5 @@
+StoreInfo
+StoreRank
 !
 !.gitignore
 !.htaccess
