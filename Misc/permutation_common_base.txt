@@ -5,11 +5,13 @@ central
 cloud
 console
 dev
+developer
 git
 go
 new
 old
 prod
+production
 qa
 staging
 stg
