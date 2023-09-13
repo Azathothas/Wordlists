@@ -1,6 +1,7 @@
 admin
 api
 auth
+bit
 central
 cloud
 console
@@ -8,12 +9,16 @@ dev
 developer
 git
 go
+int
+internal
 new
 old
+owa
 prod
 production
 qa
 staging
+stag
 stg
 test
 uat
