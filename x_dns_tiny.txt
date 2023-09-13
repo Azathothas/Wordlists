@@ -3136,6 +3136,7 @@ balance
 balancer
 balder
 bali
+ballerina
 ballerina-lang
 baltimore
 bam
@@ -3275,6 +3276,7 @@ bellatrix
 bellevue
 bem
 ben
+bench
 benchmark
 bender
 benefit
@@ -4156,6 +4158,7 @@ citrix
 citrixweb
 citrus
 city
+city 
 civil
 cj
 cjb
@@ -4236,6 +4239,7 @@ cloudadapter-test
 cloudapp
 cloudapps
 cloudbackup
+cloudbase
 cloudbase-framework
 cloudbot
 clouddrive
@@ -4306,6 +4310,7 @@ cmu
 cmx
 cn
 cna
+cnab
 cnab-spec
 cname
 cnb
@@ -4471,6 +4476,7 @@ concourse
 concrete
 concrete5
 concur
+concurrency
 concurrency-limits
 condor
 conductor
@@ -4492,6 +4498,7 @@ confixx
 confluence
 confluence-dev
 confluence-test
+conjure
 conjure-up
 conmutado
 conn
@@ -4562,6 +4569,7 @@ conversations
 converse
 conversion
 convert
+converter
 convoy
 coo
 cook
@@ -5323,6 +5331,7 @@ display
 dist
 distribution
 distributor
+distro
 dit
 ditu
 diva
@@ -5494,6 +5503,7 @@ download1
 download2
 downloader
 downloads
+downscaler
 downtime
 dox
 doze
@@ -5648,6 +5658,7 @@ eas
 easemesh
 east
 east1
+east2
 easton
 eastus
 eastus2
@@ -5864,6 +5875,7 @@ emergency
 emerson
 emily
 eminwon
+emissary
 emissary-gateway
 emkt
 eml
@@ -6423,6 +6435,7 @@ flare
 flash
 flask
 flat
+fledged
 fleet
 flex
 flight
@@ -6442,6 +6455,7 @@ floyd
 flp
 flr
 fls
+fluent
 fluent-bit
 fluentd
 fluentd-pilot
@@ -6641,6 +6655,7 @@ fuji
 fulfillment
 full
 fun
+func
 func-e
 functions
 fund
@@ -7146,6 +7161,7 @@ handle
 handler
 handshake
 handy
+hango
 hango-gateway
 hangzhou
 hannah
@@ -7174,6 +7190,7 @@ haven
 hawaii
 hawk
 hawkeye
+hawkular
 hawkular-metrics
 hb
 hbase
@@ -7188,6 +7205,7 @@ hcs
 hd
 hdd
 hdhd
+hdl
 hdlmsb
 hds
 he
@@ -7909,6 +7927,7 @@ ingestion
 ingress
 init
 ink
+inlets
 inlets-operator
 inloggen
 inloggen-digid
@@ -7940,6 +7959,7 @@ inst
 instagram
 install
 installation
+installer
 installs
 instant
 insurance
@@ -8216,6 +8236,7 @@ jeep
 jeff
 jefferson
 jellyfish
+jenkin
 jenkins
 jenkins-prod
 jenkins-test
@@ -8377,6 +8398,7 @@ kafka-Connect
 kafka-manager
 kai
 kail
+kairo
 kairo-db
 kairos
 kairosdb
@@ -8536,6 +8558,7 @@ km
 kmail
 kms
 kn
+knative
 knative-lambda-runtime
 kndev
 knight
@@ -8648,9 +8671,11 @@ kubecarrier
 kubecdn
 kubecfg
 kubecost
+kubectl
 kubectl-doctor
 kubectl-trace
 kubectl-tree
+kubectx
 kubed
 kubedb
 kubediag
@@ -8701,6 +8726,7 @@ kubevela
 kubevious
 kubevirt
 kubie
+kubiscan
 kudo
 kultur
 kuma
@@ -8936,6 +8962,7 @@ linbit
 lincoln
 linda
 line
+lineage
 lining
 link
 link2
@@ -8946,6 +8973,7 @@ links
 linksys
 linode
 linq
+linter
 linus
 linux
 linux1
@@ -9070,6 +9098,7 @@ look
 lookbook
 looker
 lookingglass
+lookout
 lookup
 loop
 loopback
@@ -9674,6 +9703,7 @@ micollab
 micro
 microconfig
 microk8s
+microservice
 microservices
 microsite
 microsites
@@ -9872,6 +9902,7 @@ monitor2
 monitoring
 monkey
 monkit
+mono
 mono-repo
 monolith
 monorepo
@@ -10299,6 +10330,7 @@ netbanking
 netbox
 netc
 netdata
+netes
 netflix
 netflow
 netgear
@@ -10472,6 +10504,7 @@ norm
 norma
 north
 north1
+north2
 northamerica
 northdakota
 northeast
@@ -10914,6 +10947,7 @@ openpeering
 openproject
 openpub
 opensearch
+opensergo
 opensergo-specification
 openshift
 opensource
@@ -10955,6 +10989,7 @@ opus
 or
 ora
 oracle
+oracleerp
 orange
 orangehrm
 oras
@@ -11062,6 +11097,7 @@ overseas
 overview
 ovh
 ovi
+ovn
 ovpn
 ow
 owa
@@ -11916,6 +11952,7 @@ push
 pushgateway
 pushmail
 pushpin
+pushrm
 putra
 puzzle
 pv
@@ -12950,6 +12987,7 @@ segment
 seguro
 sei
 sel
+seldon
 seldon-core
 select
 selection
@@ -13119,6 +13157,7 @@ shadow
 shanghai
 shannon
 shape
+sharding
 sharding-sphere
 share
 shared
@@ -13144,6 +13183,8 @@ shib
 shibboleth
 shield
 shift
+shim
+shims
 shine
 shinken
 shiny
@@ -13267,6 +13308,7 @@ sketch
 ski
 skills
 skin
+skinny
 skinny-micro
 skins
 skipper
@@ -13435,6 +13477,7 @@ sod
 soda
 sodium
 soe
+sofa
 sofa-bolt
 sofa-lookout
 sofa-rpc
@@ -13499,6 +13542,7 @@ sourcing
 sousa
 south
 south1
+south2
 southeast
 southwest1
 souwafa
@@ -13537,6 +13581,7 @@ spe
 spec
 special
 specials
+specification
 specs
 specto
 spectral
@@ -13797,6 +13842,7 @@ steve
 steven
 steward
 stg
+stg 
 stg-api
 stg-configurator
 stg1
@@ -13850,9 +13896,11 @@ street
 streisand
 stress
 strider
+strimzi
 strimzi-kafka-operator
 strong
 strongloop
+structure
 stryker
 sts
 sts2
@@ -13922,6 +13970,7 @@ superman
 supermarket
 supernova
 superset
+supertokens
 supertokens-core
 supervision
 supervisor
@@ -14171,6 +14220,7 @@ techops
 techradar
 techsupport
 techvault
+tectonic
 tectonic-installer
 ted
 tee
@@ -14214,6 +14264,7 @@ tenders
 tengine
 tennessee
 tennis
+tensile
 tensile-kube
 tensorflow
 ter
@@ -15352,6 +15403,7 @@ warren
 was
 wasabi
 washington
+wasm
 wasm-micro-runtime
 wasmcloud
 wasp
@@ -15576,6 +15628,7 @@ werkplek
 wes
 west
 west1
+west2
 westeurope
 wetter
 wf

@@ -84,6 +84,7 @@ bosun
 breeze
 broker
 brpc
+bucket
 buddy
 build
 buildkite
@@ -623,6 +624,7 @@ linter
 lists
 litmus
 live
+local
 localhost
 log
 loggie
