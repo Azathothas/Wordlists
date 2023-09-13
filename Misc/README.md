@@ -109,7 +109,7 @@
 > 2. Generating Initial Wordlist [(tok)](https://github.com/tomnomnom/hacks/tree/master/tok)
 > ```bash
 > #Separate by dots(.) | dash (-) | Underscores (_) And Filter Numerics
->  sed 's/[._-]/\n/g' "subdomains.txt" | tr -s '\n' | grep '^[[:alpha:]]\+$' | anew -q "/tmp/vhosts_wordlist.txt"
+>  sed 's/[._-]/\n/g' "subdomains.txt" | tr -s '\n' | sed -E 's/[[:alpha:]]*[[:digit:]][[:alpha:]]*//g; /^[[:space:]]*$/d' | anew -q "/tmp/vhosts_wordlist.txt"
 > #With Tok
 >  cat "subdomains.txt" | tok | anew -q "/tmp/vhosts_wordlist.txt"
 > ```
@@ -126,7 +126,7 @@
 > > 
 > > !# Get words from subdomains
 > > !# You could also use subdomains_dead.txt (Those that got resolved but aren't alive) to reduce the output
-> >  sed 's/[._-]/\n/g' "subdomains.txt" | tr -s '\n' | grep '^[[:alpha:]]\+$' | anew -q "/tmp/comb_in.txt"
+> >  sed 's/[._-]/\n/g' "subdomains.txt" | tr -s '\n' | sed -E 's/[[:alpha:]]*[[:digit:]][[:alpha:]]*//g; /^[[:space:]]*$/d' | anew -q "/tmp/comb_in.txt"
 > > 
 > > !# Using `-` as a separator, Generate
 > >  comb --separator="-" "/tmp/comb_in.txt" "/tmp/comb_in.txt" > "/tmp/comb_out.txt"
@@ -178,7 +178,7 @@
 > > - Clean Wordlist (Optional) [Not Recommended]
 > > ```bash
 > > !# If you wordlist is too large, you can optionally remove all words that have numerics (digits)
-> >  sed -e 's/[^[:alpha:]]//g; /^[[:space:]]*$/d' -i "/tmp/vhosts_wordlist.txt"
+> >  sed -E 's/[[:alpha:]]*[[:digit:]][[:alpha:]]*//g; /^[[:space:]]*$/d' -i "/tmp/vhosts_wordlist.txt"
 > > !# sort
 > >  sort -u "/tmp/vhosts_wordlist.txt" -o "/tmp/vhosts_wordlist.txt"
 > >  wc -l < "/tmp/vhosts_wordlist.txt"
