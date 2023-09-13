@@ -136,6 +136,10 @@ jobs:
           #LHFs
           cat "$GITHUB_WORKSPACE/main/Misc/api_docs.txt" 2>/dev/null | anew -q "$GITHUB_WORKSPACE/main/x_lhf_mini.txt" 2>/dev/null
           cat "$GITHUB_WORKSPACE/main/Misc/graphql_paths.txt" 2>/dev/null | anew -q "$GITHUB_WORKSPACE/main/x_lhf_mini.txt" 2>/dev/null
+          #Permutations
+          cat "$GITHUB_WORKSPACE/main/Misc/permutation_common_base_tiny.txt" 2>/dev/null | anew -q "$GITHUB_WORKSPACE/main/Misc/permutation_common_base.txt" 2>/dev/null
+          cat "$GITHUB_WORKSPACE/main/Misc/permutation_common_base.txt" 2>/dev/null | anew -q "$GITHUB_WORKSPACE/main/x_dns_tiny.txt" 2>/dev/null
+          cat "$GITHUB_WORKSPACE/main/x_dns_tiny.txt" | anew -q "$GITHUB_WORKSPACE/main/x_dns.txt" 2>/dev/null
           #Ports
           cat "$GITHUB_WORKSPACE/main/Misc/ports_sussy.txt" 2>/dev/null | anew -q "$GITHUB_WORKSPACE/main/Misc/ports_top_20k.txt" 2>/dev/null
           #Sort
