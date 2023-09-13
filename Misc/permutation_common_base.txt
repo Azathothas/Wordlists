@@ -2,6 +2,11 @@ about
 abtruse
 access
 account
+artifactory
+stack
+jfrog
+grafana
+metrics
 action
 ad
 admin
