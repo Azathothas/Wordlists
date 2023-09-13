@@ -212,6 +212,14 @@
 >  !# Note: You must NOT Pass the complete url
 >  !# Example: Complete URL: https://vhost.api.dev-stg.example.com
 >  !# Then GOBUSTER_URL: https://api.dev-stg.example.com [ We Removed the actual vHOST as that's where we want to FUZZ]
->  gobuster vhost --useragent "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" --no-tls-validation --append-domain --wordlist "/tmp/vhosts_wordlist.txt" --url "GOBUSTER_URL_NOT_COMPLETE_URL"
-> 
+>  gobuster vhost --useragent "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" --no-tls-validation --append-domain --wordlist "/tmp/vhosts_wordlist.txt" --url "$GOBUSTER_URL_NOT_COMPLETE_URL"
+>
+> !# If you want fuzz with the Ip Address then:
+> !# Append part of the hostname to the wordlist:
+>  !# Example: Complete URL: https://vhost.api.dev-stg.example.com
+>  !# When Fuzzing for vHost on the same host IP, part to append would be: `.api.dev-stg.example.com` (Including the dot)
+>  sed -i 's/$/.api.dev-stg.example.com/' "/tmp/vhosts_wordlist.txt"
+> !# Run (Notice, --append-domain is NOT used)
+>  gobuster vhost --useragent "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" --no-tls-validation --wordlist "/tmp/vhosts_wordlist.txt" --url "$HOST_IP"
+>  
 > ```
