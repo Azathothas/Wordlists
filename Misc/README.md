@@ -142,8 +142,8 @@
 > !# With x_dns_tiny.txt [Recommended] : https://github.com/Azathothas/Wordlists/blob/main/x_dns_tiny.txt
 >   wget -qO- "https://raw.githubusercontent.com/Azathothas/Wordlists/main/x_dns_tiny.txt" | anew -q "/tmp/vhosts_wordlist.txt"
 > 
-> !# with x_dns.txt [Huge] : https://github.com/Azathothas/Wordlists/blob/main/x_dns.txt
->   wget -qO- "https://raw.githubusercontent.com/Azathothas/Wordlists/main/x_dns.txt" | anew -q "/tmp/vhosts_wordlist.txt"
+> !# with x_dns_mid.txt [Huge] : https://github.com/Azathothas/Wordlists/blob/main/x_dns_mid.txt
+>   wget -qO- "https://raw.githubusercontent.com/Azathothas/Wordlists/main/x_dns_mid.txt" | anew -q "/tmp/vhosts_wordlist.txt"
 >
 > !# Sort
 >   sort -u "/tmp/vhosts_wordlist.txt" -o "/tmp/vhosts_wordlist.txt"
