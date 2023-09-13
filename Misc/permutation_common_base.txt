@@ -1,12 +1,9 @@
+Connect
+KubiScan
 about
 abtruse
 access
 account
-artifactory
-stack
-jfrog
-grafana
-metrics
 action
 ad
 admin
@@ -45,6 +42,7 @@ argo
 ark
 arkade
 armada
+artifactory
 artifacts
 assertible
 asset
@@ -130,8 +128,6 @@ chrono
 chubaofs
 ci
 ciam
-ci
-cd
 cicd
 cilium
 circleci
@@ -175,7 +171,6 @@ confd
 config
 conjure
 connect
-Connect
 console
 consul
 contact
@@ -593,7 +588,6 @@ kubevela
 kubevious
 kubevirt
 kubie
-KubiScan
 kudo
 kuma
 kusion
@@ -788,8 +782,6 @@ osiris
 osm
 ovn
 owa
-owa
-access
 owl
 pachyderm
 packer
@@ -988,11 +980,8 @@ sqoop
 squash
 ssh
 ssl
+stack
 stag
-stag
-admin
-stag
-dev
 stage
 staging
 starship
@@ -1006,8 +995,6 @@ stern
 steward
 stg
 stg 
-stg
-api
 stolon
 stoplight
 storage
