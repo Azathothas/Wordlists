@@ -1,7 +1,4 @@
-connect
-kubiscan
 about
-engineering
 abtruse
 access
 account
@@ -283,6 +280,7 @@ email
 emissary
 emqx
 en
+engineering
 envoy
 erda
 escalator
@@ -589,6 +587,7 @@ kubevela
 kubevious
 kubevirt
 kubie
+kubiscan
 kudo
 kuma
 kusion
