@@ -218,8 +218,8 @@
 > !# Append part of the hostname to the wordlist:
 >  !# Example: Complete URL: https://vhost.api.dev-stg.example.com
 >  !# When Fuzzing for vHost on the same host IP, part to append would be: `.api.dev-stg.example.com` (Including the dot)
->  sed -i 's/$/.api.dev-stg.example.com/' "/tmp/vhosts_wordlist.txt"
+>  sed 's/$/.api.dev-stg.example.com/' -i "/tmp/vhosts_wordlist.txt"
 > !# Run (Notice, --append-domain is NOT used)
->  gobuster vhost --useragent "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" --no-tls-validation --wordlist "/tmp/vhosts_wordlist.txt" --url "$HOST_IP"
+>  gobuster vhost --useragent "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" --no-tls-validation --wordlist "/tmp/vhosts_wordlist.txt" --url "$HOST_IP_WITH_HTTP_OR_HTTPS"
 >  
 > ```
