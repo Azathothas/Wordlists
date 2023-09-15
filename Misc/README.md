@@ -56,7 +56,9 @@
 > > curl -qfsSL "https://raw.githubusercontent.com/elastic/kibana/$LATEST_ELK_VERSION/x-pack/plugins/alerting/docs/openapi/bundled.json" -o "/tmp/kibana_alerting.json"
 > > !# Cases
 > > curl -qfsSL "https://raw.githubusercontent.com/elastic/kibana/$LATEST_ELK_VERSION/x-pack/plugins/cases/docs/openapi/bundled.json" -o "/tmp/kibana_cases.json"
-> > 
+> >
+> > !# ElasticSearch
+> > curl -qfsSL "https://cloud.elastic.co/api/v1/api-docs/spec.json" -o "/tmp/elastic.json"
 > > ``` 
 > > ---
 > > - [**Kubernetes**](https://github.com/kubernetes/kubernetes/)
