@@ -1,5 +1,7 @@
 api-admin-docs
 api-docs
+v2/api-docs
+swagger-resources
 api-docs.json
 api-docs.yaml
 api-docs/index.html
