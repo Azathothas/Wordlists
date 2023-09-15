@@ -15534,6 +15534,8 @@ api/access/v1/users/current/organizations
 api/access/v1/users/current/tenants 
 api/account
 api/action
+api/actions/connector_types
+api/actions/connectors
 api/actuator/dump
 api/actuator/heapdump
 api/admin
@@ -15574,6 +15576,7 @@ api/agent/service.html
 api/alert-notifiers 
 api/alert/v1/alerts/banner/immediate 
 api/alert/v1/alerts/maintenance/immediate 
+api/alerting/rule_types
 api/alerts
 api/alerts 
 api/alerts/actionProcess/update 
@@ -15642,6 +15645,11 @@ api/apidocs
 api/apidocs/swagger.json
 api/apidocs/swagger.yaml
 api/apihub/fetchjinse
+api/apm/agent_keys
+api/apm/services/:serviceName/annotation
+api/apm/settings/agent-configuration
+api/apm/settings/agent-configuration/search
+api/apm/sourcemaps
 api/application.wadl
 api/application.wadl?detail=true
 api/applications/create 
@@ -15701,6 +15709,13 @@ api/campaign
 api/campaigns
 api/cart
 api/cart/create
+api/cases
+api/cases/_find
+api/cases/configure
+api/cases/configure/connectors/_find
+api/cases/reporters
+api/cases/status
+api/cases/tags
 api/cask/graphql
 api/cask/graphql-playground
 api/cch/v1/anamnesis
@@ -15881,6 +15896,8 @@ api/dashboards/validate
 api/data.json
 api/data/v9.1/leads
 api/data/v9.1/leads/
+api/data_views
+api/data_views/default
 api/database.json
 api/dbstat/gettablessize
 api/debug
@@ -16022,6 +16039,7 @@ api/index/getlottery
 api/index/life/lycx
 api/index/loansList
 api/index/loanslist
+api/index_patterns/default
 api/info.json
 api/info/users
 api/ingress/traces 
@@ -16116,6 +16134,8 @@ api/login/ValidateUserToken
 api/login/admin
 api/login/ping 
 api/logout
+api/logstash/pipeline/2
+api/logstash/pipelines
 api/logtest
 api/lottery/getlotterydata
 api/mailings
@@ -16312,6 +16332,9 @@ api/orgs/
 api/orgs/1
 api/orgs/2
 api/orgs/3
+api/osquery/live_queries
+api/osquery/packs
+api/osquery/saved_queries
 api/otp/verify
 api/owner
 api/package.json
@@ -16542,6 +16565,7 @@ api/search/sorting
 api/search/suggestions
 api/search/v0/table
 api/security
+api/security/role
 api/server
 api/server_status
 api/servers
@@ -16593,6 +16617,8 @@ api/snapshots/
 api/snapshots/:key
 api/sources/issue_snippets 
 api/sources/lines 
+api/spaces/_get_shareable_references
+api/spaces/space
 api/spec
 api/spec/swagger.json
 api/spec/swagger.yaml
@@ -16672,6 +16698,7 @@ api/target2/deleteTarget
 api/target2/updateTargetPlanValidate 
 api/target2/uploadTargetPlan 
 api/target2/validateTargetPlan 
+api/task_manager/_health
 api/team.accessLogs
 api/team.accesslogs
 api/tenants
@@ -16699,6 +16726,7 @@ api/u/resetPwd
 api/unscite/8
 api/upcoming/ 
 api/updates
+api/upgrade_assistant/reindex/myIndex
 api/upload
 api/upload?action=filemgr&dirPath=%2f..%2f..%2fCustom%2fThemes%2fRCE_Test
 api/uploads/apimap
@@ -16940,6 +16968,15 @@ api/v1/delta/monitoring/accounts/
 api/v1/delta/order
 api/v1/delta/userAssets
 api/v1/delta/userassets
+api/v1/deployments
+api/v1/deployments/_search
+api/v1/deployments/eligible-remote-clusters
+api/v1/deployments/extensions
+api/v1/deployments/templates
+api/v1/deployments/traffic-filter/link-ids
+api/v1/deployments/traffic-filter/link-ids/_claim
+api/v1/deployments/traffic-filter/link-ids/_unclaim
+api/v1/deployments/traffic-filter/rulesets
 api/v1/details
 api/v1/devices
 api/v1/devices/snapshot
@@ -17098,6 +17135,7 @@ api/v1/opscentral/producthelp/
 api/v1/orders
 api/v1/orders/1
 api/v1/org/1
+api/v1/organizations
 api/v1/orgs/1
 api/v1/otlp/v1/metrics
 api/v1/p2p-server
@@ -17240,6 +17278,7 @@ api/v1/sites.json
 api/v1/sms-sender
 api/v1/songs
 api/v1/speakers
+api/v1/stack/versions
 api/v1/stat
 api/v1/stats
 api/v1/status
@@ -17301,6 +17340,7 @@ api/v1/transfers
 api/v1/translations/Ds.Dsar.Portal/ 
 api/v1/translations/consent-portal/ 
 api/v1/trebuchet
+api/v1/trusted-environments
 api/v1/tv-shows
 api/v1/uac/bot
 api/v1/upload
@@ -17344,6 +17384,7 @@ api/v1/users/admin/info/1
 api/v1/users/administrator/cart/1
 api/v1/users/administrator/info/1
 api/v1/users/all
+api/v1/users/auth/keys
 api/v1/users/current
 api/v1/users/list
 api/v1/venues
@@ -17734,6 +17775,7 @@ api/widget
 api/widgets/events
 api/wlan/security-settings
 api/work
+api/ws/v1/search
 api/xlsx/res/ 
 api/xml
 api/zendesk/api/v2/search.json
