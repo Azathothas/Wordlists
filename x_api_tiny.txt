@@ -3,6 +3,22 @@
 !=
 # Look at the result codes in the headers - 403 likely mean the dir exists, 404  means not. It takes an ISAPI filter for IIS to return 404's for 403s.
 &&
+alerts
+help
+audit
+auth
+annotations
+batches
+collection
+dashboards
+discover
+history
+management
+metrics
+namespaces
+argusws/v2/auth/login
+argusws/dashboards/
+argusws/v2/auth/token/refresh
 *img/managers/docs/
 -/healthy
 -/ready
