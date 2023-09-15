@@ -25104,6 +25104,7 @@ animation.4734489e.js
 anketa_zapis
 anketa_zapis.php
 annotate
+annotations
 announce
 announcement-api
 announcement.api
@@ -31185,6 +31186,9 @@ argocd-ssh-secret.yaml
 args
 argumentsconfigurationsource.java
 argumentsconfigurationsourcetest.java
+argusws/dashboards/
+argusws/v2/auth/login
+argusws/v2/auth/token/refresh
 aria2.conf
 ariadne/
 ariel-api
@@ -48105,6 +48109,7 @@ dashboard/viewcontract/
 dashboard/whatIsTradingHouse 
 dashboardAdmin
 dashboardapi
+dashboards
 dashboards 
 dashboards.cfg
 dashboards.conf
@@ -51343,6 +51348,7 @@ discount_coupon
 discourse-api
 discourse.api
 discourseapi
+discover
 discoverer/app/about
 discoverer/app/cec
 discoverer/app/connection
@@ -75266,6 +75272,7 @@ names.nsf?opendatabase
 namespace.conf
 namespace.yaml
 namespace.yml
+namespaces
 namespaces/inkscape
 nametags_conf
 nand.sh

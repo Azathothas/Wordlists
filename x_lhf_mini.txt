@@ -1,22 +1,6 @@
 !
 !.gitignore
 !.htaccess
-alerts
-help
-audit
-auth
-annotations
-batches
-collection
-dashboards
-discover
-history
-management
-metrics
-namespaces
-argusws/v2/auth/login
-argusws/dashboards/
-argusws/v2/auth/token/refresh
 !.htpasswd
 !_archives
 !_images
@@ -13327,6 +13311,7 @@ angel.php
 ani-shell.php
 animalapi.js
 annotate
+annotations
 announce
 announcements
 annuaire-professio/
@@ -15328,6 +15313,9 @@ archi~1/
 area.inc
 area.sql
 args
+argusws/dashboards/
+argusws/v2/auth/login
+argusws/v2/auth/token/refresh
 arrange
 array
 arrow
@@ -18610,6 +18598,7 @@ dashboard/UserControl/CMS/Page/Telerik.Web.UI.DialogHandler.aspx/Desktopmodules/
 dashboard/faq.html
 dashboard/howto.html
 dashboard/phpinfo.php
+dashboards
 dasusr1
 dat
 dat.sql
@@ -19439,6 +19428,7 @@ disconnects
 discount
 discount.%EXT%
 discount_coupon
+discover
 discovery
 discus_admin
 discus_admin_40
@@ -25010,6 +25000,7 @@ names
 names.nsf/People?OpenView
 names.nsf/people?openview
 names.nsf?opendatabase
+namespaces
 nand.sh
 nano.save
 nanos
