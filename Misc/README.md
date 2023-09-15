@@ -44,6 +44,21 @@
 > cherrybomb --file  "/path/to/specs" --profile passive
 > ```
 > ---
+> > ---
+> > - [EKS (x-pack/plugins/$PLUGINS/docs/openapi/bundled.json)](https://github.com/elastic/kibana)
+> > > - https://insinuator.net/2021/01/pentesting-the-elk-stack/
+> > ```bash
+> > !# Version
+> > export LATEST_ELK_VERSION=
+> > !# Actions
+> > curl -qfsSL "https://raw.githubusercontent.com/elastic/kibana/$LATEST_ELK_VERSION/x-pack/plugins/actions/docs/openapi/bundled.json" -o "/tmp/kibana_actions.json"
+> > !# Altering
+> > curl -qfsSL "https://raw.githubusercontent.com/elastic/kibana/$LATEST_ELK_VERSION/x-pack/plugins/alerting/docs/openapi/bundled.json" -o "/tmp/kibana_alerting.json"
+> > !# Cases
+> > curl -qfsSL "https://raw.githubusercontent.com/elastic/kibana/$LATEST_ELK_VERSION/x-pack/plugins/cases/docs/openapi/bundled.json" -o "/tmp/kibana_cases.json"
+> > 
+> > ``` 
+> > ---
 > > - [**Kubernetes**](https://github.com/kubernetes/kubernetes/)
 > > > - https://cloud.hacktricks.xyz/pentesting-cloud/kubernetes-security/pentesting-kubernetes-services
 > > ```bash
