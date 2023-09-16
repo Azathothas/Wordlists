@@ -32,6 +32,9 @@ $metadata
 %.gz
 %.inc
 %.ini
+openapi/v1
+openapi/v2
+openapi/v3
 %.java
 %.log
 %.lst
