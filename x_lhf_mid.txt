@@ -77382,6 +77382,9 @@ openapi.jsp
 openapi.php
 openapi.yaml
 openapi/
+openapi/v1
+openapi/v2
+openapi/v3
 openapidemo
 openapidocs.cfm
 openapigw

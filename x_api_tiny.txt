@@ -1,7 +1,4 @@
  Inconnu0lb.1.json
-openapi/v1
-openapi/v2
-openapi/v3
 !
 !=
 # Look at the result codes in the headers - 403 likely mean the dir exists, 404  means not. It takes an ISAPI filter for IIS to return 404's for 403s.
@@ -16489,6 +16486,9 @@ openapi.jsp
 openapi.php
 openapi.yaml
 openapi/
+openapi/v1
+openapi/v2
+openapi/v3
 openapidemo
 openapidocs.cfm
 openapigw
