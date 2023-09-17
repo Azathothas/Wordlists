@@ -34,9 +34,9 @@ Updating /home/runner/work/Wordlists/Wordlists/main/WordList to @latest
 ➼ x_lhf_mid.txt  : 0
 
 ➼ Fetching & Updating <-- reewardius/bbFuzzing.txt
-➼ x_lhf_mini.txt  : 0
-➼ x_lhf_mid.txt   : 0
-➼ x_lhf_large.txt  : 0
+➼ x_lhf_mini.txt  : 5
+➼ x_lhf_mid.txt   : 59
+➼ x_lhf_large.txt  : 127
 
 ➼ Fetching & Updating <-- thehlopster/hfuzz
 ➼ x_lhf_mini.txt  : 0
@@ -57,28 +57,28 @@ Updating /home/runner/work/Wordlists/Wordlists/main/WordList to @latest
 ➼ x_massive.txt  : 0
 
 ➼ New Additions 
-➼ x_lhf_mini.txt  : 0
-➼ x_lhf_mid.txt   : 0
+➼ x_lhf_mini.txt  : 5
+➼ x_lhf_mid.txt   : 4
 ➼ x_lhf_large.txt : 0
-➼ x_massive.txt   : 0
+➼ x_massive.txt   : 123
 
 ➼ Generating x_api.txt 
-➼ Newly added: 0
+➼ Newly added: 33
 
 ➼ Generating x_dns.txt 
 ➼ Newly added: 0
 
 ➼ Generating x_mini.txt 
-➼ Newly added: 0
+➼ Newly added: 5
 
 ➼Updated Wordlists:
-➼ x_api.txt       : 75869 /home/runner/work/Wordlists/Wordlists/main/x_api.txt
+➼ x_api.txt       : 75902 /home/runner/work/Wordlists/Wordlists/main/x_api.txt
 ➼ x_api_tiny.txt  : 22308 /home/runner/work/Wordlists/Wordlists/main/x_api_tiny.txt
 ➼ x_dns.txt       : 515427 /home/runner/work/Wordlists/Wordlists/main/x_dns.txt
 ➼ x_dns_tiny.txt  : 16135 /home/runner/work/Wordlists/Wordlists/main/x_dns_tiny.txt
-➼ x_mini.txt      : 13998 /home/runner/work/Wordlists/Wordlists/main/x_mini.txt
-➼ x_lhf_mini.txt  : 35686 /home/runner/work/Wordlists/Wordlists/main/x_lhf_mini.txt
-➼ x_lhf_mid.txt   : 109470 /home/runner/work/Wordlists/Wordlists/main/x_lhf_mid.txt
-➼ x_lhf_large.txt : 264947 /home/runner/work/Wordlists/Wordlists/main/x_lhf_large.txt
-➼ x_massive.txt   : 1045791 /home/runner/work/Wordlists/Wordlists/main/x_massive.txt
+➼ x_mini.txt      : 14003 /home/runner/work/Wordlists/Wordlists/main/x_mini.txt
+➼ x_lhf_mini.txt  : 35691 /home/runner/work/Wordlists/Wordlists/main/x_lhf_mini.txt
+➼ x_lhf_mid.txt   : 109533 /home/runner/work/Wordlists/Wordlists/main/x_lhf_mid.txt
+➼ x_lhf_large.txt : 265074 /home/runner/work/Wordlists/Wordlists/main/x_lhf_large.txt
+➼ x_massive.txt   : 1045914 /home/runner/work/Wordlists/Wordlists/main/x_massive.txt
 

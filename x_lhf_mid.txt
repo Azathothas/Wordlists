@@ -1167,6 +1167,7 @@ ${idfwbonavigation}.xml
 .CPIO
 .CSV
 .CVS
+.Caddyfile
 .Circle-CI.yaml
 .Circle-CI.yml
 .CircleCI.yaml
@@ -1397,6 +1398,7 @@ ${idfwbonavigation}.xml
 .adirignore
 .adm
 .admin
+.admin.ini
 .admin.php
 .admin/
 .admin;-aspx
@@ -5796,6 +5798,7 @@ ${idfwbonavigation}.xml
 .secret
 .secret.backup
 .secret.properties
+.secret_key
 .secret_token
 .secrets
 .secrets.cfg
@@ -6684,6 +6687,7 @@ ${idfwbonavigation}.xml
 .well-known/enterprise-transport-security
 .well-known/est
 .well-known/genid
+.well-known/gpc.json
 .well-known/hoba
 .well-known/host-meta
 .well-known/host-meta.json
@@ -6723,6 +6727,7 @@ ${idfwbonavigation}.xml
 .well-known/thread
 .well-known/time
 .well-known/timezone
+.well-known/trust.txt
 .well-known/uma2-configuration
 .well-known/void
 .well-known/webfinger
@@ -11692,6 +11697,7 @@ AutoNumericHelper
 AutoNumericOptions 
 AutoNumericPredefinedOptions 
 AutoTest.Net/
+Autoconfig
 Autofac.json
 Automattic/cli-table
 Avenue
@@ -26031,6 +26037,7 @@ api/auth/guest
 api/auth/login
 api/auth/login 
 api/auth/logout
+api/auth/new
 api/auth/signin
 api/auth/subscribe/ 
 api/auth/v1
@@ -27190,6 +27197,7 @@ api/v1/.env
 api/v1/.git
 api/v1/.git/config
 api/v1/.json
+api/v1/ResetPassword
 api/v1/about
 api/v1/access/share
 api/v1/account
@@ -27240,6 +27248,7 @@ api/v1/artists
 api/v1/asset/asset
 api/v1/asset/assets
 api/v1/auth
+api/v1/auth/new
 api/v1/authenticate
 api/v1/authorities
 api/v1/backend/
@@ -27299,6 +27308,7 @@ api/v1/customers
 api/v1/dashboard
 api/v1/data
 api/v1/data-static
+api/v1/database
 api/v1/database.json
 api/v1/database/1
 api/v1/datapoints
@@ -27723,7 +27733,10 @@ api/v1/users/administrator/info/1
 api/v1/users/all
 api/v1/users/auth/keys
 api/v1/users/current
+api/v1/users/full
 api/v1/users/list
+api/v1/users/listing
+api/v1/users/verify
 api/v1/venues
 api/v1/version
 api/v1/video
@@ -27806,6 +27819,7 @@ api/v2/apidocs
 api/v2/app/
 api/v2/application.wadl
 api/v2/auth
+api/v2/auth/new
 api/v2/bid
 api/v2/cmdb/system/admin/admin
 api/v2/collector
@@ -27884,8 +27898,11 @@ api/v2/user/register
 api/v2/users
 api/v2/users.json
 api/v2/users/all
+api/v2/users/full
 api/v2/users/list
+api/v2/users/listing
 api/v2/users/me
+api/v2/users/verify
 api/v2/verification/create
 api/v2/verification/financer
 api/v2/video/
@@ -27914,6 +27931,7 @@ api/v3/.env
 api/v3/.git
 api/v3/.git/config
 api/v3/.json
+api/v3/ResetPassword
 api/v3/account
 api/v3/account.json
 api/v3/accounts.json
@@ -27921,6 +27939,7 @@ api/v3/actuator/dump
 api/v3/actuator/heapdump
 api/v3/api-docs
 api/v3/apidocs
+api/v3/auth/new
 api/v3/config.json
 api/v3/config/.git/config
 api/v3/devices
@@ -27968,6 +27987,10 @@ api/v3/user/profile/1
 api/v3/user/register
 api/v3/users
 api/v3/users.json
+api/v3/users/full
+api/v3/users/list
+api/v3/users/listing
+api/v3/users/verify
 api/v3/wc.db
 api/v4
 api/v4.0
@@ -31401,6 +31424,7 @@ assets/37df09cccc14d89ab3860456fb5c61be0d59f2e0/za/
 assets/application.css
 assets/application.js
 assets/audio/mail_notif.mp3
+assets/config.min.js
 assets/config.rb
 assets/config/app.config.json
 assets/config/app.config.json 
@@ -31459,6 +31483,7 @@ assets/icons/two-toned-icon/Medium
 assets/icons/two-toned-icon/Small 
 assets/images/icons.json
 assets/jquery.js
+assets/js/config.min.js
 assets/js/fckeditor
 assets/log-publishers.json
 assets/log-publishers.json 
@@ -33384,7 +33409,12 @@ base.tar.gz
 base/
 base/.env
 base/admin
+base/admin.sql
+base/base.sql
 base/buffer 
+base/database.sql
+base/db.sql
+base/dump.sql
 base/node 
 base/reporter 
 base/static/c
@@ -39523,6 +39553,9 @@ componentstatus.yaml
 componentunmappedflowgroupsummary 
 compose
 compose 
+compose-dev
+compose-dev.yaml
+compose-dev.yml
 compose.sh
 composer
 composer-bx.json
@@ -39665,6 +39698,7 @@ conf/liveuser_configuration.php
 conf/log4j.properties
 conf/log4j.properties.template
 conf/logging.properties
+conf/logs
 conf/lutece.properties
 conf/mime.types
 conf/nginx.conf
@@ -40991,6 +41025,7 @@ config/doctrine
 config/doctrine/
 config/doctrine/schema.yml
 config/dompdf.php
+config/ehcache.xml
 config/elasticsearch.yml
 config/elixir.php
 config/email.cfg
@@ -48425,6 +48460,7 @@ database/.env
 database/.git/config
 database/database
 database/database/
+database/db_dump.sql
 database/phpMyAdmin
 database/phpMyAdmin/
 database/phpMyAdmin2
@@ -48914,12 +48950,15 @@ db/autos/*?p
 db/config
 db/config.yml
 db/config/system.sessions
+db/database.sql
 db/database.yml
 db/db-admin
 db/db-admin/
 db/db-admin/index.php
+db/db.sql
 db/db_create_mysql.sh
 db/db_create_pgsql.sh
+db/db_dump.sql
 db/dbadmin
 db/dbadmin/
 db/dbadmin/index.php
@@ -49785,6 +49824,7 @@ debug/config
 debug/config.xml
 debug/default/view
 debug/default/view.html
+debug/default/view?panel=config
 debug/env
 debug/flags/v
 debug/flush
@@ -49955,6 +49995,7 @@ default.tpl.inc
 default.xml
 default.xmltml
 default/.env
+default/view?panel=config
 default2
 default2.%EXT%
 default2.php
@@ -52082,6 +52123,8 @@ docker/compose/withMongo/.env
 docker/compose/withPostgres/.env
 docker/compose/withmongo/.env
 docker/compose/withpostgres/.env
+docker/config/caddy/Caddyfile
+docker/config/php/zzz-php_dev_custom.ini
 docker/containers
 docker/containers/count 
 docker/containers/tags 
@@ -52737,7 +52780,10 @@ dump.zip
 dump/
 dump/admin/metadata.json
 dump/admin/system.xml
+dump/db.sql
+dump/db_dump.sql
 dump/metadata.json
+dump/s.sql
 dump/system.xml
 dump1.sql
 dump2.sql
@@ -53590,6 +53636,7 @@ embed/medias/
 embed/playlists/ 
 embed/secure/iframe/entryId/ 
 embed/simple 
+embeddable/config
 embedded/:recordingID/:sessionID/:tabID
 embedding/tableau.prep.embedding.2.latest.js 
 embeddings/Microsoft_Excel_Worksheet 
@@ -53717,6 +53764,9 @@ en/career/youmakeus
 en/contact 
 en/cookies/ 
 en/docs
+en/graphql/___graphql
+en/graphql/__graphql
+en/graphql/_graphql
 en/imprint/
 en/privacy 
 en/provider-legal-notice 
@@ -60357,6 +60407,9 @@ graphql.php
 graphql.py
 graphql.rb
 graphql/
+graphql/___graphql
+graphql/__graphql
+graphql/_graphql
 graphql/api
 graphql/authorization
 graphql/batch
@@ -73109,6 +73162,7 @@ memcached-verbosity.conf
 memcached-windows.conf
 memcached.api
 memcached.conf
+memcached.xml
 memcached/
 memcached/.env
 memcached_backups.conf
@@ -84944,6 +84998,7 @@ redis.api
 redis.conf
 redis.conf.tmpl
 redis.config.js
+redis.xml
 redis.yaml
 redis.yml
 redis/
@@ -93244,6 +93299,7 @@ sql.tgz
 sql.txt
 sql.zip
 sql/
+sql/database.sql
 sql/db.sql
 sql/index.php
 sql/myadmin
@@ -95537,6 +95593,7 @@ swagger/ui/index
 swagger/ui/index#/Admin
 swagger/ui/swagger-ui.js
 swagger/v1
+swagger/v1.0/swagger.json
 swagger/v1/api-docs
 swagger/v1/index.html
 swagger/v1/swagger-ui.html
@@ -95544,11 +95601,13 @@ swagger/v1/swagger.json
 swagger/v1/swagger.json/
 swagger/v1/swagger.yaml
 swagger/v2
+swagger/v2.0/swagger.json
 swagger/v2/api-docs
 swagger/v2/index.html
 swagger/v2/swagger-ui.html
 swagger/v2/swagger.json
 swagger/v2/swagger.yaml
+swagger/v3.0/swagger.json
 swagger/v3.0/swagger.yaml
 swagger01
 swagger02
@@ -95918,6 +95977,7 @@ system.properties
 system.sh
 system.site.yaml
 system.site.yml
+system.sql
 system.theme.global.yaml
 system.theme.global.yml
 system.theme.yaml
@@ -104279,6 +104339,7 @@ view/index.js
 view/movie/config
 view/root-injects.js 
 view/systemconfig/systemtool/traceroute/traceroute.php?text_target=127.0.0.1&text_ageout=2&text_minttl=1&text_maxttl=1%7ccat+/etc/passwd;
+view?panel=config
 viewCountryProfile 
 viewDealerProfile 
 viewDealerProfileNotification 
@@ -107498,6 +107559,7 @@ wp-includes/wlwmanifest.xml
 wp-includes/wp-db.php
 wp-json
 wp-json/
+wp-json/?rest_route=/wp/v2/users
 wp-json/oembed/1.0/embed?url=http:/172.105.71.142
 wp-json/oembed/1.0/embed?url=http:/lovi.studio
 wp-json/oembed/1.0/embed?url=http:/onestopsla.com
@@ -107512,6 +107574,7 @@ wp-json/wp/v2/users
 wp-json/wp/v2/users/
 wp-json/wp/v2/users/1
 wp-json/wp/v2/users/me
+wp-json/wp/v2/users/n
 wp-links-opml.php
 wp-login
 wp-login.aspx

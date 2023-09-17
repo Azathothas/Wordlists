@@ -682,6 +682,7 @@ ${idfwbonavigation}.xml
 .CPIO
 .CSV
 .CVS
+.Caddyfile
 .Circle-CI.yaml
 .Circle-CI.yml
 .CircleCI.yaml
@@ -914,6 +915,7 @@ ${idfwbonavigation}.xml
 .adirignore
 .adm
 .admin
+.admin.ini
 .admin.php
 .admin/
 .admin/.git/config
@@ -5340,6 +5342,7 @@ ${idfwbonavigation}.xml
 .secret.backup
 .secret.php
 .secret.properties
+.secret_key
 .secret_token
 .secrets
 .secrets.cfg
@@ -6229,6 +6232,7 @@ ${idfwbonavigation}.xml
 .well-known/enterprise-transport-security
 .well-known/est
 .well-known/genid
+.well-known/gpc.json
 .well-known/hoba
 .well-known/host-meta
 .well-known/host-meta.json
@@ -6268,6 +6272,7 @@ ${idfwbonavigation}.xml
 .well-known/thread
 .well-known/time
 .well-known/timezone
+.well-known/trust.txt
 .well-known/uma2-configuration
 .well-known/void
 .well-known/webfinger

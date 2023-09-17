@@ -818,6 +818,7 @@ $metadata
 .CPIO
 .CSV
 .CVS
+.Caddyfile
 .Circle-CI.yaml
 .Circle-CI.yml
 .CircleCI.yaml
@@ -1048,6 +1049,7 @@ $metadata
 .adirignore
 .adm
 .admin
+.admin.ini
 .admin.php
 .admin/
 .admin;-aspx
@@ -5434,6 +5436,7 @@ $metadata
 .secret
 .secret.backup
 .secret.properties
+.secret_key
 .secret_token
 .secrets
 .secrets.cfg
@@ -6319,6 +6322,7 @@ $metadata
 .well-known/enterprise-transport-security
 .well-known/est
 .well-known/genid
+.well-known/gpc.json
 .well-known/hoba
 .well-known/host-meta
 .well-known/host-meta.json
@@ -6356,6 +6360,7 @@ $metadata
 .well-known/thread
 .well-known/time
 .well-known/timezone
+.well-known/trust.txt
 .well-known/uma2-configuration
 .well-known/void
 .well-known/webfinger

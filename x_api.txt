@@ -515,6 +515,7 @@ ${idfwbonavigation}.xml
 .well-known/amphtml/apikey.pub
 .well-known/assetlinks.json
 .well-known/enterprise-network-security
+.well-known/gpc.json
 .well-known/host-meta
 .well-known/host-meta.json
 .well-known/jwks.json
@@ -15668,6 +15669,7 @@ api/auth/guest
 api/auth/login
 api/auth/login 
 api/auth/logout
+api/auth/new
 api/auth/signin
 api/auth/subscribe/ 
 api/auth/v1
@@ -16835,6 +16837,7 @@ api/v1/.git
 api/v1/.git/config
 api/v1/.json
 api/v1/App/user
+api/v1/ResetPassword
 api/v1/about
 api/v1/access/share
 api/v1/account
@@ -16888,6 +16891,7 @@ api/v1/artists
 api/v1/asset/asset
 api/v1/asset/assets
 api/v1/auth
+api/v1/auth/new
 api/v1/authenticate
 api/v1/authorities
 api/v1/backend
@@ -16949,6 +16953,7 @@ api/v1/customers
 api/v1/dashboard
 api/v1/data
 api/v1/data-static
+api/v1/database
 api/v1/database.json
 api/v1/database/1
 api/v1/datapoints
@@ -17386,7 +17391,10 @@ api/v1/users/administrator/info/1
 api/v1/users/all
 api/v1/users/auth/keys
 api/v1/users/current
+api/v1/users/full
 api/v1/users/list
+api/v1/users/listing
+api/v1/users/verify
 api/v1/venues
 api/v1/version
 api/v1/video
@@ -17470,6 +17478,7 @@ api/v2/app
 api/v2/app/
 api/v2/application.wadl
 api/v2/auth
+api/v2/auth/new
 api/v2/bid
 api/v2/cmdb/system/admin/admin
 api/v2/collector
@@ -17555,8 +17564,11 @@ api/v2/user/register
 api/v2/users
 api/v2/users.json
 api/v2/users/all
+api/v2/users/full
 api/v2/users/list
+api/v2/users/listing
 api/v2/users/me
+api/v2/users/verify
 api/v2/verification/create
 api/v2/verification/financer
 api/v2/video/
@@ -17585,6 +17597,7 @@ api/v3/.env
 api/v3/.git
 api/v3/.git/config
 api/v3/.json
+api/v3/ResetPassword
 api/v3/account
 api/v3/account.json
 api/v3/accounts.json
@@ -17592,6 +17605,7 @@ api/v3/actuator/dump
 api/v3/actuator/heapdump
 api/v3/api-docs
 api/v3/apidocs
+api/v3/auth/new
 api/v3/config.json
 api/v3/config/.git/config
 api/v3/devices
@@ -17639,6 +17653,10 @@ api/v3/user/profile/1
 api/v3/user/register
 api/v3/users
 api/v3/users.json
+api/v3/users/full
+api/v3/users/list
+api/v3/users/listing
+api/v3/users/verify
 api/v3/wc.db
 api/v4
 api/v4.0
@@ -25694,6 +25712,7 @@ config/deployment_config.xml
 config/development.json
 config/deviceinformation/config.xml
 config/dns-settings.json
+config/ehcache.xml
 config/faces-config.xml
 config/filezilla/sitemanager.xml.xml
 config/firebase.json
@@ -31710,6 +31729,9 @@ en/api/v1/marken-footer.json
 en/docs
 en/extra/soapymassage
 en/extras/soapymassage
+en/graphql/___graphql
+en/graphql/__graphql
+en/graphql/_graphql
 en/massagepornvideos/soapymassage
 en/picture/soapymassage
 en/pictures/soapymassage
@@ -35721,6 +35743,9 @@ graphql.php
 graphql.py
 graphql.rb
 graphql/
+graphql/___graphql
+graphql/__graphql
+graphql/_graphql
 graphql/api
 graphql/authorization
 graphql/batch
@@ -44971,6 +44996,7 @@ memcached-v2
 memcached.api
 memcached.v1
 memcached.v2
+memcached.xml
 memcachedapi
 memcachedv1
 memcachedv2
@@ -55745,6 +55771,7 @@ redis-v2
 redis.api
 redis.v1
 redis.v2
+redis.xml
 redisapi
 redisapi.js
 redisv1
@@ -56623,6 +56650,7 @@ rest-buy-a-number.cfm
 rest-c
 rest-d
 rest-dev
+rest-doc
 rest-e
 rest-email.php
 rest-exception.cfm
@@ -64056,6 +64084,7 @@ swagger/ui/index
 swagger/ui/index#/Admin
 swagger/ui/swagger-ui.js
 swagger/v1
+swagger/v1.0/swagger.json
 swagger/v1/api-docs
 swagger/v1/index.html
 swagger/v1/swagger-ui.html
@@ -64063,11 +64092,13 @@ swagger/v1/swagger.json
 swagger/v1/swagger.json/
 swagger/v1/swagger.yaml
 swagger/v2
+swagger/v2.0/swagger.json
 swagger/v2/api-docs
 swagger/v2/index.html
 swagger/v2/swagger-ui.html
 swagger/v2/swagger.json
 swagger/v2/swagger.yaml
+swagger/v3.0/swagger.json
 swagger/v3.0/swagger.yaml
 swagger01
 swagger02
@@ -73478,6 +73509,7 @@ wp-json
 wp-json.php
 wp-json/
 wp-json/*
+wp-json/?rest_route=/wp/v2/users
 wp-json/oembed/1.0/embed?url=http:/172.105.71.142
 wp-json/oembed/1.0/embed?url=http:/lovi.studio
 wp-json/oembed/1.0/embed?url=http:/onestopsla.com
@@ -73492,6 +73524,7 @@ wp-json/wp/v2/users
 wp-json/wp/v2/users/
 wp-json/wp/v2/users/1
 wp-json/wp/v2/users/me
+wp-json/wp/v2/users/n
 wp-json2.dev.js
 wp-json2.js
 wp-json2.min.js
