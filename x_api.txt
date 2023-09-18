@@ -36964,6 +36964,7 @@ hostsv1
 hostsv2
 hostv1
 hostv2
+hot_restart_version
 hotapi.js
 hotdesks-api
 hotdesks-v1

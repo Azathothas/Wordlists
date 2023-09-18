@@ -1,8 +1,6 @@
 about
 abtruse
 access
-mvc
-svc
 account
 action
 ad
@@ -704,6 +702,7 @@ mosn
 move2kube
 mrtg
 mssql
+mvc
 mvoci
 mx
 mx1
@@ -1019,6 +1018,7 @@ supervisor
 support
 surplusci
 survey
+svc
 svix
 svn
 swagger
