@@ -13826,6 +13826,7 @@ webticket/webticketservice.svcabs/
 weixiao.php
 well-known.zip
 wenzhang
+wget-log
 wgetrc
 wheels/
 whitespace

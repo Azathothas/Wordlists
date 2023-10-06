@@ -31,7 +31,7 @@ Updating /home/runner/work/Wordlists/Wordlists/main/WordList to @latest
 
 ➼ Fetching & Updating <-- Bo0oM/fuzz.txt
 ➼ x_lhf_mini.txt  : 0
-➼ x_lhf_mid.txt  : 0
+➼ x_lhf_mid.txt  : 1
 
 ➼ Fetching & Updating <-- reewardius/bbFuzzing.txt
 ➼ x_lhf_mini.txt  : 0
@@ -69,16 +69,16 @@ Updating /home/runner/work/Wordlists/Wordlists/main/WordList to @latest
 ➼ Newly added: 0
 
 ➼ Generating x_mini.txt 
-➼ Newly added: 0
+➼ Newly added: 1
 
 ➼Updated Wordlists:
 ➼ x_api.txt       : 75907 /home/runner/work/Wordlists/Wordlists/main/x_api.txt
 ➼ x_api_tiny.txt  : 22349 /home/runner/work/Wordlists/Wordlists/main/x_api_tiny.txt
 ➼ x_dns.txt       : 515427 /home/runner/work/Wordlists/Wordlists/main/x_dns.txt
 ➼ x_dns_tiny.txt  : 16136 /home/runner/work/Wordlists/Wordlists/main/x_dns_tiny.txt
-➼ x_mini.txt      : 14020 /home/runner/work/Wordlists/Wordlists/main/x_mini.txt
+➼ x_mini.txt      : 14021 /home/runner/work/Wordlists/Wordlists/main/x_mini.txt
 ➼ x_lhf_mini.txt  : 35741 /home/runner/work/Wordlists/Wordlists/main/x_lhf_mini.txt
-➼ x_lhf_mid.txt   : 109583 /home/runner/work/Wordlists/Wordlists/main/x_lhf_mid.txt
+➼ x_lhf_mid.txt   : 109584 /home/runner/work/Wordlists/Wordlists/main/x_lhf_mid.txt
 ➼ x_lhf_large.txt : 265119 /home/runner/work/Wordlists/Wordlists/main/x_lhf_large.txt
 ➼ x_massive.txt   : 1045958 /home/runner/work/Wordlists/Wordlists/main/x_massive.txt
 
