@@ -31,7 +31,7 @@ Updating /home/runner/work/Wordlists/Wordlists/main/WordList to @latest
 
 ➼ Fetching & Updating <-- Bo0oM/fuzz.txt
 ➼ x_lhf_mini.txt  : 0
-➼ x_lhf_mid.txt  : 1
+➼ x_lhf_mid.txt  : 0
 
 ➼ Fetching & Updating <-- reewardius/bbFuzzing.txt
 ➼ x_lhf_mini.txt  : 0
@@ -69,7 +69,7 @@ Updating /home/runner/work/Wordlists/Wordlists/main/WordList to @latest
 ➼ Newly added: 0
 
 ➼ Generating x_mini.txt 
-➼ Newly added: 1
+➼ Newly added: 0
 
 ➼Updated Wordlists:
 ➼ x_api.txt       : 75907 /home/runner/work/Wordlists/Wordlists/main/x_api.txt
