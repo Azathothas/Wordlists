@@ -1822,12 +1822,14 @@ ${idfwbonavigation}.xml
 .config.inc.php.swo
 .config.inc.php.swp
 .config.jsf.swp
+.config.json
 .config.jsp.swp
 .config.php
 .config.php.swm
 .config.php.swn
 .config.php.swo
 .config.php.swp
+.config.sample.env
 .config.swm
 .config.swn
 .config.swo
@@ -1844,9 +1846,11 @@ ${idfwbonavigation}.xml
 .config/deluge/deluged.log
 .config/deluge/web.conf
 .config/deluge/web.conf~
+.config/docker/config.json
 .config/doctl/config.yaml
 .config/filezilla/filezilla.xml
 .config/filezilla/recentservers.xml
+.config/filezilla/sitemanager.xml
 .config/filezilla/sitemanager.xml.xml
 .config/firebase/credentials.json
 .config/gatsby/config.json
@@ -2015,6 +2019,7 @@ ${idfwbonavigation}.xml
 .dart_tool/
 .dart_tool/package_config.json
 .dartignore
+.dassie/.env
 .dat
 .data
 .data.php
@@ -2068,6 +2073,7 @@ ${idfwbonavigation}.xml
 .dev
 .dev/
 .devcontainer
+.devcontainer/Dockerfile
 .devcontainer/devcontainer.json
 .devcontainer/docker-compose.yml
 .devops
@@ -2473,6 +2479,7 @@ ${idfwbonavigation}.xml
 .env.inc
 .env.ini
 .env.jsf
+.env.json
 .env.jsp
 .env.live
 .env.local
@@ -2614,7 +2621,10 @@ ${idfwbonavigation}.xml
 .env.travis
 .env.variables
 .env.www
+.env.yaml
+.env.yml
 .env/actuator/env
+.env/config
 .env_1
 .env_backup
 .env_bak
@@ -3026,6 +3036,7 @@ ${idfwbonavigation}.xml
 .gitconfig~
 .github
 .github/
+.github/.dependabot
 .github/CODEOWNERS
 .github/CODE_OF_CONDUCT.md
 .github/CONTRIBUTING.md
@@ -3423,6 +3434,12 @@ ${idfwbonavigation}.xml
 .gradle/
 .gradle/gradle.properties
 .gradletasknamecache
+.graphqlrc
+.graphqlrc.js
+.graphqlrc.json
+.graphqlrc.toml
+.graphqlrc.yaml
+.graphqlrc.yml
 .grc
 .groc.json
 .group
@@ -3548,6 +3565,7 @@ ${idfwbonavigation}.xml
 .htaccess-dev
 .htaccess-local
 .htaccess-marco
+.htaccess-old
 .htaccess-prod
 .htaccess-production
 .htaccess-sample
@@ -3567,6 +3585,7 @@ ${idfwbonavigation}.xml
 .htaccess.swp
 .htaccess.txt
 .htaccess/
+.htaccess2
 .htaccessBAK
 .htaccessOLD
 .htaccessOLD2
@@ -4074,6 +4093,7 @@ ${idfwbonavigation}.xml
 .kmz
 .komodotools
 .komodotools/
+.koppie/.env
 .kops
 .ksh_history
 .kube
@@ -4909,6 +4929,7 @@ ${idfwbonavigation}.xml
 .pht
 .phtm
 .phtml
+.pid
 .pinerc
 .pip
 .pip.conf
@@ -5025,6 +5046,7 @@ ${idfwbonavigation}.xml
 .process
 .proclog
 .procmailrc
+.prod
 .product_details
 .production
 .profiel
@@ -5143,6 +5165,7 @@ ${idfwbonavigation}.xml
 .raw
 .rb
 .rbc
+.rbenv
 .rbenv-gemsets
 .rbenv-version
 .rbtp
@@ -5922,6 +5945,7 @@ ${idfwbonavigation}.xml
 .travis.yml.tmpl
 .travis.yml~
 .travis/
+.travis/.env
 .travis/after_deploy.sh
 .travis/after_install.sh
 .travis/after_script.sh
@@ -6335,6 +6359,7 @@ ${idfwbonavigation}.xml
 .wp-config.swp
 .wp-config.xml
 .wpd
+.wpeprivate/config.json
 .wps
 .wps.rtf
 .wri
