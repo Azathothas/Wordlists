@@ -302,6 +302,7 @@ ${idfwbonavigation}.xml
 .google/credentials.json
 .google/google-cloud-sdk/secrets/application_default_credentials.json
 .goxc.json
+.graphqlconfig.yml
 .graphqlrc
 .graphqlrc.js
 .graphqlrc.json
@@ -476,6 +477,7 @@ ${idfwbonavigation}.xml
 .ssh.json
 .stylelintrc.json
 .stylish-haskell.yaml
+.svc?wsdl
 .svn
 .system/sitemap.xml
 .teamcity.build.vcs.settings.xml
@@ -1217,6 +1219,7 @@ ${idfwbonavigation}.xml
 =
 ==
 ?:
+?WSDL
 ?wsdl
 @
 A
@@ -5716,6 +5719,7 @@ JsonIgriTipoviLive.aspx
 JsonIgriWebLiveGetAll.aspx
 JsonKratkiNaziviIgriWeb.aspx
 JsonProxy.ashx
+JsonRPC
 JsonSportoviTV.aspx
 JsonStream.php
 JsonTipoviOpis.aspx
@@ -15190,6 +15194,7 @@ api/1/devices/1/snapshot
 api/1/devices/2/snapshot
 api/1/docs
 api/10
+api/1000
 api/18
 api/1_0
 api/2
@@ -15202,6 +15207,7 @@ api/2/docs
 api/2/explore
 api/2/explore/
 api/2/issue/createmeta
+api/2000
 api/3
 api/3.0
 api/3.0/.git
@@ -20582,6 +20588,7 @@ assets/config/app.config.json
 assets/config/config.json
 assets/config/config.json 
 assets/credentials.json
+assets/data/company.json
 assets/data/config.json
 assets/data/config.json 
 assets/data/generalSettingsDefinition.json
@@ -20614,6 +20621,7 @@ assets/data/statics/resources/tabConfig.json
 assets/data/statics/resources/tabConfig.json 
 assets/data/trafficControl.json
 assets/data/trafficControl.json 
+assets/data/users.json
 assets/data/viewDefinition.json
 assets/data/viewDefinition.json 
 assets/images/icons.json
@@ -28076,6 +28084,7 @@ crcooperphotography
 crculrs.xml
 crea_munis_json.php
 create
+create.json
 createAccount
 createAccountHolder
 createFont()
@@ -28930,6 +28939,7 @@ database-settings.json
 database-v1
 database-v2
 database.api
+database.create.json
 database.json
 database.jsonarding.json
 database.jsonarding_config.json
@@ -67921,6 +67931,7 @@ v1/add-bank
 v1/add-beneficiary
 v1/add-card
 v1/addresses 
+v1/admin
 v1/admin/tsdb/snapshot
 v1/ads
 v1/agent/members
@@ -68019,6 +68030,7 @@ v1/common/connections
 v1/common/notifications
 v1/common/preferences
 v1/common/users/password
+v1/companies
 v1/companies 
 v1/company/subscriptions
 v1/config/application
@@ -68070,6 +68082,7 @@ v1/customer/user
 v1/customer/verify-otp
 v1/customer/verify-pass-code
 v1/customers
+v1/dashboard
 v1/data
 v1/data-permissions 
 v1/data/S/S/companies
@@ -68273,6 +68286,7 @@ v1/news.php
 v1/notification/firebase
 v1/notifications
 v1/occupation
+v1/offer
 v1/offers
 v1/open
 v1/operator/license
@@ -68295,6 +68309,8 @@ v1/prebook
 v1/privacy-policies 
 v1/proActiveInsights 
 v1/produce
+v1/product
+v1/products
 v1/profile
 v1/profile-update-otp
 v1/projects 
@@ -73595,6 +73611,7 @@ wp-json/oembed/1.0/embed?url=http:/onestopsla.com
 wp-json/wp/v2/categories
 wp-json/wp/v2/comments
 wp-json/wp/v2/menus
+wp-json/wp/v2/pages
 wp-json/wp/v2/posts
 wp-json/wp/v2/settings
 wp-json/wp/v2/tags
