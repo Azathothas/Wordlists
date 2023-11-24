@@ -6,65 +6,45 @@
 '[Tiny]'
 curl -qfsSLJO "https://raw.githubusercontent.com/Azathothas/Wordlists/main/x_api_tiny.txt"
 wget -q "https://raw.githubusercontent.com/Azathothas/Wordlists/main/x_api_tiny.txt"
-!# FeroxBuster (No Download)
-wget -qO- "https://raw.githubusercontent.com/Azathothas/Wordlists/main/x_api_tiny.txt" | feroxbuster --stdin {other_opts}
 
 '[General]'
 curl -qfsSLJO "https://raw.githubusercontent.com/Azathothas/Wordlists/main/x_api.txt"
 wget -q "https://raw.githubusercontent.com/Azathothas/Wordlists/main/x_api.txt"
-!# FeroxBuster (No Download)
-wget -qO- "https://raw.githubusercontent.com/Azathothas/Wordlists/main/x_api.txt" | feroxbuster --stdin {other_opts}
 #----------------------------------------------------------------------#
 --> DNS (Subdomain Bruteforcing | vHosts)
 '[Tiny]'
 curl -qfsSLJO "https://raw.githubusercontent.com/Azathothas/Wordlists/main/x_dns_tiny.txt"
 wget -q "https://raw.githubusercontent.com/Azathothas/Wordlists/main/x_dns_tiny.txt"
-!# FeroxBuster (No Download)
-wget -q "https://raw.githubusercontent.com/Azathothas/Wordlists/main/x_dns_tiny.txt" | feroxbuster --stdin {other_opts}
 
 '[General]'
 curl -qfsSLJO "https://raw.githubusercontent.com/Azathothas/Wordlists/main/x_dns.txt"
 wget -q "https://raw.githubusercontent.com/Azathothas/Wordlists/main/x_dns.txt"
-!# FeroxBuster (No Download)
-wget -qO- "https://raw.githubusercontent.com/Azathothas/Wordlists/main/x_dns.txt" | feroxbuster --stdin {other_opts}
 #----------------------------------------------------------------------#
 --> Spray Pray (Low Hanging Fruits)
 '[Mini]'
 curl -qfsSLJO "https://raw.githubusercontent.com/Azathothas/Wordlists/main/x_lhf_mini.txt"
 wget -q "https://raw.githubusercontent.com/Azathothas/Wordlists/main/x_lhf_mini.txt"
-!# FeroxBuster (No Download)
-wget -qO- "https://raw.githubusercontent.com/Azathothas/Wordlists/main/x_lhf_mini.txt" | feroxbuster --stdin {other_opts}
 
 '[Mid]'
 curl -qfsSLJO "https://raw.githubusercontent.com/Azathothas/Wordlists/main/x_lhf_mid.txt"
 wget -q "https://raw.githubusercontent.com/Azathothas/Wordlists/main/x_lhf_mid.txt"
-!# FeroxBuster (No Download)
-wget -qO- "https://raw.githubusercontent.com/Azathothas/Wordlists/main/x_lhf_mid.txt" | feroxbuster --stdin {other_opts}
 
 '[Large]'
 curl -qfsSLJO "https://raw.githubusercontent.com/Azathothas/Wordlists/main/x_lhf_large.txt"
 wget -q "https://raw.githubusercontent.com/Azathothas/Wordlists/main/x_lhf_large.txt"
-!# FeroxBuster (No Download)
-wget -qO- "https://raw.githubusercontent.com/Azathothas/Wordlists/main/x_lhf_large.txt" | feroxbuster --stdin {other_opts}
 #----------------------------------------------------------------------#
 --> Spray Pray (General)
 '[Mini]'
 curl -qfsSLJO "https://raw.githubusercontent.com/Azathothas/Wordlists/main/x_mini.txt"
 wget -q "https://raw.githubusercontent.com/Azathothas/Wordlists/main/x_mini.txt"
-!# FeroxBuster (No Download)
-wget -qO- "https://raw.githubusercontent.com/Azathothas/Wordlists/main/x_mini.txt" | feroxbuster --stdin {other_opts}
 
 '[Lowercase]'
 curl -qfsSLJO "https://raw.githubusercontent.com/Azathothas/Wordlists/main/Misc/lowercase_misc.txt"
 wget -q "https://raw.githubusercontent.com/Azathothas/Wordlists/main/Misc/lowercase_misc.txt"
-!# FeroxBuster (No Download)
-wget -qO- "https://raw.githubusercontent.com/Azathothas/Wordlists/main/Misc/lowercase_misc.txt" | feroxbuster --stdin {other_opts}
 
 '[Massive]'
 curl -qfsSLJO "https://raw.githubusercontent.com/Azathothas/Wordlists/main/x_massive.txt"
 wget -q "https://raw.githubusercontent.com/Azathothas/Wordlists/main/x_massive.txt"
-!# FeroxBuster (No Download)
-wget -qO- "https://raw.githubusercontent.com/Azathothas/Wordlists/main/x_massive.txt" | feroxbuster --stdin {other_opts}
 
 '[Ports]'
 curl -qfsSLJO "https://raw.githubusercontent.com/Azathothas/Wordlists/main/Misc/ports_top_20k.txt"
