@@ -2089,6 +2089,7 @@ ${idfwbonavigation}.xml
 .circleci/config
 .circleci/config-template.yaml
 .circleci/config-template.yml
+.circleci/config.cfg
 .circleci/config.tmpl
 .circleci/config.yaml
 .circleci/config.yml
@@ -2868,6 +2869,7 @@ ${idfwbonavigation}.xml
 .elastic.env
 .elasticbeanstalk
 .elasticbeanstalk/
+.elasticbeanstalk/config
 .elasticbeanstalk/config.yaml
 .elasticbeanstalk/config.yml
 .elb
@@ -3830,6 +3832,7 @@ ${idfwbonavigation}.xml
 .gitlab-ci-yml
 .gitlab-ci-yml-template
 .gitlab-ci-yml.template
+.gitlab-ci.cfg
 .gitlab-ci.cron.yml
 .gitlab-ci.d
 .gitlab-ci.d/deploy
@@ -4098,6 +4101,7 @@ ${idfwbonavigation}.xml
 .hg/hgrc
 .hg/hgrc.d
 .hg/last-message.txt
+.hg/merge-tools.rc
 .hg/requires
 .hg/store
 .hg/store/00changelog.d
@@ -4117,6 +4121,7 @@ ${idfwbonavigation}.xml
 .hgattributes
 .hgignore
 .hgignore.global
+.hgignore_global
 .hgkeep
 .hgrc
 .hgrc.bak
@@ -9787,6 +9792,8 @@ API6
 API7
 API8
 API9
+API_authentication_config.xml
+API_gateway_settings.cfg
 API_keys.bat
 API_keys.conf
 API_keys.json
@@ -9794,6 +9801,9 @@ API_keys.ps1
 API_keys.sh
 API_keys.txt
 API_keys.xml
+API_rate_limiting.yaml
+API_security.cfg
+API_versioning_configuration.xml
 APIv1
 APIv10
 APIv2
@@ -12217,6 +12227,8 @@ CATEGORIES
 CATKIN_IGNORE
 CBIRAUploadSearch 
 CC1 
+CDN_load_balancing.yaml
+CDN_settings.conf
 CFIDE
 CFIDE/
 CFIDE/Administrator/
@@ -14560,6 +14572,7 @@ DIRECTDEPOSIT
 DIRECT_DEPOSIT
 DISTRIBUTION_OVERVIEW 
 DMR/
+DNS_configuration.yaml
 DNS_records.bat
 DNS_records.conf
 DNS_records.json
@@ -15488,6 +15501,7 @@ Investment-id
 Investment_id
 Investmentid
 Invoice/InvoiceGrid 
+IoT_configuration.xml
 IpN 
 IpsThumb.db
 IsArray 
@@ -16083,6 +16097,8 @@ Nexus
 Nibiru 
 Nicholson
 NineSlicePlane 
+NinjaTrader.config
+NinjaTraderDB.xml
 Nintendo 
 NoDataToDisplay.js 
 NodeBufferReader 
@@ -17529,6 +17545,7 @@ Type
 Typography
 U
 U05 
+UDDISecurityService/UDDISecurityImplBean?wsdl
 UDI
 UI 
 UI123456/
@@ -19518,6 +19535,7 @@ access_control.xml
 access_control.yaml
 access_control.yml
 access_control?a=.js
+access_control_config.xml
 access_control_configs.bat
 access_control_configs.conf
 access_control_configs.json
@@ -19579,6 +19597,7 @@ access_log.py
 access_log.rb
 access_log.ts
 access_log.txt
+access_log_configuration.yaml
 access_logging.bat
 access_logging.conf
 access_logging.json
@@ -19709,6 +19728,7 @@ account.asp
 account.brf
 account.cfm
 account.cgi
+account.config
 account.html
 account.inc
 account.js
@@ -24110,6 +24130,7 @@ alertRespond/services/PoliciesViewService
 alertRespond/services/TelemetryAlertRespondUtils 
 alert_log
 alert_log.ora
+alert_notification_options.yaml
 alert_rules.json
 alerting 
 alerting.log
@@ -24455,6 +24476,7 @@ almond/almond.js
 alog.js 
 alog/
 alohaRedirect/ 
+alpaca.yml
 alpha
 alpha-api
 alpha.api
@@ -25705,6 +25727,7 @@ api.board.php
 api.cfm
 api.cgi
 api.cinfig.ini
+api.config
 api.config.json
 api.contactforms.php
 api.content.php
@@ -26217,6 +26240,8 @@ api/alerts/alertProcess/planAction
 api/alerts/info/shortDateFormat 
 api/alerts/states-for-dashboard 
 api/alerts/validDocumentExtensions 
+api/allUsers
+api/all_users
 api/alm_integrations/check_pat 
 api/alm_integrations/get_github_client_id 
 api/alm_integrations/import_azure_project 
@@ -26339,6 +26364,7 @@ api/call
 api/callback
 api/campaign
 api/campaigns
+api/cards
 api/cart
 api/cart/create
 api/cases
@@ -26526,6 +26552,7 @@ api/dashboards/validate
 api/data.json
 api/data/v9.1/leads
 api/data/v9.1/leads/
+api/dataUser
 api/data_views
 api/data_views/default
 api/database.json
@@ -27396,6 +27423,7 @@ api/user_groups/users
 api/user_tokens/generate 
 api/user_tokens/revoke 
 api/user_tokens/search 
+api/userdata
 api/userrolelist/systemRoles?require-cfg.js
 api/users
 api/users.json
@@ -28530,6 +28558,7 @@ api_foldresz.php
 api_function
 api_gateway_config.yaml
 api_gateway_config.yml
+api_gateway_configuration.json
 api_getNewHost.php
 api_get_cars.php
 api_get_client_ip.php
@@ -31084,6 +31113,7 @@ application_config.xml
 application_controller.rb
 application_default_credentials.json
 application_helper.rb
+application_integration.xml
 application_key
 application_log
 application_logs
@@ -31353,6 +31383,8 @@ appswitcher.js
 appswitcher.soy 
 appswitcher_old.js 
 appswitcher_old.soy 
+appsync.yaml
+appsync.yml
 appuser
 appverify.cfg
 appverify.config
@@ -31484,19 +31516,32 @@ arena/
 arenalogo.js
 argitalpenak
 argo.yaml
+argocd-app.yaml
 argocd-application-controller-configmap.yaml
 argocd-application-controller.yaml
+argocd-application.yaml
+argocd-autoscale.yaml
 argocd-cluster-secret.yaml
 argocd-cm.yaml
+argocd-destinations.yaml
 argocd-dex-secret.yaml
+argocd-dex-server-config.yaml
+argocd-notifications-config.yaml
+argocd-projects.yaml
 argocd-rbac-cm.yaml
+argocd-rbac.yaml
+argocd-redis-config.yaml
 argocd-repo-server-configmap.yaml
 argocd-repo-server-secret.yaml
+argocd-repo.yaml
 argocd-secret-patch.yaml
 argocd-secret.yaml
 argocd-server-config-cm.yaml
+argocd-server-config.yaml
 argocd-server-secret.yaml
 argocd-ssh-secret.yaml
+argocd-web-ingress.yaml
+argocd-web-tls-secret.yaml
 args
 argumentsconfigurationsource.java
 argumentsconfigurationsourcetest.java
@@ -32272,6 +32317,7 @@ authentication/consumer
 authentication/provider 
 authentication/response/extensions/1
 authentication/response/webview/1
+authentication_config.xml
 authentication_config.yaml
 authentication_config.yml
 authentication_configs.bat
@@ -32727,12 +32773,21 @@ aws-access-key.json
 aws-access-key.xml
 aws-access-key.yaml
 aws-access-key.yml
+aws-api-gateway-settings.ini
+aws-appmesh-config.ini
+aws-athena-config.yaml
 aws-cloud
 aws-cloudformation-template.yml
+aws-cloudformation.yml
+aws-cloudfront-config.ini
+aws-cloudwatch-alarms.yaml
 aws-codedeploy-agent.yaml
 aws-codedeploy-agent.yml
+aws-codepipeline-settings.yaml
+aws-cognito-config.ini
 aws-cognito.json
 aws-config
+aws-config-rules.yaml
 aws-config.cfg
 aws-config.ini
 aws-config.js
@@ -32747,8 +32802,35 @@ aws-credentials.json
 aws-credentials.xml
 aws-credentials.yaml
 aws-credentials.yml
+aws-deploy.json
+aws-deploy.yml
+aws-deployment.yml
+aws-dynamodb-config.json
+aws-ec2-instances.yaml
+aws-ecs-deployment.yml
+aws-efs-configuration.json
+aws-eks-cluster.yaml
+aws-elasticache-settings.json
+aws-elasticsearch-settings.json
+aws-emr-cluster.yaml
 aws-exports.json
+aws-glue-config.ini
+aws-guardduty-config.json
+aws-iam-policy.json
+aws-kinesis-config.yaml
+aws-lambda-config.yaml
 aws-lambda-tools-defaults.json
+aws-lightsail-instances.yaml
+aws-logs.json
+aws-neptune-config.yaml
+aws-organizations-settings.json
+aws-policy.json
+aws-quicksight-settings.yml
+aws-resource-groups.yaml
+aws-roles.yaml
+aws-route53-settings.yaml
+aws-s3-bucket.json
+aws-sagemaker-config.yml
 aws-sdk-dynamodb.json
 aws-sdk-dynamodb.yml
 aws-sdk.config.js
@@ -32762,6 +32844,13 @@ aws-secret-key.xml
 aws-secret-key.yaml
 aws-secret-key.yml
 aws-secrets.env
+aws-serverless-application-model.json
+aws-settings.yaml
+aws-sqs-config.json
+aws-step-functions.json
+aws-vpc-config.yml
+aws-waf-rules.json
+aws-workspaces-settings.yaml
 aws.cfg
 aws.config
 aws.config.js
@@ -32928,8 +33017,10 @@ azure-app-service.yaml
 azure-app-service.yml
 azure-batch.yaml
 azure-batch.yml
+azure-blob-storage.json
 azure-config
 azure-config.json
+azure-container-instances-settings.yml
 azure-container-registry.yaml
 azure-container-registry.yml
 azure-cosmosdb.yaml
@@ -32938,12 +33029,16 @@ azure-credentials
 azure-credentials.json
 azure-credentials.xml
 azure-credentials.yml
+azure-deploy.json
+azure-deploy.yml
 azure-deployment.json
+azure-deployment.yml
 azure-devops
 azure-devops.yaml
 azure-devops.yml
 azure-dns-zone.yaml
 azure-dns-zone.yml
+azure-functions-config.yaml
 azure-functions.yaml
 azure-functions.yml
 azure-key-vault.yaml
@@ -32968,11 +33063,14 @@ azure-pipelines.ci.yml
 azure-pipelines.json
 azure-pipelines.yaml
 azure-pipelines.yml
+azure-policies.json
 azure-postgresql.yaml
 azure-postgresql.yml
 azure-resource-manager-template.json
+azure-roles.yaml
 azure-secret-access-key
 azure-service-principal.json
+azure-settings.yaml
 azure-sql-active-directory-admin.json
 azure-sql-active-directory-config.json
 azure-sql-admin-credentials.json
@@ -33460,6 +33558,7 @@ backup_codes
 backup_codes 
 backup_config.pl
 backup_config.ps1
+backup_config.sh
 backup_configs.bat
 backup_configs.conf
 backup_configs.json
@@ -33497,6 +33596,7 @@ backup_mysql
 backup_old.sql
 backup_passwords.ps1
 backup_passwords.sh
+backup_restoration_options.xml
 backup_restore_config.bat
 backup_restore_config.conf
 backup_restore_config.json
@@ -36529,6 +36629,7 @@ cf-agent.conf
 cf-api.php
 cf-apps.yaml
 cf-apps.yml
+cf-config.ini
 cf-execd.conf
 cf-ext/conditional-formattings-ext-xform 
 cf-icon-ext-xform 
@@ -37050,6 +37151,7 @@ changeObjectPropertyPolicy.json
 changeObjectPropertyPolicy.json 
 changePassword 
 change_helm.php
+change_management_configuration.ini
 changeaccount
 changeall.php
 changeapi
@@ -38359,6 +38461,7 @@ cloudformation.config
 cloudformation.json
 cloudformation.yaml
 cloudformation.yml
+cloudformation_template.json
 cloudfoundryapplication
 cloudfront-distribution.json
 cloudfront.yaml
@@ -38371,6 +38474,7 @@ cloudfront_configs.ps1
 cloudfront_configs.sh
 cloudfront_configs.txt
 cloudfront_configs.xml
+cloudfront_distribution.conf
 cloudfunction.yaml
 cloudinary_api_secret
 cloudrepo.conf
@@ -38439,6 +38543,7 @@ cloudwatch_alarms.ps1
 cloudwatch_alarms.sh
 cloudwatch_alarms.xml
 cloudwatch_cache.xml
+cloudwatch_monitoring.yaml
 cloudwatch_session_log.csv
 cloudwatch_session_storage.json
 clpadb.js
@@ -38483,6 +38588,7 @@ cluster.xml
 cluster.yaml
 cluster/cluster
 cluster/nodes
+cluster_config.conf
 clusterapi
 clusterid/ 
 clusterrole.yaml
@@ -38974,6 +39080,7 @@ cognito-config.json
 cognito-identity-pool.json
 cognito-sync.json
 cognito-user-pool.json
+cognito_user_pool_config.yaml
 coidpendingrefund
 coke
 col-cache 
@@ -39422,8 +39529,10 @@ compliance.ps1
 compliance.sh
 complianceHistories 
 complianceViolations 
+compliance_audit_config.cfg
 compliance_checklists.ps1
 compliance_checklists.sh
+compliance_config.conf
 compliance_configs.ps1
 compliance_configs.sh
 compliance_key_management
@@ -40373,6 +40482,7 @@ config.cust
 config.d
 config.dat
 config.data
+config.db
 config.db.php
 config.dbmaestro
 config.default
@@ -41935,6 +42045,7 @@ config/postProcessing/testNaming
 config/postProcessing/testNaming?pattern=%3Csvg/onload=alert(document.domain)%3E
 config/postgres/credentials
 config/private
+config/prod.js
 config/producao.ini
 config/production
 config/production.env
@@ -42882,12 +42993,14 @@ configurator.asp
 configurator.cfm
 configurator.dev
 configurator.gw
+configurator.ini
 configurator.jsf
 configurator.php
 configurator.prd
 configurator.pre
 configurator.preprod
 configurator.prod
+configurator.properties
 configurator.server
 configurator.srv
 configurator.staging
@@ -43588,6 +43701,7 @@ container.properties
 container.ps1
 container.sh
 container.xml
+container.yaml
 containerLogs
 container_orchestration.bat
 container_orchestration.conf
@@ -43602,6 +43716,7 @@ containerization.json
 containerization.ps1
 containerization.sh
 containerization.xml
+containerization_options.yaml
 containerregistry/.env
 containers
 containers 
@@ -43714,6 +43829,7 @@ contentPopover.styl
 contentStream 
 contentSubplace.styl 
 content_admin
+content_delivery.yaml
 content_delivery_network_config.yaml
 content_delivery_network_config.yml
 content_types-inc.pot
@@ -46972,6 +47088,7 @@ correo/
 cors
 cors.conf
 cors.config.js
+cors.xml
 corteza-api
 corteza.api
 cortezaapi
@@ -47027,6 +47144,8 @@ couchbase-server.log.redaction.json
 couchbase-server.node.conf
 couchbase-server.static_config
 couchbase.conf
+couchbase.json
+couchbase.yaml
 couchdb-api
 couchdb.api
 couchdb.default
@@ -48518,6 +48637,7 @@ data-validations
 data-validations-xform 
 data.7z
 data.api
+data.config
 data.db
 data.json
 data.mdb
@@ -48656,7 +48776,9 @@ data_7.sql
 data_8.sql
 data_9.sql
 data_access_roles 
+data_anonymization_settings.conf
 data_auth.json
+data_backup_config.json
 data_clear.json
 data_config
 data_encryption.bat
@@ -48671,7 +48793,9 @@ data_explorer
 data_geo.sql
 data_log
 data_mapper.yml
+data_masking_settings.json
 data_mysql.sql
+data_retention_policy.conf
 data_warehouse_config.yaml
 data_warehouse_config.yml
 dataapi
@@ -49822,6 +49946,7 @@ dbclean.js
 dbconf
 dbconfig
 dbconfig.aspx
+dbconfig.cfg
 dbconfig.ini
 dbconfig.js
 dbconfig.jsf
@@ -49829,6 +49954,7 @@ dbconfig.json
 dbconfig.jsp
 dbconfig.php
 dbconfig.php~
+dbconfig.properties
 dbconfig.py
 dbconfig.xml
 dbconfig.yaml
@@ -50365,6 +50491,7 @@ defaultconfig
 defaultnumformats 
 defaults
 defaults 
+defaults.env
 defaults.ini
 defaults.properties
 defaults/transitional 
@@ -50641,7 +50768,10 @@ deployment.yaml.backup
 deployment.yml
 deployment/env/redacted.config.js
 deploymentScripts/settings.json
+deployment_automation.yaml
 deployment_manifest.json
+deployment_metrics_config.json
+deployment_rules.conf
 deployment_scripts.bat
 deployment_scripts.conf
 deployment_scripts.json
@@ -50654,6 +50784,7 @@ deployment_strategies.json
 deployment_strategies.ps1
 deployment_strategies.sh
 deployment_strategies.xml
+deployment_strategy.conf
 deployment_templates.yaml
 deployment_templates.yml
 deploymentapi
@@ -50892,6 +51023,7 @@ dev.zip
 dev/
 dev/.env
 dev/.git/config
+dev/api/v1/users
 dev/config.js
 dev/db
 dev/db/config
@@ -51957,6 +52089,7 @@ dns.bat
 dns.log
 dns.ps1
 dns.sh
+dns.yaml
 dns/server/ 
 dns_access_controls.bat
 dns_access_controls.conf
@@ -53417,6 +53550,7 @@ ec.api
 ec2-ami.json
 ec2-api-tools.cfg
 ec2-auto-scaling.json
+ec2-config.json
 ec2-elb.json
 ec2-instance-launch-template.json
 ec2-instance-userdata.sh
@@ -53429,6 +53563,7 @@ ec2.yml
 ec2/.env
 ec2_install.ps1
 ec2_install.sh
+ec2_instance_settings.json
 ecadmin
 ecall/jsp/customer/index.jsp
 ecall/jsp/customer/login/login.jsp
@@ -53531,6 +53666,7 @@ ecr-policies.json
 ecr-repository.json
 ecrire/
 ecs-cluster.json
+ecs-config.yml
 ecs-params.yaml
 ecs-params.yml
 ecs-service.json
@@ -53539,6 +53675,7 @@ ecs-task-placement-constraints.json
 ecs.config
 ecs.yaml
 ecs.yml
+ecs_cluster_configuration.xml
 ecustomer-api
 ecw-shop
 edAC-Oil 
@@ -53846,11 +53983,16 @@ elastic.config
 elastic.yaml
 elastic.yml
 elastic/
+elastic_beanstalk_config.cfg
 elastic_load_balancer.yaml
+elasticache-cluster-config.json
+elasticache-settings.conf
 elasticache.conf
 elasticache.config
 elasticache.yaml
 elasticache.yml
+elasticache_config.ini
+elasticbeanstalk.config
 elasticbeanstalk.yaml
 elasticbeanstalk.yml
 elasticsearch
@@ -53960,6 +54102,7 @@ email/unsubscribed?email=test@gmail.com%27\%22%3E%3Csvg/onload=alert(1337)%3E
 emailDomains 
 email_address
 email_admin
+email_config.json
 email_configs.bat
 email_configs.conf
 email_configs.json
@@ -53969,6 +54112,7 @@ email_configs.txt
 email_configs.xml
 email_confirmation.js
 email_confirmation.php
+email_encryption_settings.conf
 email_graphics
 email_log.csv
 email_log.txt
@@ -55538,6 +55682,7 @@ error_messages.yml
 error_mysql
 error_old.log
 error_report/install/mysql.sql
+error_reporting_config.json
 error_sample.log
 error_temp.log
 error_temp1.log
@@ -57301,6 +57446,7 @@ fi_FI.json
 fi_FI.json 
 fiat
 fiat/
+fidelity.config
 fidelity/
 field
 field 
@@ -58693,6 +58839,7 @@ function.ps1
 function.require
 function.sh
 function.xml
+function.yaml
 function/restParam 
 functional.ps1
 functional.sh
@@ -59107,11 +59254,46 @@ gcloud_credentials.json
 gcloud_keys
 gconfig.php
 gcp-access-key-id
+gcp-api-gateway-settings.yml
+gcp-bigtable-configuration.json
+gcp-bucket.json
+gcp-cloud-asset-inventory.json
+gcp-cloud-dataproc-config.json
+gcp-cloud-functions-config.yaml
+gcp-cloud-functions-triggers.yaml
+gcp-cloud-identity-config.ini
+gcp-cloud-iot-core-config.yaml
+gcp-cloud-logging-config.json
+gcp-cloud-sql-instances.yaml
+gcp-cloud-storage-config.ini
+gcp-cloud-tasks-config.ini
+gcp-cloud-vision-config.yml
+gcp-compute-engine-settings.yml
 gcp-config
 gcp-config.json
+gcp-container-engine-deployment.yml
 gcp-credentials
+gcp-dataflow-config.ini
+gcp-deploy.json
+gcp-deploy.yml
+gcp-deployment.yml
+gcp-dns-settings.yaml
+gcp-firestore-config.yaml
+gcp-gke-settings.yaml
+gcp-iot-core-settings.yaml
 gcp-key.json
+gcp-kubernetes-cluster.yaml
+gcp-logs.json
+gcp-ml-engine-settings.json
+gcp-policies.json
+gcp-pubsub-config.json
+gcp-pubsub-lite-settings.json
+gcp-resource-manager-settings.json
+gcp-roles.yaml
 gcp-secret-access-key
+gcp-settings.yaml
+gcp-spanner-config.json
+gcp-vpc-config.yml
 gcp.json
 gcp.properties
 gcp.xml
@@ -59254,6 +59436,7 @@ genxml.php
 geo-location-api.php
 geoDashboardUiService/getFilteredEUMWebGeoDashboardSubLocations
 geo_formattor 
+geo_location_settings.json
 geoblog
 geocology.js
 geoenviron
@@ -59875,6 +60058,8 @@ gitlab-ci-x
 gitlab-ci-y
 gitlab-ci-z
 gitlab-ci.api
+gitlab-ci.cfg
+gitlab-ci.config
 gitlab-ci.dev
 gitlab-ci.gw
 gitlab-ci.prd
@@ -60824,6 +61009,7 @@ graphql/validation
 graphql/variables
 graphql/voyager
 graphql/ws
+graphql?debug=1
 graphql?query
 graphql_docs
 graphql_documentation
@@ -61476,6 +61662,7 @@ hardhat.config.js
 hardware
 hardware-api
 hardware.api
+hardware_configuration.conf
 hardwareapi
 harman12/
 harp/oslo/normal.day.json
@@ -61522,7 +61709,9 @@ hassapis-peter
 hasura/.env
 hawkmenblues/
 hays/
+hazelcast.config
 hazelcast.xml
+hazelcast.yaml
 hbase-api
 hbase-bucketcache-buf-count
 hbase-bucketcache-ioengine
@@ -61777,6 +61966,7 @@ health/metrics/tomcat.sessions.created
 health/metrics/tomcat.sessions.expired
 health/metrics/tomcat.sessions.rejected
 health/status
+health_check_config.json
 healthapi
 healthcare
 healthcareprovider
@@ -63261,6 +63451,7 @@ i_admin
 iadmin
 iafb.json
 iam
+iam-config.yaml
 iam-group.json
 iam-policy.json
 iam-role-mapping.json
@@ -63274,6 +63465,7 @@ iam/siteminder
 iam_keystore.pfx
 iam_policy.yaml
 iam_role.yaml
+iam_role_configuration.xml
 ias-web.xml
 ias/cluster/appServer.jsp
 ias/cluster/topology.jsp
@@ -63403,6 +63595,7 @@ identity/envelope
 identityPool/ 
 identityProviders 
 identity_and_access_management
+identity_management.xml
 identity_management_configs.bat
 identity_management_configs.conf
 identity_management_configs.json
@@ -63457,6 +63650,8 @@ iframe_api.txt
 iframe_loaded 
 iframe_napiapp.php
 iftop.conf
+ignite-config.xml
+ignite.yaml
 ignore
 igraphql
 igrate-if-needed.sh
@@ -63557,6 +63752,7 @@ image.xml
 image/
 image_build.php
 image_data/.env
+image_processing_config.json
 image_processing_config.yaml
 image_processing_config.yml
 image_upload.sql
@@ -63872,6 +64068,7 @@ incident_response_handling_plan.ps1
 incident_response_handling_plan.sh
 incident_response_lessons_learned_plan.ps1
 incident_response_lessons_learned_plan.sh
+incident_response_plan.yaml
 incident_response_plans.bat
 incident_response_plans.conf
 incident_response_plans.json
@@ -64976,6 +65173,7 @@ instance-administration/quality-profiles/
 instance-administration/security/
 instance-administration/security/ 
 instance.json
+instance.yaml
 instance/
 instance/ 
 instance/.env
@@ -66547,6 +66745,7 @@ jenkins-x.yml
 jenkins.CLI.xml
 jenkins.CLI.xml.backup
 jenkins.api
+jenkins.config
 jenkins.model.ArtifactManagerConfiguration.xml
 jenkins.model.ArtifactManagerConfiguration.xml.backup
 jenkins.model.JenkinsLocationConfiguration.xml
@@ -66864,6 +67063,8 @@ job/
 job/***JENKINS_JOB_NAME***/build
 job/cmd/configSubmit
 job_applications.xlsx
+job_queue_management.json
+job_scheduler_config.cfg
 job_scheduler_config.yaml
 job_scheduler_config.yml
 jobaboText
@@ -68585,6 +68786,7 @@ keyentry.js
 keyevt.js
 keyfile
 keyfile.js
+keyfile.json
 keyframes-motion 
 keygame.js
 keygen
@@ -69711,11 +69913,13 @@ laitestinfo/
 lajiapi.js
 lala/.env
 lamashell.php
+lambda-config.json
 lambda-function.json
 lambda.config
 lambda.json
 lambda.yaml
 lambda.yml
+lambda_function_config.yaml
 lamp-api
 lamp.api
 lampapi
@@ -70686,6 +70890,7 @@ lightdm.conf
 lighthammer
 lighthttpd.conf
 lightning 
+lightsail_instance_settings.yaml
 lightspeed.js 
 lighttpd-access.log
 lighttpd-admin.log
@@ -71123,6 +71328,7 @@ load_testing.json
 load_testing.ps1
 load_testing.sh
 load_testing.xml
+load_testing_config.json
 load_testing_scripts.bat
 load_testing_scripts.conf
 load_testing_scripts.json
@@ -73551,6 +73757,7 @@ memcached-verbosity.conf
 memcached-windows.conf
 memcached.api
 memcached.conf
+memcached.json
 memcached.xml
 memcached/
 memcached/.env
@@ -73702,6 +73909,7 @@ message.sql
 message/
 message/install/mysql.sql
 message?title=x&msg=%26%23<svg/onload=alert(1337)>
+message_broker_config.json
 message_broker_config.yaml
 message_broker_config.yml
 message_log
@@ -73923,6 +74131,7 @@ microblog
 microprofile-config.properties
 micros
 microservices/theme.json
+microservices_architecture.json
 microservices_config.yaml
 microservices_config.yml
 microservices_credentials.yaml
@@ -74266,6 +74475,7 @@ mobile/error
 mobile/getadconfiguration.htm
 mobile/v3/appsuperdownload.do
 mobileAppId/ 
+mobile_device_config.xml
 mobile_device_security
 mobileapi
 mobileapi.js
@@ -74658,6 +74868,8 @@ mongodb-backup-cron.conf
 mongodb-backup-scripts.conf
 mongodb-backup.conf
 mongodb-backups.conf
+mongodb-cache.json
+mongodb-cache.yaml
 mongodb-cert.pem
 mongodb-cluster-add-shard.conf
 mongodb-cluster-auditing.conf
@@ -74835,6 +75047,7 @@ monitoring_scripts.json
 monitoring_scripts.ps1
 monitoring_scripts.sh
 monitoring_scripts.xml
+monitoring_settings.yaml
 monitoringapi
 monitoringprovierroot
 monkey
@@ -76106,6 +76319,7 @@ network_filters.conf
 network_interfaces.yaml
 network_interfaces.yml
 network_maps.yaml
+network_partitioning.yaml
 network_peerings.yaml
 network_policies.conf
 network_routes.bat
@@ -76373,6 +76587,8 @@ next.config.dev.js
 next.config.js
 next.config.prod.js
 next.dev.config.js
+next.dev.js
+next.env.js
 next.prod.config.js
 next/
 next/ 
@@ -76384,6 +76600,7 @@ nextSunday/index.js
 nextThursday/index.js 
 nextTuesday/index.js 
 nextWednesday/index.js 
+next_config.js
 nextcloud
 nextcloud-api
 nextcloud.api
@@ -76391,6 +76608,7 @@ nextcloud/
 nextcloud/index.php/login
 nextcloudapi
 nextflow.config
+nextjs.yml
 nexus-api
 nexus-application.properties
 nexus-default.properties
@@ -76830,6 +77048,7 @@ notification.ps1
 notification.sh
 notification/slack 
 notification_filter.conf
+notification_settings.json
 notificationapi
 notificationhub.json
 notificationhubnamespace.json
@@ -78403,6 +78622,7 @@ order-option
 order-search/OrderedBy 
 order.%EXT%
 order.api
+order.config
 order.htm
 order.log
 order.php
@@ -79851,6 +80071,7 @@ performance_tuning.json
 performance_tuning.ps1
 performance_tuning.sh
 performance_tuning.xml
+performance_tuning.yaml
 performance_tuning_scripts.bat
 performance_tuning_scripts.conf
 performance_tuning_scripts.json
@@ -82541,6 +82762,7 @@ price_hawk_client/.env
 price_item.aspx
 pricelog.js
 pricing
+pricing.config
 pricing.json
 pricing/teams-orgs
 prima/
@@ -82839,6 +83061,8 @@ prod-config.js
 prod.7z
 prod.access.key.id
 prod.api
+prod.config
+prod.env
 prod.git/config
 prod.json
 prod.log
@@ -82856,6 +83080,8 @@ prod.yml
 prod.zip
 prod/
 prod/.env
+prod/.git/config
+prod/api/v1/users
 prod2local.sh
 prod_api.txt
 prod_password
@@ -83513,6 +83739,7 @@ proxy_cache_valid.conf
 proxy_client.crt
 proxy_client.key
 proxy_config.json
+proxy_configuration.conf
 proxy_headers.conf
 proxy_intercept_errors.conf
 proxy_logs
@@ -84246,6 +84473,7 @@ queue.yaml
 queue/entry 
 queue/entry/item/assignees 
 queue/entry/items 
+queue_config.json
 quick-nav.js 
 quick-reload-manager.js 
 quick-reload-read-only-mode.js 
@@ -84923,6 +85151,7 @@ rds.conf
 rds.config
 rds.yaml
 rds.yml
+rds_database_settings.xml
 rdx/core/lang/ 
 re/index.jsp
 reach/sip.svc
@@ -85397,6 +85626,7 @@ redis-unixsocket.conf
 redis-unixsocketperm.conf
 redis.api
 redis.conf
+redis.conf.d/
 redis.conf.tmpl
 redis.config.js
 redis.xml
@@ -86321,6 +86551,7 @@ resource_allocation.json
 resource_allocation.ps1
 resource_allocation.sh
 resource_allocation.xml
+resource_allocation.yaml
 resource_auditing.bat
 resource_auditing.conf
 resource_auditing.json
@@ -87228,6 +87459,7 @@ rob
 rob/ismproperties 
 roberthalf/
 robertwalters/
+robinhood.config
 robomongo.json
 robot
 robot.properties
@@ -87505,8 +87737,10 @@ route.yaml
 route.yml
 route/
 route/validate
+route53-config.json
 route53-record.json
 route53_access_key_id
+route53_dns_config.yaml
 route_tables.yaml
 route_tables.yml
 routeconfigcoredelfino.jsp
@@ -87900,6 +88134,7 @@ s3-bucket-encryption.json
 s3-bucket-notification.json
 s3-bucket-policy.json
 s3-bucket.json
+s3-config.ini
 s3-cors.json
 s3-credentials.json
 s3-credentials.xml
@@ -88409,6 +88644,8 @@ sc_app/sc_selframe.asp
 sc_app/sc_specsheet.asp
 scaffolding.config
 scala-helloworld-webapp
+scalability_options.conf
+scalability_strategy.yaml
 scalafix.conf
 scalafmt.conf
 scalastyle-config.xml
@@ -90363,6 +90600,7 @@ server_key.pem
 server_keys.bin
 server_load_balancer.log
 server_log
+server_monitoring_settings.conf
 server_name_indication.conf
 server_old.key
 server_private_key.bin
@@ -90430,6 +90668,7 @@ serverless.yaml
 serverless.yml
 serverless.yml.json
 serverless.yml.template
+serverless_integration.xml
 serverlist.cfg
 serverlist.xml
 serverpush.htm
@@ -90529,8 +90768,10 @@ service_discovery.json
 service_discovery.ps1
 service_discovery.sh
 service_discovery.xml
+service_discovery_config.xml
 service_discovery_config.yaml
 service_discovery_config.yml
+service_disruption_plan.conf
 service_log
 service_m.bat.bat
 service_m.bat_security.bat
@@ -93098,6 +93339,7 @@ socapi
 social-api
 social-shapes 
 social.api
+social_media_integration.xml
 social_plugins/share
 socialapi
 socialapi.aspx
@@ -93917,6 +94159,7 @@ sqoop-env.sh
 sqoop-site.xml
 sqoop.conf
 sqref-ext-xform 
+sqs-config.json
 sqs.config
 sqs.yaml
 sqs.yml
@@ -94876,6 +95119,7 @@ step
 step.yaml
 step.yml
 stepResult/stepDefects
+step_functions_workflow.json
 stg
 stg-api
 stg.api
@@ -94970,6 +95214,7 @@ storage_encryption_config.ps1
 storage_encryption_config.sh
 storage_encryption_config.txt
 storage_encryption_config.xml
+storage_settings.xml
 storage_sna.batot_config.bat
 storage_sna.confot_config.conf
 storage_sna.jsonot_config.json
@@ -95156,6 +95401,7 @@ strapix
 strapiy
 strapiz
 strategy
+strategy.config
 stream 
 stream-api
 stream-buf 
@@ -95752,6 +95998,7 @@ svn.asf.authz-db
 svn.auth-db
 svn.authz-db
 svn.conf
+svn.config
 svn.groups-db
 svn.passwd-db
 svn.revision
@@ -97052,6 +97299,7 @@ task/reopen
 task/settaskstatus 
 taskToTrack 
 task_api/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+task_config.xml
 task_control.sql
 task_queue_config.yaml
 task_queue_config.yml
@@ -97222,6 +97470,7 @@ teamcenter.search.savedSearch
 teamcenter.search.search 
 teamcenter.search.shapesearch 
 teamcity-server.xml
+teamcity.config
 teamcity.json
 teamcity.yaml
 teamcity.yml
@@ -97711,6 +97960,7 @@ test/.git/config
 test/addIssueLink
 test/apacheasp/test.asp
 test/api.js
+test/api/v1/users
 test/aries-js-worker/fixtures/.env
 test/bdd/fixtures/adapter-rest/.env
 test/bdd/fixtures/agent-rest/.env
@@ -98352,6 +98602,7 @@ threads.api
 threadsapi
 threat_detection.yaml
 threat_detection.yml
+threat_detection_options.json
 threat_intelligence.conf
 threat_intelligence.yaml
 threat_intelligence.yml
@@ -99075,6 +99326,7 @@ trade_secrets.csv
 trade_secrets.xlsx
 tradeapi
 trademarks
+trader.config
 tradeshow.js
 tradetheme
 trading-api
@@ -99226,6 +99478,7 @@ travis-ci.yaml.gpg
 travis-ci.yml
 travis-ci.yml.enc
 travis-ci.yml.gpg
+travis.config
 travis.sh
 travis.yaml
 travis.yaml.enc
@@ -100943,6 +101196,8 @@ user_passwords.sh
 user_passwords.xml
 user_payment_tokens.bin
 user_pin
+user_preferences.conf
+user_prefs.xml
 user_profile 
 user_profile.json
 user_role
@@ -100954,6 +101209,7 @@ user_sessions.db
 user_sessions.json
 user_setconfig
 user_setconfig.php
+user_settings.xml
 user_shipping_data.bin
 user_shipping_tokens.bin
 user_test.rb
@@ -100999,6 +101255,7 @@ userflow.js
 usergroups.conf
 usergroupwsdl.aspx
 usergroupwsdl.jsf
+usergui.xml
 userhome
 useriban
 userid
@@ -103568,6 +103825,7 @@ varnish.service
 varnish.systemd
 varnish.upstart
 varnish.vcl
+varnish.yaml
 varnishapi
 varnishlog.conf
 varnishlog.params
@@ -104566,6 +104824,7 @@ version.web
 version.xml
 version.yaml
 version/
+version_control.yaml
 version_control_scripts.bat
 version_control_scripts.conf
 version_control_scripts.json
@@ -104881,8 +105140,10 @@ virtualhosts.xml
 virtualization.bat
 virtualization.ps1
 virtualization.sh
+virtualization_config.yaml
 virtualize.properties
 virus
+virus_scan_settings.conf
 visState
 visa
 visa/
@@ -107212,6 +107473,8 @@ workflow.config
 workflow/apps 
 workflowTemplateLocationPropertyPolicy.json
 workflowTemplateLocationPropertyPolicy.json 
+workflow_automation.json
+workflow_configuration.xml
 workflowconfigservice.svc
 workflows/argo-cd.yaml
 workflows/argo-events.yaml

@@ -1736,6 +1736,7 @@ $metadata
 .circleci/config
 .circleci/config-template.yaml
 .circleci/config-template.yml
+.circleci/config.cfg
 .circleci/config.tmpl
 .circleci/config.yaml
 .circleci/config.yml
@@ -2513,6 +2514,7 @@ $metadata
 .elastic.env
 .elasticbeanstalk
 .elasticbeanstalk/
+.elasticbeanstalk/config
 .elasticbeanstalk/config.yaml
 .elasticbeanstalk/config.yml
 .elb
@@ -3471,6 +3473,7 @@ $metadata
 .gitlab-ci-yml
 .gitlab-ci-yml-template
 .gitlab-ci-yml.template
+.gitlab-ci.cfg
 .gitlab-ci.cron.yml
 .gitlab-ci.d
 .gitlab-ci.d/deploy
@@ -3739,6 +3742,7 @@ $metadata
 .hg/hgrc
 .hg/hgrc.d
 .hg/last-message.txt
+.hg/merge-tools.rc
 .hg/requires
 .hg/store
 .hg/store/00changelog.d
@@ -3758,6 +3762,7 @@ $metadata
 .hgattributes
 .hgignore
 .hgignore.global
+.hgignore_global
 .hgkeep
 .hgrc
 .hgrc.bak

@@ -1299,6 +1299,8 @@ APIWeather.ashx
 API_ID.php
 API_Logging.jsp
 API_Standings.php
+API_authentication_config.xml
+API_gateway_settings.cfg
 API_getStoresByPromoteNews.php
 API_get_campaign.php
 API_insert_atividades.aspx
@@ -1313,7 +1315,10 @@ API_keys.sh
 API_keys.txt
 API_keys.xml
 API_more_star_store.php
+API_rate_limiting.yaml
+API_security.cfg
 API_theme.php
+API_versioning_configuration.xml
 APIgetsession.php
 APIs
 APIv1
@@ -5539,6 +5544,7 @@ Investmentid
 InviteByName
 InviteRideMount
 InviteToParty
+IoT_configuration.xml
 IsActive
 IsAdult
 IsAggroPrompt
@@ -6718,6 +6724,7 @@ NewsJson.aspx
 Newsjson.aspx
 Newtonsoft.Json.dll
 Newtonsoft.Json.json
+NinjaTraderDB.xml
 NonXMLCommonAttributes.php
 NotificationsXML.aspx
 NotifyBulletinBoard
@@ -11034,6 +11041,7 @@ TwitterAPI.php
 Typography
 Typography.php
 U
+UDDISecurityService/UDDISecurityImplBean?wsdl
 UDI
 UFCJson.php
 UIDropDownMenuButton_Disable
@@ -12956,6 +12964,7 @@ access_compliance.json
 access_compliance.xml
 access_control.json
 access_control.xml
+access_control_config.xml
 access_control_configs.json
 access_control_configs.xml
 access_control_lists.json
@@ -15093,6 +15102,7 @@ api.board.php
 api.cfm
 api.cgi
 api.cinfig.ini
+api.config
 api.config.json
 api.contactforms.php
 api.content.php
@@ -15612,6 +15622,8 @@ api/alerts/alertProcess/planAction
 api/alerts/info/shortDateFormat 
 api/alerts/states-for-dashboard 
 api/alerts/validDocumentExtensions 
+api/allUsers
+api/all_users
 api/alm_integrations/check_pat 
 api/alm_integrations/get_github_client_id 
 api/alm_integrations/import_azure_project 
@@ -15735,6 +15747,7 @@ api/call
 api/callback
 api/campaign
 api/campaigns
+api/cards
 api/cart
 api/cart/create
 api/cases
@@ -15924,6 +15937,7 @@ api/dashboards/validate
 api/data.json
 api/data/v9.1/leads
 api/data/v9.1/leads/
+api/dataUser
 api/data_views
 api/data_views/default
 api/database.json
@@ -16799,6 +16813,7 @@ api/user_groups/users
 api/user_tokens/generate 
 api/user_tokens/revoke 
 api/user_tokens/search 
+api/userdata
 api/userrolelist/systemRoles?require-cfg.js
 api/users
 api/users.json
@@ -17981,6 +17996,7 @@ api_foldresz.php
 api_function
 api_gateway_config.yaml
 api_gateway_config.yml
+api_gateway_configuration.json
 api_getNewHost.php
 api_get_acctsubr_hs_v2.jsp
 api_get_cars.php
@@ -20198,6 +20214,7 @@ applicationContext-struts.xml
 applicationContext.xml
 application_config.xml
 application_default_credentials.json
+application_integration.xml
 application_secrets.json
 application_secrets.xml
 application_startup.json
@@ -20838,6 +20855,7 @@ authbyrole-55c7dfcdfd-8v2bl
 authentication
 authentication.json
 authentication.wsdl
+authentication_config.xml
 authentication_configs.json
 authentication_configs.xml
 authentication_tokens.json
@@ -21048,13 +21066,22 @@ awfcatgarest.aspx
 awkwardswagger
 aws-access-key.json
 aws-access-key.xml
+aws-api-gateway-settings.ini
 aws-cognito.json
 aws-config.json
 aws-config.xml
 aws-credentials.json
 aws-credentials.xml
+aws-deploy.json
+aws-dynamodb-config.json
+aws-efs-configuration.json
+aws-elasticache-settings.json
+aws-elasticsearch-settings.json
 aws-exports.json
+aws-guardduty-config.json
+aws-iam-policy.json
 aws-lambda-tools-defaults.json
+aws-logs.json
 aws-node-42v44
 aws-node-7v2xs
 aws-node-9xv26
@@ -21071,10 +21098,17 @@ aws-node-v2djz
 aws-node-v47nq
 aws-node-v4hkt
 aws-node-z4v2q
+aws-organizations-settings.json
+aws-policy.json
+aws-s3-bucket.json
 aws-sdk-dynamodb.json
 aws-sdk.json
 aws-secret-key.json
 aws-secret-key.xml
+aws-serverless-application-model.json
+aws-sqs-config.json
+aws-step-functions.json
+aws-waf-rules.json
 aws.json
 aws_access_key_id.json
 aws_cloud_api_key.ini
@@ -21128,13 +21162,16 @@ azr94v2hh2lg
 azr94v2hh2lg/
 azr94v2hh2lgbbkk
 azrailphp_v1.0.php
+azure-blob-storage.json
 azure-config.json
 azure-credentials.json
 azure-credentials.xml
+azure-deploy.json
 azure-deployment.json
 azure-keys.json
 azure-network-security-group.json
 azure-pipelines.json
+azure-policies.json
 azure-resource-manager-template.json
 azure-service-principal.json
 azure-sql-active-directory-admin.json
@@ -21431,6 +21468,7 @@ backup_database.json
 backup_database.xml
 backup_keys.json
 backup_keys.xml
+backup_restoration_options.xml
 backup_restore
 backup_restore/
 backup_restore_config.bat
@@ -24670,6 +24708,7 @@ cloudflare_api_key
 cloudformation-script.json
 cloudformation-script.xml
 cloudformation.json
+cloudformation_template.json
 cloudfront-distribution.json
 cloudfront_configs.json
 cloudfront_configs.xml
@@ -27866,6 +27905,7 @@ corpwebv1
 corpwebv2
 corrections
 correlation-search-info.xml
+cors.xml
 corso.xml
 corso_core.xml
 corso_messages_es.xml
@@ -27904,6 +27944,7 @@ couch.v2
 couchapi
 couchbase-config.json
 couchbase-server.log.redaction.json
+couchbase.json
 couchdb-api
 couchdb-v1
 couchdb-v2
@@ -28905,6 +28946,7 @@ dataContext.xml
 dataRestore
 dataSources.local.xml
 data_auth.json
+data_backup_config.json
 data_brending.xml
 data_calendar.xml
 data_clear.json
@@ -28914,6 +28956,7 @@ data_fa.xml
 data_json.php
 data_ma.xml
 data_map.xml
+data_masking_settings.json
 data_pim.xml
 data_pr.xml
 data_recommend.xml
@@ -29606,6 +29649,7 @@ deployment.v2
 deployment.xml
 deploymentScripts/settings.json
 deployment_manifest.json
+deployment_metrics_config.json
 deployment_scripts.json
 deployment_scripts.xml
 deployment_strategies.json
@@ -29726,6 +29770,7 @@ dev.json
 dev.v1
 dev.v2
 dev.xml
+dev/api/v1/users
 dev/docs/v1/api
 dev/docs/v1/graphql
 dev/docs/v1/rest
@@ -31387,11 +31432,13 @@ ec.v2
 ec2-ami.json
 ec2-api-tools.cfg
 ec2-auto-scaling.json
+ec2-config.json
 ec2-elb.json
 ec2-instance-launch-template.json
 ec2-key-pair.json
 ec2-launch-config.json
 ec2-security-group.json
+ec2_instance_settings.json
 ecTopAPI.php
 ecapi
 ecardstrings.xml
@@ -31427,6 +31474,7 @@ ecs-cluster.json
 ecs-service.json
 ecs-task-definition.json
 ecs-task-placement-constraints.json
+ecs_cluster_configuration.xml
 ecustomer-api
 ecv1
 ecv2
@@ -31631,6 +31679,7 @@ el_cy.xml
 el_gr.xml
 el_polyton.xml
 el_polytoni.xml
+elasticache-cluster-config.json
 elasticsearch.json
 elcapitan
 eldorado.xml
@@ -31694,6 +31743,7 @@ email.json
 email.v1
 email.v2
 email_address
+email_config.json
 email_configs.json
 email_configs.xml
 email_docs
@@ -32195,6 +32245,7 @@ error_log.json
 error_logging.json
 error_logging.xml
 error_message_pdf.xml
+error_reporting_config.json
 error_ui_text.xml
 errorcodes.xml
 errordefine.xml
@@ -34645,8 +34696,23 @@ gcloud/application_default_credentials.json
 gcloud/jenkins-flatmap.json
 gcloud_credentials.json
 gcmodule.xml
+gcp-api-gateway-settings.yml
+gcp-bigtable-configuration.json
+gcp-bucket.json
+gcp-cloud-asset-inventory.json
+gcp-cloud-dataproc-config.json
+gcp-cloud-logging-config.json
 gcp-config.json
+gcp-deploy.json
+gcp-firestore-config.yaml
 gcp-key.json
+gcp-logs.json
+gcp-ml-engine-settings.json
+gcp-policies.json
+gcp-pubsub-config.json
+gcp-pubsub-lite-settings.json
+gcp-resource-manager-settings.json
+gcp-spanner-config.json
 gcp.json
 gcp.xml
 gcp_config.json
@@ -34719,6 +34785,7 @@ gentoo
 genxml
 genxml.php
 geo-location-api.php
+geo_location_settings.json
 geographical-information-systems-GIS.aspx
 geographical.jsp
 geographical_database_config.yaml
@@ -35857,6 +35924,7 @@ graphql/validation
 graphql/variables
 graphql/voyager
 graphql/ws
+graphql?debug=1
 graphql?query
 graphql_docs
 graphql_documentation
@@ -36533,6 +36601,7 @@ health.api
 health.json
 health.v1
 health.v2
+health_check_config.json
 healthapi
 healthcare
 healthcareprovider
@@ -37436,6 +37505,7 @@ iam-role-mapping.json
 iam-role.json
 iam-user-mapping.json
 iam-user.json
+iam_role_configuration.xml
 iaminterested
 ianime.xml
 ias-web.xml
@@ -37562,6 +37632,7 @@ identidad_api.php
 identifier
 identity
 identity-pools.json
+identity_management.xml
 identity_management_configs.json
 identity_management_configs.xml
 identity_provider.json
@@ -37616,6 +37687,7 @@ iframead.xml
 ig.xml
 ig_ng.xml
 igloo_block_v2.zip
+ignite-config.xml
 igosd_830.xml
 igraphql
 igrp-login-banner.xml
@@ -37693,6 +37765,7 @@ imageMode()
 image_edit_before_change
 image_list.xml
 image_map2.xml
+image_processing_config.json
 image_resize
 image_v2.jsp
 imageanimatorconfig.xml
@@ -39518,6 +39591,7 @@ job.v2
 job.xml
 job_data.xml
 job_openings.xml
+job_queue_management.json
 jobapi
 jobapp.view.xml
 jobb_belso_ajanlok_gphirek.xml
@@ -41053,6 +41127,7 @@ keybcs2.xml
 keybindings.json
 keycloak.json
 keyfigures/graph
+keyfile.json
 keygen
 keys
 keys-api
@@ -41561,6 +41636,7 @@ lajiapi.js
 lake-mary-admin.xml
 lake-mary.xml
 lakewood.xml
+lambda-config.json
 lambda-function.json
 lambda.json
 lamp-api
@@ -43501,6 +43577,7 @@ load_plugin_textdomain
 load_template
 load_testing.json
 load_testing.xml
+load_testing_config.json
 load_testing_scripts.json
 load_testing_scripts.xml
 load_textdomain
@@ -45069,6 +45146,7 @@ memcached-api
 memcached-v1
 memcached-v2
 memcached.api
+memcached.json
 memcached.v1
 memcached.v2
 memcached.xml
@@ -45188,6 +45266,7 @@ message.json.php
 message.v1
 message.v2
 message.xml
+message_broker_config.json
 messageapi
 messagedialog.fragment.xml
 messagedrivenbeans/docs
@@ -45375,6 +45454,7 @@ microservice-anomaly-detection-77bdf446db-z85v4
 microservice-machine-samples-744dd7cf-bv27z
 microservice-machine-samples-744dd7cf-bv2jb
 microservices/theme.json
+microservices_architecture.json
 microsoft
 microsoft.applicationblocks.data.xml
 microsoft.practices.objectbuilder2.xml
@@ -45618,6 +45698,7 @@ mobile.xml
 mobile/api
 mobile/v3/appSuperDownload.do
 mobile/v3/appsuperdownload.do
+mobile_device_config.xml
 mobileapi
 mobileapi.js
 mobileapp.json
@@ -45916,6 +45997,7 @@ mongo.v1
 mongo.v2
 mongoapi
 mongodb-api
+mongodb-cache.json
 mongodb-cluster-backup-restore.conf
 mongodb-restore-scripts.conf
 mongodb-restore.conf
@@ -47466,6 +47548,7 @@ notification.api
 notification.v1
 notification.v2
 notification.xml
+notification_settings.json
 notificationapi
 notificationhub.json
 notificationhubnamespace.json
@@ -54292,6 +54375,7 @@ prod.json
 prod.v1
 prod.v2
 prod.xml
+prod/api/v1/users
 prod_api.txt
 prodapi
 prods.json
@@ -55116,6 +55200,7 @@ questions/interests
 questzone_games_coms.xml
 queue
 queue-policy.json
+queue_config.json
 queve.xml
 quick-links.xml
 quick-search.xml
@@ -55550,6 +55635,7 @@ rds-config.json
 rds-parameter-group.json
 rds-snapshot.json
 rds-subnet-group.json
+rds_database_settings.xml
 rdv1
 rdv2
 react
@@ -57877,6 +57963,7 @@ route
 route-city-to-state-324.xml
 route.php
 route/
+route53-config.json
 route53-record.json
 route66
 route_drafts.php
@@ -59792,6 +59879,7 @@ serverless.plugins.json
 serverless.secrets.json
 serverless.xml
 serverless.yml.json
+serverless_integration.xml
 serverlist.xml
 servers
 servers.xml
@@ -59836,6 +59924,7 @@ service_credentials.json
 service_credentials_store.json
 service_discovery.json
 service_discovery.xml
+service_discovery_config.xml
 service_m.json.json
 service_m.json_security.json
 service_m.xml.xml
@@ -62203,6 +62292,7 @@ social.v2
 social.xml
 social/api/profile/1.1
 social_media.xml
+social_media_integration.xml
 social_tool.xml
 socialapi
 socialapi.aspx
@@ -62725,6 +62815,7 @@ sqlv2
 sqmapi.dll
 sqoop-site.xml
 sqrt()
+sqs-config.json
 square
 squared/api
 squid-api
@@ -63208,6 +63299,7 @@ step
 step1view.xml
 step2view.xml
 step3view.xml
+step_functions_workflow.json
 steroccasion-os.xml
 stg-api
 stg-v1
@@ -63271,6 +63363,7 @@ storage_credentials.json
 storage_credentials.xml
 storage_encryption_config.json
 storage_encryption_config.xml
+storage_settings.xml
 storage_sna.jsonot_config.json
 storage_sna.xmlot_config.xml
 storageapi
@@ -64915,6 +65008,7 @@ task.v1
 task.v2
 task.xml
 task_api/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+task_config.xml
 taskapi
 taskdef.json
 tasks
@@ -65229,6 +65323,7 @@ test.v1
 test.v2
 test.xml
 test/api.js
+test/api/v1/users
 test/bdd/fixtures/adapter-rest/.env
 test/bdd/fixtures/agent-rest/.env
 test/bdd/fixtures/demo/openapi/.env
@@ -65674,6 +65769,7 @@ threadsv1
 threadsv2
 threadv1
 threadv2
+threat_detection_options.json
 threat_intelligence_scripts.json
 threat_intelligence_scripts.xml
 thrift-api
@@ -67462,10 +67558,12 @@ user_password_graphic.aspx
 user_passwords.json
 user_passwords.xml
 user_pin
+user_prefs.xml
 user_profile.json
 user_role
 user_session_keys.json
 user_sessions.json
+user_settings.xml
 user_tokens.json
 user_type_json.php
 userapi
@@ -67477,6 +67575,7 @@ userdata.xml
 userdetail
 usergroupwsdl.aspx
 usergroupwsdl.jsf
+usergui.xml
 useriban
 userid
 userinfo
@@ -73272,6 +73371,8 @@ workdocs
 workflow-properties.xml
 workflowTemplateLocationPropertyPolicy.json
 workflowTemplateLocationPropertyPolicy.json 
+workflow_automation.json
+workflow_configuration.xml
 workfloweditor.xml.jsp
 workingsets.xml
 worklist.view.xml
