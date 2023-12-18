@@ -16721,6 +16721,8 @@ api/swagger/swagger
 api/swagger/swagger-ui.html
 api/swagger/swagger.json
 api/swagger/ui/index
+api/swagger/v2/api-docs
+api/swagger/v3/api-docs
 api/swagger_doc.json
 api/swaggerui/swagger.json
 api/swaggerui/swagger.yaml
@@ -17546,6 +17548,7 @@ api/v2/devices
 api/v2/devices/snapshot
 api/v2/displays
 api/v2/docs
+api/v2/documentation
 api/v2/event
 api/v2/feed
 api/v2/feed/
@@ -17667,6 +17670,7 @@ api/v3/config/.git/config
 api/v3/devices
 api/v3/devices/snapshot
 api/v3/docs
+api/v3/documentation
 api/v3/graphiql
 api/v3/graphql
 api/v3/index/.env
@@ -30710,6 +30714,7 @@ docs/_layouts/viewlsts.aspx
 docs/admin
 docs/administrator
 docs/api
+docs/api-docs.json
 docs/api-reference
 docs/api-reference/graphql-api
 docs/api-reference/rest-api
@@ -30826,6 +30831,11 @@ documentation
 documentation.json
 documentation.wadl
 documentation.xml
+documentation/swagger-ui
+documentation/swagger-ui.html
+documentation/swagger.json
+documentation/swagger.yaml
+documentation/swagger.yml
 documentation_generation_scripts.json
 documentation_generation_scripts.xml
 documentosinteresbd.xml
@@ -64128,6 +64138,8 @@ swagger-requests.yaml
 swagger-resources
 swagger-resources.json
 swagger-resources.yaml
+swagger-resources/configuration/security
+swagger-resources/configuration/ui
 swagger-resources/restservices/v2/api-docs
 swagger-resources/restservices/v2/api-docs/index.html
 swagger-resources/restservices/v2/api-docs/swagger-ui.html
@@ -64183,6 +64195,8 @@ swagger-ui.asp
 swagger-ui.aspx
 swagger-ui.config.json
 swagger-ui.html
+swagger-ui.html/v2/api-docs
+swagger-ui.html/v3/api-docs
 swagger-ui.js
 swagger-ui.jsf
 swagger-ui.json
@@ -64275,6 +64289,7 @@ swagger/v2/swagger.json
 swagger/v2/swagger.yaml
 swagger/v3.0/swagger.json
 swagger/v3.0/swagger.yaml
+swagger/v3/api-docs
 swagger01
 swagger02
 swagger03
