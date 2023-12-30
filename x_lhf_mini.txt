@@ -1190,6 +1190,7 @@ $metadata
 .aspx;.xml
 .aspxstorm.meta.aspx
 .assets
+.assetsearch.json?query=*&start=0&limit=10&random=123
 .asx
 .at
 .atfp_history
@@ -1589,6 +1590,7 @@ $metadata
 .byobu/
 .bz
 .bz2
+.bzconf
 .bzr
 .bzr/
 .bzr/README
@@ -2928,6 +2930,8 @@ $metadata
 .exp
 .exports
 .ext
+.ext.infinity.json
+.ext.infinity.json?tidy=true
 .external
 .external/
 .external/data
@@ -4850,6 +4854,7 @@ $metadata
 .nuget/packages.config
 .num
 .numbers
+.nupkg.metadata
 .nuxt
 .nuxtignore
 .nuxtrc

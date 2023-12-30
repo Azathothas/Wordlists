@@ -1057,6 +1057,7 @@ ${idfwbonavigation}.xml
 .aspx;.xml
 .aspxstorm.meta.aspx
 .assets
+.assetsearch.json?query=*&start=0&limit=10&random=123
 .asx
 .at
 .atfp_history
@@ -1456,6 +1457,7 @@ ${idfwbonavigation}.xml
 .byobu/
 .bz
 .bz2
+.bzconf
 .bzr
 .bzr/
 .bzr/README
@@ -4750,6 +4752,7 @@ ${idfwbonavigation}.xml
 .nuget/packages.config
 .num
 .numbers
+.nupkg.metadata
 .nuxt
 .nuxtignore
 .nuxtrc
