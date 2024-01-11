@@ -8923,6 +8923,7 @@ ${idfwbonavigation}.xml
 103
 10661336/
 11
+111.php
 11org8/
 12
 12019506/
@@ -9364,6 +9365,7 @@ ${idfwbonavigation}.xml
 2022/
 2022_dump.sql
 2023
+2023-backup.zip
 2023.7z
 2023.dump.sql
 2023.rar
@@ -9379,13 +9381,17 @@ ${idfwbonavigation}.xml
 2023/
 2023_dump.sql
 2024
+2024-backup.zip
 2024.7z
 2024.dump.sql
 2024.rar
 2024.sql
 2024.sql.tar.gz
 2024.sql.zip
+2024.tar
+2024.tar.bz2
 2024.tar.gz
+2024.tgz
 2024.txt.gz
 2024.zip
 2024/
@@ -18407,6 +18413,7 @@ __swagger__/swagger-ui.html
 __templates 
 __test.php
 __tests__/test-become/.env
+__web_console/
 _adm
 _admin
 _admin.html
@@ -31775,6 +31782,7 @@ asc/
 ascenvision
 ascii_ssh_key
 asd.json
+asd.php
 asdasd.json
 asdf.json
 asdf.php
@@ -33565,6 +33573,8 @@ backup-2021.sql
 backup-2022.sql
 backup-2022.zip
 backup-2023.sql
+backup-2023.zip
+backup-2024.zip
 backup-api
 backup-data.yaml
 backup-data.yml
@@ -33666,7 +33676,9 @@ backup2021.sql
 backup2022.sql
 backup2022.zip
 backup2023.sql
+backup2023.zip
 backup2024.sql
+backup2024.zip
 backup_0.sql.bz2
 backup_2022-12-31.sql
 backup_access_controls.bat

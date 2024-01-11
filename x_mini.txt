@@ -6817,6 +6817,7 @@ ${idfwbonavigation}.xml
 1.txt
 1.zip
 10-flannel.conf
+111.php
 123.php
 123.txt
 1admin
@@ -6905,6 +6906,7 @@ ${idfwbonavigation}.xml
 2022.tar.gz
 2022.tgz
 2022.zip
+2023-backup.zip
 2023.sql
 2023.tar
 2023.tar.bz2
@@ -7550,6 +7552,7 @@ __pycache__/
 __recovery/
 __swagger__/
 __test.php
+__web_console/
 _adm
 _admin
 _admin.html
@@ -8981,6 +8984,7 @@ artifactory/
 artifacts/
 artikeladmin
 as-admin
+asd.php
 asdf.php
 asimiline
 asp.aspx
