@@ -1,5 +1,5 @@
 ```mathematica
- 102M └─┬ main
+102M └─┬ main
  64M   ├─┬ Misc
  54M   │ ├─┬ IIS
  53M   │ │ ├── iis_large.txt
