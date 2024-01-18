@@ -11,7 +11,11 @@ $SysReset/Logs/diagerr.xml
 $SysReset/Logs/diagwrn.xml
 $SysReset/ResetSession.xml
 ${idfwbonavigation}.xml
+api/settings/1
 %EXT%.json
+api/users/all?access=all
+api/users/all
+api/users/all?fields=name
 %EXT%.xml
 &&
 *._responsive.appetizer.json.html

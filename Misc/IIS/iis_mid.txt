@@ -6,6 +6,8 @@
 .git2/config
 .htaccess.txt
 //./../.../boot.ini
+SessionStorage.aspx?USER_ID=1
+SessionStorage.aspx
 0.23.zip
 0.bfb068f9.chunk.js.license.txt
 0.bfbb30ed.chunk.js.license.txt
