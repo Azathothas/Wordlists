@@ -3192,6 +3192,7 @@ ${idfwbonavigation}.xml
 .env.www
 .env.yaml
 .env.yml
+.env/.config
 .env/actuator/env
 .env/config
 .env_1
@@ -3715,6 +3716,7 @@ ${idfwbonavigation}.xml
 .github/workflows/publish.yaml
 .github/workflows/publish.yml
 .github/workflows/puch.yml
+.github/workflows/push.ym
 .github/workflows/push.yml
 .github/workflows/release.yaml
 .github/workflows/release.yml
@@ -16808,6 +16810,7 @@ Registry
 RegulamentoFisioterapia.jsp
 RejectRequest
 Release.zip
+Releases.zip
 Releases/module.js 
 Reloadxml.aspx
 Remix-Design/RemixIcon
@@ -17193,6 +17196,8 @@ Servlets
 Session-Secret.json
 SessionExample
 SessionServlet
+SessionStorage.aspx
+SessionStorage.aspx?USER_ID=1
 SessionStorage.js 
 Session_Secret.json
 SessionsSection.e65c9824.js 
@@ -17239,6 +17244,7 @@ Sink/
 Site
 Site.admin
 Site/biztalkhttpreceive.dll
+SiteAdmin
 SiteMap
 SiteMap.xml
 SiteMapIndex.xml
@@ -17885,6 +17891,7 @@ WEB-INF/classes/application.properties
 WEB-INF/classes/application.yaml
 WEB-INF/classes/application.yml
 WEB-INF/classes/applicationContext.xml
+WEB-INF/classes/argo.properties
 WEB-INF/classes/cas-theme-default.properties
 WEB-INF/classes/commons-logging.properties
 WEB-INF/classes/config.properties
@@ -18758,6 +18765,7 @@ _include
 _include/
 _includes
 _includes/
+_includes/framer.php
 _index
 _index.%EXT%
 _index.php
@@ -27324,6 +27332,7 @@ api/set/index.html
 api/setPW
 api/set_status.php
 api/settings
+api/settings/1
 api/settings/check_secret_key 
 api/settings/encrypt 
 api/settings/generate_secret_key 
@@ -27516,6 +27525,8 @@ api/users/*
 api/users/account
 api/users/admin/init
 api/users/all
+api/users/all?access=all
+api/users/all?fields=name
 api/users/change_password 
 api/users/create 
 api/users/createUserSSO 
@@ -30825,6 +30836,7 @@ app_datserletestudentpro.sql
 app_debug
 app_dev.php
 app_dev.php/_fragment
+app_dev.php/_profile
 app_dev.php/_profiler
 app_dev.php/_profiler/empty/search/results?limit=100
 app_dev.php/_profiler/open?file=app/config/parameters.yaml
@@ -36264,6 +36276,7 @@ cams_login_config
 camsapi
 camunda
 camunda-welcome
+camunda/app/welcome/default/#!/login
 can
 canSignalDetails/event/ 
 canUseDOM 
@@ -40687,6 +40700,7 @@ config.default
 config.default.php
 config.defaults
 config.dev
+config.dev.json
 config.dev.php
 config.development.env
 config.development.ini
@@ -41531,6 +41545,7 @@ config/confMgr.php
 config/config
 config/config.action
 config/config.default.js
+config/config.dev.json
 config/config.env
 config/config.go
 config/config.inc
@@ -41541,6 +41556,7 @@ config/config.ini
 config/config.js
 config/config.json
 config/config.php
+config/config.prod.json
 config/config.properties
 config/config.py
 config/config.txt
@@ -41585,6 +41601,7 @@ config/database
 config/database-example.yaml
 config/database-example.yml
 config/database.config.ts
+config/database.create.json
 config/database.inc.php
 config/database.ini
 config/database.js
@@ -67873,6 +67890,7 @@ js/lock/11.13.0/
 js/lock/11.16.3/ 
 js/login-utils.js 
 js/mage/adminhtml/product/composite/configure.js
+js/mail.js
 js/main.js 
 js/oauth-ajax-calls.js 
 js/oauth-forms-n-buttons.js 
@@ -81541,6 +81559,7 @@ phpMyAdmin4.8.5/
 phpMyAdmin4/
 phpMyAdminBackup
 phpMyAdminBackup/
+phpMyAdminOLD/setup/index.php
 phpMyAdmin_111
 phpMyAdmin_111/
 phpMyAdmin__
@@ -86747,6 +86766,7 @@ releases
 releases-api
 releases.api
 releases.xml
+releases.zip
 releasesapi
 relgraph.js
 religion
@@ -89851,6 +89871,8 @@ scripts/shop.cgi
 scripts/shopper.cgi
 scripts/site.js 
 scripts/slxweb.dll
+scripts/sys_getpass.php
+scripts/sys_getpass.php?usercode=1
 scripts/test-all.sh 
 scripts/tiny_mce
 scripts/tinymce
@@ -99269,6 +99291,7 @@ tests.csproj
 tests.json
 tests.json 
 tests.sh
+tests.sql
 tests.yaml
 tests.yml
 tests/
@@ -101160,6 +101183,7 @@ ui/package.json
 ui/permissiontargets/buildPatterns 
 ui/projects/unassigned/statistics 
 ui/repodata 
+ui/repos/tree/General
 ui/setup/dataimporter/DataImporterAdminLandingPage 
 ui/slider 
 ui/storagesummary 
@@ -103131,6 +103155,7 @@ v1/health/status
 v1/i
 v1/identify
 v1/impress
+v1/info
 v1/init
 v1/integrations
 v1/internal
@@ -105104,6 +105129,7 @@ vendor/composer/installers/.travis.yml
 vendor/composer/installers/_config.yml
 vendor/composer/license
 vendor/composer/xdebug-handler/src/phpconfig.php
+vendor/credentials
 vendor/doctrine/cache/.coveralls.yml
 vendor/doctrine/cache/.gitignore
 vendor/doctrine/cache/.travis.yml

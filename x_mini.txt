@@ -2713,6 +2713,7 @@ ${idfwbonavigation}.xml
 .env.www
 .env.yaml
 .env.yml
+.env/.config
 .env/actuator/env
 .env/config
 .env_1
@@ -3252,6 +3253,7 @@ ${idfwbonavigation}.xml
 .github/workflows/publish.yaml
 .github/workflows/publish.yml
 .github/workflows/puch.yml
+.github/workflows/push.ym
 .github/workflows/push.yml
 .github/workflows/release.yaml
 .github/workflows/release.yml
