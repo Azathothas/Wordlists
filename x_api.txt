@@ -11,11 +11,7 @@ $SysReset/Logs/diagerr.xml
 $SysReset/Logs/diagwrn.xml
 $SysReset/ResetSession.xml
 ${idfwbonavigation}.xml
-api/settings/1
 %EXT%.json
-api/users/all?access=all
-api/users/all
-api/users/all?fields=name
 %EXT%.xml
 &&
 *._responsive.appetizer.json.html
@@ -16640,6 +16636,7 @@ api/set/index.html
 api/setPW
 api/set_status.php
 api/settings
+api/settings/1
 api/settings/check_secret_key 
 api/settings/encrypt 
 api/settings/generate_secret_key 
@@ -16834,6 +16831,8 @@ api/users/*
 api/users/account
 api/users/admin/init
 api/users/all
+api/users/all?access=all
+api/users/all?fields=name
 api/users/change_password 
 api/users/create 
 api/users/createUserSSO 
@@ -25830,6 +25829,7 @@ config.Test.json
 config.acceptance.json
 config.api
 config.beta.json
+config.dev.json
 config.development.json
 config.environment.json
 config.gamma.json
@@ -25888,7 +25888,9 @@ config/capistrano-config.rb
 config/cluster.json
 config/codeclimate.json
 config/codeclimate.xml
+config/config.dev.json
 config/config.json
+config/config.prod.json
 config/config.xml
 config/const.json
 config/couchbase.json
@@ -25896,6 +25898,7 @@ config/credentials.json
 config/credentials.yml.enc
 config/creds.json
 config/dashboard-statistics.xml
+config/database.create.json
 config/database.json
 config/db.json
 config/db.json.backup
@@ -68533,6 +68536,7 @@ v1/identity/entity/id?list=true
 v1/identity/group/id?list=true
 v1/impress
 v1/index.php
+v1/info
 v1/init
 v1/integrations
 v1/internal
