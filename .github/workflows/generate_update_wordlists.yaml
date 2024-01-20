@@ -60,7 +60,7 @@ jobs:
           set -x ; set +e
           #--------------#
           # eget for bins
-          sudo wget "https://bin.prashansa.com.np/x86_64_Linux/eget" -O "/usr/local/bin/eget"
+          sudo wget "https://bin.ajam.dev/x86_64_Linux/eget" -O "/usr/local/bin/eget"
           sudo chmod +xwr "/usr/local/bin/eget"
 
       - name: Install Deps for Wordium
@@ -69,7 +69,7 @@ jobs:
           set -x ; set +e
           #--------------#
           #anew
-          sudo eget "https://bin.prashansa.com.np/x86_64_Linux/anew" --to "/usr/local/bin/anew"
+          sudo eget "https://bin.ajam.dev/x86_64_Linux/anew" --to "/usr/local/bin/anew"
           anew -h
         continue-on-error: true
 
