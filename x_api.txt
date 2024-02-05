@@ -12649,6 +12649,17 @@ _error_docs
 _errordocs
 _ex
 _flatRest 
+_framework/appsettings.Dev.json
+_framework/appsettings.Development.json
+_framework/appsettings.Local.json
+_framework/appsettings.Prod.json
+_framework/appsettings.Production.json
+_framework/appsettings.Test.json
+_framework/appsettings.json
+_framework/appsettingsDev.json
+_framework/appsettingsLocal.json
+_framework/appsettingsProd.json
+_framework/appsettingsTest.json
 _framework/blazor.boot.json
 _getJsonTopMenu.php
 _global.xml
@@ -13443,6 +13454,7 @@ adm.json
 adm.v1
 adm.v2
 adm.xml
+adm/config.json
 admapi
 admin
 admin-6cfbdc9fff-nnpv4
@@ -13476,6 +13488,7 @@ admin/composer.json
 admin/config.json
 admin/config.xml
 admin/console.json
+admin/demo/config.json
 admin/docs
 admin/ewebeditor_v280_free/admin_login.asp
 admin/ewebeditor_v280_free/admin_login.aspx
@@ -13500,6 +13513,7 @@ admin/relReject/table_json/
 admin/restartMessage.shtml
 admin/sample/tealeafj2ee.xml
 admin/users.json
+admin/vim_settings.xml
 admin/widget/json/
 adminObjectPropertyPolicy.json
 adminObjectPropertyPolicy.json 
@@ -16116,6 +16130,7 @@ api/issues/set_severity
 api/issues/set_tags 
 api/issues/set_type 
 api/issues/tags 
+api/jakarta
 api/jobqueue/ 
 api/jobs
 api/jobs/deleteExecutionRequest 
@@ -16896,6 +16911,8 @@ api/v1/.env
 api/v1/.git
 api/v1/.git/config
 api/v1/.json
+api/v1/1/details
+api/v1/1/users
 api/v1/App/user
 api/v1/ResetPassword
 api/v1/about
@@ -16939,6 +16956,7 @@ api/v1/amazon-pay-accounts
 api/v1/analytics
 api/v1/analytics/events
 api/v1/api-docs
+api/v1/api.json
 api/v1/apidocs
 api/v1/app
 api/v1/app/
@@ -16995,6 +17013,7 @@ api/v1/common/preferences
 api/v1/common/users/password
 api/v1/complicance_store
 api/v1/componentstatuses
+api/v1/componentstatuses/controller-manager
 api/v1/config
 api/v1/config.json
 api/v1/config/.git/config
@@ -17160,6 +17179,9 @@ api/v1/monitoring/address-check
 api/v1/movies
 api/v1/namespaces
 api/v1/namespaces/default/configmaps
+api/v1/namespaces/default/endpoints
+api/v1/namespaces/default/events
+api/v1/namespaces/default/persistentvolumeclaims
 api/v1/namespaces/default/pods
 api/v1/namespaces/default/secrets
 api/v1/namespaces/default/serviceaccounts
@@ -17167,6 +17189,7 @@ api/v1/namespaces/default/services
 api/v1/namespaces/kube-node-lease/pods
 api/v1/namespaces/kube-public/pods
 api/v1/namespaces/kube-system/pods
+api/v1/namespaces/kube-system/secrets
 api/v1/namespaces/kube-system/services/https:kubernetes-dashboard:/proxy/#!/configmap?namespace=default
 api/v1/namespaces/kube-system/services/https:kubernetes-dashboard:/proxy/#!/configmap?namespace=kube-system
 api/v1/namespaces/kube-system/services/https:kubernetes-dashboard:/proxy/#!/daemon-set?namespace=kube-system
@@ -17187,6 +17210,7 @@ api/v1/namespaces/kube-system/services/https:kubernetes-dashboard:/proxy/#!/stor
 api/v1/namespaces/kube-system/services/https:kubernetes-dashboard:/proxy/#!/workload?namespace=default
 api/v1/namespaces/kube-system/services/https:kubernetes-dashboard:/proxy/#!/workload?namespace=kube-system
 api/v1/namespaces/kube-system/services/kubernetes-dashboard:/proxy
+api/v1/namespaces/kubernetes-dashboard/services/kubernetes-dashboard/proxy 
 api/v1/netdisk
 api/v1/netdisk/download
 api/v1/news
@@ -17538,6 +17562,8 @@ api/v2/.env
 api/v2/.git
 api/v2/.git/config
 api/v2/.json
+api/v2/1/details
+api/v2/1/users
 api/v2/:tan/firmwareUpdates/approveVins 
 api/v2/account
 api/v2/account.json
@@ -17546,6 +17572,7 @@ api/v2/accounts.json
 api/v2/actuator/dump
 api/v2/actuator/heapdump
 api/v2/api-docs
+api/v2/api.json
 api/v2/apidocs
 api/v2/app
 api/v2/app/
@@ -17638,6 +17665,7 @@ api/v2/user/profile/1
 api/v2/user/register
 api/v2/users
 api/v2/users.json
+api/v2/users/1
 api/v2/users/all
 api/v2/users/full
 api/v2/users/list
@@ -17676,6 +17704,8 @@ api/v3/.env
 api/v3/.git
 api/v3/.git/config
 api/v3/.json
+api/v3/1/details
+api/v3/1/users
 api/v3/ResetPassword
 api/v3/account
 api/v3/account.json
@@ -17683,6 +17713,7 @@ api/v3/accounts.json
 api/v3/actuator/dump
 api/v3/actuator/heapdump
 api/v3/api-docs
+api/v3/api.json
 api/v3/apidocs
 api/v3/auth/new
 api/v3/config.json
@@ -17734,6 +17765,7 @@ api/v3/user/profile/1
 api/v3/user/register
 api/v3/users
 api/v3/users.json
+api/v3/users/1
 api/v3/users/full
 api/v3/users/list
 api/v3/users/listing
@@ -20352,23 +20384,34 @@ appsecrets.json
 appselection.view.xml
 appsettings.Dev.json
 appsettings.DevLocal.json
+appsettings.DevTest.json
+appsettings.Devel.json
 appsettings.Development.json
 appsettings.DevelopmentLocal.json
 appsettings.DevelopmentTes.json
 appsettings.Devs.json
+appsettings.Kubernetes.json
 appsettings.Local.json
 appsettings.Pilot.json
 appsettings.PilotTest.json
 appsettings.Prod.json
+appsettings.ProdKubernetes.json
 appsettings.ProdLocal.json
 appsettings.Produ.json
 appsettings.Production.json
+appsettings.ProductionKubernetes.json
 appsettings.ProductionLocal.json
+appsettings.Secrets.json
 appsettings.Staging.json
+appsettings.Student.json
 appsettings.Test.json
+appsettings.TestBackup.json
+appsettings.TestLoad.json
 appsettings.TestLocal.json
 appsettings.Testing.json
 appsettings.UAT.json
+appsettings.World-Test.json
+appsettings.World.json
 appsettings.acceptance.json
 appsettings.beta.json
 appsettings.dev.json
@@ -20380,6 +20423,7 @@ appsettings.gamma.json
 appsettings.integration.json
 appsettings.json
 appsettings.json~
+appsettings.k8s.json
 appsettings.local.json
 appsettings.local.xml
 appsettings.perf.json
@@ -20387,6 +20431,7 @@ appsettings.prod.json
 appsettings.prod.xml
 appsettings.production.json
 appsettings.production.json~
+appsettings.secrets.json
 appsettings.stable.json
 appsettings.stage.json
 appsettings.staging.json
@@ -20395,6 +20440,11 @@ appsettings.staging.xml
 appsettings.test.json
 appsettings.test.xml
 appsettings.xml
+appsettingsDev.json
+appsettingsLocal.json
+appsettingsProd.json
+appsettingsProduction.json
+appsettingsTest.json
 appsv1
 appsv2
 appv1
@@ -22860,6 +22910,7 @@ bulles.xml
 bullet
 bulletins.xml
 bundle.xml
+bundleconfig.json
 bunkabanner.xml
 bunnerJSON.php
 bunsen-forums-search.xml
@@ -25684,6 +25735,8 @@ composemailview.xml
 composer
 composer-bx.json
 composer.json
+composer.json.bak
+composer.json.bkp
 composer.json.dist
 composer.json.old
 composer.json.orig
@@ -26133,8 +26186,13 @@ config/webmvc-config.xml
 config/xml
 config/xml/
 config/zendesk-api.json
+config1.json
+config2.json
 config2.xml
+config200.json
+config3.json
 config3d.xml
+config4.json
 configBridge.json
 config_acceptance.json
 config_acceptance.xml
@@ -29648,6 +29706,8 @@ demo.api
 demo.v1
 demo.v2
 demo.xml
+demo/user.json
+demo/vim_settings.xml
 demo/wp-includes/wlwmanifest.xml
 demo/xml/helloxml/hello.asp
 demo/xml/helloxml/hello.aspx
@@ -30213,6 +30273,9 @@ developv1
 developv2
 develv1
 develv2
+devenv1
+devenv2
+devenv3
 devextremesearch.xml
 device
 device-api
@@ -43778,6 +43841,7 @@ local.xml.template
 local/api
 local/graphics
 localStoragePopupJson.do
+local_settings.json
 localapi
 localdb_good_api.php
 locale.api.php
@@ -58665,8 +58729,10 @@ saml_security.xml
 samlv20
 sampei-json.jsp
 sample
+sample.config.json
 sample.json
 sample.xml
+sampleConfig.json
 samples
 samples-api
 samples-v1
@@ -67708,6 +67774,7 @@ user-info
 user-pin
 user-pools.json
 user-role
+user-secrets.json
 user-state
 user-v1
 user-v2
@@ -68658,6 +68725,7 @@ v1/request-as-agent
 v1/resources
 v1/rollups
 v1/routes 
+v1/save_to_DB.php
 v1/search-merchant
 v1/search-merchant/
 v1/search-seller
@@ -74404,6 +74472,7 @@ wwwboard
 wwwjoin
 wwwlog
 wwwqueentuttsworldofescapism
+wwwroot/appsettings.json
 wwwstats
 wwwv1
 wwwv2

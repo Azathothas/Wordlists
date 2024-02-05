@@ -1873,6 +1873,8 @@ ${idfwbonavigation}.xml
 .config.php.swn
 .config.php.swo
 .config.php.swp
+.config.py.env
+.config.py.local
 .config.sample.env
 .config.swm
 .config.swn
@@ -2168,6 +2170,7 @@ ${idfwbonavigation}.xml
 .docker-compose.test.yml
 .docker-compose.yaml
 .docker-compose.yml
+.docker-compose.yml.local
 .docker-credential-helpers
 .docker-env
 .docker-env-backup
@@ -4430,6 +4433,8 @@ ${idfwbonavigation}.xml
 .mailrc
 .mailsubdom
 .main
+.main.py.env
+.main.py.local
 .maint
 .maintenance
 .maintenance2
@@ -5594,6 +5599,8 @@ ${idfwbonavigation}.xml
 .settings.jsp.swp
 .settings.php
 .settings.php.swp
+.settings.py.env
+.settings.py.local
 .settings/
 .settings/.jsdtscope
 .settings/com.zend.php.javabridge.core.prefs
@@ -6559,6 +6566,9 @@ ${idfwbonavigation}.xml
 .wp-config.jsf.swp
 .wp-config.jsp.swp
 .wp-config.php
+.wp-config.php.bak
+.wp-config.php.bkp
+.wp-config.php.old
 .wp-config.php.swm
 .wp-config.php.swn
 .wp-config.php.swo

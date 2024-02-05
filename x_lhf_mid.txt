@@ -122,6 +122,7 @@
 ";waitfor delay '0:0:__TIME__'--
 #
 #.htaccess#
+#/conf
 #/configuration
 #/login
 #?
@@ -2355,6 +2356,8 @@ ${idfwbonavigation}.xml
 .config.php.swn
 .config.php.swo
 .config.php.swp
+.config.py.env
+.config.py.local
 .config.sample.env
 .config.swm
 .config.swn
@@ -2650,6 +2653,7 @@ ${idfwbonavigation}.xml
 .docker-compose.test.yml
 .docker-compose.yaml
 .docker-compose.yml
+.docker-compose.yml.local
 .docker-credential-helpers
 .docker-env
 .docker-env-backup
@@ -4892,6 +4896,8 @@ ${idfwbonavigation}.xml
 .mailrc
 .mailsubdom
 .main
+.main.py.env
+.main.py.local
 .maint
 .maintenance
 .maintenance2
@@ -6052,6 +6058,8 @@ ${idfwbonavigation}.xml
 .settings.jsp.swp
 .settings.php
 .settings.php.swp
+.settings.py.env
+.settings.py.local
 .settings/
 .settings/.jsdtscope
 .settings/com.zend.php.javabridge.core.prefs
@@ -7016,6 +7024,9 @@ ${idfwbonavigation}.xml
 .wp-config.jsf.swp
 .wp-config.jsp.swp
 .wp-config.php
+.wp-config.php.bak
+.wp-config.php.bkp
+.wp-config.php.old
 .wp-config.php.swm
 .wp-config.php.swn
 .wp-config.php.swo
@@ -18714,6 +18725,17 @@ _flush
 _fpclass
 _fpclass/
 _fragment
+_framework/appsettings.Dev.json
+_framework/appsettings.Development.json
+_framework/appsettings.Local.json
+_framework/appsettings.Prod.json
+_framework/appsettings.Production.json
+_framework/appsettings.Test.json
+_framework/appsettings.json
+_framework/appsettingsDev.json
+_framework/appsettingsLocal.json
+_framework/appsettingsProd.json
+_framework/appsettingsTest.json
 _framework/blazor.boot.json
 _freeGlobal 
 _freeGlobal.js 
@@ -20158,6 +20180,10 @@ actu/api/search
 actual
 actual/global-this 
 actuator
+actuator/%3B%2Fenv
+actuator/%3B/env
+actuator/..%2Fenv
+actuator/..;/env
 actuator/;/auditLog
 actuator/;/auditevents
 actuator/;/beans
@@ -20623,6 +20649,8 @@ adm/admloginuser.cfm
 adm/admloginuser.cgi
 adm/admloginuser.js
 adm/admloginuser.php
+adm/config.js
+adm/config.json
 adm/fckeditor
 adm/index
 adm/index.%EXT%
@@ -20821,6 +20849,7 @@ admin.checkin.php
 admin.class.php
 admin.conf
 admin.conf.default
+admin.config
 admin.config.html.php
 admin.config.php
 admin.contact.php
@@ -20994,6 +21023,7 @@ admin/addblog.php
 admin/addzevcategory/ 
 admin/adm.php
 admin/admin
+admin/admin-config.py
 admin/admin-home.php
 admin/admin-login
 admin/admin-login.%EXT%
@@ -21156,6 +21186,7 @@ admin/config.jsp
 admin/config.php
 admin/config.php#
 admin/config.php?password%5b0%5d=zizo&username=admin
+admin/config.rb
 admin/config.txt
 admin/config.xml
 admin/config/
@@ -21247,6 +21278,10 @@ admin/default.asp
 admin/default.php
 admin/default/admin.asp
 admin/default/login.asp
+admin/demo/config.js
+admin/demo/config.json
+admin/demo/config.py
+admin/dev.config.js
 admin/docs
 admin/download.php
 admin/download/backup.sql
@@ -21271,6 +21306,7 @@ admin/editor/dialogs/dialog.php?module=spawfm&dialog=spawfm&theme=spaw2lite&type
 admin/editzevcategory/ 
 admin/enter.php
 admin/env.js
+admin/environment.js
 admin/environments 
 admin/error.jsp
 admin/error.log
@@ -21669,6 +21705,7 @@ admin/view/javascript/common.js
 admin/viewblog.php
 admin/viewmembers.php
 admin/views/ajax/autocomplete/user/a
+admin/vim_settings.xml
 admin/voucher.php
 admin/web
 admin/web/
@@ -26814,6 +26851,7 @@ api/issues/set_severity
 api/issues/set_tags 
 api/issues/set_type 
 api/issues/tags 
+api/jakarta
 api/jobqueue/ 
 api/jobs
 api/jobs/deleteExecutionRequest 
@@ -27590,6 +27628,8 @@ api/v1/.env
 api/v1/.git
 api/v1/.git/config
 api/v1/.json
+api/v1/1/details
+api/v1/1/users
 api/v1/ResetPassword
 api/v1/about
 api/v1/access/share
@@ -27630,6 +27670,7 @@ api/v1/amazon-pay-accounts
 api/v1/analytics
 api/v1/analytics/events
 api/v1/api-docs
+api/v1/api.json
 api/v1/apidocs
 api/v1/app/
 api/v1/apple-pay-accounts
@@ -27683,6 +27724,7 @@ api/v1/common/preferences
 api/v1/common/users/password
 api/v1/complicance_store
 api/v1/componentstatuses
+api/v1/componentstatuses/controller-manager
 api/v1/config
 api/v1/config.json
 api/v1/config/.git/config
@@ -27839,6 +27881,9 @@ api/v1/monitoring/address-check
 api/v1/movies
 api/v1/namespaces
 api/v1/namespaces/default/configmaps
+api/v1/namespaces/default/endpoints
+api/v1/namespaces/default/events
+api/v1/namespaces/default/persistentvolumeclaims
 api/v1/namespaces/default/pods
 api/v1/namespaces/default/secrets
 api/v1/namespaces/default/serviceaccounts
@@ -27846,6 +27891,7 @@ api/v1/namespaces/default/services
 api/v1/namespaces/kube-node-lease/pods
 api/v1/namespaces/kube-public/pods
 api/v1/namespaces/kube-system/pods
+api/v1/namespaces/kube-system/secrets
 api/v1/namespaces/kube-system/services/https:kubernetes-dashboard:/proxy/#!/configmap?namespace=default
 api/v1/namespaces/kube-system/services/https:kubernetes-dashboard:/proxy/#!/configmap?namespace=kube-system
 api/v1/namespaces/kube-system/services/https:kubernetes-dashboard:/proxy/#!/daemon-set?namespace=kube-system
@@ -27866,6 +27912,7 @@ api/v1/namespaces/kube-system/services/https:kubernetes-dashboard:/proxy/#!/stor
 api/v1/namespaces/kube-system/services/https:kubernetes-dashboard:/proxy/#!/workload?namespace=default
 api/v1/namespaces/kube-system/services/https:kubernetes-dashboard:/proxy/#!/workload?namespace=kube-system
 api/v1/namespaces/kube-system/services/kubernetes-dashboard:/proxy
+api/v1/namespaces/kubernetes-dashboard/services/kubernetes-dashboard/proxy 
 api/v1/netdisk
 api/v1/netdisk/download
 api/v1/news
@@ -28213,6 +28260,8 @@ api/v2/.env
 api/v2/.git
 api/v2/.git/config
 api/v2/.json
+api/v2/1/details
+api/v2/1/users
 api/v2/:tan/firmwareUpdates/approveVins 
 api/v2/account
 api/v2/account.json
@@ -28221,6 +28270,7 @@ api/v2/accounts.json
 api/v2/actuator/dump
 api/v2/actuator/heapdump
 api/v2/api-docs
+api/v2/api.json
 api/v2/apidocs
 api/v2/app/
 api/v2/application.wadl
@@ -28304,6 +28354,7 @@ api/v2/user/profile/1
 api/v2/user/register
 api/v2/users
 api/v2/users.json
+api/v2/users/1
 api/v2/users/all
 api/v2/users/full
 api/v2/users/list
@@ -28342,6 +28393,8 @@ api/v3/.env
 api/v3/.git
 api/v3/.git/config
 api/v3/.json
+api/v3/1/details
+api/v3/1/users
 api/v3/ResetPassword
 api/v3/account
 api/v3/account.json
@@ -28349,6 +28402,7 @@ api/v3/accounts.json
 api/v3/actuator/dump
 api/v3/actuator/heapdump
 api/v3/api-docs
+api/v3/api.json
 api/v3/apidocs
 api/v3/auth/new
 api/v3/config.json
@@ -28399,6 +28453,7 @@ api/v3/user/profile/1
 api/v3/user/register
 api/v3/users
 api/v3/users.json
+api/v3/users/1
 api/v3/users/full
 api/v3/users/list
 api/v3/users/listing
@@ -29927,6 +29982,12 @@ app-api
 app-config-secret.yaml
 app-config.js
 app-config.xml
+app-config.yaml
+app-config.yaml1
+app-config.yml
+app-config.yml1
+app-config1.yaml
+app-config1.yml
 app-critical.log
 app-debug.log
 app-dev.properties
@@ -30008,6 +30069,7 @@ app.ml
 app.mock.json
 app.module.ts
 app.php
+app.php.env
 app.preprod.json
 app.prod.conf
 app.prod.json
@@ -31473,23 +31535,34 @@ appserv
 appserver
 appsettings.Dev.json
 appsettings.DevLocal.json
+appsettings.DevTest.json
+appsettings.Devel.json
 appsettings.Development.json
 appsettings.DevelopmentLocal.json
 appsettings.DevelopmentTes.json
 appsettings.Devs.json
+appsettings.Kubernetes.json
 appsettings.Local.json
 appsettings.Pilot.json
 appsettings.PilotTest.json
 appsettings.Prod.json
+appsettings.ProdKubernetes.json
 appsettings.ProdLocal.json
 appsettings.Produ.json
 appsettings.Production.json
+appsettings.ProductionKubernetes.json
 appsettings.ProductionLocal.json
+appsettings.Secrets.json
 appsettings.Staging.json
+appsettings.Student.json
 appsettings.Test.json
+appsettings.TestBackup.json
+appsettings.TestLoad.json
 appsettings.TestLocal.json
 appsettings.Testing.json
 appsettings.UAT.json
+appsettings.World-Test.json
+appsettings.World.json
 appsettings.acceptance.json
 appsettings.beta.json
 appsettings.cfg
@@ -31506,6 +31579,7 @@ appsettings.ini
 appsettings.integration.json
 appsettings.json
 appsettings.json~
+appsettings.k8s.json
 appsettings.local.json
 appsettings.local.xml
 appsettings.perf.json
@@ -31514,6 +31588,7 @@ appsettings.prod.xml
 appsettings.production.json
 appsettings.production.json~
 appsettings.properties
+appsettings.secrets.json
 appsettings.stable.json
 appsettings.stage.json
 appsettings.staging.json
@@ -31525,6 +31600,11 @@ appsettings.toml
 appsettings.xml
 appsettings.yaml
 appsettings.yml
+appsettingsDev.json
+appsettingsLocal.json
+appsettingsProd.json
+appsettingsProduction.json
+appsettingsTest.json
 appspec.yaml
 appspec.yml
 appspot
@@ -33577,6 +33657,7 @@ backend/admin/user/user.json
 backend/admin/user/users.json
 backend/core/info.xml
 backend/package.json
+backend/settings/configs.py.local
 backend/src/.env
 backend/web/site/login
 backendId/ 
@@ -35591,6 +35672,7 @@ build_project.py
 build_project.sh
 build_project.txt
 build_project.xml
+build_query
 build_release.sh
 build_research.htm
 build_tarball.sh
@@ -35693,6 +35775,7 @@ bundle-libraries.sh
 bundle.sh
 bundle/distribution-overview/ 
 bundleartifacts
+bundleconfig.json
 bundles 
 bundles* 
 bundles/*
@@ -40174,6 +40257,8 @@ compose.sh
 composer
 composer-bx.json
 composer.json
+composer.json.bak
+composer.json.bkp
 composer.json.dist
 composer.json.old
 composer.json.orig
@@ -40274,6 +40359,7 @@ conf.php.bak
 conf.php.old
 conf.php.swp
 conf.py
+conf.py.local
 conf.rb
 conf.swp
 conf.yaml
@@ -40911,8 +40997,10 @@ config.js.bak
 config.js.bkp
 config.js.cfm
 config.js.dist
+config.js.env
 config.js.example
 config.js.jsp
+config.js.local
 config.js.php
 config.jsf
 config.jsf-eb
@@ -41036,6 +41124,7 @@ config.php.dif
 config.php.disabled
 config.php.dist
 config.php.dump
+config.php.env
 config.php.err
 config.php.gz
 config.php.html
@@ -41170,12 +41259,17 @@ config.properties.xml
 config.ps1
 config.py
 config.py-old
+config.py.1
 config.py.bak
+config.py.bkp
+config.py.env
+config.py.local
 config.py.old
 config.py~
 config.rar
 config.rb
 config.rb.bak
+config.rb.env
 config.rej
 config.rpath
 config.rpmnew
@@ -41693,6 +41787,7 @@ config/enable
 config/encryption
 config/env.py
 config/environment.js
+config/environment.py.local
 config/environment.rb
 config/environment/dev.php
 config/environment/test.php
@@ -42596,6 +42691,26 @@ config/yetting.yaml
 config/yetting.yml
 config/zendesk-api.json
 config/zookeeper.cfg
+config1
+config1.js
+config1.json
+config1.py
+config2
+config2.js
+config2.json
+config2.py
+config200
+config200.js
+config200.json
+config200.py
+config3
+config3.js
+config3.json
+config3.py
+config4
+config4.js
+config4.json
+config4.py
 config?a=.js
 config?logpathConf.html
 configBL.php
@@ -43002,6 +43117,7 @@ configs.java
 configs.js
 configs.php
 configs.py
+configs.py.local
 configs.rb
 configs.txt
 configs.zip
@@ -49593,6 +49709,7 @@ db.bz2
 db.clojure
 db.cnf
 db.conf
+db.conf.bak
 db.config
 db.config.backup
 db.config.bkp
@@ -50892,6 +51009,11 @@ demo/
 demo/.env
 demo/.git/config
 demo/:slug 
+demo/admin/config
+demo/config
+demo/config.js
+demo/config.py
+demo/config.rb
 demo/corba/viewsrc/HelloCorbaWrapperBean.java.txt
 demo/ejb/index.html
 demo/ejb/viewsrc/EmployeeEJBWrapper.java.txt
@@ -50933,6 +51055,8 @@ demo/sql/tag/viewsrc/sample1.jsp.txt
 demo/sql/tag/viewsrc/sample2.jsp.txt
 demo/sql/tag/viewsrc/sample4.jsp.txt
 demo/sql/tag/viewsrc/sample5.jsp.txt
+demo/user.json
+demo/vim_settings.xml
 demo/wp-includes/wlwmanifest.xml
 demo/xml/helloxml/hello.jsp
 demo/xml/helloxml/index.html
@@ -51059,6 +51183,7 @@ deployment.yaml
 deployment.yaml.backup
 deployment.yml
 deployment/env/config.js
+deployment/env/dev.config.js
 deployment/env/redacted.config.js
 deploymentScripts/settings.json
 deployment_automation.yaml
@@ -51302,6 +51427,7 @@ dev.nupkg
 dev.php
 dev.ps1
 dev.py
+dev.py.local
 dev.py.old
 dev.py~
 dev.rar
@@ -51707,6 +51833,9 @@ developpeurs/*
 devels
 deventry.js
 devenv
+devenv1
+devenv2
+devenv3
 devexpress
 devforum
 devhome
@@ -52102,11 +52231,13 @@ digital.aspx
 digital.php
 digital/preview
 digital/search
+digital1
 digitalAssets
 digitalGoods
 digitalRetailIntegration.do
 digitalSignature.contributions 
 digitalTV.ashx
+digital_assets
 digital_chronicle.php
 digital_doorbusters_mobile.ashx
 digital_editions
@@ -52843,6 +52974,7 @@ docker-compose.worker.yaml
 docker-compose.worker.yml
 docker-compose.yaml
 docker-compose.yml
+docker-compose.yml.local
 docker-compose.zookeeper.yaml
 docker-compose.zookeeper.yml
 docker-compose/platform/.env
@@ -55470,6 +55602,7 @@ env/.config
 env/.env
 env/FormData 
 env/data 
+env/dev.config.js
 env/dockers/mariadb-test/.env
 env/dockers/php-apache/.env
 env/example/.env
@@ -55712,6 +55845,7 @@ environment.production.ini
 environment.production.json
 environment.properties
 environment.py
+environment.py.local
 environment.rb
 environment.sh
 environment.staging.ini
@@ -71903,6 +72037,7 @@ local_bd_old.txt
 local_conf.php
 local_conf.php.bac
 local_conf.php.bak
+local_settings.json
 local_settings.py
 localadmin
 localapi
@@ -73461,6 +73596,7 @@ manage.inc
 manage.json
 manage.php
 manage.py
+manage.py.env
 manage/
 manage/admin.asp
 manage/fckeditor
@@ -77561,6 +77697,7 @@ nginx/conf
 nginx/nginx.conf
 nginx_access.log
 nginx_access.log.1
+nginx_admin.conf
 nginx_app.conf
 nginx_fastcgi.conf
 nginx_http2_proxy.conf
@@ -78088,10 +78225,16 @@ nu/
 nua/
 nucleus/documentation/history.html
 nudge/api
+nuget-new.config
+nuget-old.config
 nuget.config
+nuget.config.new
+nuget.config.old
 nuget_api_key
 nuget_apikey
 nuget_key
+nuget_new.config
+nuget_old.config
 nuke-graph-directory.sh
 nuke.app.ui/.env
 nuke.sql
@@ -89309,6 +89452,7 @@ saml_subject_confirmation.php
 samlssodemo_dest
 samlssodemo_source
 sample
+sample.config.json
 sample.htaccess
 sample.json
 sample.log
@@ -89322,6 +89466,7 @@ sample/page-1
 sample/page-2 
 sample/page-3 
 sample01.py
+sampleConfig.json
 sample_data.sql
 sample_document.yaml
 sample_document.yml
@@ -92348,7 +92493,9 @@ settings/config.json
 settings/config.py
 settings/config.yaml
 settings/config.yml
+settings/configs.py.local
 settings/createRoles 
+settings/dev.py.local
 settings/gdpr 
 settings/gdpr/ 
 settings/general 
@@ -94443,6 +94590,7 @@ source.api
 source.php
 source.zip
 source/
+source/conf.py.local
 source/inspector.html
 sourceFilters
 sourceMapping
@@ -101793,6 +101941,7 @@ uploads-api
 uploads.api
 uploads.json
 uploads.php
+uploads.sql
 uploads.zip
 uploads/
 uploads/.env
@@ -101949,6 +102098,7 @@ user-privoxy.config
 user-role
 user-roles.yaml
 user-roles.yml
+user-secrets.json
 user-sessions 
 user-state
 user-state 
@@ -109559,6 +109709,7 @@ wwwroot.tar.bz2
 wwwroot.tar.gz
 wwwroot.tgz
 wwwroot.zip
+wwwroot/appsettings.json
 wwwstat
 wwwstats
 wwwstats.htm
