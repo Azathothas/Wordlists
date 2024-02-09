@@ -88,13 +88,13 @@ wget -q "https://raw.githubusercontent.com/Azathothas/Wordlists/main/Misc/ports_
 ➼Updated Wordlists:
 ➼ x_api.txt       : 76379 /home/runner/work/Wordlists/Wordlists/main/x_api.txt
 ➼ x_api_tiny.txt  : 22349 /home/runner/work/Wordlists/Wordlists/main/x_api_tiny.txt
-➼ x_dns.txt       : 524847 /home/runner/work/Wordlists/Wordlists/main/x_dns.txt
+➼ x_dns.txt       : 524855 /home/runner/work/Wordlists/Wordlists/main/x_dns.txt
 ➼ x_dns_tiny.txt  : 16136 /home/runner/work/Wordlists/Wordlists/main/x_dns_tiny.txt
 ➼ x_mini.txt      : 14315 /home/runner/work/Wordlists/Wordlists/main/x_mini.txt
 ➼ x_lhf_mini.txt  : 36035 /home/runner/work/Wordlists/Wordlists/main/x_lhf_mini.txt
 ➼ x_lhf_mid.txt   : 111361 /home/runner/work/Wordlists/Wordlists/main/x_lhf_mid.txt
 ➼ x_lhf_large.txt : 271162 /home/runner/work/Wordlists/Wordlists/main/x_lhf_large.txt
-➼ x_massive.txt   : 1050447 /home/runner/work/Wordlists/Wordlists/main/x_massive.txt
+➼ x_massive.txt   : 1050450 /home/runner/work/Wordlists/Wordlists/main/x_massive.txt
 
 
 ```
