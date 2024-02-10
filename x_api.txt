@@ -12787,6 +12787,9 @@ _vti_log
 _vti_pvt
 _vti_rpc
 _wpeprivate/config.json
+_wpeprivate/config.json.backup
+_wpeprivate/config.json.bkp
+_wpeprivate/config.json.old
 _wpeprivate/config.json_
 _x
 _xml
@@ -16030,6 +16033,7 @@ api/feature
 api/features/list 
 api/feeds_service
 api/file
+api/file-storage
 api/file_uploader.php
 api/filemanager
 api/files.remote.share
@@ -16156,6 +16160,7 @@ api/jwt
 api/jwt/refresh
 api/katalog/v1.0/ 
 api/kcdb/swagger-ui/index.html
+api/keys
 api/keys.js
 api/konglog/command
 api/konglog/device
@@ -16668,6 +16673,7 @@ api/shop/v1
 api/short-urls 
 api/sign-up
 api/signature
+api/signin
 api/signup
 api/silence/clear
 api/silence/get
@@ -16880,6 +16886,7 @@ api/utilisateurs
 api/utilisateurs/1
 api/utilisateurs/2
 api/utilities
+api/utils/signup
 api/v
 api/v/index/queryOfficePage
 api/v/index/queryofficepage
@@ -17367,6 +17374,7 @@ api/v1/setting
 api/v1/settings
 api/v1/sign-up
 api/v1/signature
+api/v1/signin
 api/v1/signup
 api/v1/sites.json
 api/v1/sms-sender
@@ -17608,6 +17616,7 @@ api/v2/index/.git/config
 api/v2/internal/users/1
 api/v2/ip.json
 api/v2/jobs
+api/v2/keys
 api/v2/leads
 api/v2/link
 api/v2/login
@@ -17727,6 +17736,7 @@ api/v3/graphql
 api/v3/index/.env
 api/v3/index/.git/config
 api/v3/internal/users/1
+api/v3/keys
 api/v3/leads
 api/v3/login
 api/v3/me
@@ -29942,7 +29952,11 @@ dev.json
 dev.v1
 dev.v2
 dev.xml
+dev/api/
+dev/api/v1/
 dev/api/v1/users
+dev/api/v2/
+dev/api/v3/
 dev/docs/v1/api
 dev/docs/v1/graphql
 dev/docs/v1/rest
@@ -43828,7 +43842,10 @@ local.settings.ci.json
 local.settings.development.json
 local.settings.json
 local.settings.json.backup
+local.settings.json.bkp
+local.settings.json.old
 local.settings.json.template
+local.settings.json1
 local.settings.production.json
 local.settings.staging.json
 local.settings.test.json

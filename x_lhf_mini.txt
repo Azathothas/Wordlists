@@ -1990,6 +1990,7 @@ $metadata
 .conf_keys.conf
 .conf_private_keys.conf
 .config
+.config.backup
 .config.example
 .config.inc.php.bck
 .config.inc.php.swo
@@ -2061,6 +2062,11 @@ $metadata
 .config/stripe/config.toml
 .config/yarn/global/package.json
 .config/yarn/global/yarn.lock
+.config1.backup
+.config2.backup
+.config3.backup
+.config_old
+.config_orig
 .configuration
 .configuration.jsf.swp
 .configuration.jsp.swp
@@ -2353,6 +2359,7 @@ $metadata
 .docker/nginx
 .docker/nginx-reverse-proxy
 .docker/nginx.conf
+.docker/nginx/app.conf
 .docker/nginx/points-common.inc
 .docker/nginx/points.conf
 .docker/php
