@@ -86,15 +86,15 @@ wget -q "https://raw.githubusercontent.com/Azathothas/Wordlists/main/Misc/ports_
 
 --> METADATA
 ➼Updated Wordlists:
-➼ x_api.txt       : 76396 /home/runner/work/Wordlists/Wordlists/main/x_api.txt
+➼ x_api.txt       : 76432 /home/runner/work/Wordlists/Wordlists/main/x_api.txt
 ➼ x_api_tiny.txt  : 22349 /home/runner/work/Wordlists/Wordlists/main/x_api_tiny.txt
-➼ x_dns.txt       : 525093 /home/runner/work/Wordlists/Wordlists/main/x_dns.txt
+➼ x_dns.txt       : 525106 /home/runner/work/Wordlists/Wordlists/main/x_dns.txt
 ➼ x_dns_tiny.txt  : 16136 /home/runner/work/Wordlists/Wordlists/main/x_dns_tiny.txt
-➼ x_mini.txt      : 14322 /home/runner/work/Wordlists/Wordlists/main/x_mini.txt
-➼ x_lhf_mini.txt  : 36042 /home/runner/work/Wordlists/Wordlists/main/x_lhf_mini.txt
-➼ x_lhf_mid.txt   : 111413 /home/runner/work/Wordlists/Wordlists/main/x_lhf_mid.txt
-➼ x_lhf_large.txt : 271255 /home/runner/work/Wordlists/Wordlists/main/x_lhf_large.txt
-➼ x_massive.txt   : 1050537 /home/runner/work/Wordlists/Wordlists/main/x_massive.txt
+➼ x_mini.txt      : 14336 /home/runner/work/Wordlists/Wordlists/main/x_mini.txt
+➼ x_lhf_mini.txt  : 36057 /home/runner/work/Wordlists/Wordlists/main/x_lhf_mini.txt
+➼ x_lhf_mid.txt   : 111528 /home/runner/work/Wordlists/Wordlists/main/x_lhf_mid.txt
+➼ x_lhf_large.txt : 271470 /home/runner/work/Wordlists/Wordlists/main/x_lhf_large.txt
+➼ x_massive.txt   : 1050701 /home/runner/work/Wordlists/Wordlists/main/x_massive.txt
 
 
 ```

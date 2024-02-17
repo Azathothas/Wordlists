@@ -1466,6 +1466,7 @@ ${idfwbonavigation}.xml
 .apf
 .apj
 .app
+.appconfig.ini
 .appledb
 .appledesktop
 .appledouble
@@ -1891,6 +1892,7 @@ ${idfwbonavigation}.xml
 .bowerrc
 .box
 .br
+.bra.toml
 .brackets.json
 .browse
 .browser
@@ -2702,6 +2704,7 @@ ${idfwbonavigation}.xml
 .docker/docker-compose.stage.yml
 .docker/docker-compose.yml
 .docker/docker-entrypoint.sh
+.docker/docker_run_git.sh
 .docker/entrypoint
 .docker/entrypoint.dev.sh
 .docker/entrypoint.prod.sh
@@ -3668,6 +3671,7 @@ ${idfwbonavigation}.xml
 .github/pull_request_template.md
 .github/secrets
 .github/stale.yml
+.github/teams.yml
 .github/workflows
 .github/workflows/CI.yml
 .github/workflows/action.yml
@@ -4937,11 +4941,13 @@ ${idfwbonavigation}.xml
 .memcached-cli.history
 .memcached-cli.session
 .memdump
+.memory.env
 .menu
 .menu.php
 .merchant
 .mergesources.yaml
 .mergesources.yml
+.mergify.yml
 .merlin
 .met
 .meta
@@ -5357,6 +5363,8 @@ ${idfwbonavigation}.xml
 .p3p
 .p4ignore
 .p7b
+.pa11yci-pr.conf.js
+.pa11yci.conf.js
 .pac
 .pac.pac
 .pac/
@@ -5516,6 +5524,7 @@ ${idfwbonavigation}.xml
 .php
 .php$
 .php-
+.php-cs-fixer.phpb
 .php-dist
 .php-ini
 .php-version
@@ -5623,6 +5632,7 @@ ${idfwbonavigation}.xml
 .popup.pop_3d_viewer
 .popup.pop_formata_viewer
 .portal
+.postcss-sorting.json
 .postcss.config.js
 .postcssignore
 .postcssrc
@@ -5848,6 +5858,7 @@ ${idfwbonavigation}.xml
 .registration
 .registry
 .release.json
+.releaserc
 .remarkignore
 .remarkrc
 .remote
@@ -6020,6 +6031,7 @@ ${idfwbonavigation}.xml
 .semaphore
 .semaphore/semaphore.yaml
 .semaphore/semaphore.yml
+.semgrepignore
 .semver
 .sencha
 .send
@@ -6961,6 +6973,7 @@ ${idfwbonavigation}.xml
 .well-known/host-meta
 .well-known/host-meta.json
 .well-known/http-opportunistic
+.well-known/humans.txt
 .well-known/idp-proxy
 .well-known/jmap
 .well-known/jwks
@@ -6982,6 +6995,7 @@ ${idfwbonavigation}.xml
 .well-known/openid-configuration 
 .well-known/openid-configuration/
 .well-known/openid-configuration/jwks
+.well-known/openid-federation
 .well-known/openorg
 .well-known/openpgpkey
 .well-known/pki-validation
@@ -18581,6 +18595,9 @@ _borders
 _borders/
 _build
 _build/
+_build/build.sample.properties
+_build/build.xml
+_build/docblox.xml
 _bulk 
 _cache
 _cache/
@@ -26306,6 +26323,7 @@ api/_data
 api/_hopefullynotexist404
 api/_swagger_
 api/_swagger_/
+api/_users
 api/access-control/roles
 api/access-control/user/actions 
 api/access/api/v1/users
@@ -27619,6 +27637,7 @@ api/v1
 api/v1 
 api/v1.0
 api/v1.0/.git
+api/v1.0/.git/config
 api/v1.0/.json
 api/v1.0/logs
 api/v1.0/reg
@@ -27645,6 +27664,7 @@ api/v1/.json
 api/v1/1/details
 api/v1/1/users
 api/v1/ResetPassword
+api/v1/_users
 api/v1/about
 api/v1/access/share
 api/v1/account
@@ -28072,6 +28092,7 @@ api/v1/search
 api/v1/seats
 api/v1/secret
 api/v1/secrets
+api/v1/secrets.json
 api/v1/series
 api/v1/server
 api/v1/serviceaccounts
@@ -28245,6 +28266,7 @@ api/v2
 api/v2 
 api/v2.0
 api/v2.0/.git
+api/v2.0/.git/config
 api/v2.0/.json
 api/v2.0/configuration
 api/v2.0/health
@@ -28278,6 +28300,7 @@ api/v2/.json
 api/v2/1/details
 api/v2/1/users
 api/v2/:tan/firmwareUpdates/approveVins 
+api/v2/_users
 api/v2/account
 api/v2/account.json
 api/v2/accounts
@@ -28305,6 +28328,7 @@ api/v2/displays
 api/v2/docs
 api/v2/event
 api/v2/feed/
+api/v2/files
 api/v2/graphiql
 api/v2/graphql
 api/v2/health
@@ -28340,6 +28364,8 @@ api/v2/resetPassword/admin
 api/v2/resetPassword/administrator
 api/v2/resetPassword/test
 api/v2/resetPwd
+api/v2/secrets
+api/v2/secrets.json
 api/v2/server
 api/v2/sign-up
 api/v2/signature
@@ -28388,6 +28414,7 @@ api/v3
 api/v3 
 api/v3.0
 api/v3.0/.git
+api/v3.0/.git/config
 api/v3.0/.json
 api/v3.0/reg
 api/v3.0/register
@@ -28412,6 +28439,7 @@ api/v3/.json
 api/v3/1/details
 api/v3/1/users
 api/v3/ResetPassword
+api/v3/_users
 api/v3/account
 api/v3/account.json
 api/v3/accounts.json
@@ -28426,6 +28454,7 @@ api/v3/config/.git/config
 api/v3/devices
 api/v3/devices/snapshot
 api/v3/docs
+api/v3/files
 api/v3/graphiql
 api/v3/graphql
 api/v3/index/.env
@@ -28451,6 +28480,8 @@ api/v3/resetPassword/admin
 api/v3/resetPassword/administrator
 api/v3/resetPassword/test
 api/v3/resetPwd
+api/v3/secrets
+api/v3/secrets.json
 api/v3/server
 api/v3/sign-up
 api/v3/signature
@@ -28480,6 +28511,7 @@ api/v3/wc.db
 api/v3?page=1
 api/v4
 api/v4.0
+api/v4.0/.git/config
 api/v4.0/users?page=1
 api/v4.1
 api/v4.10
@@ -28506,6 +28538,7 @@ api/v4/users.json
 api/v4/users?page=1
 api/v5
 api/v5.0
+api/v5.0/.git/config
 api/v5.0/users?page=1
 api/v5.1
 api/v5.10
@@ -28517,12 +28550,14 @@ api/v5.6
 api/v5.7
 api/v5.8
 api/v5.9
+api/v5/.git/config
 api/v5/actuator/dump
 api/v5/actuator/heapdump
 api/v5/graphql
 api/v5/users?page=1
 api/v6
 api/v6.0
+api/v6.0/.git/config
 api/v6.0/users?page=1
 api/v6.1
 api/v6.10
@@ -28534,6 +28569,7 @@ api/v6.6
 api/v6.7
 api/v6.8
 api/v6.9
+api/v6/.git/config
 api/v6/users?page=1
 api/v7
 api/v7.0
@@ -30955,6 +30991,7 @@ app_themes/default/images/objects/__configuration__
 app_themes/default/images/others/apiexamples
 app_token.txt
 app_tokens.py
+app_ui_config
 app_webreferences/ws/webservice.wsdl
 app_xmlinjection.log
 appadmin
@@ -30978,6 +31015,7 @@ appcenter-post-build.sh
 appcenter-pre-build.sh
 appconfig
 appconfig 
+appconfig.ini
 appconfig.php
 appconfig.xml
 appcues
@@ -31274,6 +31312,7 @@ application.sql
 application.sql.tar.gz
 application.sql.zip
 application.tar.gz
+application.template.conf
 application.txt.gz
 application.txtutdown.txt
 application.wadl
@@ -34084,6 +34123,7 @@ base
 base-cell-anchor-xform 
 base-resource/base-resource.service 
 base-xform 
+base.conf
 base.dump.sql
 base.sh
 base.sql
@@ -34631,6 +34671,7 @@ bin/catalina.sh
 bin/company.web.api.dll
 bin/config.bat
 bin/config.conf
+bin/config.ini
 bin/config.json
 bin/config.ps1
 bin/config.sh
@@ -35631,6 +35672,7 @@ build/
 build/.env
 build/.git/config
 build/Release
+build/assets-local.json
 build/build.properties
 build/buildinfo.properties
 build/pdf.sandbox.js 
@@ -40384,6 +40426,7 @@ conf.yml
 conf/
 conf/.env
 conf/Catalina
+conf/base.conf
 conf/caches.dat
 conf/caches.properties
 conf/cassandra-env.sh
@@ -40410,12 +40453,15 @@ conf/fastcgi_params
 conf/fe.conf
 conf/httpd.conf
 conf/interpreter.json
+conf/jaspic-providers.xml
+conf/jaspic-providers.xsd
 conf/jetty-https.xml
 conf/jetty.xml
 conf/jpa_context.xml
 conf/jtidy.properties
 conf/koi-utf
 conf/koi-win
+conf/ldap.toml
 conf/liveuser_configuration.php
 conf/log4j.properties
 conf/log4j.properties.template
@@ -40424,6 +40470,7 @@ conf/logs
 conf/lutece.properties
 conf/mime.types
 conf/nginx.conf
+conf/npc.conf
 conf/page_navigator.xml
 conf/pika.conf
 conf/push_ssh_keys.yaml
@@ -40444,6 +40491,7 @@ conf/sonar.log.properties
 conf/sonar.properties
 conf/system.properties
 conf/tomcat-users.xml
+conf/tomcat-users.xsd
 conf/tomcat8.conf
 conf/tomee.xml
 conf/uwsgi_params
@@ -41479,6 +41527,7 @@ config.xml.tpl
 config.yaml
 config.yaml.txt
 config.yml
+config.yml.dist
 config.yml.templ
 config.yml.tmpl
 config.zip
@@ -42155,6 +42204,7 @@ config/main.php
 config/mandrill.yml
 config/manifest.inc.php
 config/master.key
+config/master_config.ini
 config/matomo.yml
 config/memcached.yml
 config/memsql.yml
@@ -43501,6 +43551,7 @@ configure.dev
 configure.group.php
 configure.gw
 configure.in
+configure.ini
 configure.js
 configure.jsf
 configure.jsf.bak
@@ -44173,6 +44224,7 @@ content../.git/config
 content.1.json
 content.1.xml
 content.10.json
+content.4.2.1...json
 content.api
 content.assetsearch.json?query=*&start=0&limit=10&random=123
 content.blueprint.json
@@ -44183,6 +44235,11 @@ content.feed.xml
 content.infinity.json
 content.inline 
 content.json
+content.json/a.css
+content.json/a.html
+content.json/a.ico
+content.json/a.png
+content.json;%0aa.css
 content.languages.json
 content.pages.json
 content.php
@@ -44310,6 +44367,7 @@ contrib/unicode2nginx/win-utf
 contrib/vim
 contribapi
 contribute
+contribute.json
 contributing.md
 contributor
 contributor.%EXT%
@@ -51453,6 +51511,7 @@ dev.config
 dev.env
 dev.exs
 dev.go
+dev.html
 dev.java
 dev.js
 dev.json
@@ -51481,10 +51540,14 @@ dev.zip
 dev/
 dev/.env
 dev/.git/config
+dev/api
 dev/api/
+dev/api/v1
 dev/api/v1/
 dev/api/v1/users
+dev/api/v2
 dev/api/v2/
+dev/api/v3
 dev/api/v3/
 dev/config.js
 dev/config.py
@@ -51529,6 +51592,7 @@ dev/wp-content/plugins/wp-file-manager/readme.txt
 dev/wp-content/uploads.zip
 dev/wp-includes/wlwmanifest.xml
 dev1.php
+dev2
 dev2local.sh
 dev60cgi
 dev60cgi/f60cgi
@@ -51588,6 +51652,7 @@ dev_css_backup_2022-12-31
 dev_css_static
 dev_css_static_2021-12-31
 dev_css_static_2022-12-31
+dev_dashboard
 dev_data
 dev_data_2021-12-31
 dev_data_2022-12-31
@@ -51814,6 +51879,8 @@ developer
 developer-api
 developer-docs
 developer.api
+developer.asp
+developer.aspx
 developer.js
 developer/.env
 developer/.git/config
@@ -52090,6 +52157,7 @@ devotionals
 devotions
 devotions.js
 devoybb
+devpage
 devplug.js
 devportal/apis
 devrank.js
@@ -53260,6 +53328,7 @@ docker/docker-compose.yml
 docker/examples/compose/.env
 docker/info 
 docker/kafka.env
+docker/keycloak/.env
 docker/platform/.env
 docker/postgres/.env
 docker/tb-web-ui.env
@@ -60486,6 +60555,13 @@ git-stg
 git-subtree-check.sh
 git-t
 git-test
+git-tools/commit-msg-hook-range.sh
+git-tools/hooks/commit-msg
+git-tools/hooks/install
+git-tools/hooks/pre-commit
+git-tools/hooks/prepare-commit-msg
+git-tools/hooks/uninstall
+git-tools/merge.php
 git-u
 git-v
 git-w
@@ -62959,6 +63035,7 @@ heroku-stag-tests.yaml
 heroku-stag-tests.yml
 heroku-stag-workers.yaml
 heroku-stag-workers.yml
+heroku.env
 heroku.json
 heroku.yaml
 heroku.yml
@@ -63356,6 +63433,8 @@ honeypot.api
 honeypotapi
 hongcms.sql
 hook 
+hook.yaml
+hook.yml
 hooks 
 hooks/use-on-motion-finish 
 hooks/use-theme-reset-styles 
@@ -63487,6 +63566,7 @@ hostapi
 hostconfig.php
 hosted-api
 hosted.api
+hosted/app_ui_config
 hostedDiscussionLocation 
 hostedObjectInfoLocation 
 hostedapi
@@ -65683,6 +65763,7 @@ install-release.sh
 install-sh
 install-std-race.sh
 install-wp-tests.sh
+install-xpconf
 install-xpconf.php
 install.%EXT%
 install.api
@@ -69440,6 +69521,7 @@ keycaps.js
 keycloak-error 
 keycloak.js 
 keycloak.json
+keycloak/.env
 keycode 
 keycont.js
 keycred.js
@@ -70946,6 +71028,7 @@ latest
 latest-en.php
 latest-mysql-en.php
 latest-mysql.php
+latest.json
 latest.log
 latest.php
 latest.xml
@@ -71146,6 +71229,7 @@ ledger_sync/.env
 leds.sh
 leebyron
 left
+lefthook.yml
 legacy
 legacy 
 legacy-api
@@ -73365,6 +73449,7 @@ magmi/conf/magmi.ini
 magmi/web/ajax_pluginconf.php?file=../../../../../../../../../../../etc/passwd&plugintype=utilities&pluginclass=CustomSQLUtility
 magmi/web/js/magmi_utils.js
 magnews_api.php
+magnifier_xml
 magnifier_xml.php
 magnus.conf
 magpie_debug.php
@@ -74044,6 +74129,7 @@ master/.env
 master/console/config
 master/portquotes_new/admin.log
 master_admin
+master_config.ini
 master_key
 master_key.bin
 master_key.pem
@@ -76586,6 +76672,7 @@ mysql.txt
 mysql.txt.gz
 mysql.zip
 mysql/
+mysql/.env
 mysql/admin
 mysql/admin/
 mysql/admin/index.php
@@ -78129,6 +78216,7 @@ now-playing-api.php
 now.json
 nown_tokens.csv
 np/
+npc.conf
 npc/
 npctrack_setmapid
 npm-bundle-deps.sh
@@ -78467,6 +78555,7 @@ oauth/authorize
 oauth/check_token
 oauth/clients
 oauth/consumer-info 
+oauth/device/code
 oauth/discovery/keys
 oauth/grant-type/password-realm
 oauth/grant-type/passwordless/otp
@@ -80540,6 +80629,7 @@ parameters.xml
 parameters.yaml
 parameters.yml
 parameters.yml.dist
+parameters.yml.test 
 params.conf
 params.json
 params.txt
@@ -80971,6 +81061,7 @@ pcadmin
 pcapi
 pcapsettings 
 pcatalog.js
+pconf
 pconf.php
 pconfig.inc.php
 pconfirm.html
@@ -83518,6 +83609,7 @@ postgresconnect.php
 postgresql
 postgresql-api
 postgresql-cluster.tmpl
+postgresql-docker-compose.yml
 postgresql-pg_hba.conf
 postgresql-pgbouncer.conf
 postgresql-pgpool.conf
@@ -84154,6 +84246,7 @@ prod_password
 prod_secrets.py
 prodapi
 prodbuild.js
+prodconf
 prodconf.gif
 proddbconf.sh
 prodder
@@ -84231,9 +84324,11 @@ productcockpit/
 production
 production-api
 production-error/
+production-ph.env.json
 production.7z
 production.api
 production.config
+production.env.json
 production.ini
 production.json
 production.log
@@ -89109,6 +89204,7 @@ rungitom
 runlevel.conf
 runlogin.js
 runme.sh
+runner.env
 runner.sh
 runner.yaml
 running
@@ -91244,6 +91340,7 @@ senderholder
 senderiban
 senderid
 sendgrid.env
+sendgrid/.env
 sendgrid_api
 sendgrid_api_key
 sendgrid_config-dev.py
@@ -91543,6 +91640,7 @@ server/config.xml
 server/config/.env
 server/config/admin.php
 server/config/passport.js
+server/database.conf
 server/laravel/.env
 server/server.js
 server/solr.xml
@@ -92399,6 +92497,7 @@ set_domain_list.yaml
 set_domain_name.yaml
 set_env.aspx
 set_env.jsf
+set_env.json
 set_env.jsp
 set_env.php
 set_hostname.yaml
@@ -92430,6 +92529,7 @@ setenvironment
 setfenv
 setkey.js
 setobjectconfiguration
+sets.json
 sets.sql
 setsecretkey
 setshare.js
@@ -92771,6 +92871,7 @@ setup2005.sql
 setup2022.sql
 setup2023.sql
 setup_db.php
+setup_debug_local.env
 setup_env.pl
 setup_env.ps1
 setup_env.sh
@@ -95917,6 +96018,7 @@ staging-api
 staging.%EXT%
 staging.api
 staging.config
+staging.env.json
 staging.yaml
 staging.yml
 staging/.env
@@ -98624,6 +98726,7 @@ teamlogin.js
 teams 
 teams-api
 teams.api
+teams.yml
 teams/
 teams/create 
 teams/edit 
@@ -99383,6 +99486,7 @@ testcafe.json
 testcase.yaml
 testcases.xml
 testcases.yaml
+testclient/api/v1
 testconf.js
 testconfig
 testdata.properties
@@ -99542,6 +99646,7 @@ testschedule/TestSchedule
 testschedule/TestSchedule/b8 
 testschedule/testschedule/b8 
 testserver.sh
+testsettings.json
 testshow.js
 testsql.sql
 teststep/ 
@@ -99915,6 +100020,7 @@ timing
 timing.sh
 timings.json
 tindev.js
+tinode.conf
 tiny_mce
 tiny_mce.tar
 tiny_mce/
@@ -101405,6 +101511,7 @@ ui/views/dockerv2
 ui/workers 
 ui/xrayRepo/getIndex 
 uiStateJSON
+ui_config
 ui_config.php
 ui_config.properties
 uiapi
@@ -103207,6 +103314,7 @@ v1/change-password
 v1/channels
 v1/check-phone-exist
 v1/check-phone-exist/
+v1/client_configs
 v1/companies 
 v1/company/subscriptions
 v1/config/application
@@ -103798,6 +103906,7 @@ v2/auction/
 v2/bots
 v2/candles
 v2/client
+v2/client_configs
 v2/collect
 v2/companies 
 v2/console
@@ -104772,6 +104881,8 @@ vagrant.sh
 vagrant.yaml
 vagrant.yml
 vagrant/
+vagrant/bootstrap.yaml
+vagrant/phpbb-install-config.yml
 vagrantfile
 vagrantfile.backup
 val
@@ -104874,8 +104985,12 @@ var/cache/test/profiler/index.csv
 var/cache/test/url_generating_routes.php
 var/cache/test/url_matching_routes.php
 var/classes.1.json
+var/classes.1.xml
+var/classes.feed.xml
+var/classes.infinity.json
 var/classes.json
 var/classes.tidy.infinity.json
+var/classes.xml
 var/company_name/config/database.yml
 var/config/database.yml
 var/cpanel/cpanel.config

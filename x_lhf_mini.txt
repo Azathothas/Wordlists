@@ -1114,6 +1114,7 @@ $metadata
 .apf
 .apj
 .app
+.appconfig.ini
 .appledb
 .appledesktop
 .appledouble
@@ -1539,6 +1540,7 @@ $metadata
 .bowerrc
 .box
 .br
+.bra.toml
 .brackets.json
 .browse
 .browser
@@ -1721,6 +1723,7 @@ $metadata
 .children.json/FNZ.png
 .children.json?FNZ.html
 .children.json?FNZ.ico
+.childrenlist.json
 .chm
 .chronograf
 .chronograf.d
@@ -2346,6 +2349,7 @@ $metadata
 .docker/docker-compose.stage.yml
 .docker/docker-compose.yml
 .docker/docker-entrypoint.sh
+.docker/docker_run_git.sh
 .docker/entrypoint
 .docker/entrypoint.dev.sh
 .docker/entrypoint.prod.sh
@@ -3310,6 +3314,7 @@ $metadata
 .github/pull_request_template.md
 .github/secrets
 .github/stale.yml
+.github/teams.yml
 .github/workflows
 .github/workflows/CI.yml
 .github/workflows/action.yml
@@ -4577,11 +4582,13 @@ $metadata
 .memcached-cli.history
 .memcached-cli.session
 .memdump
+.memory.env
 .menu
 .menu.php
 .merchant
 .mergesources.yaml
 .mergesources.yml
+.mergify.yml
 .merlin
 .met
 .meta
@@ -4996,6 +5003,8 @@ $metadata
 .p3p
 .p4ignore
 .p7b
+.pa11yci-pr.conf.js
+.pa11yci.conf.js
 .pac
 .pac.pac
 .pac/
@@ -5154,6 +5163,7 @@ $metadata
 .php
 .php$
 .php-
+.php-cs-fixer.phpb
 .php-dist
 .php-ini
 .php-version
@@ -5260,6 +5270,7 @@ $metadata
 .popup.pop_3d_viewer
 .popup.pop_formata_viewer
 .portal
+.postcss-sorting.json
 .postcss.config.js
 .postcssignore
 .postcssrc
@@ -5485,6 +5496,7 @@ $metadata
 .registration
 .registry
 .release.json
+.releaserc
 .remarkignore
 .remarkrc
 .remote
@@ -5657,6 +5669,7 @@ $metadata
 .semaphore
 .semaphore/semaphore.yaml
 .semaphore/semaphore.yml
+.semgrepignore
 .semver
 .sencha
 .send
@@ -6595,6 +6608,7 @@ $metadata
 .well-known/host-meta
 .well-known/host-meta.json
 .well-known/http-opportunistic
+.well-known/humans.txt
 .well-known/idp-proxy
 .well-known/jmap
 .well-known/jwks
@@ -6615,6 +6629,7 @@ $metadata
 .well-known/openid-configuration
 .well-known/openid-configuration/
 .well-known/openid-configuration/jwks
+.well-known/openid-federation
 .well-known/openorg
 .well-known/openpgpkey
 .well-known/pki-validation

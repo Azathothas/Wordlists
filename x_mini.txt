@@ -981,6 +981,7 @@ ${idfwbonavigation}.xml
 .apf
 .apj
 .app
+.appconfig.ini
 .appledb
 .appledesktop
 .appledouble
@@ -1406,6 +1407,7 @@ ${idfwbonavigation}.xml
 .bowerrc
 .box
 .br
+.bra.toml
 .brackets.json
 .browse
 .browser
@@ -2220,6 +2222,7 @@ ${idfwbonavigation}.xml
 .docker/docker-compose.stage.yml
 .docker/docker-compose.yml
 .docker/docker-entrypoint.sh
+.docker/docker_run_git.sh
 .docker/entrypoint
 .docker/entrypoint.dev.sh
 .docker/entrypoint.prod.sh
@@ -3204,6 +3207,7 @@ ${idfwbonavigation}.xml
 .github/pull_request_template.md
 .github/secrets
 .github/stale.yml
+.github/teams.yml
 .github/workflows
 .github/workflows/CI.yml
 .github/workflows/action.yml
@@ -4474,11 +4478,13 @@ ${idfwbonavigation}.xml
 .memcached-cli.history
 .memcached-cli.session
 .memdump
+.memory.env
 .menu
 .menu.php
 .merchant
 .mergesources.yaml
 .mergesources.yml
+.mergify.yml
 .merlin
 .met
 .meta
@@ -4894,6 +4900,8 @@ ${idfwbonavigation}.xml
 .p3p
 .p4ignore
 .p7b
+.pa11yci-pr.conf.js
+.pa11yci.conf.js
 .pac
 .pac.pac
 .pac/
@@ -5056,6 +5064,7 @@ ${idfwbonavigation}.xml
 .php
 .php$
 .php-
+.php-cs-fixer.phpb
 .php-dist
 .php-ini
 .php-version
@@ -5163,6 +5172,7 @@ ${idfwbonavigation}.xml
 .popup.pop_3d_viewer
 .popup.pop_formata_viewer
 .portal
+.postcss-sorting.json
 .postcss.config.js
 .postcssignore
 .postcssrc
@@ -5388,6 +5398,7 @@ ${idfwbonavigation}.xml
 .registration
 .registry
 .release.json
+.releaserc
 .remarkignore
 .remarkrc
 .remote
@@ -5561,6 +5572,7 @@ ${idfwbonavigation}.xml
 .semaphore
 .semaphore/semaphore.yaml
 .semaphore/semaphore.yml
+.semgrepignore
 .semver
 .sencha
 .send
@@ -6503,6 +6515,7 @@ ${idfwbonavigation}.xml
 .well-known/host-meta
 .well-known/host-meta.json
 .well-known/http-opportunistic
+.well-known/humans.txt
 .well-known/idp-proxy
 .well-known/jmap
 .well-known/jwks
@@ -6524,6 +6537,7 @@ ${idfwbonavigation}.xml
 .well-known/openid-configuration 
 .well-known/openid-configuration/
 .well-known/openid-configuration/jwks
+.well-known/openid-federation
 .well-known/openorg
 .well-known/openpgpkey
 .well-known/pki-validation

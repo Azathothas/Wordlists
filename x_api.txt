@@ -444,6 +444,7 @@ ${idfwbonavigation}.xml
 .phpmd.xml
 .pipeline/blubber.yaml
 .pipeline/config.yaml
+.postcss-sorting.json
 .pre-commit-config.yaml
 .prettierrc.json
 .prettierrc.yaml
@@ -12636,6 +12637,8 @@ _async/asyncresponseservicesoap12
 _async/asyncresponseservicesoap12https
 _async/asyncresponseservicesoap12jms
 _baseRest.js 
+_build/build.xml
+_build/docblox.xml
 _common.xml
 _context.xml
 _cs_xmlpub
@@ -15574,6 +15577,7 @@ api/_data
 api/_hopefullynotexist404
 api/_swagger_
 api/_swagger_/
+api/_users
 api/access-control/roles
 api/access-control/user/actions 
 api/access/api/v1/users
@@ -16895,6 +16899,7 @@ api/v1
 api/v1 
 api/v1.0
 api/v1.0/.git
+api/v1.0/.git/config
 api/v1.0/.json
 api/v1.0/logs
 api/v1.0/reg
@@ -16922,6 +16927,7 @@ api/v1/1/details
 api/v1/1/users
 api/v1/App/user
 api/v1/ResetPassword
+api/v1/_users
 api/v1/about
 api/v1/access/share
 api/v1/account
@@ -17364,6 +17370,7 @@ api/v1/search
 api/v1/seats
 api/v1/secret
 api/v1/secrets
+api/v1/secrets.json
 api/v1/series
 api/v1/server
 api/v1/serviceaccounts
@@ -17540,6 +17547,7 @@ api/v2
 api/v2 
 api/v2.0
 api/v2.0/.git
+api/v2.0/.git/config
 api/v2.0/.json
 api/v2.0/configuration
 api/v2.0/health
@@ -17573,6 +17581,7 @@ api/v2/.json
 api/v2/1/details
 api/v2/1/users
 api/v2/:tan/firmwareUpdates/approveVins 
+api/v2/_users
 api/v2/account
 api/v2/account.json
 api/v2/accounts
@@ -17606,6 +17615,7 @@ api/v2/documentation
 api/v2/event
 api/v2/feed
 api/v2/feed/
+api/v2/files
 api/v2/graphiql
 api/v2/graphql
 api/v2/health
@@ -17641,6 +17651,8 @@ api/v2/resetPassword/admin
 api/v2/resetPassword/administrator
 api/v2/resetPassword/test
 api/v2/resetPwd
+api/v2/secrets
+api/v2/secrets.json
 api/v2/server
 api/v2/sign-up
 api/v2/signature
@@ -17692,6 +17704,7 @@ api/v3
 api/v3 
 api/v3.0
 api/v3.0/.git
+api/v3.0/.git/config
 api/v3.0/.json
 api/v3.0/reg
 api/v3.0/register
@@ -17716,6 +17729,7 @@ api/v3/.json
 api/v3/1/details
 api/v3/1/users
 api/v3/ResetPassword
+api/v3/_users
 api/v3/account
 api/v3/account.json
 api/v3/accounts.json
@@ -17731,6 +17745,7 @@ api/v3/devices
 api/v3/devices/snapshot
 api/v3/docs
 api/v3/documentation
+api/v3/files
 api/v3/graphiql
 api/v3/graphql
 api/v3/index/.env
@@ -17756,6 +17771,8 @@ api/v3/resetPassword/admin
 api/v3/resetPassword/administrator
 api/v3/resetPassword/test
 api/v3/resetPwd
+api/v3/secrets
+api/v3/secrets.json
 api/v3/server
 api/v3/sign-up
 api/v3/signature
@@ -17785,6 +17802,7 @@ api/v3/wc.db
 api/v3?page=1
 api/v4
 api/v4.0
+api/v4.0/.git/config
 api/v4.0/users?page=1
 api/v4.1
 api/v4.10
@@ -17811,6 +17829,7 @@ api/v4/users.json
 api/v4/users?page=1
 api/v5
 api/v5.0
+api/v5.0/.git/config
 api/v5.0/users?page=1
 api/v5.1
 api/v5.10
@@ -17822,12 +17841,14 @@ api/v5.6
 api/v5.7
 api/v5.8
 api/v5.9
+api/v5/.git/config
 api/v5/actuator/dump
 api/v5/actuator/heapdump
 api/v5/graphql
 api/v5/users?page=1
 api/v6
 api/v6.0
+api/v6.0/.git/config
 api/v6.0/users?page=1
 api/v6.1
 api/v6.10
@@ -17839,6 +17860,7 @@ api/v6.6
 api/v6.7
 api/v6.8
 api/v6.9
+api/v6/.git/config
 api/v6/users?page=1
 api/v7
 api/v7.0
@@ -22879,6 +22901,7 @@ build.v2
 build.xml
 build.xml.sample
 build.xml.template
+build/assets-local.json
 build/reference/web-api/explore
 buildIndexXmlData.do
 build_all.json
@@ -25823,6 +25846,7 @@ conf/core.xml
 conf/core_context.xml
 conf/defaults.ini
 conf/interpreter.json
+conf/jaspic-providers.xml
 conf/jetty-https.xml
 conf/jetty.xml
 conf/jpa_context.xml
@@ -29952,10 +29976,14 @@ dev.json
 dev.v1
 dev.v2
 dev.xml
+dev/api
 dev/api/
+dev/api/v1
 dev/api/v1/
 dev/api/v1/users
+dev/api/v2
 dev/api/v2/
+dev/api/v3
 dev/api/v3/
 dev/docs/v1/api
 dev/docs/v1/graphql
@@ -42036,6 +42064,7 @@ lastpost
 lastpost.xml
 lastupdate_json.php
 latest
+latest.json
 latest.xml
 latest/api
 latest/graphql-api
@@ -54654,9 +54683,11 @@ productgroups-json.php
 production
 production-api
 production-api-fdcd955dd-8jtpc
+production-ph.env.json
 production-v1
 production-v2
 production.api
+production.env.json
 production.json
 production.v1
 production.v2
@@ -60294,6 +60325,7 @@ set()
 setData_tracking.json.php
 set_current_user
 set_dev_api.txt
+set_env.json
 set_log_api.php
 set_post_format
 set_post_thumbnail
@@ -60309,6 +60341,7 @@ setfenv
 setgraphuserdata
 setlistsearch.xml
 setmetatable
+sets.json
 setting
 setting.xml
 setting_gallery.xml
@@ -63392,6 +63425,7 @@ staging-manufacturing-units-api-cloudsql-bbbc478bd-mks2f
 staging-v1
 staging-v2
 staging.api
+staging.env.json
 staging.v1
 staging.v2
 staging/wp-includes/wlwmanifest.xml
@@ -65696,6 +65730,7 @@ testapi2027
 testcafe.json
 testcafesearch.xml
 testcases.xml
+testclient/api/v1
 testenbeddedconfig.cfg.xml
 tester
 testexpectedexception.xml
@@ -65867,6 +65902,7 @@ tests/test_utils/fixtures/should_not_be_loaded.json
 tests/view_tests/tests/test_json.py
 testsapi
 testsapi.js
+testsettings.json
 testsliderhome.xml
 testsuitefixture.xml
 testsv1
