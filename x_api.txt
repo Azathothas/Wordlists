@@ -16040,6 +16040,7 @@ api/file
 api/file-storage
 api/file_uploader.php
 api/filemanager
+api/files.php
 api/files.remote.share
 api/filters/GetCountry
 api/filters/GetCountry 
@@ -28480,6 +28481,7 @@ csharp.xml
 csi-do-node-rv2tj
 csokik.xml
 csp/gateway/slc/api/swagger-ui.html
+cspell.json
 csportal-api
 csportal-v1
 csportal-v2
@@ -55485,6 +55487,7 @@ queryv1
 queryv2
 quest.xml
 question
+question.json
 question.xml
 questions
 questions.xml
@@ -70724,6 +70727,7 @@ vcenter.v2
 vcenterapi
 vcenterv1
 vcenterv2
+vcpkg.json
 vcs-root.xml
 vcs.xml
 vcss

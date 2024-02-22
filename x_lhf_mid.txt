@@ -1184,6 +1184,7 @@ ${idfwbonavigation}.xml
 .EXE
 .FBCIndex
 .FCKEditor
+.FileMaker
 .FileMaker-cli-history
 .FileMaker-cli-session
 .FileMaker-cli.history
@@ -3219,6 +3220,7 @@ ${idfwbonavigation}.xml
 .env_dev
 .env_example
 .env_local
+.env_new
 .env_old
 .env_production
 .env_sample
@@ -19301,6 +19303,7 @@ _vti_txt
 _vti_txt/
 _warmer 
 _wdt/
+_web.config
 _web_inf
 _webalizer
 _webalizer/
@@ -26443,6 +26446,7 @@ api/announcement/login
 api/announcements
 api/ansprechpartner/ 
 api/api
+api/api-browser
 api/api-browser/
 api/api-docs
 api/api-docs/swagger.json
@@ -26711,6 +26715,7 @@ api/data_views
 api/data_views/default
 api/database.json
 api/dbstat/gettablessize
+api/debug
 api/debug/schedlock
 api/dependencies
 api/deployment
@@ -26782,6 +26787,7 @@ api/file
 api/file-storage
 api/file_uploader.php
 api/filemanager
+api/files.php
 api/files.remote.share
 api/filters/GetCountry
 api/filters/GetCountry 
@@ -27856,6 +27862,7 @@ api/v1/graphql
 api/v1/guides
 api/v1/health
 api/v1/health/status
+api/v1/healthz
 api/v1/help
 api/v1/history/history
 api/v1/image_proxy
@@ -28927,6 +28934,7 @@ api_shipment.ashx
 api_shoppingcart.ashx
 api_site_info.php
 api_slides.php
+api_smartapp/storage
 api_smartapp/storage/
 api_socket.php
 api_sound_ajax.php
@@ -29219,6 +29227,7 @@ apis/coordination.k8s.io/v1/leases
 apis/coordination.k8s.io/v1/watch/leases
 apis/coordination.k8s.io/v1beta1
 apis/core
+apis/custom.metrics.k8s.io
 apis/discovery.k8s.io/
 apis/discovery.k8s.io/v1/
 apis/discovery.k8s.io/v1/endpointslices
@@ -29232,6 +29241,7 @@ apis/events.k8s.io/v1/watch/events
 apis/events.k8s.io/v1beta1
 apis/extensions
 apis/extensions/v1beta1
+apis/external.metrics.k8s.io
 apis/flowcontrol.apiserver.k8s.io/
 apis/flowcontrol.apiserver.k8s.io/v1beta2/
 apis/flowcontrol.apiserver.k8s.io/v1beta2/flowschemas
@@ -29248,6 +29258,7 @@ apis/internal.apiserver.k8s.io/
 apis/internal.apiserver.k8s.io/v1alpha1/
 apis/internal.apiserver.k8s.io/v1alpha1/storageversions
 apis/internal.apiserver.k8s.io/v1alpha1/watch/storageversions
+apis/metrics.k8s.io
 apis/metrics.k8s.io/v1beta1
 apis/networking
 apis/networking.k8s.io/
@@ -29325,6 +29336,7 @@ apis/storage.k8s.io/v1/watch/csistoragecapacities
 apis/storage.k8s.io/v1/watch/storageclasses
 apis/storage.k8s.io/v1/watch/volumeattachments
 apis/storage.k8s.io/v1beta1
+apis/v1
 apis/wapp_token
 apisagas.js
 apiscam
@@ -35088,6 +35100,7 @@ blue-team-api
 blue-team.api
 blue-teamapi
 blue.api
+blue.yml
 blue.zip
 blue/.env
 blueapi
@@ -48107,6 +48120,7 @@ cshelpers.js
 csi.do
 csillag/
 csp/gateway/slc/api/swagger-ui.html
+cspell.json
 csportal-api
 csportal.api
 csportalapi
@@ -49379,6 +49393,7 @@ database/
 database/.env
 database/.git/config
 database/database
+database/database.sqlite
 database/database/
 database/db_dump.sql
 database/phpMyAdmin
@@ -53307,6 +53322,7 @@ docker.api
 docker.conf
 docker.env
 docker.sh
+docker.yaml
 docker/
 docker/.env
 docker/app/.env
@@ -58503,6 +58519,7 @@ fingerprint.jsp
 finish
 finish.js
 firebase-cloud-messaging-push-scope 
+firebase-config.properties
 firebase-debug.log
 firebase-messaging-sw.js 
 firebase-secret.yaml
@@ -61854,6 +61871,7 @@ greasemonkey
 greater 
 green
 green-chili/
+green.yml
 green.zip
 greenhouse
 greenhousebywebsphere/docs
@@ -63728,6 +63746,7 @@ htdocs
 htdocs.zip
 htdocs/
 htdocs/.env
+htdocs/.gitignore
 htdocs/admin/config.php
 htdocs/admin/inc/config.php
 htdocs/config
@@ -65833,6 +65852,7 @@ install_admin
 install_all.bat
 install_apache.sh
 install_backend.sh
+install_build_dependencies.sh
 install_cron.sh
 install_data.sql
 install_dependencies.bat
@@ -73539,6 +73559,7 @@ mails.sql
 mailserver-api
 mailserver.api
 mailserverapi
+mailsms/s?func=ADMIN:appState&dumpConfig=
 mailsms/s?func=ADMIN:appState&dumpConfig=/
 mailsms/s?func=admin:appstate&dumpconfig=
 mailu-api
@@ -75773,6 +75794,7 @@ monitor.sh
 monitor.xml
 monitor.yaml
 monitor/
+monitor/conf
 monitor_agent
 monitorapi
 monitorconfig
@@ -76670,6 +76692,7 @@ mysql.tgz
 mysql.tmp
 mysql.txt
 mysql.txt.gz
+mysql.yaml
 mysql.zip
 mysql/
 mysql/.env
@@ -83593,6 +83616,7 @@ postfixadmin
 postfixadmin/.env
 postfixapi
 postgre
+postgre.yaml
 postgres
 postgres-api
 postgres-configsvr.tmpl
@@ -83623,6 +83647,7 @@ postgresql.jar
 postgresql.php
 postgresql.properties
 postgresql.sql
+postgresql.yaml
 postgresql.yml
 postgresql_data
 postgresql_install
@@ -85296,6 +85321,7 @@ push-server
 push.api
 push.js
 push.sh
+push.yml
 push_notification_credentials.sh
 push_ssh_keys.yaml
 push_ssh_keys.yml
@@ -85635,6 +85661,7 @@ questgen.js
 question
 question 
 question-circle-icon.f49aac85.js 
+question.json
 question/bulkupload 
 question/create 
 question/questiondelete/ 
@@ -95186,6 +95213,7 @@ sql.zip
 sql/
 sql/database.sql
 sql/db.sql
+sql/dump.sql
 sql/index.php
 sql/myadmin
 sql/myadmin/
@@ -105184,6 +105212,7 @@ vcenter-api
 vcenter.api
 vcenterapi
 vconfigs
+vcpkg.json
 vcs-root.xml
 vcs.xml
 vcss
@@ -106993,6 +107022,7 @@ web-.config
 web-access.log
 web-api
 web-api 
+web-app.yml
 web-app/WEB-INF
 web-app/WEB-INF/classes
 web-app/WEB-INF/grails-app/views
@@ -108781,6 +108811,7 @@ workflows/argo-workflow-crds.yaml
 workflows/cron.yaml
 workflows/dag.yaml
 workflows/hello-world.yaml
+workflows/push.yml
 worklog.sql
 workplace
 works_db.sql

@@ -832,6 +832,7 @@ $metadata
 .EXE
 .FBCIndex
 .FCKEditor
+.FileMaker
 .FileMaker-cli-history
 .FileMaker-cli-session
 .FileMaker-cli.history
@@ -2864,6 +2865,7 @@ $metadata
 .env_dev
 .env_example
 .env_local
+.env_new
 .env_old
 .env_production
 .env_sample
