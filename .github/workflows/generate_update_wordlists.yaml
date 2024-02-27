@@ -17,7 +17,8 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          path: main  
+          path: main
+          filter: "blob:none" #https://github.blog/2020-12-21-get-up-to-speed-with-partial-clone-and-shallow-clone/ 
 
       - name: Install Coreutils
         run: |
@@ -149,7 +150,46 @@ jobs:
           find . -maxdepth 1 -type f -name '*.txt' -exec sort -u {} -o {} \; 2>/dev/null
           #Misc
           find ./Misc -type f -name '*.txt' -exec sort -u {} -o {} \; 2>/dev/null
-          
+
+      - name: Enrichments (Resolvers)
+        run: |
+          # Presets
+          set -x ; set +e
+          #--------------#
+          # fetch Resolvers
+          fetch_resolvers()
+          {
+          #Fetch from Sources  
+          echo -e "\n${GREEN}ⓘ Fetching ${BLUE}@latest ${PURPLE}Resolvers List${NC}\n"
+          resolvers_dir="$(mktemp -d)" && export resolvers_dir="$resolvers_dir"  
+          #https://github.com/proabiral/Fresh-Resolvers (Preferred)
+            # ~ 200 (IPv6 only)
+            curl -qfsSL "https://raw.githubusercontent.com/proabiral/Fresh-Resolvers/master/resolvers.ipv6" -o "$resolvers_dir/proabiral_ipv6.txt"
+            # ~ 300 (IPv4 only)
+            curl -qfsSL "https://raw.githubusercontent.com/edoardottt/secfiles/main/dns/trusted-resolvers-small.txt" -o "$resolvers_dir/secfiles_trusted_ipv4.txt"
+            # ~ 50 (Trusted IPv4 Only)
+            curl -qfsSL "https://raw.githubusercontent.com/trickest/resolvers/main/resolvers-trusted.txt" -o "$resolvers_dir/trickest_trusted_ipv4.txt"
+          #Merge  
+          resolvers_ipv4="$(mktemp)" && export resolvers_ipv4="$resolvers_ipv4"
+          resolvers_ipv6="$(mktemp)" && export resolvers_ipv6="$resolvers_ipv6"
+          resolvers_all="$(mktemp)" && export resolvers_all="$resolvers_all"
+            # IPv4
+            find "$resolvers_dir" -type f -name '*ipv4*' -exec cat {} + | sort -u -o "$resolvers_ipv4"
+            # IPv6
+            find "$resolvers_dir" -type f -name '*ipv6*' -exec cat {} + | sort -u -o "$resolvers_ipv6"
+            # ALL
+            cat "$resolvers_ipv4" "$resolvers_ipv6" | sort -u -o "$resolvers_all"
+          }
+          #export this globally
+          export -f fetch_resolvers
+          #Run
+          fetch_resolvers
+          #Merge
+          sort -u "$resolvers_ipv4" -o "$GITHUB_WORKSPACE/main/resolvers_ipv4"
+          sort -u "$resolvers_ipv6" -o "$GITHUB_WORKSPACE/main/resolvers_ipv6"
+          sort -u "$resolvers_all" -o "$GITHUB_WORKSPACE/main/resolvers_all"
+        continue-on-error: true
+
       - name: Dos2Unix Everything
         run: |
           # Presets
