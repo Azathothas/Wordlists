@@ -16084,6 +16084,8 @@ api/graphql
 api/graphql 
 api/graphql/index.html
 api/graphql/v1
+api/graphql/v2
+api/graphql/v3
 api/health
 api/healthcheck 
 api/hello
@@ -16928,7 +16930,9 @@ api/v1/1/details
 api/v1/1/users
 api/v1/App/user
 api/v1/ResetPassword
+api/v1/_admin
 api/v1/_users
+api/v1/_users.json
 api/v1/about
 api/v1/access/share
 api/v1/account
@@ -17084,6 +17088,7 @@ api/v1/directors
 api/v1/dms
 api/v1/docs
 api/v1/documentation
+api/v1/download
 api/v1/downloads
 api/v1/dsrequestqueues/ 
 api/v1/dsrequestqueues/attachment/ 
@@ -17475,6 +17480,7 @@ api/v1/user/register
 api/v1/userOrg
 api/v1/users
 api/v1/users.json
+api/v1/users/*
 api/v1/users/1
 api/v1/users/1/alerts
 api/v1/users/1/avatar
@@ -17582,7 +17588,9 @@ api/v2/.json
 api/v2/1/details
 api/v2/1/users
 api/v2/:tan/firmwareUpdates/approveVins 
+api/v2/_admin
 api/v2/_users
+api/v2/_users.json
 api/v2/account
 api/v2/account.json
 api/v2/accounts
@@ -17613,6 +17621,7 @@ api/v2/devices/snapshot
 api/v2/displays
 api/v2/docs
 api/v2/documentation
+api/v2/download
 api/v2/event
 api/v2/feed
 api/v2/feed/
@@ -17681,12 +17690,14 @@ api/v2/tickets/2.json
 api/v2/tickets/3.json
 api/v2/token
 api/v2/track
+api/v2/upload
 api/v2/user/all
 api/v2/user/list
 api/v2/user/profile/1
 api/v2/user/register
 api/v2/users
 api/v2/users.json
+api/v2/users/*
 api/v2/users/1
 api/v2/users/all
 api/v2/users/full
@@ -17730,7 +17741,9 @@ api/v3/.json
 api/v3/1/details
 api/v3/1/users
 api/v3/ResetPassword
+api/v3/_admin
 api/v3/_users
+api/v3/_users.json
 api/v3/account
 api/v3/account.json
 api/v3/accounts.json
@@ -17746,6 +17759,7 @@ api/v3/devices
 api/v3/devices/snapshot
 api/v3/docs
 api/v3/documentation
+api/v3/download
 api/v3/files
 api/v3/graphiql
 api/v3/graphql
@@ -17789,10 +17803,12 @@ api/v3/tickets/1.json
 api/v3/tickets/2.json
 api/v3/tickets/3.json
 api/v3/token
+api/v3/upload
 api/v3/user/profile/1
 api/v3/user/register
 api/v3/users
 api/v3/users.json
+api/v3/users/*
 api/v3/users/1
 api/v3/users/full
 api/v3/users/list
@@ -17816,15 +17832,21 @@ api/v4.7
 api/v4.8
 api/v4.9
 api/v4/.git/config
+api/v4/_admin
+api/v4/_users
+api/v4/_users.json
 api/v4/actuator/dump
 api/v4/actuator/heapdump
 api/v4/application/settings
+api/v4/docs
+api/v4/download
 api/v4/groups
 api/v4/internal/allowed
 api/v4/internal/check
 api/v4/internal/lfs_authenticate
 api/v4/internal/users/1
 api/v4/projects
+api/v4/upload
 api/v4/users
 api/v4/users.json
 api/v4/users?page=1
@@ -21102,6 +21124,7 @@ autodiscover.v1
 autodiscover.v2
 autodiscover.xml
 autodiscover/autodiscover.xml
+autodiscover/oab.xml
 autodiscoverapi
 autodiscoverv1
 autodiscoverv2
@@ -27114,6 +27137,7 @@ core/.eslintrc.passing.json
 core/.prettierrc.json
 core/.stylelintrc.json
 core/admin/config.xml
+core/api
 core/api/apirenderer.php
 core/api/corshandler.php
 core/api/datatablegenericfilter.php
@@ -27127,6 +27151,12 @@ core/api/inconsistencies.php
 core/api/proxy.php
 core/api/request.php
 core/api/responsebuilder.php
+core/api/v1
+core/api/v1/users
+core/api/v2
+core/api/v2/users
+core/api/v3
+core/api/v3/users
 core/assets/scaffold/files/eslintrc.json
 core/assets/vendor/jquery.ui/package.json
 core/assets/vendor/jquery.ui/ui.accordion.jquery.json
@@ -36161,6 +36191,8 @@ graphql/subscriptions
 graphql/subscriptions-transport-ws
 graphql/types
 graphql/v1
+graphql/v2
+graphql/v3
 graphql/validation
 graphql/variables
 graphql/voyager
@@ -48068,6 +48100,7 @@ oa_html/ptb/ecxotaping.htm
 oa_html/ptb/xml_sample1.htm
 oa_servlets//oracle.xml.xsql.xsqlservlet/oa_html/jtfwrepo.xml
 oa_servlets/oracle.xml.xsql.XSQLServlet/OA_HTML/jtfwrepo.xml
+oab.xml
 oakleysignsgraphics.jsp
 oaktreecapital
 oauth
@@ -64562,6 +64595,10 @@ swagger.yaml
 swagger.yml
 swagger/
 swagger/api-docs
+swagger/api/v1/docs
+swagger/api/v2/docs
+swagger/api/v3/docs
+swagger/api/v4/docs
 swagger/codes
 swagger/doc.html
 swagger/doc.json
@@ -64585,6 +64622,7 @@ swagger/ui/swagger-ui.js
 swagger/v1
 swagger/v1.0/swagger.json
 swagger/v1/api-docs
+swagger/v1/docs
 swagger/v1/index.html
 swagger/v1/swagger-ui.html
 swagger/v1/swagger.json
@@ -64593,6 +64631,7 @@ swagger/v1/swagger.yaml
 swagger/v2
 swagger/v2.0/swagger.json
 swagger/v2/api-docs
+swagger/v2/docs
 swagger/v2/index.html
 swagger/v2/swagger-ui.html
 swagger/v2/swagger.json
@@ -64600,6 +64639,8 @@ swagger/v2/swagger.yaml
 swagger/v3.0/swagger.json
 swagger/v3.0/swagger.yaml
 swagger/v3/api-docs
+swagger/v3/docs
+swagger/v4/docs
 swagger01
 swagger02
 swagger03
