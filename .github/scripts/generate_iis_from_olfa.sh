@@ -22,9 +22,9 @@
 #From "./onelistforallshort.txt"
  grep -i '.accdb$\|.accdr$\|.asar$\|.asax$\|.ash$\|.ashx$\|.asmx$\|.asp$\|.aspx$\|.axd$\|.bat$\|.bin$\|.cnf$\|.conf$\|.config$\|.csv$\|.dat$\|.dll$\|.doc$\|.docm$\|.docx$\|.eml$\|.eps$\|.evt$\|.evtx$\|.html$\|.ini$\|.iso$\|.jar$\|.log$\|.mas$\|.msi$\|.potm$\|.ppsm$\|.ppsx$\|.pptx$\|.rar$\|.rtf$\|.sldm$\|.sldx$\|.sys$\|.tmp$\|.txt$\|.wadl$\|.wbk$\|.wks$\|.wsdl$\|.xlsm$\|.xltm$\|.xml$\|.xps$\|.zip$' "./onelistforallshort.txt" | sed 's/^http\(\|s\):\/\///g' | grep -vE '^\.|[+%~]|^\*' | sed 's/^\///' | sed -e '/^[[:space:]]*$/d' | sort -u -o "/tmp/iis_mid.txt"
 #Fetch from origin
- cat "$GITHUB_WORKSPACE/main/Misc/IIS/iis_mini.txt" | anew -q "/tmp/iis_mid.txt"
+ cat "$GITHUB_WORKSPACE/main/Misc/IIS/iis_mini.txt" | anew-rs -q "/tmp/iis_mid.txt"
 #Sort and add to exsisting
- sort -u "/tmp/iis_mid.txt" | anew -q "$GITHUB_WORKSPACE/main/Misc/IIS/iis_mid.txt"
+ sort -u "/tmp/iis_mid.txt" | anew-rs -q "$GITHUB_WORKSPACE/main/Misc/IIS/iis_mid.txt"
  sort -u "$GITHUB_WORKSPACE/main/Misc/IIS/iis_mid.txt" -o "$GITHUB_WORKSPACE/main/Misc/IIS/iis_mid.txt"
 #------------# 
 #Generate Large
@@ -47,9 +47,9 @@ grep -i '.accdb$\|.accdr$\|.asar$\|.asax$\|.ash$\|.ashx$\|.asmx$\|.asp$\|.aspx$\
  #Remove Special Chars
  sed -E '/^[:"'\''#$&)(*\-]/d' -i "/tmp/iis_large.txt"
 #Fetch from origin
- cat "$GITHUB_WORKSPACE/main/Misc/IIS/iis_mid.txt" | anew -q "/tmp/iis_large.txt"
+ cat "$GITHUB_WORKSPACE/main/Misc/IIS/iis_mid.txt" | anew-rs -q "/tmp/iis_large.txt"
 #Sort and add to exsisting
- sort -u "/tmp/iis_large.txt" | anew -q "$GITHUB_WORKSPACE/main/Misc/IIS/iis_large.txt"
+ sort -u "/tmp/iis_large.txt" | anew-rs -q "$GITHUB_WORKSPACE/main/Misc/IIS/iis_large.txt"
  sort -u "$GITHUB_WORKSPACE/main/Misc/IIS/iis_large.txt" -o "$GITHUB_WORKSPACE/main/Misc/IIS/iis_large.txt"
 #------------# 
 #This will fail, as the output > 100 MB (Larger than GH Limit)
@@ -57,12 +57,12 @@ grep -i '.accdb$\|.accdr$\|.asar$\|.asax$\|.ash$\|.ashx$\|.asmx$\|.asp$\|.aspx$\
 #Extensions: https://github.com/Azathothas/Wordlists/blob/main/Misc/IIS/extensions_all_dots.txt
 #Filters: anything starting with a dot or *, or has + % ~ In Name
 #From "./onelistforall.txt" 
-cat "/tmp/iis_large.txt" | anew -q "/tmp/iis_massive.txt"
+cat "/tmp/iis_large.txt" | anew-rs -q "/tmp/iis_massive.txt"
 grep -i '.accdb$\|.accdr$\|.asar$\|.asax$\|.ash$\|.ashx$\|.asmx$\|.asp$\|.aspx$\|.axd$\|.bat$\|.bin$\|.cnf$\|.conf$\|.config$\|.csv$\|.dat$\|.dll$\|.doc$\|.docm$\|.docx$\|.eml$\|.eps$\|.evt$\|.evtx$\|.html$\|.ini$\|.iso$\|.jar$\|.log$\|.mas$\|.msi$\|.potm$\|.ppsm$\|.ppsx$\|.pptx$\|.rar$\|.rtf$\|.sldm$\|.sldx$\|.sys$\|.tmp$\|.txt$\|.wadl$\|.wbk$\|.wks$\|.wsdl$\|.xlsm$\|.xltm$\|.xml$\|.xps$\|.zip$' "./onelistforall.txt" | sed 's/^http\(\|s\):\/\///g' | grep -vE '^\.|[+%~]|^\*' | sed 's/^\///' | sed -E 's/[[:alpha:]]*[[:digit:]][[:alpha:]]*//g; /^[[:space:]]*$/d' | sort -u -o "/tmp/iis_massive.txt"
 #Fetch from origin
- cat "$GITHUB_WORKSPACE/main/Misc/IIS/iis_large.txt" | anew -q "/tmp/iis_massive.txt"
+ cat "$GITHUB_WORKSPACE/main/Misc/IIS/iis_large.txt" | anew-rs -q "/tmp/iis_massive.txt"
 #Sort and add to exsisting
- sort -u "/tmp/iis_massive.txt" | anew -q "$GITHUB_WORKSPACE/main/Misc/IIS/iis_massive.txt"
+ sort -u "/tmp/iis_massive.txt" | anew-rs -q "$GITHUB_WORKSPACE/main/Misc/IIS/iis_massive.txt"
  sort -u "$GITHUB_WORKSPACE/main/Misc/IIS/iis_massive.txt" -o "$GITHUB_WORKSPACE/main/Misc/IIS/iis_massive.txt"
 #---------------------------------------------------------------------------------#
 #EOF

@@ -121,14 +121,14 @@
 > !# Install dsieve
 >  sudo curl -qfsSL "https://bin.ajam.dev/x86_64_Linux/dsieve" -o "/usr/local/bin/dsieve" && sudo chmod +xwr "/usr/local/bin/dsieve"
 > !# Separate into levels [Level 2 --> main domain + all it's subdomains]
->  dsieve -if "subdomains.txt" -f 2: | anew -q "subdomains.txt"
+>  dsieve -if "subdomains.txt" -f 2: | anew-rs -q "subdomains.txt"
 > ```
 > 2. Generating Initial Wordlist [(tok)](https://github.com/tomnomnom/hacks/tree/master/tok)
 > ```bash
 > #Separate by dots(.) | dash (-) | Underscores (_) And Filter Numerics
->  sed 's/[._-]/\n/g' "subdomains.txt" | tr -s '\n' | sed -E 's/[[:alpha:]]*[[:digit:]][[:alpha:]]*//g; /^[[:space:]]*$/d' | anew -q "/tmp/vhosts_wordlist.txt"
+>  sed 's/[._-]/\n/g' "subdomains.txt" | tr -s '\n' | sed -E 's/[[:alpha:]]*[[:digit:]][[:alpha:]]*//g; /^[[:space:]]*$/d' | anew-rs -q "/tmp/vhosts_wordlist.txt"
 > #With Tok
->  cat "subdomains.txt" | tok | anew -q "/tmp/vhosts_wordlist.txt"
+>  cat "subdomains.txt" | tok | anew-rs -q "/tmp/vhosts_wordlist.txt"
 > ```
 > > ---
 > > - Generate a Combined Wordlist [(comb)](https://github.com/tomnomnom/hacks/tree/master/comb) (Optional) 
@@ -143,13 +143,13 @@
 > > 
 > > !# Get words from subdomains
 > > !# You could also use subdomains_dead.txt (Those that got resolved but aren't alive) to reduce the output
-> >  sed 's/[._-]/\n/g' "subdomains.txt" | tr -s '\n' | sed -E 's/[[:alpha:]]*[[:digit:]][[:alpha:]]*//g; /^[[:space:]]*$/d' | anew -q "/tmp/comb_in.txt"
+> >  sed 's/[._-]/\n/g' "subdomains.txt" | tr -s '\n' | sed -E 's/[[:alpha:]]*[[:digit:]][[:alpha:]]*//g; /^[[:space:]]*$/d' | anew-rs -q "/tmp/comb_in.txt"
 > > 
 > > !# Using `-` as a separator, Generate
 > >  comb --separator="-" "/tmp/comb_in.txt" "/tmp/comb_in.txt" > "/tmp/comb_out.txt"
 > > 
 > > !# Merge & Sort
-> >  cat "/tmp/comb_out.txt" | anew -q "/tmp/vhosts_wordlist.txt"
+> >  cat "/tmp/comb_out.txt" | anew-rs -q "/tmp/vhosts_wordlist.txt"
 > > ```
 > > ---
 > 3. Merge & Sort
@@ -157,10 +157,10 @@
 > !# You may want to skip this, especially if you used comb to generate permutations
 > 
 > !# With x_dns_tiny.txt [Recommended] : https://github.com/Azathothas/Wordlists/blob/main/x_dns_tiny.txt
->   wget -qO- "https://raw.githubusercontent.com/Azathothas/Wordlists/main/x_dns_tiny.txt" | anew -q "/tmp/vhosts_wordlist.txt"
+>   wget -qO- "https://raw.githubusercontent.com/Azathothas/Wordlists/main/x_dns_tiny.txt" | anew-rs -q "/tmp/vhosts_wordlist.txt"
 > 
 > !# with x_dns_mid.txt [Huge] : https://github.com/Azathothas/Wordlists/blob/main/x_dns_mid.txt
->   wget -qO- "https://raw.githubusercontent.com/Azathothas/Wordlists/main/x_dns_mid.txt" | anew -q "/tmp/vhosts_wordlist.txt"
+>   wget -qO- "https://raw.githubusercontent.com/Azathothas/Wordlists/main/x_dns_mid.txt" | anew-rs -q "/tmp/vhosts_wordlist.txt"
 >
 > !# Sort
 >   sort -u "/tmp/vhosts_wordlist.txt" -o "/tmp/vhosts_wordlist.txt"
@@ -185,7 +185,7 @@
 > > !# or CEWL: https://github.com/digininja/CeWL
 > > 
 > > !# Generate
-> >  mgwls -l "/tmp/mgwls_in.txt" -r "/tmp/vhosts_wordlist.txt" -delimiter "-" | anew -q  "/tmp/vhosts_wordlist.txt"
+> >  mgwls -l "/tmp/mgwls_in.txt" -r "/tmp/vhosts_wordlist.txt" -delimiter "-" | anew-rs -q  "/tmp/vhosts_wordlist.txt"
 > >
 > > !# Sort
 > >  sort -u "/tmp/vhosts_wordlist.txt" -o "/tmp/vhosts_wordlist.txt"

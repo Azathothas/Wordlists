@@ -124,28 +124,28 @@ jobs:
           #--------------#        
           #anew things
           #APIs
-          cat "$GITHUB_WORKSPACE/main/Misc/api_docs.txt" 2>/dev/null | anew -q "$GITHUB_WORKSPACE/main/x_api_tiny.txt" 2>/dev/null
-          cat "$GITHUB_WORKSPACE/main/Misc/graphql_paths.txt" 2>/dev/null | anew -q "$GITHUB_WORKSPACE/main/x_api_tiny.txt" 2>/dev/null
+          cat "$GITHUB_WORKSPACE/main/Misc/api_docs.txt" 2>/dev/null | anew-rs -q "$GITHUB_WORKSPACE/main/x_api_tiny.txt" 2>/dev/null
+          cat "$GITHUB_WORKSPACE/main/Misc/graphql_paths.txt" 2>/dev/null | anew-rs -q "$GITHUB_WORKSPACE/main/x_api_tiny.txt" 2>/dev/null
           #English Words
           wget --quiet "https://raw.githubusercontent.com/dwyl/english-words/master/words_alpha.txt" -O "/tmp/english_words_alpha.txt"
-          cat "/tmp/english_words_alpha.txt" | anew -q "$GITHUB_WORKSPACE/main/Misc/english_words_alpha.txt"
+          cat "/tmp/english_words_alpha.txt" | anew-rs -q "$GITHUB_WORKSPACE/main/Misc/english_words_alpha.txt"
           wget --quiet "https://raw.githubusercontent.com/dwyl/english-words/master/words.txt" -O "/tmp/english_words_alpha_numerics.txt"
-          cat "/tmp/english_words_alpha_numerics.txt" | anew -q "$GITHUB_WORKSPACE/main/Misc/english_words_alpha_numerics.txt"
+          cat "/tmp/english_words_alpha_numerics.txt" | anew-rs -q "$GITHUB_WORKSPACE/main/Misc/english_words_alpha_numerics.txt"
           #IIS
-          cat "$GITHUB_WORKSPACE/main/Misc/IIS/extensions_top_dots.txt" 2>/dev/null | anew -q "/tmp/extensions_all_dots.txt" 2>/dev/null
-          cat "$GITHUB_WORKSPACE/main/Misc/IIS/extensions_top_no_dots.txt" 2>/dev/null | anew -q "/tmp/extensions_top_no_dots.txt" 2>/dev/null
-          cat "$GITHUB_WORKSPACE/main/Misc/IIS/iis_mini.txt" 2>/dev/null | anew -q "$GITHUB_WORKSPACE/main/Misc/IIS/iis_mid.txt" 2>/dev/null
-          cat "$GITHUB_WORKSPACE/main/Misc/IIS/iis_mid.txt" 2>/dev/null | anew -q "$GITHUB_WORKSPACE/main/Misc/IIS/iis_large.txt" 2>/dev/null
+          cat "$GITHUB_WORKSPACE/main/Misc/IIS/extensions_top_dots.txt" 2>/dev/null | anew-rs -q "/tmp/extensions_all_dots.txt" 2>/dev/null
+          cat "$GITHUB_WORKSPACE/main/Misc/IIS/extensions_top_no_dots.txt" 2>/dev/null | anew-rs -q "/tmp/extensions_top_no_dots.txt" 2>/dev/null
+          cat "$GITHUB_WORKSPACE/main/Misc/IIS/iis_mini.txt" 2>/dev/null | anew-rs -q "$GITHUB_WORKSPACE/main/Misc/IIS/iis_mid.txt" 2>/dev/null
+          cat "$GITHUB_WORKSPACE/main/Misc/IIS/iis_mid.txt" 2>/dev/null | anew-rs -q "$GITHUB_WORKSPACE/main/Misc/IIS/iis_large.txt" 2>/dev/null
           #LHFs
-          cat "$GITHUB_WORKSPACE/main/Misc/api_docs.txt" 2>/dev/null | anew -q "$GITHUB_WORKSPACE/main/x_lhf_mini.txt" 2>/dev/null
-          cat "$GITHUB_WORKSPACE/main/Misc/graphql_paths.txt" 2>/dev/null | anew -q "$GITHUB_WORKSPACE/main/x_lhf_mini.txt" 2>/dev/null
+          cat "$GITHUB_WORKSPACE/main/Misc/api_docs.txt" 2>/dev/null | anew-rs -q "$GITHUB_WORKSPACE/main/x_lhf_mini.txt" 2>/dev/null
+          cat "$GITHUB_WORKSPACE/main/Misc/graphql_paths.txt" 2>/dev/null | anew-rs -q "$GITHUB_WORKSPACE/main/x_lhf_mini.txt" 2>/dev/null
           #Permutations & DNS
-          cat "$GITHUB_WORKSPACE/main/Misc/permutation_common_base_tiny.txt" 2>/dev/null | anew -q "$GITHUB_WORKSPACE/main/Misc/permutation_common_base.txt" 2>/dev/null
-          cat "$GITHUB_WORKSPACE/main/Misc/permutation_common_base.txt" 2>/dev/null | anew -q "$GITHUB_WORKSPACE/main/x_dns_tiny.txt" 2>/dev/null
-          cat "$GITHUB_WORKSPACE/main/x_dns_tiny.txt" | anew -q "$GITHUB_WORKSPACE/main/x_dns_mid.txt" 2>/dev/null
-          cat "$GITHUB_WORKSPACE/main/x_dns_mid.txt" | anew -q "$GITHUB_WORKSPACE/main/x_dns.txt" 2>/dev/null
+          cat "$GITHUB_WORKSPACE/main/Misc/permutation_common_base_tiny.txt" 2>/dev/null | anew-rs -q "$GITHUB_WORKSPACE/main/Misc/permutation_common_base.txt" 2>/dev/null
+          cat "$GITHUB_WORKSPACE/main/Misc/permutation_common_base.txt" 2>/dev/null | anew-rs -q "$GITHUB_WORKSPACE/main/x_dns_tiny.txt" 2>/dev/null
+          cat "$GITHUB_WORKSPACE/main/x_dns_tiny.txt" | anew-rs -q "$GITHUB_WORKSPACE/main/x_dns_mid.txt" 2>/dev/null
+          cat "$GITHUB_WORKSPACE/main/x_dns_mid.txt" | anew-rs -q "$GITHUB_WORKSPACE/main/x_dns.txt" 2>/dev/null
           #Ports
-          cat "$GITHUB_WORKSPACE/main/Misc/ports_sussy.txt" 2>/dev/null | anew -q "$GITHUB_WORKSPACE/main/Misc/ports_top_20k.txt" 2>/dev/null
+          cat "$GITHUB_WORKSPACE/main/Misc/ports_sussy.txt" 2>/dev/null | anew-rs -q "$GITHUB_WORKSPACE/main/Misc/ports_top_20k.txt" 2>/dev/null
           #Sort
           cd "$GITHUB_WORKSPACE/main"
           #Main
