@@ -71,7 +71,9 @@ jobs:
           #--------------#
           #anew
           sudo eget "https://bin.ajam.dev/x86_64_Linux/anew" --to "/usr/local/bin/anew"
-          anew -h
+          #anew-rs
+          sudo eget "https://bin.ajam.dev/x86_64_Linux/anew-rs" --to "/usr/local/bin/anew-rs"
+          anew-rs -h
         continue-on-error: true
 
       - name: Clean Cloned Repos (I)
