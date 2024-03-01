@@ -9,7 +9,7 @@
 > - [**Application.wadl**](https://eclipse-ee4j.github.io/jersey.github.io/documentation/latest/wadl.html)
 > ```bash
 > !# Install wadl-dumper: https://github.com/dwisiswant0/wadl-dumper
->  sudo curl -qfsSL "https://raw.githubusercontent.com/Azathothas/Toolpacks/main/x86_64/wadl-dumper" -o "/usr/local/bin/wadl-dumper" && sudo chmod +xwr "/usr/local/bin/wadl-dumper"
+>  sudo curl -qfsSL "https://bin.ajam.dev/x86_64_Linux/wadl-dumper" -o "/usr/local/bin/wadl-dumper" && sudo chmod +xwr "/usr/local/bin/wadl-dumper"
 > !# wadl-dumper also accepts direct urls: --input "https://example.com/app.wadl"
 > !# Extract FUZZABLE Paths
 > wadl-dumper --input "/path/to/specs.wadl" 
@@ -39,7 +39,7 @@
 > ```bash 
 > !# Only Works if schema perfectly matches openapi v3 or greater
 > !# Install
-> sudo curl -qfsSL "https://raw.githubusercontent.com/Azathothas/Toolpacks/main/x86_64/cherrybomb" -o "/usr/local/bin/cherrybomb" && sudo chmod +xwr "/usr/local/bin/cherrybomb"
+> sudo curl -qfsSL "https://bin.ajam.dev/x86_64_Linux/cherrybomb" -o "/usr/local/bin/cherrybomb" && sudo chmod +xwr "/usr/local/bin/cherrybomb"
 > !# Passive Mode
 > cherrybomb --file  "/path/to/specs" --profile passive
 > ```
@@ -119,7 +119,7 @@
 > 1. Expanding Source [(dsieve)](https://github.com/trickest/dsieve)
 > ```bash
 > !# Install dsieve
->  sudo curl -qfsSL "https://raw.githubusercontent.com/Azathothas/Toolpacks/main/x86_64/dsieve" -o "/usr/local/bin/dsieve" && sudo chmod +xwr "/usr/local/bin/dsieve"
+>  sudo curl -qfsSL "https://bin.ajam.dev/x86_64_Linux/dsieve" -o "/usr/local/bin/dsieve" && sudo chmod +xwr "/usr/local/bin/dsieve"
 > !# Separate into levels [Level 2 --> main domain + all it's subdomains]
 >  dsieve -if "subdomains.txt" -f 2: | anew -q "subdomains.txt"
 > ```
@@ -139,7 +139,7 @@
 > > !# You could also use subdomains_dead.txt (Those that got resolved but aren't alive) to reduce the output
 > > 
 > > !# Install Comb
-> >  sudo curl -qfsSL "https://raw.githubusercontent.com/Azathothas/Toolpacks/main/x86_64/comb" -o "/usr/local/bin/comb" && sudo chmod +xwr "/usr/local/bin/comb"
+> >  sudo curl -qfsSL "https://bin.ajam.dev/x86_64_Linux/comb" -o "/usr/local/bin/comb" && sudo chmod +xwr "/usr/local/bin/comb"
 > > 
 > > !# Get words from subdomains
 > > !# You could also use subdomains_dead.txt (Those that got resolved but aren't alive) to reduce the output
@@ -172,7 +172,7 @@
 > > - Generate a Target Specific Wordlist [(mgwls)](https://github.com/trickest/mgwls) (Optional)
 > > ```bash
 > > !# Install
-> >  sudo curl -qfsSL "https://raw.githubusercontent.com/Azathothas/Toolpacks/main/x86_64/mgwls" -o "/usr/local/bin/mgwls" && sudo chmod +xwr "/usr/local/bin/mgwls"
+> >  sudo curl -qfsSL "https://bin.ajam.dev/x86_64_Linux/mgwls" -o "/usr/local/bin/mgwls" && sudo chmod +xwr "/usr/local/bin/mgwls"
 > >
 > > !# Put Individual Words from your subdomain in a text file
 > > !# Example: prod-dev-config.admin.example.com
@@ -180,7 +180,7 @@
 > >  echo "$domain.tld" | sed 's/[._-]/\n/g' | tr -s '\n' | tee "/tmp/mgwls_in.txt"
 > > !# You can crawl the domain and add your own words to "/tmp/mgwls_in.txt"
 > > !# You can also something like: https://github.com/d4rckh/gorilla
-> > !# sudo curl -qfsSL "https://raw.githubusercontent.com/Azathothas/Toolpacks/main/x86_64/gorilla" -o "/usr/local/bin/gorilla" && sudo chmod +xwr "/usr/local/bin/gorilla"
+> > !# sudo curl -qfsSL "https://bin.ajam.dev/x86_64_Linux/gorilla" -o "/usr/local/bin/gorilla" && sudo chmod +xwr "/usr/local/bin/gorilla"
 > > !# gorilla --from-website https://example.com
 > > !# or CEWL: https://github.com/digininja/CeWL
 > > 
@@ -204,7 +204,7 @@
 > - [**Feroxbuster**](https://epi052.github.io/feroxbuster-docs/docs/) [NOT SUPPORTED]
 > ```bash
 >  !# Install @latest
->   sudo curl -qfsSL "https://raw.githubusercontent.com/Azathothas/Toolpacks/main/x86_64/feroxbuster" -o "/usr/local/bin/feroxbuster" && sudo chmod +xwr "/usr/local/bin/feroxbuster"
+>   sudo curl -qfsSL "https://bin.ajam.dev/x86_64_Linux/feroxbuster" -o "/usr/local/bin/feroxbuster" && sudo chmod +xwr "/usr/local/bin/feroxbuster"
 >
 >  !# Fuzz
 >  feroxbuster currently can't do vHOST fuzzing
@@ -214,7 +214,7 @@
 > - [**FFUF**](https://github.com/ffuf/ffuf#usage) [NOT RECOMMENDED]
 > ```bash
 >  !# Install
->   sudo curl -qfsSL "https://raw.githubusercontent.com/Azathothas/Toolpacks/main/x86_64/ffuf" -o "/usr/local/bin/ffuf" && sudo chmod +xwr "/usr/local/bin/ffuf"
+>   sudo curl -qfsSL "https://bin.ajam.dev/x86_64_Linux/ffuf" -o "/usr/local/bin/ffuf" && sudo chmod +xwr "/usr/local/bin/ffuf"
 > 
 >  !# Fuzz, use optional filters (-mc | -fc | -ms etc as you see fit)
 >    ffuf -H "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" -w "/tmp/vhosts_wordlist.txt" -H "Host: FUZZ.$DOMAIN.TLD" -u "https://$host_or_ip"
@@ -223,7 +223,7 @@
 > - [**GoBuster**](https://github.com/OJ/gobuster#vhost-mode) [RECOMMENDED]
 > ```bash
 >  !# Install
->   sudo curl -qfsSL "https://raw.githubusercontent.com/Azathothas/Toolpacks/main/x86_64/gobuster" -o "/usr/local/bin/gobuster" && sudo chmod +xwr "/usr/local/bin/gobuster"
+>   sudo curl -qfsSL "https://bin.ajam.dev/x86_64_Linux/gobuster" -o "/usr/local/bin/gobuster" && sudo chmod +xwr "/usr/local/bin/gobuster"
 > 
 >  !# Fuzz
 >  !# Note: You must NOT Pass the complete url
