@@ -3,8 +3,8 @@
 # NOT TESTED
 
 #---------------------------------------------------------------------------------#
-#Install anew
- sudo curl -qfsSL "https://bin.ajam.dev/x86_64_Linux/anew" -o "/usr/local/bin/anew" && sudo chmod +xwr "/usr/local/bin/anew"
+#Install anew-rs
+ sudo curl -qfsSL "https://bin.ajam.dev/x86_64_Linux/anew-rs" -o "/usr/local/bin/anew-rs" && sudo chmod +xwr "/usr/local/bin/anew-rs"
 #Install Duplicut
  pushd "$(mktemp -d)" && git clone "https://github.com/nil0x42/duplicut" && cd duplicut
  make ; sudo mv "./duplicut" "/usr/local/bin/duplicut" ; sudo chmod +xwr "/usr/local/bin/duplicut" ; popd
