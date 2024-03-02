@@ -168,6 +168,7 @@ ${idfwbonavigation}.xml
 .babel.json
 .babelrc.json
 .bluemix/.cf/config.json
+.bluemix/api.pipeline.yml
 .bluemix/config.json
 .bluemix/pipeline.yaml
 .bower.json
@@ -243,6 +244,7 @@ ${idfwbonavigation}.xml
 .deploy/values.yaml
 .deployment-config.json
 .devcontainer/devcontainer.json
+.docker/brp-api.yml
 .docker/config.json
 .docker/config.json.example
 .docker/daemon.json
@@ -13083,6 +13085,7 @@ accounts-config.xml.cfm
 accounts-v1
 accounts-v2
 accounts.api
+accounts.json
 accounts.v1
 accounts.v2
 accounts.xml
@@ -15170,6 +15173,7 @@ api.news
 api.php
 api.php5
 api.pinterest.php
+api.pipeline.yml
 api.playlist.php
 api.prd
 api.pre
@@ -15211,6 +15215,7 @@ api/
 api/*
 api/.env
 api/.env 
+api/.env.dev
 api/.git/config
 api/.htaccess
 api/.htpasswd
@@ -16678,6 +16683,7 @@ api/settings/values
 api/share
 api/shop/v1 
 api/short-urls 
+api/sign-in
 api/sign-up
 api/signature
 api/signin
@@ -16923,6 +16929,7 @@ api/v1.9
 api/v1/
 api/v1/ 
 api/v1/.env
+api/v1/.env.dev
 api/v1/.git
 api/v1/.git/config
 api/v1/.json
@@ -17385,6 +17392,7 @@ api/v1/session
 api/v1/sessions/current
 api/v1/setting
 api/v1/settings
+api/v1/sign-in
 api/v1/sign-up
 api/v1/signature
 api/v1/signin
@@ -17582,6 +17590,7 @@ api/v2.8
 api/v2.9
 api/v2/
 api/v2/.env
+api/v2/.env.dev
 api/v2/.git
 api/v2/.git/config
 api/v2/.json
@@ -17664,8 +17673,10 @@ api/v2/resetPwd
 api/v2/secrets
 api/v2/secrets.json
 api/v2/server
+api/v2/sign-in
 api/v2/sign-up
 api/v2/signature
+api/v2/signin
 api/v2/signup
 api/v2/spans
 api/v2/swagger
@@ -17735,6 +17746,7 @@ api/v3.8
 api/v3.9
 api/v3/
 api/v3/.env
+api/v3/.env.dev
 api/v3/.git
 api/v3/.git/config
 api/v3/.json
@@ -17789,8 +17801,10 @@ api/v3/resetPwd
 api/v3/secrets
 api/v3/secrets.json
 api/v3/server
+api/v3/sign-in
 api/v3/sign-up
 api/v3/signature
+api/v3/signin
 api/v3/signup
 api/v3/swagger
 api/v3/swagger-ui
@@ -30902,8 +30916,10 @@ docker.api
 docker.v1
 docker.v2
 docker/daemon.json
+docker/dockerhub_api.sh
 dockerapi
 dockerconfigjson
+dockerhub_api.sh
 dockerrun.aws.json
 dockerv1
 dockerv2
@@ -49724,6 +49740,7 @@ packer-template.json
 packer-user-variables.json
 packer-variables.json
 packer-vars.json
+packer.deploy.json
 packer.json
 packer_template.json
 pad
@@ -62336,6 +62353,7 @@ soap.udp
 soap.v1
 soap.v2
 soap.wsdl
+soap.xml
 soap/
 soap/admin
 soap/admin/providermanager
@@ -64898,6 +64916,7 @@ system///sling/loginstatus.json
 system///sling/loginstatus.json/a.1.json
 system///sling/loginstatus.json/a.css
 system///sling/loginstatus.json/a.ico
+system///sling/loginstatus.json;%0aa.css
 system/bgservlets/test.json
 system/bgservlets/test.json/a.1.json
 system/bgservlets/test.json;%0aa.css
@@ -68212,6 +68231,7 @@ v1.%EXT%
 v1.0
 v1.0/
 v1.0/swagger-ui.html
+v1.0/users
 v1.01
 v1.02
 v1.03
@@ -68521,6 +68541,7 @@ v1/countries
 v1/countries 
 v1/country/list
 v1/createfromdatabase
+v1/credentials
 v1/currency-conversion
 v1/customer-topup-expire
 v1/customer-topup-withdraw
@@ -69178,6 +69199,7 @@ v2-ag
 v2.0
 v2.0/.well-known/openid-configuration 
 v2.0/swagger-ui.html
+v2.0/users
 v2.01
 v2.02
 v2.03
@@ -69358,6 +69380,7 @@ v2/companies
 v2/console
 v2/contenidos
 v2/cpstyles
+v2/credentials
 v2/cron.php
 v2/css
 v2/customavatars
@@ -69585,6 +69608,7 @@ v2ybs4hj.php
 v3
 v3.%EXT%
 v3.0/swagger-ui.html
+v3.0/users
 v3.01
 v3.02
 v3.03
@@ -69730,6 +69754,7 @@ v3/connect
 v3/connectme
 v3/console
 v3/convertprofile
+v3/credentials
 v3/data/Sank/Sank/Roles
 v3/data/sank/sank/roles
 v3/diagnostics

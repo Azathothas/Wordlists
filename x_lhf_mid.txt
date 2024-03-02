@@ -1062,6 +1062,7 @@ ${idfwbonavigation}.xml
 .4.0
 .4.1
 .4.2
+.4.2.1...json
 .4.2.min.js
 .4.4
 .4.6
@@ -1567,12 +1568,14 @@ ${idfwbonavigation}.xml
 .award
 .awm
 .aws
+.aws-env.dev
 .aws-okta
 .aws-sam
 .aws-sam/build/template.json
 .aws-sam/build/template.yaml
 .aws-sam/cli-config.toml
 .aws-shell
+.aws.env
 .aws/
 .aws/aws_secret_access_key
 .aws/cli
@@ -1610,6 +1613,7 @@ ${idfwbonavigation}.xml
 .azure/accessTokens.json
 .azure/accesstokens.json
 .azure/az.json
+.azure/azure-pipelines.yml
 .azure/azure.config
 .azure/azure.json
 .azure/azureProfile.json
@@ -1627,6 +1631,7 @@ ${idfwbonavigation}.xml
 .azure_htaccess
 .azurecli
 .azurecredentials
+.azurepipelines
 .azurerm
 .b
 .babel-config.js
@@ -1870,6 +1875,7 @@ ${idfwbonavigation}.xml
 .blog.ini.php
 .bluemix
 .bluemix/.cf/config.json
+.bluemix/api.pipeline.yml
 .bluemix/config.json
 .bluemix/pipeline.yaml
 .bluemix/pipeline.yml
@@ -2082,6 +2088,9 @@ ${idfwbonavigation}.xml
 .chronograf
 .chronograf.d
 .ci
+.ci/azure-deploy-kubernetes.yml
+.ci/docker-compose-file/credentials.env
+.ci/docker/credentials.env
 .ci/publish.sh
 .circle
 .circleci
@@ -2114,6 +2123,7 @@ ${idfwbonavigation}.xml
 .circleci/config/test
 .circleci/config/versions
 .circleci/config/workflows
+.circleci/continue_config.yml
 .circleci/cron.yml
 .circleci/dependencies.yaml
 .circleci/dependencies.yml
@@ -2161,6 +2171,7 @@ ${idfwbonavigation}.xml
 .circleci/parameters.yml
 .circleci/prod.yml
 .circleci/release.yml
+.circleci/scripts/publish-dockerhub.sh
 .circleci/sec.yml
 .circleci/secrets.yaml
 .circleci/secrets.yml
@@ -2571,6 +2582,7 @@ ${idfwbonavigation}.xml
 .db.env
 .db.xml
 .db.yaml
+.db/docker-compose.yml
 .db3
 .dbeaver/credentials-config.json
 .dbeaver/data-sources.json
@@ -2690,6 +2702,8 @@ ${idfwbonavigation}.xml
 .docker/Dockerfile.override
 .docker/Dockerfile.production
 .docker/Dockerfile.stage
+.docker/application.yml
+.docker/brp-api.yml
 .docker/build
 .docker/ca.pem
 .docker/config.json
@@ -2697,10 +2711,12 @@ ${idfwbonavigation}.xml
 .docker/config.yml
 .docker/daemon.json
 .docker/docker-compose.ci.yml
+.docker/docker-compose.microservices.yml
 .docker/docker-compose.override.dev.yml
 .docker/docker-compose.override.prod.yml
 .docker/docker-compose.override.test.yml
 .docker/docker-compose.override.yml
+.docker/docker-compose.prod.yml
 .docker/docker-compose.production.yml
 .docker/docker-compose.stage.yml
 .docker/docker-compose.yml
@@ -2935,6 +2951,8 @@ ${idfwbonavigation}.xml
 .env
 .env-example
 .env-sample
+.env.admin.dev
+.env.app.dev
 .env.asp
 .env.aspx
 .env.back
@@ -2980,6 +2998,7 @@ ${idfwbonavigation}.xml
 .env.default.dist
 .env.defaults
 .env.demo
+.env.deploy.example
 .env.dev
 .env.dev.dist
 .env.dev.example
@@ -3010,7 +3029,11 @@ ${idfwbonavigation}.xml
 .env.dusk.production
 .env.dusk.staging
 .env.dusk.testing
+.env.elk
+.env.elk.dev
+.env.environment
 .env.example
+.env.example.dev
 .env.example.dist
 .env.example.local
 .env.example.template
@@ -3154,6 +3177,7 @@ ${idfwbonavigation}.xml
 .env.secret~
 .env.selenium
 .env.stage
+.env.stage.dev
 .env.staging
 .env.staging.dev.local~
 .env.staging.dev~
@@ -3287,6 +3311,7 @@ ${idfwbonavigation}.xml
 .eu
 .eunit
 .event
+.evergreen/.evg.yml
 .evg.yaml
 .evg.yml
 .ex
@@ -3323,6 +3348,7 @@ ${idfwbonavigation}.xml
 .face
 .face.icon@
 .faces
+.factory/automation.yml
 .factorypath
 .fake
 .fake/
@@ -3902,6 +3928,7 @@ ${idfwbonavigation}.xml
 .gitlab-ci.yml~
 .gitlab-ci/.env
 .gitlab-runner
+.gitlab/.gitlab-ci.yml
 .gitlab/CI
 .gitlab/CI/cron.yml
 .gitlab/CI/ext.yml
@@ -3911,6 +3938,7 @@ ${idfwbonavigation}.xml
 .gitlab/CI/sec.yml
 .gitlab/CI/stage.yml
 .gitlab/CI/test.yml
+.gitlab/Deploy.ci.yml
 .gitlab/issue_templates
 .gitlab/merge_request_templates
 .gitlab/route-map.yaml
@@ -4658,6 +4686,11 @@ ${idfwbonavigation}.xml
 .json/FNZ.html
 .json/FNZ.ico
 .json/FNZ.png
+.json/a.css
+.json/a.html
+.json/a.ico
+.json/a.png
+.json;%0aa.css
 .json?FNZ.html
 .json?FNZ.ico
 .json_keys.json
@@ -5588,6 +5621,7 @@ ${idfwbonavigation}.xml
 .pipeline/config.yml
 .pipeline/credentials.yml
 .pipeline/dev_prereq.sh
+.pipelines/azure-pipeline-build.yml
 .pivotal
 .pivotal/authentication.conf
 .pivotal/authentication.yaml
@@ -6031,6 +6065,7 @@ ${idfwbonavigation}.xml
 .selected_editor
 .sema
 .semaphore
+.semaphore/release.yml
 .semaphore/semaphore.yaml
 .semaphore/semaphore.yml
 .semgrepignore
@@ -7037,6 +7072,8 @@ ${idfwbonavigation}.xml
 .wml
 .wmv
 .woa
+.woodpecker/build-and-publish.yml
+.woodpecker/manifest.yml
 .work
 .worksheet
 .workspace
@@ -7146,6 +7183,7 @@ ${idfwbonavigation}.xml
 .xtpl
 .xy.php
 .y
+.yamato/android.yml
 .yaml
 .yamllint
 .yamllintignore
@@ -19975,6 +20013,7 @@ accounts.aspx
 accounts.cgi
 accounts.htm
 accounts.html
+accounts.json
 accounts.jsp
 accounts.php
 accounts.pl
@@ -25925,6 +25964,7 @@ api.ml
 api.news
 api.php
 api.pinterest.php
+api.pipeline.yml
 api.playlist.php
 api.prd
 api.pre
@@ -25962,6 +26002,7 @@ api/
 api/*
 api/.env
 api/.env 
+api/.env.dev
 api/.git/config
 api/.htaccess
 api/.htpasswd
@@ -27423,6 +27464,7 @@ api/settings/values
 api/share
 api/shop/v1 
 api/short-urls 
+api/sign-in
 api/sign-up
 api/signature
 api/signin
@@ -27666,6 +27708,7 @@ api/v1.9
 api/v1/
 api/v1/ 
 api/v1/.env
+api/v1/.env.dev
 api/v1/.git
 api/v1/.git/config
 api/v1/.json
@@ -28113,6 +28156,7 @@ api/v1/session
 api/v1/sessions/current
 api/v1/setting
 api/v1/settings
+api/v1/sign-in
 api/v1/sign-up
 api/v1/signature
 api/v1/signin
@@ -28307,6 +28351,7 @@ api/v2.8
 api/v2.9
 api/v2/
 api/v2/.env
+api/v2/.env.dev
 api/v2/.git
 api/v2/.git/config
 api/v2/.json
@@ -28383,8 +28428,10 @@ api/v2/resetPwd
 api/v2/secrets
 api/v2/secrets.json
 api/v2/server
+api/v2/sign-in
 api/v2/sign-up
 api/v2/signature
+api/v2/signin
 api/v2/signup
 api/v2/spans
 api/v2/swagger
@@ -28451,6 +28498,7 @@ api/v3.8
 api/v3.9
 api/v3/
 api/v3/.env
+api/v3/.env.dev
 api/v3/.git
 api/v3/.git/config
 api/v3/.json
@@ -28504,8 +28552,10 @@ api/v3/resetPwd
 api/v3/secrets
 api/v3/secrets.json
 api/v3/server
+api/v3/sign-in
 api/v3/sign-up
 api/v3/signature
+api/v3/signin
 api/v3/signup
 api/v3/swagger
 api/v3/swagger-ui
@@ -30194,6 +30244,7 @@ app/
 app/ 
 app/.env
 app/.git/config
+app/.gitignore
 app/.htaccess
 app/CR/ 
 app/CR/items.asp
@@ -31504,12 +31555,15 @@ apps
 apps 
 apps-api
 apps.1.json
+apps.1.xml
 apps.api
 apps.feed.xml
+apps.infinity.json
 apps.json
 apps.properties
 apps.py
 apps.tidy.infinity.json
+apps.xml
 apps/
 apps/ 
 apps/* 
@@ -33141,6 +33195,7 @@ aws-eks-cluster.yaml
 aws-elasticache-settings.json
 aws-elasticsearch-settings.json
 aws-emr-cluster.yaml
+aws-env.dev
 aws-env.yaml
 aws-exports.json
 aws-glue-config.ini
@@ -33190,6 +33245,7 @@ aws-workspaces-settings.yaml
 aws.cfg
 aws.config
 aws.config.js
+aws.env
 aws.json
 aws.properties
 aws.sh
@@ -34613,6 +34669,7 @@ bin-release/
 bin-release/update_descriptor_1.xml
 bin.1.json
 bin.1.xml
+bin.4.2.1...json
 bin.api
 bin.aspx?ID*
 bin.bak
@@ -34621,13 +34678,43 @@ bin.ext.json
 bin.feed.xml
 bin.infinity.json
 bin.json
+bin.json/a.css
+bin.json/a.html
+bin.json/a.ico
+bin.json/a.png
+bin.json;%0aa.css
 bin.old
 bin.tidy.infinity.json
 bin.xml
 bin/
 bin///querybuilder.feed
+bin///querybuilder.feed.servlet
+bin///querybuilder.feed.servlet/a.1.json
+bin///querybuilder.feed.servlet/a.css
+bin///querybuilder.feed.servlet/a.ico
+bin///querybuilder.feed.servlet;%0aa.css
 bin///querybuilder.json
+bin///querybuilder.json.css
+bin///querybuilder.json.html
+bin///querybuilder.json.ico
+bin///querybuilder.json.png
 bin///querybuilder.json.servlet
+bin///querybuilder.json.servlet/a.1.json
+bin///querybuilder.json.servlet/a.css
+bin///querybuilder.json.servlet/a.ico
+bin///querybuilder.json.servlet;%0aa.css
+bin///querybuilder.json/a.1.json
+bin///querybuilder.json/a.css
+bin///querybuilder.json/a.ico
+bin///querybuilder.json;%0aa.css
+bin///wcm/search/gql.json
+bin///wcm/search/gql.json/a.1.json
+bin///wcm/search/gql.json/a.css
+bin///wcm/search/gql.json/a.html
+bin///wcm/search/gql.json/a.ico
+bin///wcm/search/gql.json/a.png
+bin///wcm/search/gql.json;%0aa.css
+bin///wcm/search/gql.servlet.json
 bin/AjaxControlToolkit.dll
 bin/AjaxMin.dll
 bin/CMS.Blogs.dll
@@ -34728,8 +34815,14 @@ bin/querybuilder.json
 bin/querybuilder.json.css?path=/bin
 bin/querybuilder.json.css?path=/home
 bin/querybuilder.json.servlet
+bin/querybuilder.json/a.1.json
+bin/querybuilder.json/a.css
 bin/querybuilder.json/a.css?path=/bin
 bin/querybuilder.json/a.css?path=/home
+bin/querybuilder.json/a.html
+bin/querybuilder.json/a.ico
+bin/querybuilder.json/a.png
+bin/querybuilder.json;%0aa.css
 bin/querybuilder.json;%0aa.css?path=/bin
 bin/querybuilder.json;%0aa.css?path=/home
 bin/querybuilder.json?path=/apps/system/config&p.hits=full
@@ -34759,6 +34852,7 @@ bin/shopper.cgi
 bin/symfony_requirements
 bin/target
 bin/tmp
+bin/wcm/contentfinder/connector/suggestions.json/a.html?query_term=path%3a/&pre=%3Csvg+onload%3dalert(document.domain)%3E&post=yyyy
 bin/wcm/search/gql.servlet.json?query=type:base%20limit:..-1&pathPrefix=
 bin/zkCli.sh
 binapi
@@ -35048,6 +35142,7 @@ blog.xml
 blog/
 blog/.env
 blog/.git/config
+blog/.gitignore
 blog/?alg_wc_ev_verify_email=eyJpZCI6MSwiY29kZSI6MH0=
 blog/?alg_wc_ev_verify_email=eyjpzci6mswiy29kzsi6mh0=
 blog/_wpeprivate/config.json
@@ -35708,6 +35803,7 @@ build.zip
 build/
 build/.env
 build/.git/config
+build/.secrets.example
 build/Release
 build/assets-local.json
 build/build.properties
@@ -35847,6 +35943,7 @@ builds/:buildName/:buildNumber/:startTime/:tab
 builds/:buildName/:buildNumber/:startTime/:tab/:moduleID
 buildsapi
 buildsapi.js
+buildscripts/sonatype-upload.sh
 buildsite.js
 buildsitemap.php
 buildspec
@@ -41893,6 +41990,7 @@ config/ember-try.js
 config/enable 
 config/encryption
 config/env.py
+config/env/development.example.env
 config/environment.js
 config/environment.py.local
 config/environment.rb
@@ -44266,6 +44364,7 @@ content.api
 content.assetsearch.json?query=*&start=0&limit=10&random=123
 content.blueprint.json
 content.childrenlist.json
+content.ext.infinity.1..json?tidy=true
 content.ext.json
 content.feed.html
 content.feed.xml
@@ -44950,6 +45049,7 @@ core/core.libraries.yml
 core/core.link_relation_types.yml
 core/core.services.yaml
 core/core.services.yml
+core/database/.env
 core/database_api.php
 core/datavase/.env
 core/docs/changelog.txt
@@ -51276,6 +51376,7 @@ deploy/deploy-gateway/src/main/resources/config/application-gw.properties
 deploy/deployment-definition.yaml
 deploy/deployment-definition.yml
 deploy/ec2/.env
+deploy/infra/k8s-install.sh
 deploy/symlink.rb
 deploy_app.cmd
 deploy_app.py
@@ -51325,6 +51426,7 @@ deployment/env/dev.config.js
 deployment/env/redacted.config.js
 deploymentScripts/settings.json
 deployment_automation.yaml
+deployment_k8s.sh
 deployment_manifest.json
 deployment_metrics_config.json
 deployment_rules.conf
@@ -51555,6 +51657,7 @@ dev.bat
 dev.conf
 dev.config
 dev.env
+dev.env.dev
 dev.exs
 dev.go
 dev.html
@@ -51624,6 +51727,7 @@ dev/raphael.core.js
 dev/raphael.vml.js 
 dev/register
 dev/script.sh
+dev/setup_secrets.sh
 dev/shm
 dev/shm 
 dev/shm/tmp 
@@ -51967,6 +52071,7 @@ development-wiki
 development.config
 development.esproj
 development.esproj/
+development.example.env
 development.html
 development.ini
 development.js
@@ -52891,6 +52996,7 @@ doc.inc
 doc.wadl
 doc/
 doc/.env
+doc/.gitignore
 doc/AwButton.md 
 doc/README_FOR_APP
 doc/api
@@ -53139,6 +53245,7 @@ docker-compose/platform/.env
 docker-config
 docker-config.json
 docker-daemon.json
+docker-dev.sh
 docker-elk/.env
 docker-entrypoint-initdb.bat
 docker-entrypoint-initdb.conf
@@ -53352,6 +53459,7 @@ docker-wait-for-it.xml
 docker.api
 docker.conf
 docker.env
+docker.env.sh
 docker.sh
 docker.yaml
 docker/
@@ -53372,15 +53480,18 @@ docker/db/.env
 docker/db/mongo/.env
 docker/docker-compose.yaml
 docker/docker-compose.yml
+docker/dockerhub_api.sh
 docker/examples/compose/.env
 docker/info 
 docker/kafka.env
 docker/keycloak/.env
 docker/platform/.env
+docker/postgres.env
 docker/postgres/.env
 docker/tb-web-ui.env
 docker/variables.env
 docker/webdav/.env
+docker_build.sh
 docker_hub_password
 docker_key
 docker_pass
@@ -53404,6 +53515,7 @@ dockercomposedev.yml
 dockerconfigjson
 dockerfile
 dockerfiles
+dockerhub_api.sh
 dockerhub_password
 dockerhubpassword
 dockerize-disk.sh
@@ -53427,6 +53539,7 @@ docs.sh
 docs/
 docs/.env
 docs/.git
+docs/.gitignore
 docs/1/api
 docs/1/graphql.html
 docs/1/rest
@@ -54029,7 +54142,9 @@ dump/s.sql
 dump/system.xml
 dump1.sql
 dump2.sql
+dump2020.sql
 dump2021.json
+dump2021.sql
 dump2021.xml
 dump2022.json
 dump2022.sql
@@ -54037,6 +54152,9 @@ dump2022.xml
 dump2023.json
 dump2023.sql
 dump2023.xml
+dump2024.sql
+dump2025.sql
+dump2026.sql
 dump3.sql
 dump_file.sql
 dump_table_review.sql
@@ -55763,6 +55881,7 @@ env/.env
 env/FormData 
 env/data 
 env/dev.config.js
+env/development.example.env
 env/dockers/mariadb-test/.env
 env/dockers/php-apache/.env
 env/example/.env
@@ -57286,6 +57405,7 @@ example.app-settings.conf
 example.app-settings.json
 example.conf
 example.env
+example.env.environment
 example.gitignore
 example.htaccess
 example.ini
@@ -58448,6 +58568,7 @@ filters/filterTransforms
 filters/spriteMask/SpriteMaskFilter 
 fin
 final
+final.env
 final.sh
 final/
 finalVersion/lcomernbootcamp/projbackend/.env
@@ -64467,6 +64588,7 @@ iis
 iis-api
 iis.api
 iis.config
+iis.sql
 iisadmin
 iisadmin/
 iisadmpwd
@@ -65667,6 +65789,7 @@ infoviewapp
 infoviewapp/help/en/user/html
 infoviewapp/logon.jsp
 infra-engine/resource/notebook/type/level/O/id/ 
+infra/k8s-install.sh
 infrastructure-as-code.yaml
 infrastructure-as-code.yml
 infrastructure/get_geo/
@@ -66818,6 +66941,7 @@ ipch
 ipch/
 ipconfig.aspx
 ipconfig.do
+ipconfig.php.example
 ipcpricing/ui
 ipdata/
 ipdshield.js
@@ -68908,6 +69032,7 @@ k8s-deployment.yaml
 k8s-deployment.yml
 k8s-ingress.yaml
 k8s-ingress.yml
+k8s-install.sh
 k8s-namespace.yaml
 k8s-pods.yaml
 k8s-pods.yml
@@ -68919,6 +69044,8 @@ k8s-services.yaml
 k8s-services.yml
 k8s-statefulset.yaml
 k8s-statefulset.yml
+k8s-up.sh
+k8s-vps.sh
 k8s.yaml
 k8s/api/v1
 k8s/configmap.yaml
@@ -69174,6 +69301,7 @@ k8s_service_discovery_credentials.ps1
 k8s_service_discovery_credentials.sh
 k8s_service_discovery_credentials.txt
 k8s_service_discovery_credentials.xml
+k8s_setup.sh
 k8s_tracing_credentials.bat
 k8s_tracing_credentials.conf
 k8s_tracing_credentials.json
@@ -69846,6 +69974,7 @@ kontakt/vertriebskontakte/
 kontalk-api
 kontalk.api
 kontalkapi
+kool.deploy.env
 kope28/
 kops.yaml
 korugan/openvpn_advanced
@@ -71613,15 +71742,59 @@ libs.json
 libs.xml
 libs/.env
 libs/cq/analytics/components/sitecatalystpage/segments.json.servlet
+libs/cq/analytics/components/sitecatalystpage/segments.json.servlet.1.json?datacenter=https://site%23&company=xxx&username=zzz&secret=yyyy
+libs/cq/analytics/components/sitecatalystpage/segments.json.servlet.css?datacenter=https://site%23&company=xxx&username=zzz&secret=yyyy
+libs/cq/analytics/components/sitecatalystpage/segments.json.servlet.gif?datacenter=https://site%23&company=xxx&username=zzz&secret=yyyy
+libs/cq/analytics/components/sitecatalystpage/segments.json.servlet.html?datacenter=https://site%23&company=xxx&username=zzz&secret=yyyy
+libs/cq/analytics/components/sitecatalystpage/segments.json.servlet.ico?datacenter=https://site%23&company=xxx&username=zzz&secret=yyyy
+libs/cq/analytics/components/sitecatalystpage/segments.json.servlet.png?datacenter=https://site%23&company=xxx&username=zzz&secret=yyyy
+libs/cq/analytics/components/sitecatalystpage/segments.json.servlet/a.css?datacenter=https://site%23&company=xxx&username=zzz&secret=yyyy
+libs/cq/analytics/components/sitecatalystpage/segments.json.servlet;%0aa.css?datacenter=https://site%23&company=xxx&username=zzz&secret=yyyy
+libs/cq/analytics/components/sitecatalystpage/segments.json.servlet?datacenter=https://site%23&company=xxx&username=zzz&secret=yyyy
 libs/cq/analytics/templates/sitecatalyst/jcr:content.segments.json
+libs/cq/analytics/templates/sitecatalyst/jcr:content.segments.json/a.1.json?datacenter=https://site%23&company=xxx&username=zzz&secret=yyyy
+libs/cq/analytics/templates/sitecatalyst/jcr:content.segments.json/a.css?datacenter=https://site%23&company=xxx&username=zzz&secret=yyyy
+libs/cq/analytics/templates/sitecatalyst/jcr:content.segments.json/a.html?datacenter=https://site%23&company=xxx&username=zzz&secret=yyyy
+libs/cq/analytics/templates/sitecatalyst/jcr:content.segments.json/a.png?datacenter=https://site%23&company=xxx&username=zzz&secret=yyyy
+libs/cq/analytics/templates/sitecatalyst/jcr:content.segments.json;%0aa.css?datacenter=https://site%23&company=xxx&username=zzz&secret=yyyy
+libs/cq/analytics/templates/sitecatalyst/jcr:content.segments.json?datacenter=https://site%23&company=xxx&username=zzz&secret=yyyy
+libs/cq/cloudservicesprovisioning/content/autoprovisioning.json
+libs/cq/cloudservicesprovisioning/content/autoprovisioning.json/a.1.json
+libs/cq/cloudservicesprovisioning/content/autoprovisioning.json/a.css
+libs/cq/cloudservicesprovisioning/content/autoprovisioning.json/a.gif
+libs/cq/cloudservicesprovisioning/content/autoprovisioning.json/a.html
+libs/cq/cloudservicesprovisioning/content/autoprovisioning.json/a.ico
+libs/cq/cloudservicesprovisioning/content/autoprovisioning.json/a.png
+libs/cq/cloudservicesprovisioning/content/autoprovisioning.json;%0aa.css
+libs/cq/contentinsight/content/proxy.reportingservices.json
+libs/cq/contentinsight/content/proxy.reportingservices.json/a.1.json?url=http://169.254.169.254%23/api1.omniture.com/a&q=a
+libs/cq/contentinsight/content/proxy.reportingservices.json/a.css?url=http://169.254.169.254%23/api1.omniture.com/a&q=a
+libs/cq/contentinsight/content/proxy.reportingservices.json/a.html?url=http://169.254.169.254%23/api1.omniture.com/a&q=a
+libs/cq/contentinsight/content/proxy.reportingservices.json/a.ico?url=http://169.254.169.254%23/api1.omniture.com/a&q=a
+libs/cq/contentinsight/content/proxy.reportingservices.json/a.png?url=http://169.254.169.254%23/api1.omniture.com/a&q=a
+libs/cq/contentinsight/content/proxy.reportingservices.json;%0aa.css?url=http://169.254.169.254%23/api1.omniture.com/a&q=a
+libs/cq/contentinsight/content/proxy.reportingservices.json?url=http://169.254.169.254%23/api1.omniture.com/a&q=a
+libs/cq/contentinsight/proxy/reportingservices.json.GET.servlet
+libs/cq/contentinsight/proxy/reportingservices.json.GET.servlet.css?url=http://169.254.169.254%23/api1.omniture.com/a&q=a
+libs/cq/contentinsight/proxy/reportingservices.json.GET.servlet.html?url=http://169.254.169.254%23/api1.omniture.com/a&q=a
+libs/cq/contentinsight/proxy/reportingservices.json.GET.servlet.ico?url=http://169.254.169.254%23/api1.omniture.com/a&q=a
+libs/cq/contentinsight/proxy/reportingservices.json.GET.servlet.png?url=http://169.254.169.254%23/api1.omniture.com/a&q=a
+libs/cq/contentinsight/proxy/reportingservices.json.GET.servlet?url=http://169.254.169.254%23/api1.omniture.com/a&q=a
 libs/cq/core/content/login.json
 libs/cq/core/content/welcome.html
 libs/cq/security/userinfo 
 libs/cq/security/userinfo.json
+libs/dam/cloud/proxy.json
 libs/foundation/components/primary/cq/workflow/components/participants/json.GET.servlet
 libs/granite/core/content/login/favicon.ico
 libs/granite/csrf/token.json
 libs/granite/csrf/token.json 
+libs/mcm/salesforce/customer.html/a.1.json?checkType=authorize&authorization_url=http://169.254.169.254&customer_key=zzzz&customer_secret=zzzz&redirect_uri=xxxx&code=e
+libs/mcm/salesforce/customer.json
+libs/mcm/salesforce/customer.json/a.css?checkType=authorize&authorization_url=http://169.254.169.254&customer_key=zzzz&customer_secret=zzzz&redirect_uri=xxxx&code=e
+libs/mcm/salesforce/customer.json/a.gif?checkType=authorize&authorization_url=http://169.254.169.254&customer_key=zzzz&customer_secret=zzzz&redirect_uri=xxxx&code=e
+libs/mcm/salesforce/customer.json/a.png?checkType=authorize&authorization_url=http://169.254.169.254&customer_key=zzzz&customer_secret=zzzz&redirect_uri=xxxx&code=e
+libs/mcm/salesforce/customer.json?checkType=authorize&authorization_url=http://169.254.169.254&customer_key=zzzz&customer_secret=zzzz&redirect_uri=xxxx&code=e
 libs/spaw/dialogs/dialog.php
 libs/spaw2/dialogs/dialog.php
 libs/wcm/core/resources/languages.overlay.infinity.json
@@ -77055,6 +77228,7 @@ nXB
 na_admin/
 nabopoll/admin/config_edit.php
 nac/
+nacos-config.sh
 nadmin
 nagasudhirpulla-api-datasource
 naginator
@@ -80413,6 +80587,7 @@ packer-template.json
 packer-user-variables.json
 packer-variables.json
 packer-vars.json
+packer.deploy.json
 packer.json
 packer_cache
 packer_cache/
@@ -90193,6 +90368,7 @@ scripts/deploy.json
 scripts/deploy.ps1
 scripts/deploy.sh
 scripts/deploy.xml
+scripts/docker-compose/db.env
 scripts/emurl/RECMAN.dll
 scripts/environ.pl
 scripts/ezshopper/search.cgi
@@ -90433,6 +90609,7 @@ secret.bak
 secret.bat
 secret.conf
 secret.env
+secret.env.example
 secret.go
 secret.ini
 secret.jar
@@ -94486,6 +94663,7 @@ soap.api
 soap.config.js
 soap.json
 soap.wsdl
+soap.xml
 soap/
 soap/admin
 soap/admin/providermanager
@@ -97972,10 +98150,19 @@ system.yaml
 system.zip
 system/
 system/.env
+system///sling/loginstatus.json
+system///sling/loginstatus.json/a.1.json
+system///sling/loginstatus.json/a.css
+system///sling/loginstatus.json/a.ico
+system///sling/loginstatus.json;%0aa.css
 system/activateFeature 
 system/adoptionMetric 
 system/auth/screen/footer 
+system/bgservlets/test.json
+system/bgservlets/test.json/a.1.json
+system/bgservlets/test.json;%0aa.css
 system/bgservlets/test.json?cycles-999999&interval=0&flushEvery=111111111
+system/bgservlets/test.json?cycles=999999&interval=0&flushEvery=111111111
 system/cache
 system/cache/
 system/cache/cache.xml
@@ -98009,6 +98196,9 @@ system/portal
 system/resendVerification 
 system/setUserCustomFields 
 system/sling/info.sessionInfo.json
+system/sling/loginstatus.json
+system/sling/loginstatus.json/a.1.json
+system/sling/loginstatus.json;%0aa.css
 system/status/ha 
 system/status/nodes 
 system/storage
@@ -101900,6 +102090,7 @@ update6.1.sql
 update7.0.sql
 updateAccount
 updateBPPosts
+updateConfig.sh
 updateCustomRange 
 updateFaq
 updateFieldFix 

@@ -549,6 +549,7 @@ $metadata
 ..\;
 ..\\..\\..\\..\\..\\..\\..\\..\\..\\..\\..\\..\\..\\..\\..\\..\\..\\Windows\\win.ini
 ..\\..\\..\\..\\..\\..\\..\\boot.ini
+..assetsearch.json?query=*&start=0&limit=10&random=123
 ..png.ashx
 ./
 ./../../../../../../../../../../etc/passwd
@@ -710,6 +711,7 @@ $metadata
 .4.0
 .4.1
 .4.2
+.4.2.1...json
 .4.2.min.js
 .4.4
 .4.6
@@ -1215,12 +1217,14 @@ $metadata
 .award
 .awm
 .aws
+.aws-env.dev
 .aws-okta
 .aws-sam
 .aws-sam/build/template.json
 .aws-sam/build/template.yaml
 .aws-sam/cli-config.toml
 .aws-shell
+.aws.env
 .aws/
 .aws/aws_secret_access_key
 .aws/cli
@@ -1258,6 +1262,7 @@ $metadata
 .azure/accessTokens.json
 .azure/accesstokens.json
 .azure/az.json
+.azure/azure-pipelines.yml
 .azure/azure.config
 .azure/azure.json
 .azure/azureProfile.json
@@ -1275,6 +1280,7 @@ $metadata
 .azure_htaccess
 .azurecli
 .azurecredentials
+.azurepipelines
 .azurerm
 .b
 .babel-config.js
@@ -1518,6 +1524,7 @@ $metadata
 .blog.ini.php
 .bluemix
 .bluemix/.cf/config.json
+.bluemix/api.pipeline.yml
 .bluemix/config.json
 .bluemix/pipeline.yaml
 .bluemix/pipeline.yml
@@ -1729,6 +1736,9 @@ $metadata
 .chronograf
 .chronograf.d
 .ci
+.ci/azure-deploy-kubernetes.yml
+.ci/docker-compose-file/credentials.env
+.ci/docker/credentials.env
 .ci/publish.sh
 .circle
 .circleci
@@ -1761,6 +1771,7 @@ $metadata
 .circleci/config/test
 .circleci/config/versions
 .circleci/config/workflows
+.circleci/continue_config.yml
 .circleci/cron.yml
 .circleci/dependencies.yaml
 .circleci/dependencies.yml
@@ -1808,6 +1819,7 @@ $metadata
 .circleci/parameters.yml
 .circleci/prod.yml
 .circleci/release.yml
+.circleci/scripts/publish-dockerhub.sh
 .circleci/sec.yml
 .circleci/secrets.yaml
 .circleci/secrets.yml
@@ -2217,6 +2229,7 @@ $metadata
 .db.env
 .db.xml
 .db.yaml
+.db/docker-compose.yml
 .db3
 .dbeaver/credentials-config.json
 .dbeaver/data-sources.json
@@ -2335,6 +2348,8 @@ $metadata
 .docker/Dockerfile.override
 .docker/Dockerfile.production
 .docker/Dockerfile.stage
+.docker/application.yml
+.docker/brp-api.yml
 .docker/build
 .docker/ca.pem
 .docker/config.json
@@ -2342,10 +2357,12 @@ $metadata
 .docker/config.yml
 .docker/daemon.json
 .docker/docker-compose.ci.yml
+.docker/docker-compose.microservices.yml
 .docker/docker-compose.override.dev.yml
 .docker/docker-compose.override.prod.yml
 .docker/docker-compose.override.test.yml
 .docker/docker-compose.override.yml
+.docker/docker-compose.prod.yml
 .docker/docker-compose.production.yml
 .docker/docker-compose.stage.yml
 .docker/docker-compose.yml
@@ -2580,6 +2597,8 @@ $metadata
 .env
 .env-example
 .env-sample
+.env.admin.dev
+.env.app.dev
 .env.asp
 .env.aspx
 .env.back
@@ -2625,6 +2644,7 @@ $metadata
 .env.default.dist
 .env.defaults
 .env.demo
+.env.deploy.example
 .env.dev
 .env.dev.dist
 .env.dev.example
@@ -2655,7 +2675,11 @@ $metadata
 .env.dusk.production
 .env.dusk.staging
 .env.dusk.testing
+.env.elk
+.env.elk.dev
+.env.environment
 .env.example
+.env.example.dev
 .env.example.dist
 .env.example.local
 .env.example.template
@@ -2799,6 +2823,7 @@ $metadata
 .env.secret~
 .env.selenium
 .env.stage
+.env.stage.dev
 .env.staging
 .env.staging.dev.local~
 .env.staging.dev~
@@ -2931,6 +2956,7 @@ $metadata
 .eu
 .eunit
 .event
+.evergreen/.evg.yml
 .evg.yaml
 .evg.yml
 .ex
@@ -2949,6 +2975,7 @@ $metadata
 .ext
 .ext.infinity.json
 .ext.infinity.json?tidy=true
+.ext.json
 .external
 .external/
 .external/data
@@ -2966,6 +2993,7 @@ $metadata
 .face
 .face.icon@
 .faces
+.factory/automation.yml
 .factorypath
 .fake
 .fake/
@@ -3545,6 +3573,7 @@ $metadata
 .gitlab-ci.yml~
 .gitlab-ci/.env
 .gitlab-runner
+.gitlab/.gitlab-ci.yml
 .gitlab/CI
 .gitlab/CI/cron.yml
 .gitlab/CI/ext.yml
@@ -3554,6 +3583,7 @@ $metadata
 .gitlab/CI/sec.yml
 .gitlab/CI/stage.yml
 .gitlab/CI/test.yml
+.gitlab/Deploy.ci.yml
 .gitlab/issue_templates
 .gitlab/merge_request_templates
 .gitlab/route-map.yaml
@@ -4300,6 +4330,11 @@ $metadata
 .json/FNZ.html
 .json/FNZ.ico
 .json/FNZ.png
+.json/a.css
+.json/a.html
+.json/a.ico
+.json/a.png
+.json;%0aa.css
 .json?FNZ.html
 .json?FNZ.ico
 .json_keys.json
@@ -5226,6 +5261,7 @@ $metadata
 .pipeline/config.yml
 .pipeline/credentials.yml
 .pipeline/dev_prereq.sh
+.pipelines/azure-pipeline-build.yml
 .pivotal
 .pivotal/authentication.conf
 .pivotal/authentication.yaml
@@ -5669,6 +5705,7 @@ $metadata
 .selected_editor
 .sema
 .semaphore
+.semaphore/release.yml
 .semaphore/semaphore.yaml
 .semaphore/semaphore.yml
 .semgrepignore
@@ -6670,6 +6707,8 @@ $metadata
 .wml
 .wmv
 .woa
+.woodpecker/build-and-publish.yml
+.woodpecker/manifest.yml
 .work
 .worksheet
 .workspace
@@ -6779,6 +6818,7 @@ $metadata
 .xtpl
 .xy.php
 .y
+.yamato/android.yml
 .yaml
 .yamllint
 .yamllintignore
