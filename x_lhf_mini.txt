@@ -851,6 +851,10 @@ $metadata
 .JPEG
 .JPG
 .JS
+.Jenkinsfile
+.Jenkinsfile.examle
+.Jenkinsfile.sample
+.Jenkinsfile.template
 .JustCode
 .LHA
 .LICENSE.bud
@@ -1056,6 +1060,7 @@ $metadata
 .admin.php
 .admin/
 .admin;-aspx
+.admin_config
 .adminer.jsf.swp
 .adminer.jsp.swp
 .adminer.php.swp
@@ -1736,6 +1741,7 @@ $metadata
 .chronograf
 .chronograf.d
 .ci
+.ci/Jenkinsfile
 .ci/azure-deploy-kubernetes.yml
 .ci/docker-compose-file/credentials.env
 .ci/docker/credentials.env

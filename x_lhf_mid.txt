@@ -1202,6 +1202,10 @@ ${idfwbonavigation}.xml
 .JPEG
 .JPG
 .JS
+.Jenkinsfile
+.Jenkinsfile.examle
+.Jenkinsfile.sample
+.Jenkinsfile.template
 .JustCode
 .LHA
 .LICENSE.bud
@@ -1407,6 +1411,7 @@ ${idfwbonavigation}.xml
 .admin.php
 .admin/
 .admin;-aspx
+.admin_config
 .adminer.jsf.swp
 .adminer.jsp.swp
 .adminer.php.swp
@@ -2088,6 +2093,7 @@ ${idfwbonavigation}.xml
 .chronograf
 .chronograf.d
 .ci
+.ci/Jenkinsfile
 .ci/azure-deploy-kubernetes.yml
 .ci/docker-compose-file/credentials.env
 .ci/docker/credentials.env
@@ -15705,6 +15711,7 @@ Jenkinsfile-build
 Jenkinsfile-deploy-build
 Jenkinsfile-deploy-environment
 Jenkinsfile-deploy-production
+Jenkinsfile-dev
 Jenkinsfile-environment
 Jenkinsfile-production
 Jenkinsfile-production-branch
@@ -15733,6 +15740,7 @@ Jenkinsfile.batared
 Jenkinsfile.build
 Jenkinsfile.confared
 Jenkinsfile.credentials
+Jenkinsfile.dev
 Jenkinsfile.docker
 Jenkinsfile.environment
 Jenkinsfile.jsonared
@@ -15743,6 +15751,7 @@ Jenkinsfile.shared
 Jenkinsfile.xmlared
 Jenkinsfile.yaml
 Jenkinsfile.yml
+JenkinsfileDev
 Job
 Joey333/
 Johnson
@@ -20793,6 +20802,7 @@ admin-custom
 admin-dashboard
 admin-dashboard.html
 admin-dashboard.php
+admin-data.json
 admin-database
 admin-database.php
 admin-database/
@@ -22211,6 +22221,7 @@ admin_dashboard_error.log
 admin_dashboard_security.log
 admin_data
 admin_data.%EXT%
+admin_data.json
 admin_data.php
 admin_data_export.php
 admin_data_import.php
@@ -26748,6 +26759,7 @@ api/dashboards/import
 api/dashboards/tags 
 api/dashboards/trim 
 api/dashboards/validate 
+api/data.csv
 api/data.json
 api/data/v9.1/leads
 api/data/v9.1/leads/
@@ -27638,6 +27650,7 @@ api/user_tokens/search
 api/userdata
 api/userrolelist/systemRoles?require-cfg.js
 api/users
+api/users.csv
 api/users.json
 api/users/ 
 api/users/*
@@ -27830,6 +27843,7 @@ api/v1/customers
 api/v1/dashboard
 api/v1/data
 api/v1/data-static
+api/v1/data.csv
 api/v1/database
 api/v1/database.json
 api/v1/database/1
@@ -28248,6 +28262,7 @@ api/v1/user/profile/1
 api/v1/user/register
 api/v1/userOrg
 api/v1/users
+api/v1/users.csv
 api/v1/users.json
 api/v1/users/*
 api/v1/users/1
@@ -28382,6 +28397,7 @@ api/v2/config/.git/config
 api/v2/current_user/
 api/v2/current_user/owner/
 api/v2/dashboard/
+api/v2/data.csv
 api/v2/devices
 api/v2/devices/snapshot
 api/v2/displays
@@ -28459,6 +28475,7 @@ api/v2/user/list
 api/v2/user/profile/1
 api/v2/user/register
 api/v2/users
+api/v2/users.csv
 api/v2/users.json
 api/v2/users/*
 api/v2/users/1
@@ -28519,6 +28536,7 @@ api/v3/apidocs
 api/v3/auth/new
 api/v3/config.json
 api/v3/config/.git/config
+api/v3/data.csv
 api/v3/devices
 api/v3/devices/snapshot
 api/v3/docs
@@ -28572,6 +28590,7 @@ api/v3/upload
 api/v3/user/profile/1
 api/v3/user/register
 api/v3/users
+api/v3/users.csv
 api/v3/users.json
 api/v3/users/*
 api/v3/users/1
@@ -30137,6 +30156,7 @@ app-info.log
 app-key
 app-order-client/.env
 app-routing.module 
+app-sample.json
 app-server-agent 
 app-server.yaml
 app-server.yml
@@ -41480,6 +41500,7 @@ config.rpmsave
 config.ru
 config.sample
 config.sample.inc.php
+config.sample.json
 config.sample.php
 config.sap.ora
 config.sass-cache
@@ -49244,6 +49265,7 @@ data-api.aspx
 data-api.jsf
 data-api.jsp
 data-api.php
+data-auth.json
 data-dump.log
 data-grid-dnd/data-grid-dnd 
 data-lake-export.conf
@@ -49358,6 +49380,7 @@ data/tmp
 data/tmp/
 data/tokenizer 
 data/version-2/
+data1.json
 data2.sql
 data2022.sql
 data2023.sql
@@ -49369,6 +49392,7 @@ dataAlert/
 dataAlerts 
 dataConnection 
 dataContext.xml
+dataCustomer.json
 dataGrid.styl 
 dataImporter/dataImporter.app 
 dataReader 
@@ -71673,6 +71697,7 @@ libraries
 libraries/
 libraries/ 
 libraries/config.default.php
+libraries/config.js
 libraries/config/config.inc.php
 libraries/gapi
 libraries/gapi/example.account.php
@@ -76799,6 +76824,7 @@ myoa_initdata.sql
 myonlineexam.sql
 myphp.sql
 myphpadmin
+myproject.deps.json
 myprotein/
 myrentals.web/clientapp/.env
 myroute
@@ -107795,6 +107821,7 @@ web.config.old.old
 web.config.old.transform
 web.config.old.txt
 web.config.old.xdt
+web.config.old1
 web.config.oo
 web.config.org
 web.config.orig
@@ -107884,7 +107911,9 @@ web.config.xml
 web.config.xsl
 web.config.zip
 web.config1
+web.config1.old
 web.config2
+web.config3
 web.config::$DATA
 web.config::$data
 web.config=

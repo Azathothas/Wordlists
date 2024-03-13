@@ -715,6 +715,10 @@ ${idfwbonavigation}.xml
 .JPEG
 .JPG
 .JS
+.Jenkinsfile
+.Jenkinsfile.examle
+.Jenkinsfile.sample
+.Jenkinsfile.template
 .JustCode
 .LHA
 .LICENSE.bud
@@ -922,6 +926,7 @@ ${idfwbonavigation}.xml
 .admin/
 .admin/.git/config
 .admin;-aspx
+.admin_config
 .adminer.jsf.swp
 .adminer.jsp.swp
 .adminer.php.swp
@@ -1605,6 +1610,7 @@ ${idfwbonavigation}.xml
 .chronograf
 .chronograf.d
 .ci
+.ci/Jenkinsfile
 .ci/azure-deploy-kubernetes.yml
 .ci/docker-compose-file/credentials.env
 .ci/docker/credentials.env

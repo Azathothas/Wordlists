@@ -13471,6 +13471,7 @@ admin-account.json
 admin-api
 admin-authz.xml
 admin-config.json
+admin-data.json
 admin-docs
 admin-login.json
 admin-logout.json
@@ -13536,6 +13537,7 @@ admin_credentials.json
 admin_credentials.xml
 admin_data.asp?action=restoredata
 admin_data.aspx?action=restoredata
+admin_data.json
 admin_data.php?action=restoredata
 admin_db_backup.asp?action=restoredata
 admin_db_backup.aspx?action=restoredata
@@ -15965,6 +15967,7 @@ api/dashboards/import
 api/dashboards/tags 
 api/dashboards/trim 
 api/dashboards/validate 
+api/data.csv
 api/data.json
 api/data/v9.1/leads
 api/data/v9.1/leads/
@@ -16859,6 +16862,7 @@ api/user_tokens/search
 api/userdata
 api/userrolelist/systemRoles?require-cfg.js
 api/users
+api/users.csv
 api/users.json
 api/users/ 
 api/users/*
@@ -17057,6 +17061,7 @@ api/v1/customers
 api/v1/dashboard
 api/v1/data
 api/v1/data-static
+api/v1/data.csv
 api/v1/database
 api/v1/database.json
 api/v1/database/1
@@ -17487,6 +17492,7 @@ api/v1/user/profile/1
 api/v1/user/register
 api/v1/userOrg
 api/v1/users
+api/v1/users.csv
 api/v1/users.json
 api/v1/users/*
 api/v1/users/1
@@ -17625,6 +17631,7 @@ api/v2/current_user/owner
 api/v2/current_user/owner/
 api/v2/dashboard
 api/v2/dashboard/
+api/v2/data.csv
 api/v2/devices
 api/v2/devices/snapshot
 api/v2/displays
@@ -17707,6 +17714,7 @@ api/v2/user/list
 api/v2/user/profile/1
 api/v2/user/register
 api/v2/users
+api/v2/users.csv
 api/v2/users.json
 api/v2/users/*
 api/v2/users/1
@@ -17767,6 +17775,7 @@ api/v3/apidocs
 api/v3/auth/new
 api/v3/config.json
 api/v3/config/.git/config
+api/v3/data.csv
 api/v3/devices
 api/v3/devices/snapshot
 api/v3/docs
@@ -17821,6 +17830,7 @@ api/v3/upload
 api/v3/user/profile/1
 api/v3/user/register
 api/v3/users
+api/v3/users.csv
 api/v3/users.json
 api/v3/users/*
 api/v3/users/1
@@ -18862,6 +18872,7 @@ app
 app-api
 app-config.xml
 app-guide
+app-sample.json
 app-service-guide
 app-service.yaml
 app-settings.json
@@ -25978,6 +25989,7 @@ config.perf.json
 config.prod.json
 config.production.json
 config.properties.xml
+config.sample.json
 config.stable.json
 config.stage.json
 config.staging.json
@@ -29161,6 +29173,7 @@ data-api.jsf
 data-api.jsp
 data-api.php
 data-at-rest.ts
+data-auth.json
 data-collection-home-page.xml
 data-collection-menu.xml
 data-v1
@@ -29186,6 +29199,7 @@ data/stat_setting.xml
 data/statics/resources/hotline.json
 data/statics/resources/hotline.json 
 data/wps.setup.json
+data1.json
 data1.xml
 data10.xml
 data2.xml
@@ -29193,6 +29207,7 @@ data3.xml
 data6_2.xml
 dataApi.php
 dataContext.xml
+dataCustomer.json
 dataRestore
 dataSources.local.xml
 data_auth.json
@@ -46962,6 +46977,7 @@ mymindv1
 mymindv2
 mymysticalphotography
 myoccupylaarrest
+myproject.deps.json
 myroute
 myscrapapi.jsp
 mysearchdetails.view.xml
