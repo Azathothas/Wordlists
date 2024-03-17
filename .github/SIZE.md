@@ -16,10 +16,12 @@
 112K   │ ├── jwt_secrets.txt
  84K   │ ├── fuzzgen.txt
  72K   │ ├── usernames_top_lowercase.txt
- 56K   │ ├─┬ User-Agents
+ 72K   │ ├─┬ User-Agents
  12K   │ │ ├── user_agents_all.txt
 4.0K   │ │ ├── ua_safari_macos_latest.txt
 4.0K   │ │ ├── ua_safari_macos_all.txt
+4.0K   │ │ ├── ua_safari_iphone_latest.txt
+4.0K   │ │ ├── ua_safari_iphone_all.txt
 4.0K   │ │ ├── ua_firefox_windows_latest.txt
 4.0K   │ │ ├── ua_firefox_windows_all.txt
 4.0K   │ │ ├── ua_firefox_macos_latest.txt
@@ -27,7 +29,9 @@
 4.0K   │ │ ├── ua_chrome_windows_latest.txt
 4.0K   │ │ ├── ua_chrome_windows_all.txt
 4.0K   │ │ ├── ua_chrome_macos_latest.txt
-4.0K   │ │ └── ua_chrome_macos_all.txt
+4.0K   │ │ ├── ua_chrome_macos_all.txt
+4.0K   │ │ ├── ua_chrome_android_latest.txt
+4.0K   │ │ └── ua_chrome_android_all.txt
  32K   │ ├── fuzzgen_extensions_path.txt
  16K   │ ├── api_docs.txt
  16K   │ ├── README.md
