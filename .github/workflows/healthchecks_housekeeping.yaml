@@ -103,6 +103,7 @@ jobs:
         run: |
           # Presets
           set -x ; set +e
+          mkdir -p "$GITHUB_WORKSPACE/main/Misc/User-Agents"
           #--------------#
           ##Fetch
           #curl -qfsSL "https://raw.githubusercontent.com/EIGHTFINITE/top-user-agents/main/index.json" | jq -r '.[]' | sort -u -o "$GITHUB_WORKSPACE/main/Misc/User-Agents/user_agents_all.txt"
