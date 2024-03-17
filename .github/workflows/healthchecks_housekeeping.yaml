@@ -5,7 +5,7 @@ on:
   #push:
   workflow_dispatch:
   schedule:
-    - cron: "45 02 * * *"  # 02:45 AM UTC --> 08:30 AM Morning NPT
+    - cron: "*/55 * * * *"  # Every 55 Mins
 
 env:
   USER_AGENT: "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/115.0"
@@ -109,6 +109,9 @@ jobs:
           #curl -qfsSL "https://raw.githubusercontent.com/EIGHTFINITE/top-user-agents/main/index.json" | jq -r '.[]' | sort -u -o "$GITHUB_WORKSPACE/main/Misc/User-Agents/user_agents_all.txt"
           curl -qfsSL "https://raw.githubusercontent.com/microlinkhq/top-user-agents/master/src/index.json" | jq -r '.[]' | sort -u | sort -V -o "$GITHUB_WORKSPACE/main/Misc/User-Agents/user_agents_all.txt"
           ##Filter
+          #Chrome-Android
+          cat "$GITHUB_WORKSPACE/main/Misc/User-Agents/user_agents_all.txt" | grep -i 'android' | grep -iv 'edg\|moto\|obsidian\|opr\|pfum' | sort -V > "$GITHUB_WORKSPACE/main/Misc/User-Agents/ua_chrome_android_all.txt"
+          cat "$GITHUB_WORKSPACE/main/Misc/User-Agents/user_agents_all.txt" | grep -i 'android' | grep -iv 'edg\|moto\|obsidian\|opr\|pfum' | sort -V | tail -n 1 > "$GITHUB_WORKSPACE/main/Misc/User-Agents/ua_chrome_android_latest.txt"
           #Chrome-macOS
           cat "$GITHUB_WORKSPACE/main/Misc/User-Agents/user_agents_all.txt" | grep -i 'mac' | grep -i 'chrome' | grep -iv 'edg\|obsidian\|opr' | sort -V > "$GITHUB_WORKSPACE/main/Misc/User-Agents/ua_chrome_macos_all.txt"
           cat "$GITHUB_WORKSPACE/main/Misc/User-Agents/user_agents_all.txt" | grep -i 'mac' | grep -i 'chrome' | grep -iv 'edg\|obsidian\|opr' | sort -V | tail -n 1 > "$GITHUB_WORKSPACE/main/Misc/User-Agents/ua_chrome_macos_latest.txt"
@@ -121,6 +124,9 @@ jobs:
           #Firefox-Windows
           cat "$GITHUB_WORKSPACE/main/Misc/User-Agents/user_agents_all.txt" | grep -i 'Windows NT 10' | grep -i 'firefox' | grep -iv 'edg\|obsidian\|opr' | sort -V > "$GITHUB_WORKSPACE/main/Misc/User-Agents/ua_firefox_windows_all.txt"
           cat "$GITHUB_WORKSPACE/main/Misc/User-Agents/user_agents_all.txt" | grep -i 'Windows NT 10' | grep -i 'firefox' | grep -iv 'edg\|obsidian\|opr' | sort -V | tail -n 1 > "$GITHUB_WORKSPACE/main/Misc/User-Agents/ua_firefox_windows_latest.txt"
+          #Safari-Iphone
+          cat "$GITHUB_WORKSPACE/main/Misc/User-Agents/user_agents_all.txt" | grep -i 'iphone' | grep -iv 'chrome\|edg\|obsidian\|opr' | sort -V > "$GITHUB_WORKSPACE/main/Misc/User-Agents/ua_safari_iphone_all.txt"
+          cat "$GITHUB_WORKSPACE/main/Misc/User-Agents/user_agents_all.txt" | grep -i 'iphone' | grep -iv 'chrome\|edg\|obsidian\|opr' | sort -V | tail -n 1 > "$GITHUB_WORKSPACE/main/Misc/User-Agents/ua_safari_iphone_latest.txt"
           #Safari-macOS
           cat "$GITHUB_WORKSPACE/main/Misc/User-Agents/user_agents_all.txt" | grep -i 'mac' | grep -i 'safari' | grep -iv 'iphone' | grep -iv 'edg\|obsidian\|opr' | sort -V > "$GITHUB_WORKSPACE/main/Misc/User-Agents/ua_safari_macos_all.txt"
           cat "$GITHUB_WORKSPACE/main/Misc/User-Agents/user_agents_all.txt" | grep -i 'mac' | grep -i 'safari' | grep -iv 'iphone' | grep -iv 'edg\|obsidian\|opr' | sort -V | tail -n 1 > "$GITHUB_WORKSPACE/main/Misc/User-Agents/ua_safari_macos_latest.txt"
