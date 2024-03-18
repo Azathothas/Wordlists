@@ -43,7 +43,7 @@
 4.0K   │ ├── permutation_common_base_tiny.txt
 4.0K   │ └── extensions_all_no_dots.txt
  17M   ├── x_massive.txt
-7.3M   ├── x_dns.txt
+7.4M   ├── x_dns.txt
 5.0M   ├── x_lhf_large.txt
 2.4M   ├── x_lhf_mid.txt
 2.3M   ├── x_dns_mid.txt
@@ -53,10 +53,13 @@
 224K   ├── x_mini.txt
 112K   ├── x_dns_tiny.txt
 8.0K   ├── resolvers_ipv4.txt
+8.0K   ├── resolvers_ipv4
 8.0K   ├── resolvers_all.txt
+8.0K   ├── resolvers_all
 8.0K   ├── README.md
 8.0K   ├─┬ Logs
 4.0K   │ └── wordium.log
 4.0K   ├── resolvers_ipv6.txt
+4.0K   ├── resolvers_ipv6
 4.0K   └── INFO.md
 ```
