@@ -1,6 +1,3 @@
-stor
-lms
-pms
 0
 001
 002
@@ -13868,6 +13865,7 @@ stolon
 stone
 stop
 stoplight
+stor
 storage
 storage1
 storage2
