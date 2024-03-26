@@ -1,3 +1,6 @@
+stor
+lms
+pms
 0
 001
 002
