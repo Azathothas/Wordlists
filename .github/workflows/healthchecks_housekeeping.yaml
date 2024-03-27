@@ -83,12 +83,12 @@ jobs:
           cat "$GITHUB_WORKSPACE/main/Misc/passwords_mid.txt" 2>/dev/null | anew-rs -q "$GITHUB_WORKSPACE/main/Misc/passwords_big.txt"
           sed -E '/^[[:space:]]*$/d' "$GITHUB_WORKSPACE/main/Misc/passwords_big.txt" | sort -u -o "$GITHUB_WORKSPACE/main/Misc/passwords_big.txt"
           #Blanks
-          echo "" >> "$GITHUB_WORKSPACE/main/Misc/usernames_small.txt"
-          echo "" >> "$GITHUB_WORKSPACE/main/Misc/usernames_mid.txt"
-          echo "" >> "$GITHUB_WORKSPACE/main/Misc/usernames_big.txt"
-          echo "" >> "$GITHUB_WORKSPACE/main/Misc/passwords_small.txt"
-          echo "" >> "$GITHUB_WORKSPACE/main/Misc/passwords_mid.txt"
-          echo "" >> "$GITHUB_WORKSPACE/main/Misc/passwords_big.txt"
+          sed '1s/^/\n/' -i "$GITHUB_WORKSPACE/main/Misc/usernames_small.txt"
+          sed '1s/^/\n/' -i "$GITHUB_WORKSPACE/main/Misc/usernames_mid.txt"
+          sed '1s/^/\n/' -i "$GITHUB_WORKSPACE/main/Misc/usernames_big.txt"
+          sed '1s/^/\n/' -i "$GITHUB_WORKSPACE/main/Misc/passwords_small.txt"
+          sed '1s/^/\n/' -i "$GITHUB_WORKSPACE/main/Misc/passwords_mid.txt"
+          sed '1s/^/\n/' -i "$GITHUB_WORKSPACE/main/Misc/passwords_big.txt"
         continue-on-error: true
 
       - name: Enrichments (Resolvers)
