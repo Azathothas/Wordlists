@@ -10,11 +10,11 @@
 4.6M   │ ├── english_words_alpha_numerics.txt
 3.7M   │ ├── english_words_alpha.txt
 940K   │ ├── lowercase_misc.txt
-736K   │ ├── usernames_big.txt
+744K   │ ├── usernames_big.txt
 116K   │ ├── ports_top_20k.txt
 112K   │ ├── jwt_secrets.txt
  84K   │ ├── fuzzgen.txt
- 72K   │ ├── usernames_mid.txt
+ 80K   │ ├── usernames_mid.txt
  72K   │ ├─┬ User-Agents
  12K   │ │ ├── user_agents_all.txt
 4.0K   │ │ ├── ua_safari_macos_latest.txt
@@ -33,10 +33,12 @@
 4.0K   │ │ └── ua_chrome_android_all.txt
  32K   │ ├── fuzzgen_extensions_path.txt
  24K   │ ├── passwords_mid.txt
+ 24K   │ ├── passwords_big.txt
  16K   │ ├── api_docs.txt
  16K   │ ├── README.md
  12K   │ ├── usernames_small.txt
  12K   │ ├── permutation_common_base.txt
+ 12K   │ ├── passwords_small.txt
 8.0K   │ ├── ports_sussy.txt
 8.0K   │ ├── graphql_paths.txt
 8.0K   │ ├── extensions_all_dots.txt
