@@ -70,18 +70,25 @@ jobs:
           set -x ; set +e
           #--------------#
           #Usernames
-          sort -u "$GITHUB_WORKSPACE/main/Misc/usernames_small.txt" -o "$GITHUB_WORKSPACE/main/Misc/usernames_small.txt"
+          sed -E '/^[[:space:]]*$/d' "$GITHUB_WORKSPACE/main/Misc/usernames_small.txt" | sort -u -o "$GITHUB_WORKSPACE/main/Misc/usernames_small.txt"
           cat "$GITHUB_WORKSPACE/main/Misc/usernames_small.txt" 2>/dev/null | anew-rs -q "$GITHUB_WORKSPACE/main/Misc/usernames_mid.txt"
-          sort -u "$GITHUB_WORKSPACE/main/Misc/usernames_mid.txt" -o "$GITHUB_WORKSPACE/main/Misc/usernames_mid.txt"
+          sed -E '/^[[:space:]]*$/d' "$GITHUB_WORKSPACE/main/Misc/usernames_mid.txt" | sort -u -o "$GITHUB_WORKSPACE/main/Misc/usernames_mid.txt"
           cat "$GITHUB_WORKSPACE/main/Misc/usernames_mid.txt" 2>/dev/null | anew-rs -q "$GITHUB_WORKSPACE/main/Misc/usernames_big.txt"
-          sort -u "$GITHUB_WORKSPACE/main/Misc/usernames_big.txt" -o "$GITHUB_WORKSPACE/main/Misc/usernames_big.txt"
+          sed -E '/^[[:space:]]*$/d' "$GITHUB_WORKSPACE/main/Misc/usernames_big.txt" | sort -u -o "$GITHUB_WORKSPACE/main/Misc/usernames_big.txt"
           #Passwords
           cat "$GITHUB_WORKSPACE/main/Misc/usernames_small.txt" 2>/dev/null | anew-rs -q "$GITHUB_WORKSPACE/main/Misc/passwords_small.txt"
-          sort -u "$GITHUB_WORKSPACE/main/Misc/passwords_small.txt" -o "$GITHUB_WORKSPACE/main/Misc/passwords_small.txt"
+          sed -E '/^[[:space:]]*$/d' "$GITHUB_WORKSPACE/main/Misc/passwords_small.txt" | sort -u -o "$GITHUB_WORKSPACE/main/Misc/passwords_small.txt"
           cat "$GITHUB_WORKSPACE/main/Misc/passwords_small.txt" 2>/dev/null | anew-rs -q "$GITHUB_WORKSPACE/main/Misc/passwords_mid.txt"
-          sort -u "$GITHUB_WORKSPACE/main/Misc/passwords_mid.txt" -o "$GITHUB_WORKSPACE/main/Misc/passwords_mid.txt"
+          sed -E '/^[[:space:]]*$/d' "$GITHUB_WORKSPACE/main/Misc/passwords_mid.txt" | sort -u -o "$GITHUB_WORKSPACE/main/Misc/passwords_mid.txt"
           cat "$GITHUB_WORKSPACE/main/Misc/passwords_mid.txt" 2>/dev/null | anew-rs -q "$GITHUB_WORKSPACE/main/Misc/passwords_big.txt"
-          sort -u "$GITHUB_WORKSPACE/main/Misc/passwords_big.txt" -o "$GITHUB_WORKSPACE/main/Misc/passwords_big.txt"
+          sed -E '/^[[:space:]]*$/d' "$GITHUB_WORKSPACE/main/Misc/passwords_big.txt" | sort -u -o "$GITHUB_WORKSPACE/main/Misc/passwords_big.txt"
+          #Blanks
+          echo "" >> "$GITHUB_WORKSPACE/main/Misc/usernames_small.txt"
+          echo "" >> "$GITHUB_WORKSPACE/main/Misc/usernames_mid.txt"
+          echo "" >> "$GITHUB_WORKSPACE/main/Misc/usernames_big.txt"
+          echo "" >> "$GITHUB_WORKSPACE/main/Misc/passwords_small.txt"
+          echo "" >> "$GITHUB_WORKSPACE/main/Misc/passwords_mid.txt"
+          echo "" >> "$GITHUB_WORKSPACE/main/Misc/passwords_big.txt"
         continue-on-error: true
 
       - name: Enrichments (Resolvers)
