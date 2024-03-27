@@ -10,11 +10,11 @@
 4.6M   │ ├── english_words_alpha_numerics.txt
 3.7M   │ ├── english_words_alpha.txt
 940K   │ ├── lowercase_misc.txt
-736K   │ ├── usernames_common_lowercase.txt
+736K   │ ├── usernames_big.txt
 116K   │ ├── ports_top_20k.txt
 112K   │ ├── jwt_secrets.txt
  84K   │ ├── fuzzgen.txt
- 72K   │ ├── usernames_top_lowercase.txt
+ 72K   │ ├── usernames_mid.txt
  72K   │ ├─┬ User-Agents
  12K   │ │ ├── user_agents_all.txt
 4.0K   │ │ ├── ua_safari_macos_latest.txt
