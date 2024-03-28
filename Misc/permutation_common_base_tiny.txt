@@ -1,6 +1,7 @@
 admin
 api
 app
+go
 auth
 backup
 bit
@@ -30,6 +31,7 @@ local
 localhost
 new
 old
+hub
 ops
 panel
 private
