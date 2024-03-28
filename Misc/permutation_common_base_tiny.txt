@@ -1,7 +1,6 @@
 admin
 api
 app
-go
 auth
 backup
 bit
@@ -22,6 +21,8 @@ ext
 external
 ftp
 git
+go
+hub
 int
 internal
 intra
@@ -31,7 +32,6 @@ local
 localhost
 new
 old
-hub
 ops
 panel
 private
