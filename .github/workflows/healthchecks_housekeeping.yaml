@@ -70,6 +70,8 @@ jobs:
           set -x ; set +e
           #--------------#
           #Usernames
+          sed -E '/^[[:space:]]*$/d' "$GITHUB_WORKSPACE/main/Misc/usernames_tiny.txt" | sort -u -o "$GITHUB_WORKSPACE/main/Misc/usernames_tiny.txt"
+          cat "$GITHUB_WORKSPACE/main/Misc/usernames_tiny.txt" 2>/dev/null | anew-rs -q "$GITHUB_WORKSPACE/main/Misc/usernames_small.txt"
           sed -E '/^[[:space:]]*$/d' "$GITHUB_WORKSPACE/main/Misc/usernames_small.txt" | sort -u -o "$GITHUB_WORKSPACE/main/Misc/usernames_small.txt"
           cat "$GITHUB_WORKSPACE/main/Misc/usernames_small.txt" 2>/dev/null | anew-rs -q "$GITHUB_WORKSPACE/main/Misc/usernames_mid.txt"
           sed -E '/^[[:space:]]*$/d' "$GITHUB_WORKSPACE/main/Misc/usernames_mid.txt" | sort -u -o "$GITHUB_WORKSPACE/main/Misc/usernames_mid.txt"
@@ -83,6 +85,7 @@ jobs:
           cat "$GITHUB_WORKSPACE/main/Misc/passwords_mid.txt" 2>/dev/null | anew-rs -q "$GITHUB_WORKSPACE/main/Misc/passwords_big.txt"
           sed -E '/^[[:space:]]*$/d' "$GITHUB_WORKSPACE/main/Misc/passwords_big.txt" | sort -u -o "$GITHUB_WORKSPACE/main/Misc/passwords_big.txt"
           #Blanks
+          sed '1s/^/\n/' -i "$GITHUB_WORKSPACE/main/Misc/usernames_tiny.txt"
           sed '1s/^/\n/' -i "$GITHUB_WORKSPACE/main/Misc/usernames_small.txt"
           sed '1s/^/\n/' -i "$GITHUB_WORKSPACE/main/Misc/usernames_mid.txt"
           sed '1s/^/\n/' -i "$GITHUB_WORKSPACE/main/Misc/usernames_big.txt"
