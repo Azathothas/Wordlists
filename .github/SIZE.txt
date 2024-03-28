@@ -43,6 +43,7 @@
 8.0K   │ ├── graphql_paths.txt
 8.0K   │ ├── extensions_all_dots.txt
 8.0K   │ ├── api_docs_mini.txt
+4.0K   │ ├── usernames_tiny.txt
 4.0K   │ ├── permutation_common_base_tiny.txt
 4.0K   │ └── extensions_all_no_dots.txt
  17M   ├── x_massive.txt
@@ -54,7 +55,7 @@
 560K   ├── x_lhf_mini.txt
 548K   ├── x_api_tiny.txt
 224K   ├── x_mini.txt
-112K   ├── x_dns_tiny.txt
+116K   ├── x_dns_tiny.txt
 8.0K   ├── resolvers_ipv4.txt
 8.0K   ├── resolvers_ipv4
 8.0K   ├── resolvers_all.txt

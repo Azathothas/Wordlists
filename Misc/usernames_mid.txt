@@ -151,6 +151,7 @@ DBI
 DBSNMP
 DCL
 DDIC
+DEBUG
 DECMAIL
 DECNET
 DEFAULT
@@ -163,6 +164,7 @@ DEMO8
 DEMO9
 DES
 DESQUETOP
+DEV
 DEV2000_DEMOS
 DIP
 DIRECT
@@ -311,6 +313,7 @@ MTS_USER
 MTYSYS
 MXAGENT
 Manager
+Master
 McdataSE
 Menara
 Minnie
@@ -328,6 +331,7 @@ NEVIEW
 NEWINGRES
 NEWS
 NICONEX
+NOBODY
 NSA
 NetLinx
 Nice-admin
@@ -407,6 +411,7 @@ PRINT
 PRINTER
 PRIV
 PROCAL
+PROD
 PRODBM
 PRODCICS
 PRODDTA
@@ -456,6 +461,7 @@ RSCS
 RSCSV2
 Replicator
 Rodopi
+Root
 SA
 SABRE
 SAMPLE
@@ -485,6 +491,7 @@ SQLSQLSQLSQL
 SQLUSER
 SSA
 STARTER
+STG
 STRAT_USER
 STUDENT
 SUPERUSER
@@ -510,8 +517,12 @@ Service
 SqlServer
 Sqlserver
 SuperUser
+Superuser
 Symbol
+Sys
+Sysadmin
 Sysop
+System
 TAHITI
 TDISK
 TDOS_ICSAP
@@ -532,6 +543,7 @@ TSUSER
 TURBINE
 Tasman
 Telecom
+Test
 UAMIS_
 UETP
 ULTIMATE
@@ -592,6 +604,7 @@ WKSYS
 WP
 WWW
 WWWUSER
+WWWW
 WebAdmin
 WinCCAdmin
 WinCCConnect
@@ -8147,6 +8160,7 @@ neysa
 nga
 ngai
 ngan
+nginx
 nguyen
 nguyet
 nha
