@@ -1,0 +1,17 @@
+.asar
+.asax
+.ash
+.ashx
+.asmx
+.asp
+.aspx
+.axd
+.config
+.html
+.ini
+.mas
+.txt
+.wadl
+.wsdl
+.xml
+.zip
