@@ -7026,6 +7026,8 @@ ${idfwbonavigation}.xml
 9678.php
 ?view=log
 ?wsdl
+@debug
+@documentation
 ADMIN
 ADSearch.cc?methodToCall=search
 ASALocalRun/
@@ -7631,6 +7633,7 @@ __admin
 __bx_log.log
 __cache/
 __clockwork/app
+__debug__/
 __dummy.html
 __history/
 __index.php
@@ -7756,6 +7759,7 @@ _phpmyadmin/
 _pkginfo.txt
 _ppadmin
 _private
+_profiler
 _profiler/
 _profiler/empty/search/results?limit=10
 _profiler/phpinfo
@@ -8169,6 +8173,7 @@ admin/secure/logon.jsp
 admin/shutdown
 admin/signin
 admin/sqladmin/
+admin/stats
 admin/sxd/
 admin/sysadmin/
 admin/tap
@@ -10085,6 +10090,7 @@ dbadmin/index.php
 dbase
 dbase.sql
 dbbackup/
+dbconsole
 dbdump.sql
 dbfix/
 dbweb/
@@ -10195,6 +10201,7 @@ dfshealth.jsp
 dgadmin
 dhadmin
 dhcp_log/
+diagnostics
 dialin/
 digitalus
 dir
@@ -10798,6 +10805,7 @@ get.php
 getFavicon?host=burpcollaborator.net
 getFile.cfm
 getcfg.php
+gii
 git-receive-pack
 git-service
 git/
@@ -10932,6 +10940,7 @@ home.tar.gz
 home.zip
 homepage.nsf
 hopfully404
+horizon
 host
 host-manager/
 host-manager/html
@@ -11984,6 +11993,7 @@ nosetests.xml
 notExpandable
 notifications
 notify
+nova
 npm-debug.log
 npm-shrinkwrap.json
 nra.cache
@@ -12718,9 +12728,11 @@ radmind-1/
 radmind/
 raft
 rails/actions?error=ActiveRecord
+rails/conductor/active_storage/blobs
 rails/info
 rails/info/properties
 rails/info/properties.json
+rails/info/routes
 rails/info/routes.json
 railsapp/config/storage.yml
 rap_admin
@@ -13518,6 +13530,7 @@ teknoportal/readme.txt
 teleadmin
 telemetry
 telephone
+telescope
 telescope/requests
 telphin.log
 teluguadmin
@@ -13701,6 +13714,7 @@ topicadmin
 total
 touradmin
 trace
+trace.axd
 trace.json
 tracez
 tracing

@@ -7517,6 +7517,8 @@ ${idfwbonavigation}.xml
 /;/
 /?view=log
 /?wsdl
+/@debug
+/@documentation
 /ADSearch.cc?methodToCall=search
 /Admin/
 /Admin;/
@@ -7576,6 +7578,7 @@ ${idfwbonavigation}.xml
 /__/auth/handler/signout
 /___graphql
 /__clockwork/app
+/__debug__/
 /__swagger__/
 /_admin
 /_cat
@@ -7589,6 +7592,7 @@ ${idfwbonavigation}.xml
 /_darcs/prefs/binaries
 /_debug
 /_debug_toolbar
+/_fragment
 /_monitoring
 /_netrc
 /_node
@@ -7596,6 +7600,7 @@ ${idfwbonavigation}.xml
 /_nodes/stats
 /_notary_server
 /_notes/dwsync.xml
+/_profiler
 /_profiler/
 /_profiler/phpinfo
 /_profiler/phpinfo.php
@@ -7716,6 +7721,7 @@ ${idfwbonavigation}.xml
 /admin/routes
 /admin/runtime/tree
 /admin/shutdown
+/admin/stats
 /admin/tap
 /admin/threadz
 /admin/tls
@@ -8043,6 +8049,7 @@ ${idfwbonavigation}.xml
 /db_backup.sql
 /db_config.php.bak
 /dbaas_monitor/login
+/dbconsole
 /dbdump.sql
 /debug
 /debug.cgi
@@ -8088,6 +8095,7 @@ ${idfwbonavigation}.xml
 /destination
 /development.log
 /dfshealth.html
+/diagnostics
 /dialin/
 /dispatcher/invalidate.cache
 /django/settings.py
@@ -8190,6 +8198,7 @@ ${idfwbonavigation}.xml
 /gems
 /getFavicon?host=burpcollaborator.net
 /getcfg.php
+/gii
 /git-receive-pack
 /global
 /glpi/status.php
@@ -8231,6 +8240,7 @@ ${idfwbonavigation}.xml
 /heapdump
 /home.html
 /homepage.nsf
+/horizon
 /host-manager/html
 /host.key
 /hosts
@@ -8403,6 +8413,7 @@ ${idfwbonavigation}.xml
 /monitor/health
 /monitor/stat
 /monitor_agent
+/monitoring
 /moto/application/configs/application.ini
 /mrtg/
 /my.key
@@ -8428,6 +8439,7 @@ ${idfwbonavigation}.xml
 /node_stats
 /nominatim.openstreetmap.org/lookup
 /nominatim.openstreetmap.org/search
+/nova
 /npm-debug.log
 /npm-shrinkwrap.json
 /oab/
@@ -8536,8 +8548,11 @@ ${idfwbonavigation}.xml
 /radio/application/configs/application.ini
 /raft
 /rails/actions?error=ActiveRecord
+/rails/conductor/active_storage/blobs
 /rails/info
+/rails/info/properties
 /rails/info/properties.json
+/rails/info/routes
 /rails/info/routes.json
 /railsapp/config/storage.yml
 /reach/sip.svc
@@ -8742,6 +8757,7 @@ ${idfwbonavigation}.xml
 /tag.json
 /targets
 /td-agent.log
+/telescope
 /telescope/requests
 /temp.php
 /temp.sql
@@ -8766,6 +8782,7 @@ ${idfwbonavigation}.xml
 /tools/adminer.php
 /toolsadminer.php
 /trace
+/trace.axd
 /tracez
 /tracing
 /translate.sql
