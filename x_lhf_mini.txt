@@ -1,4 +1,8 @@
 !
+openapi/httpfs.yaml
+openapi/openapi.yaml
+openapi/swagger-ui
+openapi/swagger-ui/
 !.gitignore
 !.htaccess
 !.htpasswd
