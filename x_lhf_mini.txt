@@ -1,8 +1,4 @@
 !
-openapi/httpfs.yaml
-openapi/openapi.yaml
-openapi/swagger-ui
-openapi/swagger-ui/
 !.gitignore
 !.htaccess
 !.htpasswd
@@ -25854,6 +25850,10 @@ openapi.jsp
 openapi.php
 openapi.yaml
 openapi/
+openapi/httpfs.yaml
+openapi/openapi.yaml
+openapi/swagger-ui
+openapi/swagger-ui/
 openapi/v1
 openapi/v2
 openapi/v3

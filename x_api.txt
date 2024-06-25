@@ -1,10 +1,6 @@
 
  Inconnu0lb.1.json
 !
-openapi/httpfs.yaml
-openapi/openapi.yaml
-openapi/swagger-ui
-openapi/swagger-ui/
 !=
 # Look at the result codes in the headers - 403 likely mean the dir exists, 404  means not. It takes an ISAPI filter for IIS to return 404's for 403s.
 #admin/system/api
@@ -48694,6 +48690,10 @@ openapi.jsp
 openapi.php
 openapi.yaml
 openapi/
+openapi/httpfs.yaml
+openapi/openapi.yaml
+openapi/swagger-ui
+openapi/swagger-ui/
 openapi/v1
 openapi/v2
 openapi/v3
