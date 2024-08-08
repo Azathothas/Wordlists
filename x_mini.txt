@@ -899,6 +899,8 @@ ${idfwbonavigation}.xml
 .access.login
 .access.php
 .access.stat
+.accessdb
+.ace
 .acgi
 .ackrc
 .act
@@ -965,6 +967,7 @@ ${idfwbonavigation}.xml
 .alicloud/credentials.json
 .aliyuncli
 .aliyuncli/credentials
+.all-contributor
 .all-contributorsrc
 .all.php
 .alt
@@ -989,6 +992,7 @@ ${idfwbonavigation}.xml
 .apj
 .app
 .appconfig.ini
+.apple
 .appledb
 .appledesktop
 .appledouble
@@ -1025,6 +1029,7 @@ ${idfwbonavigation}.xml
 .archived
 .arclint
 .arcrc
+.arj
 .array-key-exists
 .array-keys
 .array-merge
@@ -1512,6 +1517,7 @@ ${idfwbonavigation}.xml
 .cache/.wsdlDataModel
 .cache/.wsdldatamodel
 .cache~
+.caddyfile
 .calendar
 .call-user-func-array
 .cane
@@ -1616,6 +1622,8 @@ ${idfwbonavigation}.xml
 .ci/docker/credentials.env
 .ci/publish.sh
 .circle
+.circle-ci.yaml
+.circle-ci.yml
 .circleci
 .circleci.yaml
 .circleci.yml
@@ -1777,6 +1785,7 @@ ${idfwbonavigation}.xml
 .codacy.yaml
 .codacy.yml
 .code
+.code-workspace
 .codebuild
 .codecept-ignore.js
 .codecept.js
@@ -2027,6 +2036,7 @@ ${idfwbonavigation}.xml
 .cpc
 .cpcache
 .cpcache/
+.cpio
 .cproject
 .cr
 .cr/
@@ -2039,6 +2049,7 @@ ${idfwbonavigation}.xml
 .credentials_rsaparams
 .credits
 .credo.exs
+.creds
 .cropcanvas.php
 .cropinterface.php
 .crt
@@ -2096,13 +2107,16 @@ ${idfwbonavigation}.xml
 .data
 .data.php
 .data/
+.database
 .database.env
+.database.php.swp
 .datadog-agent/agent.yaml
 .date
 .dav
 .davfs2
 .db
 .db.env
+.db.php.swp
 .db.xml
 .db.yaml
 .db/docker-compose.yml
@@ -2135,6 +2149,7 @@ ${idfwbonavigation}.xml
 .dependabot
 .dependency.yaml
 .dependency.yml
+.deploy
 .deploy/values.yaml
 .deployignore
 .deployment
@@ -2307,6 +2322,7 @@ ${idfwbonavigation}.xml
 .docs
 .docs/
 .document
+.documentvault
 .docusaurus.config.js
 .docx
 .dogpl
@@ -2365,6 +2381,7 @@ ${idfwbonavigation}.xml
 .dynamodb-cli.session
 .dynamodb/
 .e
+.ear
 .eb
 .ebextensions
 .ebextensions/01_config.config
@@ -2437,6 +2454,7 @@ ${idfwbonavigation}.xml
 .elixir_ls
 .elixir_ls/
 .emacs
+.emacs.d
 .emacs.desktop
 .emacs.desktop.lock
 .emacs.d~
@@ -2640,6 +2658,8 @@ ${idfwbonavigation}.xml
 .env.prod.local
 .env.prod.local~
 .env.production
+.env.production.dev
+.env.production.dev.local
 .env.production.dev.local~
 .env.production.dev~
 .env.production.example
@@ -2648,6 +2668,8 @@ ${idfwbonavigation}.xml
 .env.production.json
 .env.production.local
 .env.production.local~
+.env.production.prod
+.env.production.prod.local
 .env.production.prod.local~
 .env.production.prod~
 .env.production.properties
@@ -2705,6 +2727,8 @@ ${idfwbonavigation}.xml
 .env.stage
 .env.stage.dev
 .env.staging
+.env.staging.dev
+.env.staging.dev.local
 .env.staging.dev.local~
 .env.staging.dev~
 .env.staging.example
@@ -2713,6 +2737,8 @@ ${idfwbonavigation}.xml
 .env.staging.json
 .env.staging.local
 .env.staging.local~
+.env.staging.prod
+.env.staging.prod.local
 .env.staging.prod.local~
 .env.staging.prod~
 .env.staging.properties
@@ -2900,6 +2926,11 @@ ${idfwbonavigation}.xml
 .file
 .file-get-contents
 .file-put-contents
+.filemaker
+.filemaker-cli-history
+.filemaker-cli-session
+.filemaker-cli.history
+.filemaker-cli.session
 .filemanager
 .filemgr-tmp
 .filemtime
@@ -3534,7 +3565,9 @@ ${idfwbonavigation}.xml
 .gnupg
 .gnupg/
 .gnupg/S.gpg-agent
+.gnupg/S.gpg-agent.extra
 .gnupg/S.gpg-agent.extra~
+.gnupg/S.gpg-agent.ssh
 .gnupg/S.gpg-agent.ssh~
 .gnupg/S.gpg-agent~
 .gnupg/dirmngr.conf
@@ -3542,12 +3575,15 @@ ${idfwbonavigation}.xml
 .gnupg/gpg-agent.conf~
 .gnupg/gpg.conf
 .gnupg/gpg.conf~
+.gnupg/gpgsm.conf
 .gnupg/gpgsm.conf~
 .gnupg/private-keys-v1.d
 .gnupg/pubring.gpg
+.gnupg/pubring.kbx
 .gnupg/pubring.kbx~
 .gnupg/random_seed
 .gnupg/random_seed~
+.gnupg/scdaemon.conf
 .gnupg/scdaemon.conf~
 .gnupg/secring.gpg
 .gnupg/secring.gpg~
@@ -4072,6 +4108,7 @@ ${idfwbonavigation}.xml
 .index.php
 .index.php.swp
 .index.php~
+.index.swp
 .indices
 .inf
 .infinity.json
@@ -4103,6 +4140,7 @@ ${idfwbonavigation}.xml
 .interproscan-5
 .interproscan-5/
 .inv
+.inventory
 .ionide
 .ionide/
 .ipynb_checkpoints
@@ -4140,6 +4178,9 @@ ${idfwbonavigation}.xml
 .jenkins.yaml
 .jenkins.yml
 .jenkinsfile
+.jenkinsfile.examle
+.jenkinsfile.sample
+.jenkinsfile.template
 .jenv-version
 .jest-config-js
 .jest-config.js
@@ -4259,6 +4300,7 @@ ${idfwbonavigation}.xml
 .junit-ignore-config.js
 .junit-ignore.config.js
 .junit.config.js
+.jupyter
 .jupyter/jupyter_notebook_config.json
 .jupyter~
 .justcode
@@ -4368,12 +4410,14 @@ ${idfwbonavigation}.xml
 .lgtm.yam
 .lgtm.yaml
 .lgtm.yml
+.lha
 .lia.cache
 .lib
 .lib.php
 .lib/
 .librarian
 .library
+.library.config.js
 .libs
 .libs/
 .lic
@@ -4424,6 +4468,7 @@ ${idfwbonavigation}.xml
 .local.mk
 .local.php
 .local/
+.local/share/Trash/files
 .local/share/Trash/files~
 .localcache
 .localcache/
@@ -4464,7 +4509,9 @@ ${idfwbonavigation}.xml
 .luna_manager/luna-manager.log
 .lvimrc
 .lynx_cookies
+.lz4
 .lzh
+.lzma
 .m
 .m/
 .m2
@@ -4695,6 +4742,7 @@ ${idfwbonavigation}.xml
 .mysql-select-db
 .mysql.env
 .mysql.history
+.mysql.php.swp
 .mysql.txt
 .mysql_history
 .mysql_history_backup
@@ -4752,6 +4800,7 @@ ${idfwbonavigation}.xml
 .nlia.cache
 .nmap.sh.swp
 .no-sublime-package
+.node-gyp
 .node-gyp~
 .node-version
 .node_repl_history
@@ -4774,8 +4823,11 @@ ${idfwbonavigation}.xml
 .npm-global
 .npm-init
 .npm/
+.npm/_cacache
 .npm/_cacache~
+.npm/_config
 .npm/_config~
+.npm/_logs
 .npm/_logs~
 .npm/anonymous-cli-metrics.json
 .npmignore
@@ -4957,11 +5009,13 @@ ${idfwbonavigation}.xml
 .page
 .pages
 .pairs
+.pak
 .paket
 .paket/
 .paket/paket.exe
 .pallet/services/aws.clj
 .pam_environment
+.par
 .parallel
 .parallel/
 .paramiko
@@ -5220,6 +5274,7 @@ ${idfwbonavigation}.xml
 .postcssrc
 .postcssrc.js
 .postgres.env
+.postgresql_history
 .postgresql_history~
 .pot
 .potm
@@ -5370,6 +5425,7 @@ ${idfwbonavigation}.xml
 .pyup.yaml
 .pyup.yml
 .q
+.qcow2
 .qidb
 .qmake.cache
 .qmake.conf
@@ -5406,12 +5462,18 @@ ${idfwbonavigation}.xml
 .rbenv-version
 .rbtp
 .rbuildignore
+.rbuildignore.win
 .rc
+.rcache
+.rcheck
 .rdata
+.rdata-journal
+.rdata-lock
 .rdf
 .rds
 .rdsTempFiles
 .rdstempfiles
+.rdummy
 .read
 .readme
 .readme.md.bud
@@ -5453,6 +5515,7 @@ ${idfwbonavigation}.xml
 .rename.jsf.swp
 .rename.jsp.swp
 .rename.php.swp
+.renviron
 .repl_history
 .repo-metadata.json
 .req
@@ -5474,6 +5537,7 @@ ${idfwbonavigation}.xml
 .rhosts
 .rhosts~
 .rhtml
+.rinstignore
 .rm
 .rmvb
 .rnd
@@ -5497,6 +5561,10 @@ ${idfwbonavigation}.xml
 .rpt2_cache
 .rpt2_cache/
 .rsa
+.rsession-data
+.rsession-data-index
+.rsession-data-index-lock
+.rsession-data-lock
 .rspec
 .rspec_parallel
 .rss
@@ -5507,6 +5575,7 @@ ${idfwbonavigation}.xml
 .rtf
 .rtfd
 .rtlcssrc
+.rtmp
 .rts2_cache_cjs
 .rts2_cache_cjs/
 .rts2_cache_es
@@ -5541,6 +5610,7 @@ ${idfwbonavigation}.xml
 .run
 .run.adcode
 .runner
+.ruserdata
 .rustfmt.toml
 .rvmrc
 .rvsPublish.ini.php
@@ -5563,6 +5633,7 @@ ${idfwbonavigation}.xml
 .sample
 .sample$
 .samples
+.sar
 .sass-cache
 .sass-cache/
 .sass-lint.yaml
@@ -5778,6 +5849,7 @@ ${idfwbonavigation}.xml
 .ssf
 .ssh
 .ssh-config
+.ssh-keys
 .ssh.asp
 .ssh.aspx
 .ssh.js
@@ -5947,9 +6019,13 @@ ${idfwbonavigation}.xml
 .subscribe
 .subversie
 .subversion
+.subversion/auth/svn.password
 .subversion/auth/svn.password~
+.subversion/auth/svn.simple
 .subversion/auth/svn.simple~
+.subversion/auth/svn.ssl.server
 .subversion/auth/svn.ssl.server~
+.subversion/auth/svn.username
 .subversion/auth/svn.username~
 .subversion/config
 .sucuriquarantine
@@ -5987,6 +6063,7 @@ ${idfwbonavigation}.xml
 .svn/wc.db
 .svnignore
 .svnkeep
+.svnpristine
 .sw
 .swd
 .swf
@@ -6271,6 +6348,7 @@ ${idfwbonavigation}.xml
 .trellix
 .trivy
 .truffle
+.ts
 .tsv
 .ttf
 .tugboat
@@ -6360,6 +6438,7 @@ ${idfwbonavigation}.xml
 .vbs
 .vcf
 .vcs
+.vdi
 .venv
 .verb.md
 .verbrc.md
@@ -6368,6 +6447,7 @@ ${idfwbonavigation}.xml
 .versions-readme
 .vgextensions
 .vgextensions/
+.vhd
 .video
 .view
 .view.php
@@ -6412,6 +6492,7 @@ ${idfwbonavigation}.xml
 .visapopup.php
 .visapopupvalid.php
 .vm
+.vmdk
 .vmware
 .vmware/
 .vmware/credentials
@@ -6421,6 +6502,7 @@ ${idfwbonavigation}.xml
 .vs
 .vs/
 .vscode
+.vscode-server
 .vscode-server~
 .vscode/
 .vscode/.env
@@ -6445,6 +6527,7 @@ ${idfwbonavigation}.xml
 .vscode/scp.json
 .vscode/scp.yaml
 .vscode/scp.yml
+.vscode/setting.json
 .vscode/settings.json
 .vscode/sftp.json
 .vscode/sftp.json.save
@@ -6611,6 +6694,7 @@ ${idfwbonavigation}.xml
 .wgetrc
 .whitesource
 .wihtm
+.wim
 .wimzi.php
 .wireless.action
 .wm
@@ -6731,6 +6815,7 @@ ${idfwbonavigation}.xml
 .xsql
 .xtpl
 .xy.php
+.xz
 .y
 .yamato/android.yml
 .yaml
