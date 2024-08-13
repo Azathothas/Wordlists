@@ -43813,6 +43813,8 @@ kr/resources/reports/restricted
 kr_event.xml
 kr_search.xml
 kr_search_plugin.xml
+krakend.json
+krakend/krakend.json
 krbylevne.xml
 kredi-hesap-makinesi.xml
 krepselis_json.php
