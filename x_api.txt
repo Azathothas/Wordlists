@@ -15220,6 +15220,7 @@ api.tar
 api.tar.gz
 api.test
 api.tf
+api.tgz
 api.tiles.mapbox.com/v4/
 api.ts
 api.txt

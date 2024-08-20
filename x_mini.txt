@@ -8884,6 +8884,8 @@ api.json
 api.log
 api.php
 api.py
+api.tar.gz
+api.tgz
 api.yaml
 api.yml
 api.zip

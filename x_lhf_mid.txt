@@ -27020,6 +27020,7 @@ api.tar
 api.tar.gz
 api.test
 api.tf
+api.tgz
 api.ts
 api.txt
 api.video.display.php
