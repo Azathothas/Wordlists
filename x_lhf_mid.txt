@@ -112921,6 +112921,7 @@ vqmod/logs/
 vqmod/mods.cache
 vqmod/vqcache
 vqmod/vqcache/
+vrot.php
 vscantest
 vscode.conf
 vsftpd.conf
