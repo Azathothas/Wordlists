@@ -17113,6 +17113,7 @@ api/v1/assets
 api/v1/assets-under-management
 api/v1/assignments
 api/v1/assistance
+api/v1/attachment
 api/v1/attachments
 api/v1/audio
 api/v1/audit
@@ -17376,6 +17377,7 @@ api/v1/end-of-life-care
 api/v1/endorsements
 api/v1/endpoints
 api/v1/enroll
+api/v1/env
 api/v1/epidemiology
 api/v1/episodes
 api/v1/equipment
@@ -18542,6 +18544,7 @@ api/v2/encryption
 api/v2/end-of-life-care
 api/v2/endorsements
 api/v2/enroll
+api/v2/env
 api/v2/epidemiology
 api/v2/equipment
 api/v2/equipment-rental
@@ -19307,6 +19310,7 @@ api/v3/encryption
 api/v3/end-of-life-care
 api/v3/endorsements
 api/v3/enroll
+api/v3/env
 api/v3/epidemiology
 api/v3/equipment
 api/v3/equipment-rental
@@ -57000,7 +57004,13 @@ prod.json
 prod.v1
 prod.v2
 prod.xml
+prod/api/v1/
+prod/api/v1/attachment
 prod/api/v1/users
+prod/api/v2/
+prod/api/v2/attachment
+prod/api/v3/
+prod/api/v3/attachment
 prod_api.txt
 prodapi
 prods.json
@@ -57038,6 +57048,9 @@ production.env.json
 production.json
 production.v1
 production.v2
+production/api/v1/attachment
+production/api/v2/attachment
+production/api/v3/attachment
 production/api/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
 productionapi
 productioninfo.xml
@@ -68156,7 +68169,10 @@ test.v1
 test.v2
 test.xml
 test/api.js
+test/api/v1/
 test/api/v1/users
+test/api/v2/
+test/api/v3/
 test/bdd/fixtures/adapter-rest/.env
 test/bdd/fixtures/agent-rest/.env
 test/bdd/fixtures/demo/openapi/.env

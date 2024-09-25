@@ -8480,6 +8480,9 @@ ${idfwbonavigation}.xml
 /desktop.ini
 /destination
 /dev/.git/config
+/dev/api/v1/
+/dev/api/v2/
+/dev/api/v3/
 /developer/.git/config
 /developerslv/.env
 /development.log
@@ -9138,7 +9141,16 @@ ${idfwbonavigation}.xml
 /processor/.env
 /prod.git/config
 /prod/.env
+/prod/api/v1/
+/prod/api/v1/attachment
+/prod/api/v2/
+/prod/api/v2/attachment
+/prod/api/v3/
+/prod/api/v3/attachment
 /production.log
+/production/api/v1/attachment
+/production/api/v2/attachment
+/production/api/v3/attachment
 /profile
 /proftpd.conf
 /projbackend/.env
@@ -9518,6 +9530,9 @@ ${idfwbonavigation}.xml
 /test.cgi
 /test.php
 /test/.env
+/test/api/v1/
+/test/api/v2/
+/test/api/v3/
 /test/aries-js-worker/fixtures/.env
 /test/bdd/fixtures/adapter-rest/.env
 /test/bdd/fixtures/agent-rest/.env
@@ -10686,6 +10701,7 @@ ${idfwbonavigation}.xml
 ?favorites
 ?level=12
 ?msk
+?pp=env
 ?pretty
 ?q=*
 ?q=admin/
@@ -20957,6 +20973,8 @@ accounts.pl
 accounts.py
 accounts.rb
 accounts.sql
+accounts.sqlite
+accounts.sqlite3
 accounts.txt
 accounts.xml
 accounts.yml
@@ -28760,6 +28778,12 @@ api/users/user/check
 api/users/user/delete 
 api/users/userInfoAdmin 
 api/users/userInfoSSO 
+api/users?api-version=1
+api/users?api-version=2
+api/users?api-version=3
+api/users?v=1
+api/users?v=2
+api/users?v=3
 api/utilisateurs
 api/utilisateurs/1
 api/utilisateurs/2
@@ -28891,6 +28915,7 @@ api/v1/assets
 api/v1/assets-under-management
 api/v1/assignments
 api/v1/assistance
+api/v1/attachment
 api/v1/attachments
 api/v1/audio
 api/v1/audit
@@ -29148,6 +29173,7 @@ api/v1/end-of-life-care
 api/v1/endorsements
 api/v1/endpoints
 api/v1/enroll
+api/v1/env
 api/v1/epidemiology
 api/v1/episodes
 api/v1/equipment
@@ -29918,6 +29944,7 @@ api/v1/user/me
 api/v1/user/profile
 api/v1/user/profile/1
 api/v1/user/register
+api/v1/user/search
 api/v1/user/ticket
 api/v1/userOrg
 api/v1/users
@@ -30305,6 +30332,7 @@ api/v2/encryption
 api/v2/end-of-life-care
 api/v2/endorsements
 api/v2/enroll
+api/v2/env
 api/v2/epidemiology
 api/v2/equipment
 api/v2/equipment-rental
@@ -30752,6 +30780,8 @@ api/v2/user/all
 api/v2/user/list
 api/v2/user/profile/1
 api/v2/user/register
+api/v2/user/search
+api/v2/user/search/?query=&page=1&page_size=20
 api/v2/users
 api/v2/users.csv
 api/v2/users.json
@@ -31064,6 +31094,7 @@ api/v3/encryption
 api/v3/end-of-life-care
 api/v3/endorsements
 api/v3/enroll
+api/v3/env
 api/v3/epidemiology
 api/v3/equipment
 api/v3/equipment-rental
@@ -31481,6 +31512,7 @@ api/v3/user-profile
 api/v3/user-registration
 api/v3/user/profile/1
 api/v3/user/register
+api/v3/user/search
 api/v3/users
 api/v3/users.csv
 api/v3/users.json
@@ -31787,6 +31819,7 @@ api_default_study.aspx
 api_demo.php
 api_docs
 api_documentation
+api_documentation_logs
 api_entry.php
 api_error
 api_error.php
@@ -31854,6 +31887,7 @@ api_key.php
 api_key.secret
 api_key.txt
 api_key.xlsx
+api_key_management
 api_key_secret
 api_key_sid
 api_keys
@@ -33479,6 +33513,7 @@ app/config/auth.php
 app/config/bootstrap.php
 app/config/bundles.php
 app/config/charting.php
+app/config/config.local.neon
 app/config/config.yaml
 app/config/config.yml
 app/config/config.yml.dist
@@ -44713,6 +44748,7 @@ config.local
 config.local.cfm
 config.local.ini
 config.local.json
+config.local.neon
 config.local.php
 config.local.php_old
 config.local.php~
@@ -45322,6 +45358,7 @@ config/config.inc.php.dist
 config/config.ini
 config/config.js
 config/config.json
+config/config.local.neon
 config/config.php
 config/config.prod.json
 config/config.properties
@@ -55417,19 +55454,32 @@ dev-web
 dev-work-in-progress
 dev.%EXT%
 dev.7z
+dev.accdb
 dev.api
+dev.backup
+dev.bak
 dev.bat
 dev.conf
 dev.config
+dev.db
+dev.dbf
 dev.env
 dev.env.dev
 dev.exs
+dev.frm
 dev.go
+dev.gz
 dev.html
+dev.ibd
 dev.java
 dev.js
 dev.json
+dev.ldf
 dev.log
+dev.mdb
+dev.mdf
+dev.myd
+dev.ndb
 dev.nupkg
 dev.php
 dev.ps1
@@ -55443,6 +55493,8 @@ dev.slug.js
 dev.sql
 dev.sql.tar.gz
 dev.sql.zip
+dev.sqlite
+dev.sqlite3
 dev.tar
 dev.tar.gz
 dev.txt
@@ -55890,6 +55942,8 @@ device.txt
 device.xml
 device.yaml
 device.yml
+device_management
+device_management_logs
 deviceapi
 deviceatlas
 deviceaudit
@@ -59827,6 +59881,7 @@ env/
 env/.config
 env/.env
 env/FormData 
+env/config
 env/data 
 env/dev.config.js
 env/development.example.env
@@ -78526,6 +78581,8 @@ main.ps1
 main.py
 main.sh
 main.sql
+main.sqlite
+main.sqlite3
 main.tf
 main.yaml
 main.yml
@@ -89807,6 +89864,8 @@ prod.secret.key
 prod.sql
 prod.sql.tar.gz
 prod.sql.zip
+prod.sqlite
+prod.sqlite3
 prod.tar.gz
 prod.txt.gz
 prod.xml
@@ -95396,6 +95455,8 @@ sample.htaccess
 sample.json
 sample.log
 sample.sql
+sample.sqlite
+sample.sqlite3
 sample.txt
 sample.txt~
 sample.yaml
@@ -105402,6 +105463,7 @@ test.sql1
 test.sql2
 test.sql3
 test.sqlite
+test.sqlite3
 test.tar
 test.tar.gz
 test.tcsh
@@ -108845,6 +108907,7 @@ users.sql.tar.gzip
 users.sql.tgz
 users.sql.zip
 users.sqlite
+users.sqlite3
 users.tar
 users.tar.bz2
 users.tar.bzip2
