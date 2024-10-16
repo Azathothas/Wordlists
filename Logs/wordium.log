@@ -1,0 +1,84 @@
+
+        ╭┳╮
+╭┳┳┳━┳┳┳╯┣╋┳┳━━╮
+┃W┃O┃R╭┫D┃I┃U┃M┃
+╰━━┻━┻╯╰━┻┻━┻┻┻╯
+
+➼ Specified Wordlist Directory: /home/runner/work/Wordlists/Wordlists/main
+
+✗ Error: /home/runner/work/Wordlists/Wordlists/main/bbFuzzing.txt/bbFuzzing.txt not found
+Reinstalling....
+
+✗ Error: /home/runner/work/Wordlists/Wordlists/main/bbFuzzing.txt not found
+This will take quite some time (If first run)
+Depending on your internet, it may take upto 1 hr
+Just let your terminal be!
+No Git (.git) folder found in /home/runner/work/Wordlists/Wordlists/main or its parent directories!
+Proceeding with git clone
+
+Updating /home/runner/work/Wordlists/Wordlists/main/bbFuzzing.txt to @latest
+ⓘ Already @latest
+Updating /home/runner/work/Wordlists/Wordlists/main/fuzz.txt to @latest
+ⓘ Already @latest
+Updating /home/runner/work/Wordlists/Wordlists/main/hfuzz to @latest
+ⓘ Already @latest
+Updating /home/runner/work/Wordlists/Wordlists/main/leaky-paths to @latest
+ⓘ Already @latest
+Updating /home/runner/work/Wordlists/Wordlists/main/OneListForAll to @latest
+ⓘ Already @latest
+Updating /home/runner/work/Wordlists/Wordlists/main/WordList to @latest
+ⓘ Already @latest
+
+➼ Fetching & Updating <-- Bo0oM/fuzz.txt
+➼ x_lhf_mini.txt  : 0
+➼ x_lhf_mid.txt  : 0
+
+➼ Fetching & Updating <-- reewardius/bbFuzzing.txt
+➼ x_lhf_mini.txt  : 0
+➼ x_lhf_mid.txt   : 0
+➼ x_lhf_large.txt  : 0
+
+➼ Fetching & Updating <-- thehlopster/hfuzz
+➼ x_lhf_mini.txt  : 0
+➼ x-lhf-large.txt  : 0
+
+➼ Fetching & Updating <-- ayoubfathi/leaky-paths
+➼ x_lhf_mini.txt  : 0
+
+➼ Fetching & Updating <-- Six2dez/OneListForAll
+➼ x_lhf_mini.txt  : 0
+➼ x_lhf_large.txt  : 0
+➼ x_massive.txt  : 0
+
+➼ Fetching & Updating <-- rix4uni/WordList
+➼ x_lhf_mini.txt  : 0 , 0
+➼ x_lhf_mid.txt  : 0
+➼ x_lhf_large.txt  : 0
+➼ x_massive.txt  : 0
+
+➼ New Additions 
+➼ x_lhf_mini.txt  : 0
+➼ x_lhf_mid.txt   : 0
+➼ x_lhf_large.txt : 0
+➼ x_massive.txt   : 0
+
+➼ Generating x_api.txt 
+➼ Newly added: 0
+
+➼ Generating x_dns.txt 
+➼ Newly added: 128
+
+➼ Generating x_mini.txt 
+➼ Newly added: 0
+
+➼Updated Wordlists:
+➼ x_api.txt       : 79043 /home/runner/work/Wordlists/Wordlists/main/x_api.txt
+➼ x_api_tiny.txt  : 22383 /home/runner/work/Wordlists/Wordlists/main/x_api_tiny.txt
+➼ x_dns.txt       : 594895 /home/runner/work/Wordlists/Wordlists/main/x_dns.txt
+➼ x_dns_tiny.txt  : 16235 /home/runner/work/Wordlists/Wordlists/main/x_dns_tiny.txt
+➼ x_mini.txt      : 14484 /home/runner/work/Wordlists/Wordlists/main/x_mini.txt
+➼ x_lhf_mini.txt  : 36245 /home/runner/work/Wordlists/Wordlists/main/x_lhf_mini.txt
+➼ x_lhf_mid.txt   : 117947 /home/runner/work/Wordlists/Wordlists/main/x_lhf_mid.txt
+➼ x_lhf_large.txt : 294932 /home/runner/work/Wordlists/Wordlists/main/x_lhf_large.txt
+➼ x_massive.txt   : 1070115 /home/runner/work/Wordlists/Wordlists/main/x_massive.txt
+
