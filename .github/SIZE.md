@@ -64,11 +64,11 @@
 8.0K   ├── resolvers_ipv4
 8.0K   ├── resolvers_all.txt
 8.0K   ├── resolvers_all
+8.0K   ├── README.md
+8.0K   ├─┬ Logs
+4.0K   │ └── wordium.log
 4.0K   ├── resolvers_ipv6.txt
 4.0K   ├── resolvers_ipv6
-4.0K   ├── README.md
-4.0K   ├─┬ Logs
-  0B   │ └── wordium.log
 4.0K   ├── LICENSE
 4.0K   └── INFO.md
 ```
