@@ -1,0 +1,290 @@
+name: 🐧🧹 HealthChecks 🖳🗑️
+#MAX_RUNTIME: 02 Minutes */10 * * * * 
+
+on:
+  #push:
+  workflow_dispatch:
+  schedule:
+    - cron: "*/55 * * * *"  # Every 55 Mins
+
+env:
+  USER_AGENT: "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/115.0"
+  RCLONE_CF_R2_PUB: "${{ secrets.RCLONE_CF_R2_PUB }}"
+#------------------------------------------------------------------------------------#
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    
+    permissions:
+      contents: write
+      
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          path: main
+          filter: "blob:none" #https://github.blog/2020-12-21-get-up-to-speed-with-partial-clone-and-shallow-clone/
+
+      - name: Setup Env
+        run: |
+          #Presets
+          set +x ; set +e
+          #--------------#        
+          sudo apt update -y
+          sudo apt install dos2unix -y
+          pip install ansi2txt --upgrade
+        continue-on-error: true
+        
+      - name: Install Addons
+        run: |
+          #Presets
+          set +x ; set +e
+          #--------------#
+          #action-lint
+          sudo curl -qfsSL "https://bin.ajam.dev/x86_64_Linux/actionlint" -o "/usr/local/bin/actionlint" && sudo chmod +xwr "/usr/local/bin/actionlint"
+          #anew
+          sudo curl -qfsSL "https://bin.ajam.dev/x86_64_Linux/anew" -o "/usr/local/bin/anew" && sudo chmod +xwr "/usr/local/bin/anew"
+          #anew-rs
+          sudo curl -qfsSL "https://bin.ajam.dev/x86_64_Linux/anew-rs" -o "/usr/local/bin/anew-rs" && sudo chmod +xwr "/usr/local/bin/anew-rs"
+          #delta
+          sudo curl -qfsSL "https://bin.ajam.dev/x86_64_Linux/delta" -o "/usr/local/bin/delta" && sudo chmod +xwr "/usr/local/bin/delta"
+          #dust
+          sudo curl -qfsSL "https://bin.ajam.dev/x86_64_Linux/dust" -o "/usr/local/bin/dust" && sudo chmod +xwr "/usr/local/bin/dust"
+          #eget
+          sudo curl -qfsSL "https://bin.ajam.dev/x86_64_Linux/eget" -o "/usr/local/bin/eget" && sudo chmod +xwr "/usr/local/bin/eget"
+          #git-sizer
+          sudo curl -qfsSL "https://bin.ajam.dev/x86_64_Linux/git-sizer" -o "/usr/local/bin/git-sizer" && sudo chmod +xwr "/usr/local/bin/git-sizer"
+          #rclone
+          sudo curl -qfsSL "https://bin.ajam.dev/x86_64_Linux/rclone" -o "/usr/local/bin/rclone" && sudo chmod +xwr "/usr/local/bin/rclone"
+          #validtoml
+          sudo curl -qfsSL "https://bin.ajam.dev/x86_64_Linux/validtoml" -o "/usr/local/bin/validtoml" && sudo chmod +xwr "/usr/local/bin/validtoml"
+          #Yq
+          sudo curl -qfsSL "https://bin.ajam.dev/x86_64_Linux/yq" -o "/usr/local/bin/yq" && sudo chmod +xwr "/usr/local/bin/yq"
+          #Yj
+          sudo curl -qfsSL "https://bin.ajam.dev/x86_64_Linux/yj" -o "/usr/local/bin/yj" && sudo chmod +xwr "/usr/local/bin/yj"
+        continue-on-error: true
+
+      - name: Enrichments (Creds)
+        run: |
+          # Presets
+          set -x ; set +e
+          #--------------#
+          #Usernames
+          sed -E '/^[[:space:]]*$/d' "$GITHUB_WORKSPACE/main/Misc/usernames_tiny.txt" | sort -u -o "$GITHUB_WORKSPACE/main/Misc/usernames_tiny.txt"
+          cat "$GITHUB_WORKSPACE/main/Misc/usernames_tiny.txt" 2>/dev/null | anew-rs -q "$GITHUB_WORKSPACE/main/Misc/usernames_small.txt"
+          sed -E '/^[[:space:]]*$/d' "$GITHUB_WORKSPACE/main/Misc/usernames_small.txt" | sort -u -o "$GITHUB_WORKSPACE/main/Misc/usernames_small.txt"
+          cat "$GITHUB_WORKSPACE/main/Misc/usernames_small.txt" 2>/dev/null | anew-rs -q "$GITHUB_WORKSPACE/main/Misc/usernames_mid.txt"
+          sed -E '/^[[:space:]]*$/d' "$GITHUB_WORKSPACE/main/Misc/usernames_mid.txt" | sort -u -o "$GITHUB_WORKSPACE/main/Misc/usernames_mid.txt"
+          cat "$GITHUB_WORKSPACE/main/Misc/usernames_mid.txt" 2>/dev/null | anew-rs -q "$GITHUB_WORKSPACE/main/Misc/usernames_big.txt"
+          sed -E '/^[[:space:]]*$/d' "$GITHUB_WORKSPACE/main/Misc/usernames_big.txt" | sort -u -o "$GITHUB_WORKSPACE/main/Misc/usernames_big.txt"
+          #Passwords
+          cat "$GITHUB_WORKSPACE/main/Misc/usernames_small.txt" 2>/dev/null | anew-rs -q "$GITHUB_WORKSPACE/main/Misc/passwords_small.txt"
+          sed -E '/^[[:space:]]*$/d' "$GITHUB_WORKSPACE/main/Misc/passwords_small.txt" | sort -u -o "$GITHUB_WORKSPACE/main/Misc/passwords_small.txt"
+          cat "$GITHUB_WORKSPACE/main/Misc/passwords_small.txt" 2>/dev/null | anew-rs -q "$GITHUB_WORKSPACE/main/Misc/passwords_mid.txt"
+          sed -E '/^[[:space:]]*$/d' "$GITHUB_WORKSPACE/main/Misc/passwords_mid.txt" | sort -u -o "$GITHUB_WORKSPACE/main/Misc/passwords_mid.txt"
+          cat "$GITHUB_WORKSPACE/main/Misc/passwords_mid.txt" 2>/dev/null | anew-rs -q "$GITHUB_WORKSPACE/main/Misc/passwords_big.txt"
+          sed -E '/^[[:space:]]*$/d' "$GITHUB_WORKSPACE/main/Misc/passwords_big.txt" | sort -u -o "$GITHUB_WORKSPACE/main/Misc/passwords_big.txt"
+          #Blanks
+          sed '1s/^/\n/' -i "$GITHUB_WORKSPACE/main/Misc/usernames_tiny.txt"
+          sed '1s/^/\n/' -i "$GITHUB_WORKSPACE/main/Misc/usernames_small.txt"
+          sed '1s/^/\n/' -i "$GITHUB_WORKSPACE/main/Misc/usernames_mid.txt"
+          sed '1s/^/\n/' -i "$GITHUB_WORKSPACE/main/Misc/usernames_big.txt"
+          sed '1s/^/\n/' -i "$GITHUB_WORKSPACE/main/Misc/passwords_small.txt"
+          sed '1s/^/\n/' -i "$GITHUB_WORKSPACE/main/Misc/passwords_mid.txt"
+          sed '1s/^/\n/' -i "$GITHUB_WORKSPACE/main/Misc/passwords_big.txt"
+        continue-on-error: true
+
+      - name: Enrichments (JWT Secrets)
+        run: |
+          # Presets
+          set -x ; set +e
+          #--------------#
+          #Get src
+          curl -qfsSL "https://raw.githubusercontent.com/wallarm/jwt-secrets/master/jwt.secrets.list" -o "/tmp/jwt_secrets_big.txt"
+          cat "/tmp/jwt_secrets_big.txt" | sort -u | anew-rs -q "$GITHUB_WORKSPACE/main/Misc/jwt_secrets_big.txt"
+          #Enrich
+          cat "$GITHUB_WORKSPACE/main/Misc/jwt_secrets_small.txt" | sort -u | anew-rs -q "$GITHUB_WORKSPACE/main/Misc/jwt_secrets_mid.txt"
+          "$GITHUB_WORKSPACE/main/Misc/jwt_secrets_mid.txt" | sort -u | anew-rs -q "$GITHUB_WORKSPACE/main/Misc/jwt_secrets_big.txt"
+          #Sort
+          sort -u "$GITHUB_WORKSPACE/main/Misc/jwt_secrets_small.txt" -o "$GITHUB_WORKSPACE/main/Misc/jwt_secrets_small.txt"
+          sort -u "$GITHUB_WORKSPACE/main/Misc/jwt_secrets_mid.txt" -o "$GITHUB_WORKSPACE/main/Misc/jwt_secrets_mid.txt"
+          sort -u "$GITHUB_WORKSPACE/main/Misc/jwt_secrets_big.txt" -o "$GITHUB_WORKSPACE/main/Misc/jwt_secrets_big.txt"
+          #Blanks
+          sed '1s/^/\n/' -i "$GITHUB_WORKSPACE/main/Misc/jwt_secrets_small.txt"
+          sed '1s/^/\n/' -i "$GITHUB_WORKSPACE/main/Misc/jwt_secrets_mid.txt"
+          sed '1s/^/\n/' -i "$GITHUB_WORKSPACE/main/Misc/jwt_secrets_big.txt"
+        continue-on-error: true
+
+      - name: Enrichments (Resolvers)
+        run: |
+          # Presets
+          set -x ; set +e
+          #--------------#
+          # fetch Resolvers
+          fetch_resolvers()
+          {
+          #Fetch from Sources  
+          echo -e "\n${GREEN}ⓘ Fetching ${BLUE}@latest ${PURPLE}Resolvers List${NC}\n"
+          resolvers_dir="$(mktemp -d)" && export resolvers_dir="$resolvers_dir"  
+          #https://github.com/proabiral/Fresh-Resolvers (Preferred)
+            # ~ 200 (IPv6 only)
+            curl -qfsSL "https://raw.githubusercontent.com/proabiral/Fresh-Resolvers/master/resolvers.ipv6" -o "$resolvers_dir/proabiral_ipv6.txt"
+            # ~ 300 (IPv4 only)
+            curl -qfsSL "https://raw.githubusercontent.com/edoardottt/secfiles/main/dns/trusted-resolvers-small.txt" -o "$resolvers_dir/secfiles_trusted_ipv4.txt"
+            # ~ 50 (Trusted IPv4 Only)
+            curl -qfsSL "https://raw.githubusercontent.com/trickest/resolvers/main/resolvers-trusted.txt" -o "$resolvers_dir/trickest_trusted_ipv4.txt"
+          #Merge  
+          resolvers_ipv4="$(mktemp)" && export resolvers_ipv4="$resolvers_ipv4"
+          resolvers_ipv6="$(mktemp)" && export resolvers_ipv6="$resolvers_ipv6"
+          resolvers_all="$(mktemp)" && export resolvers_all="$resolvers_all"
+            # IPv4
+            find "$resolvers_dir" -type f -name '*ipv4*' -exec cat {} + | sort -u -o "$resolvers_ipv4"
+            # IPv6
+            find "$resolvers_dir" -type f -name '*ipv6*' -exec cat {} + | sort -u -o "$resolvers_ipv6"
+            # ALL
+            cat "$resolvers_ipv4" "$resolvers_ipv6" | sort -u -o "$resolvers_all"
+          }
+          #export this globally
+          export -f fetch_resolvers
+          #Run
+          fetch_resolvers
+          #Merge
+          sort -u "$resolvers_ipv4" -o "$GITHUB_WORKSPACE/main/resolvers_ipv4.txt"
+          sort -u "$resolvers_ipv6" -o "$GITHUB_WORKSPACE/main/resolvers_ipv6.txt"
+          sort -u "$resolvers_all" -o "$GITHUB_WORKSPACE/main/resolvers_all.txt"
+        continue-on-error: true
+
+      - name: Enrichments (User-Agents)
+        run: |
+          # Presets
+          set -x ; set +e
+          mkdir -p "$GITHUB_WORKSPACE/main/Misc/User-Agents"
+          #--------------#
+          ##Fetch
+          #curl -qfsSL "https://raw.githubusercontent.com/EIGHTFINITE/top-user-agents/main/index.json" | jq -r '.[]' | sort -u -o "$GITHUB_WORKSPACE/main/Misc/User-Agents/user_agents_all.txt"
+          curl -qfsSL "https://raw.githubusercontent.com/microlinkhq/top-user-agents/master/src/index.json" | jq -r '.[]' | sort -u | sort -V -o "$GITHUB_WORKSPACE/main/Misc/User-Agents/user_agents_all.txt"
+          ##Filter
+          #Chrome-Android
+          cat "$GITHUB_WORKSPACE/main/Misc/User-Agents/user_agents_all.txt" | grep -i 'android' | grep -iv 'edg\|moto\|obsidian\|opr\|pfum' | sort -V > "$GITHUB_WORKSPACE/main/Misc/User-Agents/ua_chrome_android_all.txt"
+          cat "$GITHUB_WORKSPACE/main/Misc/User-Agents/user_agents_all.txt" | grep -i 'android' | grep -iv 'edg\|moto\|obsidian\|opr\|pfum' | sort -V | tail -n 1 > "$GITHUB_WORKSPACE/main/Misc/User-Agents/ua_chrome_android_latest.txt"
+          #Chrome-macOS
+          cat "$GITHUB_WORKSPACE/main/Misc/User-Agents/user_agents_all.txt" | grep -i 'mac' | grep -i 'chrome' | grep -iv 'edg\|obsidian\|opr' | sort -V > "$GITHUB_WORKSPACE/main/Misc/User-Agents/ua_chrome_macos_all.txt"
+          cat "$GITHUB_WORKSPACE/main/Misc/User-Agents/user_agents_all.txt" | grep -i 'mac' | grep -i 'chrome' | grep -iv 'edg\|obsidian\|opr' | sort -V | tail -n 1 > "$GITHUB_WORKSPACE/main/Misc/User-Agents/ua_chrome_macos_latest.txt"
+          #Chrome-Windows
+          cat "$GITHUB_WORKSPACE/main/Misc/User-Agents/user_agents_all.txt" | grep -i 'Windows NT 10' | grep -i 'chrome' | grep -iv 'edg\|obsidian\|opr' | sort -V > "$GITHUB_WORKSPACE/main/Misc/User-Agents/ua_chrome_windows_all.txt"
+          cat "$GITHUB_WORKSPACE/main/Misc/User-Agents/user_agents_all.txt" | grep -i 'Windows NT 10' | grep -i 'chrome' | grep -iv 'edg\|obsidian\|opr' | sort -V | tail -n 1 > "$GITHUB_WORKSPACE/main/Misc/User-Agents/ua_chrome_windows_latest.txt"
+          #Firefox-macOS
+          cat "$GITHUB_WORKSPACE/main/Misc/User-Agents/user_agents_all.txt" | grep -i 'mac' | grep -i 'firefox' | grep -iv 'edg\|obsidian\|opr' | sort -V > "$GITHUB_WORKSPACE/main/Misc/User-Agents/ua_firefox_macos_all.txt"
+          cat "$GITHUB_WORKSPACE/main/Misc/User-Agents/user_agents_all.txt" | grep -i 'mac' | grep -i 'firefox' | grep -iv 'edg\|obsidian\|opr' | sort -V | tail -n 1 > "$GITHUB_WORKSPACE/main/Misc/User-Agents/ua_firefox_macos_latest.txt"
+          #Firefox-Windows
+          cat "$GITHUB_WORKSPACE/main/Misc/User-Agents/user_agents_all.txt" | grep -i 'Windows NT 10' | grep -i 'firefox' | grep -iv 'edg\|obsidian\|opr' | sort -V > "$GITHUB_WORKSPACE/main/Misc/User-Agents/ua_firefox_windows_all.txt"
+          cat "$GITHUB_WORKSPACE/main/Misc/User-Agents/user_agents_all.txt" | grep -i 'Windows NT 10' | grep -i 'firefox' | grep -iv 'edg\|obsidian\|opr' | sort -V | tail -n 1 > "$GITHUB_WORKSPACE/main/Misc/User-Agents/ua_firefox_windows_latest.txt"
+          #Safari-Iphone
+          cat "$GITHUB_WORKSPACE/main/Misc/User-Agents/user_agents_all.txt" | grep -i 'iphone' | grep -iv 'chrome\|edg\|obsidian\|opr' | sort -V > "$GITHUB_WORKSPACE/main/Misc/User-Agents/ua_safari_iphone_all.txt"
+          cat "$GITHUB_WORKSPACE/main/Misc/User-Agents/user_agents_all.txt" | grep -i 'iphone' | grep -iv 'chrome\|edg\|obsidian\|opr' | sort -V | tail -n 1 > "$GITHUB_WORKSPACE/main/Misc/User-Agents/ua_safari_iphone_latest.txt"
+          #Safari-macOS
+          cat "$GITHUB_WORKSPACE/main/Misc/User-Agents/user_agents_all.txt" | grep -i 'mac' | grep -i 'safari' | grep -iv 'iphone' | grep -iv 'edg\|obsidian\|opr' | sort -V > "$GITHUB_WORKSPACE/main/Misc/User-Agents/ua_safari_macos_all.txt"
+          cat "$GITHUB_WORKSPACE/main/Misc/User-Agents/user_agents_all.txt" | grep -i 'mac' | grep -i 'safari' | grep -iv 'iphone' | grep -iv 'edg\|obsidian\|opr' | sort -V | tail -n 1 > "$GITHUB_WORKSPACE/main/Misc/User-Agents/ua_safari_macos_latest.txt"
+        continue-on-error: true
+
+      - name: Dos2Unix Everything
+        run: |
+          #Presets
+          set +x ; set +e
+          #--------------#
+          cd "$GITHUB_WORKSPACE/main"
+          find . -type f ! -path "./.git/*" -exec dos2unix {} \; 2>/dev/null
+        continue-on-error: true
+
+      - name: ActionLint
+        run: |
+          #Presets
+          set +x ; set +e
+          #--------------#
+          cd "$GITHUB_WORKSPACE/main"
+          find ".github/workflows" -type f -name "*ml" -exec actionlint {} \;
+        continue-on-error: true
+
+      - name: Generate Repo Metadata (git-sizer)
+        run: |
+          #Presets
+          set +x ; set +e
+          #--------------#
+          cd "$GITHUB_WORKSPACE/main"
+          #Dust sizes
+          echo '```mathematica' > "$GITHUB_WORKSPACE/main/.github/SIZE.md"
+          dust -b -c -i -r -n 99999999 "$GITHUB_WORKSPACE/main" | tee -a "$GITHUB_WORKSPACE/main/.github/SIZE.md"
+          dust -b -c -i -r -n 99999999 "$GITHUB_WORKSPACE/main" | tee "$GITHUB_WORKSPACE/main/.github/SIZE.txt"
+          echo '```' >> "$GITHUB_WORKSPACE/main/.github/SIZE.md"
+        continue-on-error: true
+
+      - name: Ensure Healthy Commit Nums (RESET ON >= 1000)
+        run: |
+          #Presets
+          set +x ; set +e
+          #--------------#
+          pushd "$(mktemp -d)" > /dev/null 2>&1 && git clone --filter="blob:none" "$GITHUB_SERVER_URL/$GITHUB_REPOSITORY"
+          cd "$(find . -maxdepth 1 -type d -exec basename {} \; | grep -Ev '^\.$' | xargs -I {} realpath {})"
+          CLONED_DIR="$(realpath .)" && export CLONED_DIR="$CLONED_DIR"
+          COMMIT_NUMS="$(git rev-list --count HEAD)" && export COMMIT_NUMS="$COMMIT_NUMS"
+          popd > /dev/null 2>&1 ; rm -rf "$CLONED_DIR" 2>/dev/null
+          cd "$GITHUB_WORKSPACE/main"
+          if [ "$COMMIT_NUMS" -gt 1000 ]; then
+              echo -e "\n[+] Total number of commits exceeds 1000. ($COMMIT_NUMS)\n"
+              cd "$GITHUB_WORKSPACE/main"
+              git config "user.name" "Azathothas"
+              git config "user.email" "AjamX101@gmail.com"
+              git checkout --orphan temp
+              git add --all --verbose && git commit -m "Purge (Re:Init)"
+              git branch -D "main"
+              git branch -m "main"
+              git push --set-upstream origin main --force
+              echo "RESET_HISTORY=YES" >> "$GITHUB_ENV"
+          else
+              echo -e "\n[+] Total number of commits looks healthy. ($COMMIT_NUMS)\n"
+              echo "RESET_HISTORY=NO" >> "$GITHUB_ENV"
+          fi
+          pushd "$GITHUB_WORKSPACE/main" >/dev/null 2>&1 && git pull origin main && popd >/dev/null 2>&1
+        continue-on-error: true
+
+      - name: Get DateTime
+        run: |
+          # Date Time
+          NEPALI_TIME=$(TZ='Asia/Kathmandu' date +'%Y-%m-%d (%I:%M:%S %p)')
+          echo "NEPALI_TIME=$NEPALI_TIME" >> $GITHUB_ENV
+        continue-on-error: true
+
+      - name: Git Pull
+        run: |
+          cd "$GITHUB_WORKSPACE/main" && git pull origin main
+        continue-on-error: true
+
+      - uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          repository: ./main        
+          commit_user_name: Azathothas # defaults to "github-actions[bot]"
+          commit_user_email: AjamX101@gmail.com # defaults to "41898282+github-actions[bot]@users.noreply.github.com"
+          #commit_message: "✅ 🐧🧹 🖳🗑️"
+          commit_message: "‎‎‏‏‎ ‎"
+          #push_options: '--force'
+        continue-on-error: true
+#------------------------------------------------------------------------------------#
+      - name: rClone BackUp Repo ("https://pub.ajam.dev/repos/$GITHUB_REPOSITORY")
+        run: |
+          # Presets
+          set -x ; set +e
+          #--------------#
+          #touch "$HOME/.rclone.conf"
+          echo "${{ secrets.RCLONE_CF_R2_PUB }}" > "$HOME/.rclone.conf"
+          #chdir to Repo
+          cd "$GITHUB_WORKSPACE/main"
+          #Git pull
+          git pull origin main --no-edit 2>/dev/null
+          #Del Bloat
+          rm -rf "$(pwd)/.git"
+          #Upload to Pub
+          echo -e "[+] Syncing $GITHUB_REPOSITORY to pub.ajam.dev/repos/$GITHUB_REPOSITORY \n"
+          rclone sync "." "r2:/pub/repos/$GITHUB_REPOSITORY/" --user-agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) obsidian/1.5.3 Chrome/114.0.5735.289 Electron/25.8.1 Safari/537.36" --buffer-size="100M" --s3-upload-concurrency="500" --s3-chunk-size="100M" --multi-thread-streams="500" --checkers="2000" --transfers="1000" --check-first --checksum --copy-links --fast-list --progress
+        continue-on-error: true
+#EOF
+#------------------------------------------------------------------------------------#

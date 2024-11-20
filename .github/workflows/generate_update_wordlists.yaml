@@ -1,0 +1,242 @@
+name: 💾 Fetch || ⏫ Update Wordlists 📙
+#MAX_RUNTIME: ~ 05-10 mins
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "15 23 * * *"  # ( 11:15 PM UTC --> 05:00 AM Morning )
+    
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    
+    permissions:
+      contents: write
+      
+    steps:        
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          path: main
+          filter: "blob:none" #https://github.blog/2020-12-21-get-up-to-speed-with-partial-clone-and-shallow-clone/ 
+
+      - name: Install Coreutils
+        run: |
+          # Presets
+          set -x ; set +e
+          #--------------#
+          sudo apt update -y
+          sudo apt install coreutils curl dos2unix git jq moreutils wget -y
+          # Do again, sometimes fails
+          sudo apt install coreutils curl dos2unix git jq moreutils wget -y
+          pip install ansi2txt
+        continue-on-error: true
+
+      - name: Debloat Runner
+        run: |
+          # Presets
+          set -x ; set +e
+          #--------------#
+          #12.0 GB
+          sudo rm /usr/local/lib/android -rf 2>/dev/null
+          #8.2 GB
+          sudo rm /opt/hostedtoolcache/CodeQL -rf 2>/dev/null
+          #5.0 GB
+          sudo rm /usr/local/.ghcup -rf 2>/dev/null
+          #2.0 GB
+          sudo rm /usr/share/dotnet -rf 2>/dev/null
+          #1.7 GB
+          sudo rm /usr/share/swift -rf 2>/dev/null
+          #1.1 GB
+          #sudo rm /usr/local/lib/node_modules -rf 2>/dev/null
+          #1.0 GB
+          sudo rm /usr/local/share/powershell -rf 2>/dev/null
+          #500 MB
+          sudo rm /usr/local/lib/heroku -rf 2>/dev/null
+        continue-on-error: true
+
+      - name: Install eget
+        run: |
+          # Presets
+          set -x ; set +e
+          #--------------#
+          # eget for bins
+          sudo wget "https://bin.ajam.dev/x86_64_Linux/eget" -O "/usr/local/bin/eget"
+          sudo chmod +xwr "/usr/local/bin/eget"
+
+      - name: Install Deps for Wordium
+        run: |
+          # Presets
+          set -x ; set +e
+          #--------------#
+          #anew
+          sudo eget "https://bin.ajam.dev/x86_64_Linux/anew" --to "/usr/local/bin/anew"
+          #anew-rs
+          sudo eget "https://bin.ajam.dev/x86_64_Linux/anew-rs" --to "/usr/local/bin/anew-rs"
+          anew-rs -h
+        continue-on-error: true
+
+      - name: Clean Cloned Repos (I)
+        run: |
+           # Presets
+           set -x ; set +e
+           #--------------#       
+           # Del all Dirs
+           find "$GITHUB_WORKSPACE/main" -maxdepth 1 -type d ! -name '.git*' ! -name 'main' ! -name '*Logs*' ! -name '*Misc*' -exec rm -rf {} \; 2>/dev/null
+        continue-on-error: true  
+        
+      - name: Setup Env
+        run: |
+          # Presets
+          set -x ; set +e
+          #--------------#        
+          # Create Output Dir
+          mkdir -p "$GITHUB_WORKSPACE/main/Logs"
+        continue-on-error: true
+
+      - name: Run Wordium
+        run: |
+          # Presets
+          set -x ; set +e
+          #--------------#
+          #Install
+          sudo curl -qflSL "https://raw.githubusercontent.com/Azathothas/Arsenal/main/wordium/wordium.sh" -o "/usr/local/bin/wordium"
+          sudo chmod +xwr "/usr/local/bin/wordium"
+          #Run , (DO NOT SPECIFY /Wordlists)
+          wordium --wordlist-dir $GITHUB_WORKSPACE/main/ | tee "/tmp/wordium.log"
+          cat "/tmp/wordium.log" | ansi2txt > "$GITHUB_WORKSPACE/main/Logs/wordium.log"
+          cat "/tmp/wordium.log" | ansi2txt | grep -A999999 "➼Updated Wordlists:" > "/tmp/wordium_stat.txt"
+        continue-on-error: true
+
+      - name: Clean Cloned Repos (II)
+        run: |
+           # Presets
+           set -x ; set +e
+           #--------------#       
+           # Del all Dirs
+           find "$GITHUB_WORKSPACE/main" -maxdepth 1 -type d ! -name '.git*' ! -name 'main' ! -name '*Logs*' ! -name '*Misc*' -exec rm -rf {} \; 2>/dev/null
+        continue-on-error: true  
+
+      - name: Enrichments (Anew || Sort Misc)
+        run: |
+          # Presets
+          set -x ; set +e
+          #--------------#        
+          #anew things
+          #APIs
+          cat "$GITHUB_WORKSPACE/main/Misc/api_docs.txt" 2>/dev/null | anew-rs -q "$GITHUB_WORKSPACE/main/x_api_tiny.txt" 2>/dev/null
+          cat "$GITHUB_WORKSPACE/main/Misc/graphql_paths.txt" 2>/dev/null | anew-rs -q "$GITHUB_WORKSPACE/main/x_api_tiny.txt" 2>/dev/null
+          #English Words
+          wget --quiet "https://raw.githubusercontent.com/dwyl/english-words/master/words_alpha.txt" -O "/tmp/english_words_alpha.txt"
+          cat "/tmp/english_words_alpha.txt" | anew-rs -q "$GITHUB_WORKSPACE/main/Misc/english_words_alpha.txt"
+          wget --quiet "https://raw.githubusercontent.com/dwyl/english-words/master/words.txt" -O "/tmp/english_words_alpha_numerics.txt"
+          cat "/tmp/english_words_alpha_numerics.txt" | anew-rs -q "$GITHUB_WORKSPACE/main/Misc/english_words_alpha_numerics.txt"
+          #IIS
+          cat "$GITHUB_WORKSPACE/main/Misc/IIS/extensions_top_dots.txt" 2>/dev/null | anew-rs -q "/tmp/extensions_all_dots.txt" 2>/dev/null
+          cat "$GITHUB_WORKSPACE/main/Misc/IIS/extensions_top_no_dots.txt" 2>/dev/null | anew-rs -q "/tmp/extensions_top_no_dots.txt" 2>/dev/null
+          cat "$GITHUB_WORKSPACE/main/Misc/IIS/iis_mini.txt" 2>/dev/null | anew-rs -q "$GITHUB_WORKSPACE/main/Misc/IIS/iis_mid.txt" 2>/dev/null
+          cat "$GITHUB_WORKSPACE/main/Misc/IIS/iis_mid.txt" 2>/dev/null | anew-rs -q "$GITHUB_WORKSPACE/main/Misc/IIS/iis_large.txt" 2>/dev/null
+          #LHFs
+          cat "$GITHUB_WORKSPACE/main/Misc/api_docs.txt" 2>/dev/null | anew-rs -q "$GITHUB_WORKSPACE/main/x_lhf_mini.txt" 2>/dev/null
+          cat "$GITHUB_WORKSPACE/main/Misc/graphql_paths.txt" 2>/dev/null | anew-rs -q "$GITHUB_WORKSPACE/main/x_lhf_mini.txt" 2>/dev/null
+          #Permutations & DNS
+          cat "$GITHUB_WORKSPACE/main/Misc/permutation_common_base_tiny.txt" 2>/dev/null | anew-rs -q "$GITHUB_WORKSPACE/main/Misc/permutation_common_base.txt" 2>/dev/null
+          cat "$GITHUB_WORKSPACE/main/Misc/permutation_common_base.txt" 2>/dev/null | anew-rs -q "$GITHUB_WORKSPACE/main/x_dns_tiny.txt" 2>/dev/null
+          cat "$GITHUB_WORKSPACE/main/x_dns_tiny.txt" | anew-rs -q "$GITHUB_WORKSPACE/main/x_dns_mid.txt" 2>/dev/null
+          cat "$GITHUB_WORKSPACE/main/x_dns_mid.txt" | anew-rs -q "$GITHUB_WORKSPACE/main/x_dns.txt" 2>/dev/null
+          #Ports
+          cat "$GITHUB_WORKSPACE/main/Misc/ports_sussy.txt" 2>/dev/null | anew-rs -q "$GITHUB_WORKSPACE/main/Misc/ports_top_20k.txt" 2>/dev/null
+          #Sort
+          cd "$GITHUB_WORKSPACE/main"
+          #Main
+          find . -maxdepth 1 -type f -name '*.txt' -exec sort -u {} -o {} \; 2>/dev/null
+          #Misc
+          find ./Misc -type f -name '*.txt' -exec sort -u {} -o {} \; 2>/dev/null
+
+      - name: Enrichments (Resolvers)
+        run: |
+          # Presets
+          set -x ; set +e
+          #--------------#
+          # fetch Resolvers
+          fetch_resolvers()
+          {
+          #Fetch from Sources  
+          echo -e "\n${GREEN}ⓘ Fetching ${BLUE}@latest ${PURPLE}Resolvers List${NC}\n"
+          resolvers_dir="$(mktemp -d)" && export resolvers_dir="$resolvers_dir"  
+          #https://github.com/proabiral/Fresh-Resolvers (Preferred)
+            # ~ 200 (IPv6 only)
+            curl -qfsSL "https://raw.githubusercontent.com/proabiral/Fresh-Resolvers/master/resolvers.ipv6" -o "$resolvers_dir/proabiral_ipv6.txt"
+            # ~ 300 (IPv4 only)
+            curl -qfsSL "https://raw.githubusercontent.com/edoardottt/secfiles/main/dns/trusted-resolvers-small.txt" -o "$resolvers_dir/secfiles_trusted_ipv4.txt"
+            # ~ 50 (Trusted IPv4 Only)
+            curl -qfsSL "https://raw.githubusercontent.com/trickest/resolvers/main/resolvers-trusted.txt" -o "$resolvers_dir/trickest_trusted_ipv4.txt"
+          #Merge  
+          resolvers_ipv4="$(mktemp)" && export resolvers_ipv4="$resolvers_ipv4"
+          resolvers_ipv6="$(mktemp)" && export resolvers_ipv6="$resolvers_ipv6"
+          resolvers_all="$(mktemp)" && export resolvers_all="$resolvers_all"
+            # IPv4
+            find "$resolvers_dir" -type f -name '*ipv4*' -exec cat {} + | sort -u -o "$resolvers_ipv4"
+            # IPv6
+            find "$resolvers_dir" -type f -name '*ipv6*' -exec cat {} + | sort -u -o "$resolvers_ipv6"
+            # ALL
+            cat "$resolvers_ipv4" "$resolvers_ipv6" | sort -u -o "$resolvers_all"
+          }
+          #export this globally
+          export -f fetch_resolvers
+          #Run
+          fetch_resolvers
+          #Merge
+          sort -u "$resolvers_ipv4" -o "$GITHUB_WORKSPACE/main/resolvers_ipv4"
+          sort -u "$resolvers_ipv6" -o "$GITHUB_WORKSPACE/main/resolvers_ipv6"
+          sort -u "$resolvers_all" -o "$GITHUB_WORKSPACE/main/resolvers_all"
+        continue-on-error: true
+
+      - name: Dos2Unix Everything
+        run: |
+          # Presets
+          set -x ; set +e
+          #--------------#        
+          cd "$GITHUB_WORKSPACE/main"
+          find . -type f -name '*.txt' -exec dos2unix {} \;
+        continue-on-error: true      
+        
+      - name: Update README.md
+        run: |
+           # Presets
+           set -x ; set +e
+           #--------------#
+           cd "$GITHUB_WORKSPACE/main"
+           cat ./INFO.md > ./README.md
+           echo -e "" >> ./README.md 
+           echo '---' >> ./README.md
+           echo '```console' >> ./README.md
+           echo -e "" >> ./README.md
+           echo -e "--> METADATA" >> ./README.md
+           /bin/bash -c 'PS4="$ "; cat /tmp/wordium_stat.txt '&>> ./README.md
+           echo -e "" >> ./README.md
+           echo -e '```\n' >> ./README.md
+           echo -e "" >> ./README.md
+           echo '---' >> ./README.md
+           echo -e "" >> ./README.md                   
+        working-directory: main
+        continue-on-error: true
+
+      - name: Get DateTime
+        run: |
+          # Date Time
+          NEPALI_TIME=$(TZ='Asia/Kathmandu' date +'%Y-%m-%d (%I:%M:%S %p)')
+          echo "NEPALI_TIME=$NEPALI_TIME" >> $GITHUB_ENV
+
+      - name: Git Pull
+        run: |
+           cd "$GITHUB_WORKSPACE/main" && git pull origin main
+        continue-on-error: true
+        
+      - uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          repository: ./main        
+          commit_user_name: Azathothas # defaults to "github-actions[bot]"
+          commit_user_email: AjamX101@gmail.com # defaults to "41898282+github-actions[bot]@users.noreply.github.com"
+          commit_message: "✅ Fetch latest Wordlists 📙 <-- ${{ env.NEPALI_TIME }} ⌚"
+          #push_options: '--force'
