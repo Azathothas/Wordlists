@@ -9129,6 +9129,7 @@ application.ini
 application.log
 application.wadl
 application.wadl?detail=true
+application.yml
 application/
 application/cache/
 application/configs/application.ini
@@ -9636,6 +9637,7 @@ chkadmin
 chklogin
 chubb.xml
 ci/
+cicd/swarm-template.yml
 cidr.txt
 cimjobpostadmin
 circle.yml
@@ -10254,6 +10256,7 @@ deploy
 deploy.env
 deploy.rb
 deploy.sh
+deploy.yml
 deps
 deps/deps.jl
 description
@@ -13546,6 +13549,7 @@ swagger/v2/swagger.yaml
 swagger/v3/api-docs
 swaggerui
 swaggerui/
+swarm-template.yml
 swfobject.js
 swfupload
 swfupload.swf

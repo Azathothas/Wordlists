@@ -41452,6 +41452,7 @@ cicd.conf
 cicd.txt
 cicd.yaml
 cicd.yml
+cicd/swarm-template.yml
 cidr.txt
 cidr.txt?
 ciffanplayrapi.jsp
@@ -103850,6 +103851,7 @@ swarm-overlay.yaml
 swarm-overlay.yml
 swarm-stack.yaml
 swarm-stack.yml
+swarm-template.yml
 swarm-worker.conf
 swarm.env
 swarm.yaml
