@@ -928,6 +928,7 @@ ${idfwbonavigation}.xml
 /system///sling/loginstatus.json/a.ico
 /system///sling/loginstatus.json;%0aa.css
 0
+0.json
 0.xml
 00
 000.xml
@@ -983,6 +984,7 @@ ${idfwbonavigation}.xml
 1.1
 1.1.3.xml
 1.1.4.xml
+1.json
 1.xml
 1/api
 1/graphiql
@@ -1082,11 +1084,15 @@ ${idfwbonavigation}.xml
 2005_tv2
 2006
 2007
+2012.json
 2017
 2018/wp-includes/wlwmanifest.xml
 2019/wp-includes/wlwmanifest.xml
 202.xml
 2020/wp-includes/wlwmanifest.xml
+2023.json
+2024.json
+2025.json
 207_en.xml
 21.xml
 213.xml
@@ -1107,6 +1113,7 @@ ${idfwbonavigation}.xml
 2fa-v1
 2fa-v2
 2fa.api
+2fa.json
 2fa.v1
 2fa.v2
 2faapi
@@ -1269,7 +1276,11 @@ API-Header-AuctionSession.asp
 API-Testing.aspx
 API.ashx
 API.aspx
+API.html
+API.json
 API.php
+API.txt
+API.zip
 API/
 API/DW/Dwplugin/SystemLabel/SiteConfig.htm
 API/DW/Dwplugin/TemplateManage/login_site.htm
@@ -1301,6 +1312,7 @@ APIImageHandler.ashx
 APIIndexList.aspx
 APIKEY
 APILoginLoader.aspx
+APIS.txt
 APIWeather.ashx
 API_ID.php
 API_Logging.jsp
@@ -1515,6 +1527,8 @@ AndroidManifest.xml
 Annotate
 AnnounceSceneContentChange
 AnnouncementsXML.aspx
+Antichat Shell v1.3.php
+Antichat_Shell_v1.3.php
 Anticipate
 Api
 Api.java
@@ -1701,6 +1715,8 @@ AskNumberFrame_OnChar
 AskNumberFrame_OnKeyDown
 AskNumberFrame_UpdateTypeNumber
 AskPlayerInfo
+Asp_Aspx_Php_V1.jpg
+Asp_Aspx_Php_V2.jpg
 AssignOnLoot
 AssistUnit
 AssociateScriptWithObject
@@ -1803,6 +1819,7 @@ AuxiliaryConsoleShow
 AzProfile.json
 AzureaccessTokens.json
 B
+B374k Beta ShElL V1.php
 BALANCE
 BANK
 BANK-CODE
@@ -2904,6 +2921,7 @@ ClubMapXML.php
 Code
 CognitoHostedUIConfig.json
 Coidpendingrefund
+Coinbase.json
 CollapseGuildGroup
 Collect
 Color
@@ -3164,6 +3182,7 @@ Customer
 CustomerApi.php
 Customers
 Customization.xml
+Customize.soap
 CutPathCtrlPoints
 D
 DATA
@@ -3346,6 +3365,7 @@ EditMacro
 Editaccount
 Education
 EemAdminService/EemAdmin?wsdl
+EgY_SpIdEr ShElL V2.php
 EjectDisk
 Eligibility
 Email
@@ -3514,6 +3534,7 @@ FSF_OnLoad
 FSF_OnShow
 FSF_Study
 FSF_Update
+FaTaL Shell v1.0 - Edited By KingDefacer.php
 Fabricate
 Facilities
 Facility
@@ -5336,6 +5357,7 @@ HumanName
 HyperGraphQL
 Hyperlink_Assign
 I
+I-47 v1.3.php
 IAM_policies.json
 IAM_policies.xml
 IBAN
@@ -5739,6 +5761,7 @@ JsonStream.php
 JsonTipoviOpis.aspx
 Json_Serialize_Manager.php
 Jsonp.aspx
+Jspspy web~shell V1.0 ※MADE by 孤水绕城 QQ540410588.jsp
 Jump
 K
 KDFItemButton_OnClick
@@ -5771,6 +5794,7 @@ KoreanFrame_OnUpdate
 L
 LEND
 LENDING
+LOTFREE PHP Backdoor v1.5.php
 LSF_AudioSettings_Initialize
 LSF_AudioSettings_OnApply
 LSF_BestRadioButton_OnClick
@@ -6704,11 +6728,15 @@ MusicVolumeSlider_GetValue
 MusicVolumeSlider_SetValue
 My
 MyScrapAPI.jsp
+Mysql interface v1.0.php
 Mysql_interface_v1.0.php
 N
 NAMEPLUGIN.xml
+NCC Shell v1.0.0.php
 NCFindWeb?service=IPreAlertConfigService&filename=../../ierp/bin/prop.xml
 NCFindWeb?service=IPreAlertConfigService&filename=WEB-INF/web.xml
+NTDaddy  v1.9.asp
+NTDaddy v1.9.php
 NTDaddy_v1.9.php
 Name
 Names
@@ -7050,6 +7078,7 @@ Output
 P
 PAGE
 PASS-SERVICLUB-El-pago-rapido-y-facil-de-YPF.aspx
+PASS.json
 PASSWORD.json
 PATIENT
 PATIENT-ID
@@ -7172,6 +7201,7 @@ PFJSONdata.aspx
 PFont
 PGraphics
 PHP
+PHPJackal v1.9.php
 PHPMYADMINdb_details_importdocsql.php?submit_show=true&do=import&docpath=../../../../../../../etc
 PI
 PIN
@@ -7427,6 +7457,7 @@ PictureDocumentId
 PictureId
 Pilot
 Pin
+Pinterest.txt
 Pixels
 PlaceCursor
 PlantFrameClearBatton_OnClick
@@ -10006,6 +10037,7 @@ SHAREHOLDER
 SHOPIFY
 SICtermListJson.aspx
 SITE_API
+SJavaWebManageV1.4.jsp
 SKB_ButtonDown
 SKB_ButtonOnClick
 SKB_Close
@@ -10527,6 +10559,7 @@ ShowPChomeApi.php
 ShowProductAndMeterialList
 ShowUIPanel
 Signature
+Silic Group php Webshell v3.php
 SimpleResource
 SimpleRouter.php
 SimplifyMpPath
@@ -10872,6 +10905,8 @@ Technicalauthorisation
 Technicalcancel
 Technology
 TechnologySamples/docs
+Telegram_api
+Telegramapi
 Telegraph
 Terminate
 Terms
@@ -11916,6 +11951,7 @@ WebLogsJSONdata.aspx
 WebReport/ReportServer?op=chart&cmd=get_geo_json&resourcepath=privilege.xml
 WebServicesSamples/docs/
 WebServicesSamples/docs/*
+WebShell系列(一)---XML.txt
 WebSocketClientAPI.js
 WebSocketServerAPI.js
 WebSphereBank/docs/
@@ -12886,6 +12922,7 @@ a2sp-os.xml
 a3.rest.login.js.jsp
 a90_webrotate_v3.xml
 aPicture.php
+aZRaiLPhp v1.0.php
 aZRaiLPhp_v1.0.php
 a_gallerycheckoutitem_1.0.xml
 a_gallerycheckouttransaction_1.0.xml
@@ -12900,6 +12937,7 @@ aa_er_saaho.xml
 aa_et.xml
 aaa
 aaa/app/kjapi/controller/caipiaotimescontroller.class.php
+aap.json
 aapi
 ab-testing.xml
 ab/docs
@@ -13312,6 +13350,7 @@ ad_index_buttom.xml
 ad_index_middle.xml
 ad_json.jsp
 ad_search.xml
+ada.json
 adamsosprovidergeneral.xml
 adapi
 adapt
@@ -13417,6 +13456,7 @@ address-api
 address-v1
 address-v2
 address.api
+address.json
 address.v1
 address.v2
 address.xml
@@ -13436,6 +13476,7 @@ addressbookv2
 addressbookw2je/services/addressbook/wsdl
 addressbookw2je/services/addressbook/wsdl/*
 addressdetailv4.aspx
+addresses.json
 addressv1
 addressv2
 addrestaurant
@@ -13581,6 +13622,8 @@ admin_xml
 adminapi
 admincp.json
 adminhelp
+admini.json
+administrador.json
 administrat
 administration
 administration-due-diligence/graphinput 
@@ -13870,6 +13913,7 @@ afbbaseconfiguration.xml
 afboverviewmapconfig.xml
 afdhfo.xml
 afeed.xml
+aff.json
 affiliate
 affiliate-api
 affiliate-v1
@@ -13883,6 +13927,7 @@ affiliates-api
 affiliates-v1
 affiliates-v2
 affiliates.api
+affiliates.json
 affiliates.v1
 affiliates.v2
 affiliatesapi
@@ -13978,6 +14023,7 @@ agreen.xml
 agrestina-pode-mais
 ahaideas.xml
 ahead.xml
+ai.json
 aicatic_api_key
 aid
 aiko.xml
@@ -14169,6 +14215,7 @@ alfaapi
 alfav1
 alfav2
 alfav3-encoded.php
+alfav3.0.1.php
 alfav4.1-decoded.php
 alfav4.1-encoded.php
 alghera_120_generic.xml
@@ -14446,6 +14493,7 @@ anchorapi
 anchorv1
 anchorv2
 ancient.xml
+anda.json
 andinia.xml
 andrew_davison.xml
 andrewshapiro.zip
@@ -20383,8 +20431,12 @@ apijax.php
 apijwt.js
 apik
 apikey
+apikey.gzip
 apikey.js
+apikey.txt
+apikey.zip
 apikeys
+apikeys.txt
 apikeys_new
 apikeywordlist.do
 apiku
@@ -20451,9 +20503,12 @@ apis.go
 apis.google_script.js.txt
 apis.java
 apis.js
+apis.json
 apis.php
 apis.py
 apis.rb
+apis.txt
+apis.zip
 apis/
 apis/ 
 apis/admissionregistration.k8s.io
@@ -20848,6 +20903,7 @@ apix
 apixwb
 apiy
 apiz
+apiz.txt
 apizarradeldia.aspx
 apl
 apm
@@ -22768,6 +22824,7 @@ asmx_json_dam_to_ku_sale_count.aspx
 asn1/api 
 asp
 asp/ajaxrequests/spv/spv2.php
+aspSH.v1.asp
 aspadmin
 aspimini.xml
 aspnet_client
@@ -23024,6 +23081,7 @@ auth.json
 auth.v1
 auth.v2
 auth.xml
+auth/api
 auth/restore
 auth/v1/features/info 
 auth/v1/oauth/token 
@@ -23737,6 +23795,7 @@ badkamers-os.xml
 badosa-en.xml
 badrouters
 badtv1
+baepfawm.json
 bahnen-axalp.xml
 bahs.xml
 bai-da-dang.xml
@@ -23748,6 +23807,7 @@ bak
 bak-up
 bakup
 balance
+balance.json
 balanceTags
 balance_diario.xml
 balancer-api
@@ -23822,6 +23882,7 @@ bankingv2
 banks
 bankv1
 bankv2
+banned.json
 banner
 banner.pics.xml
 banner.xml
@@ -23903,6 +23964,8 @@ bannersdos.xml
 bannersizquierda.xml
 bannerstres.xml
 bannersuno.xml
+bantuek.json
+bantueklaew.json
 bapi
 bapi.templates.aspx
 bapi.textdata.aspx
@@ -23926,6 +23989,7 @@ barrajson.php
 bartoptalentec.xml
 basa.xml
 base
+base.json
 base.xml
 base/base_graph_common.php
 base/base_graph_display.php
@@ -23982,6 +24046,7 @@ batchapi
 batchtransfer
 batchv1
 batchv2
+batua.json
 baumkunde-de.xml
 baygel.xml
 baysearch.xml
@@ -24118,6 +24183,7 @@ beta-api
 beta-v1
 beta-v2
 beta.api
+beta.json
 beta.v1
 beta.v2
 betaapi
@@ -24391,6 +24457,7 @@ bin/wcm/search/gql.servlet.json?query=type:base%20limit:..-1&pathPrefix=
 bin/wcm/search/gql.servlet.json?query=type:base%20limit:..1&pathPrefix=
 bin/wcm/siteadmin/tree.json?path=/content
 bin/wcmcommand?cmd=open&path=/content&jsonMode=true
+binance.json
 binapi
 binaries
 binary()
@@ -24419,6 +24486,7 @@ biru.xml
 bitblitshaders.xml
 bitbucket.json
 bitbucket.xml
+bitcoin.json
 bitrix/modules/main/admin/restore.php
 bitrix_rest.php
 biv1
@@ -24432,9 +24500,11 @@ bk_1.xml
 bkpfusebox.xml.cfm
 bl
 black
+black.json
 black.xml
 black/template.xml
 blackice_program_versions.xml
+blacklist.json
 blade-v2.iso
 blah.json
 blahdocs
@@ -24458,8 +24528,12 @@ blobaccounts.json
 blobid
 blobs
 block.api.php
+block.json
 block.xml
 blockchain.json
+blockchains.json
+blocked.json
+blocklist.json
 blocks
 blockxml
 blog
@@ -24621,6 +24695,7 @@ body
 body01.xml
 body02.xml
 body_class
+boffmax_v1.0_web_shell_by_the-c0de_team(1).php
 boias.json.php
 boilatestpublication.xml
 bokchae.xml
@@ -24695,6 +24770,7 @@ bootstrap-typography.php
 bootstrap.json
 bootstrap.xml
 bootstrapinit
+borang.json
 boss-api
 boss-v1
 boss-v2
@@ -24710,6 +24786,7 @@ bot-api
 bot-v1
 bot-v2
 bot.api
+bot.json
 bot.v1
 bot.v2
 botContJson.do
@@ -24729,15 +24806,20 @@ botnet-api
 botnet-v1
 botnet-v2
 botnet.api
+botnet.json
 botnet.v1
 botnet.v2
 botnetapi
 botnetv1
 botnetv2
+botpanel.json
 bots
+bots.json
 bots.xml
 bots_all.xml
 bots_live.xml
+botss.json
+botted.json
 bottom
 bottom-links.xml
 bottom_brand.xml
@@ -24745,6 +24827,7 @@ bottom_first_banner.xml
 bottom_second_banner.xml
 botv1
 botv2
+botz.json
 bouncer-api
 bouncer-v1
 bouncer-v2
@@ -24929,6 +25012,7 @@ bsnewsjsonajax.do
 bsupropertiesjson.jsp
 bt-opensearch.xml
 btc
+btc.json
 btn.xml
 btn_fontstyle.xml
 btn_link.xml
@@ -25397,6 +25481,7 @@ call-json.php
 call-v1
 call-v2
 call.api
+call.json
 call.v1
 call.v2
 callApi.aspx
@@ -25405,7 +25490,11 @@ call_to_marketing_api.php
 callapi
 callapi.php
 callback
+called.json
+caller.json
+callers.json
 calligraphy
+calling.json
 callisto-api
 callisto-v1
 callisto-v2
@@ -25655,6 +25744,7 @@ car_camry.xml
 card
 card-json.php
 card.xml
+cardano.json
 cardinal
 cardinalcruise/v1/songbird
 cardolustur.xml
@@ -25725,6 +25815,7 @@ cart_json.cfm
 cart_json.php
 carta-search.xml
 cartcntjson.do
+cartera.json
 cartjsonobject.jsp
 cartlist_json.do
 cartographie
@@ -25928,6 +26019,7 @@ cbgapi.js
 cbm.xml
 cbox.xml
 cc
+cc.json
 ccAPI.php
 ccbr.zoeken.xml
 ccdocs
@@ -25936,6 +26028,7 @@ cch.xml
 cch_ng.xml
 ccmcip/xmldirectorylist.jsp
 ccs
+ccs.json
 ccsearch.xml
 cctv-api
 cctv-v1
@@ -26249,6 +26342,7 @@ chan-api
 chan-v1
 chan-v2
 chan.api
+chan.json
 chan.v1
 chan.v2
 chanapi
@@ -26357,6 +26451,7 @@ chat-api
 chat-v1
 chat-v2
 chat.api
+chat.json
 chat.v1
 chat.v2
 chat.xml
@@ -26384,6 +26479,7 @@ chatroom.v2
 chatroomapi
 chatroomv1
 chatroomv2
+chats.json
 chatter_message.xml
 chatter_messages.xml
 chatv1
@@ -26413,6 +26509,7 @@ checkapi
 checkbox_examplec.xml
 checkcrossdomainxml.php
 checked
+checked.json
 checking
 checkout
 checkout-api
@@ -26472,6 +26569,7 @@ china
 chinesecrested
 chinkapin
 chinquapin
+chitra.json
 chkApiColorticon.php
 chkApiEmoticon.php
 choose_primary_blog
@@ -26691,9 +26789,11 @@ classroomv1
 classroomv2
 classxml
 classxmlrpc
+clean.json
 clean_blog_cache
 clean_pre
 clean_url
+cleaned.json
 cleanjson.js
 cleanup.json
 cleanup.xml
@@ -27473,7 +27573,10 @@ cognito-sync.json
 cognito-user-pool.json
 cognitohosteduiconfig.json
 coidpendingrefund
+coin.json
+coinbase.json
 coinrate.xml
+coins.json
 coke
 coldbox.xml.cfm
 collab-api
@@ -27584,6 +27687,7 @@ com_crashlytics_export_strings.xml
 comanda-rapida
 comapi
 combgraphex1.php
+combo.json
 comboComunidadesJsonDatosComunes.action
 comboConfesionesJsonDatosComunes.action
 comboProvinciasJsonDatosComunes.action
@@ -27591,7 +27695,9 @@ combobox.xml
 combocomunidadesjsondatoscomunes.action
 comboconfesionesjsondatoscomunes.action
 comboprovinciasjsondatoscomunes.action
+combos.json
 combosubconfesionesjsondatoscomunes.action
+comboz.json
 comentarios-novo-carga-rapida-index.php
 comics
 comics.xml
@@ -28380,6 +28486,7 @@ configapi
 configindex.xml
 confignew.xml
 configs
+configs.json
 configs/api
 configs/app-config.json
 configuracao.xml
@@ -28828,6 +28935,8 @@ continuous_integration.json
 continuous_integration.xml
 contract
 contracts
+contrasena.json
+contrasenas.json
 contrib
 contrib-api
 contrib-v1
@@ -30209,6 +30318,7 @@ corpwebv1
 corpwebv2
 corrections
 correlation-search-info.xml
+correos-electronicos.json
 cors.xml
 corso.xml
 corso_core.xml
@@ -30425,6 +30535,8 @@ cq/libs/cq/xssprotection/config.xml
 cqlresult.xml
 cqsearchriders.xml
 crack
+cracked.json
+cracks.json
 crans_opensearch.xml
 crcooperphotography
 crculrs.xml
@@ -31717,9 +31829,12 @@ debug_flags.json
 debug_logging.json
 debug_logging.xml
 debugapi
+debugged.json
 debugger
+debugging.json
 debugging_scripts.json
 debugging_scripts.xml
+debugs.json
 debugv1
 debugv2
 debv1
@@ -32003,6 +32118,7 @@ deportes/api/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
 deposit
 deposit.xml
 deposit_rates.xml
+deposits.json
 deps.json
 dept-api
 dept-v1
@@ -32643,6 +32759,7 @@ digitone-logo-black-2.xml
 dikmenu.xml
 diksubmenu.xml
 dimens.xml
+dinero.json
 diners_message.xml
 dining_shop.xml
 diningads.xml
@@ -32747,6 +32864,7 @@ discoveryv2
 discretesearch.xml
 discuss
 discussion
+disimpan.json
 disk
 diskapi.js
 diskgraph
@@ -33291,6 +33409,7 @@ domoapi
 domov1
 domov2
 dompavlovich_ukraine3d_equi.xml
+dompet.json
 domxml
 domxml-php4-php5.php
 domxml-php4-to-php5.php
@@ -33318,6 +33437,7 @@ dotnetopenmail.xml
 dotv1
 dotv2
 double
+double.json
 doubleclick.xml
 doujindb.xml
 dovecot-api
@@ -33331,6 +33451,7 @@ dovecotv1
 dovecotv2
 dowcipy.xml
 down
+down.json
 download
 download-api
 download-v1
@@ -33390,6 +33511,7 @@ draft.json
 drag2zoom.xml
 dragdrop4.xml
 dragon
+drainer.json
 dratfs
 draw
 draw()
@@ -34096,6 +34218,7 @@ ellipseMode()
 elloposgfinder.xml
 elmah.xml
 elmirapicture
+elon.json
 elonplayerlight.xml
 elpuntavui.xml
 elrinconcitorapido.php
@@ -34123,7 +34246,11 @@ email_exists
 email_graphics
 emailapi
 emailcloak.xml
+emailed.json
+emailing.json
+emaillist.json
 emails
+emails.json
 emailspellcheckjson
 emailv1
 emailv2
@@ -34137,6 +34264,7 @@ emc2.v2
 emc2api
 emc2v1
 emc2v2
+emel.json
 emergency-feed.xml
 emergency.xml
 emergency_api.php
@@ -34479,6 +34607,7 @@ env40x40
 env_vars.json
 env_vars.xml
 envapi
+enviar.json
 environ
 environment
 environment.development.json
@@ -34874,6 +35003,7 @@ etesyncv2
 etev1
 etev2
 eth
+eth.json
 ether-api
 ether-v1
 ether-v2
@@ -35044,6 +35174,7 @@ example-xrds.xml
 example.app-settings.json
 example.json
 example.xml
+example1.json
 example1.xml
 example_api_addglobalvar.php
 example_api_addobject.php
@@ -35165,6 +35296,7 @@ experts-api/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
 explanationview.mustache.xml
 explicit-security-config.xml
 explode
+exploit.json
 exploits
 explorer
 explorer-api
@@ -35495,6 +35627,7 @@ favorsearch.xml
 favourites
 faziletapi.php
 fb-tw-google.xml
+fb.json
 fb.svg.xml
 fb_blog.xml
 fb_posts_json.asp
@@ -35591,6 +35724,7 @@ feeds-api
 feeds-v1
 feeds-v2
 feeds.api
+feeds.json
 feeds.v1
 feeds.v2
 feeds.xml
@@ -35701,14 +35835,19 @@ files-api
 files-v1
 files-v2
 files.api
+files.json
 files.v1
 files.v2
 files.xml
 files/docs/docs.checksum
 files/download/WEB-INF/users/admin.xml
+files/email.json
+files/emails.json
 files/joomla.xml
 files/kietuv4/hit.php
 files/package.json
+files/phone.json
+files/saves.json
 files_assets.xml
 files_images.xml
 files_images_books.xml
@@ -35753,7 +35892,9 @@ filters.xml
 filters_lt.xml
 filtres.xml
 fin
+finace.json
 final
+final.json
 finalize
 finance
 finance-api
@@ -35837,9 +35978,11 @@ firms.xml
 firmy_xml.xml
 first
 first-name
+first.json
 first_name
 firstapi.php
 firstname
+fish.json
 fit
 fitness.json
 five.xml
@@ -36398,6 +36541,7 @@ format.json
 format_code_lang
 format_to_edit
 format_to_post
+formatted.json
 formfield.xml
 formhandler
 formlist.xml
@@ -36440,6 +36584,7 @@ formtools.v2
 formtoolsapi
 formtoolsv1
 formtoolsv2
+formulario.json
 formupdate
 formv1
 formv2
@@ -36643,6 +36788,7 @@ fremdwort.xml
 french
 french.xml
 frenchxml
+fresh.json
 fresh_search.xml
 friend
 friendapi.js
@@ -36770,6 +36916,7 @@ ftpv1
 ftpv2
 ftsearch.xml
 ftxapi
+fud.json
 fulfill
 full
 fullScreen()
@@ -36978,6 +37125,7 @@ gallio.xml
 gallio35.xml
 galpub1.xml
 galsari.xml
+gambar.json
 game
 game-api
 game-opensearch.xml
@@ -38522,6 +38670,8 @@ gtransition.xml
 gu.xml
 gu_in.xml
 guapisimas
+guardado.json
+guardar.json
 guardi3.xml
 guardi3_core.xml
 guardi3_messages_en.xml
@@ -38741,6 +38891,7 @@ haber/api
 haberler.xml
 habitat/plan.sh
 hack
+hacked.json
 hacker
 hacking
 hadoop-api
@@ -38806,6 +38957,7 @@ handshakev2
 hanlder
 hanoi.xml
 hansha_month.xml
+hantar.json
 hanzi.json.txt
 hapi
 hapi.config.js
@@ -39055,6 +39207,7 @@ healthscript.json
 healthscript.xml
 healthv1
 healthv2
+healthy.json
 heapdump-api/heapdump
 heapdump-rest/heapdump
 heapdump.json
@@ -39275,6 +39428,7 @@ hibernate.reveng.xml
 hibernate.xml
 hibyte
 hidden
+hiddens shell v1.php
 hide
 hide-thumbs.xml
 hierarchical.xml
@@ -39301,6 +39455,7 @@ history_json.php
 hitcount
 hitokuchi_hp.xml
 hits
+hits.json
 hive-api
 hive-config.json
 hive-config.xml
@@ -40210,6 +40365,7 @@ image_v2.jsp
 imageanimatorconfig.xml
 imageapi
 imagenavi.xml
+imagenes.json
 imagenes.xml
 imageproperties.xml
 imagerotator.xml
@@ -40259,6 +40415,7 @@ imapapi
 imapi
 imapv1
 imapv2
+imehl.json
 imemrj.xml
 img
 img-api
@@ -40329,6 +40486,7 @@ in_category
 in_the_loop
 inapi
 inbox
+inbox.json
 inboxes
 inc
 inc-allergy-graph.php
@@ -40600,6 +40758,7 @@ infcloudv2
 infe/rest/fig/advertise/common.json
 infe/rest/flash/getServerIP.json
 infe/rest/flash/getserverip.json
+infected.json
 influx-api
 influx-v1
 influx-v2
@@ -40686,6 +40845,7 @@ ingressv1
 ingressv2
 ini
 ini.xml
+inicio-de-sesion.json
 inicio/autenticacion/restaurar
 iniciosesion.view.xml
 init
@@ -40888,6 +41048,7 @@ instances.json
 instantapi
 institution.xml
 institutions.xml
+instructions.json
 instructions.xml
 instrumentos.xml
 insurance
@@ -40930,6 +41091,7 @@ integrationv1
 integrationv2
 integrator.json
 intel
+intel.json
 intelligencia.urlrewriter.xml
 interact
 interactive
@@ -40953,6 +41115,7 @@ interest2
 interestdstrc.do
 interestedinbarx_countries.txt
 interesting
+interesting.txt
 interestingwebs
 interestitemadd
 interestonlycalc
@@ -41195,6 +41358,7 @@ ipod
 ipp
 iprosearch.xml
 ips
+ips.json
 ips.xml
 iptables-rules.v4
 iptu_descricao.xml
@@ -41337,6 +41501,7 @@ ipv6api
 ipv6v1
 ipv6v2
 ipwatchdog.xml
+ipz.json
 iqf.xml
 iraq
 irc
@@ -41344,6 +41509,7 @@ irc-api
 irc-v1
 irc-v2
 irc.api
+irc.json
 irc.v1
 irc.v2
 irc_pass.json
@@ -41690,6 +41856,7 @@ jacksonjsonprovider/nonJAXBResource
 jacksonjsonprovider/nonjaxbresource
 jacob_opensearch.xml
 jaddress.xml
+jamaa-karen.json
 janusgraph
 janusgraph-berkeleyje-hadoop.properties
 janusgraph-berkeleyje-server.properties
@@ -43401,6 +43568,8 @@ ka.xml
 ka_ge.xml
 kaart.json.php
 kabumap.xml
+kadavucchol.json
+kadavuccholgal.json
 kafka-acls.json
 kafka-acls.xml
 kafka-api
@@ -43525,6 +43694,7 @@ kaspersky.v2
 kasperskyapi
 kasperskyv1
 kasperskyv2
+katalaluan.json
 katalog-search.xml
 kategoriler.xml
 kazan_krh.xml
@@ -43657,7 +43827,9 @@ kfo.xml
 kfo_ci.xml
 kfo_ng.xml
 kh_search.xml
+khaosurabop.json
 khorosatlassearch.xml
+khun.json
 kibana-api
 kibana-v1
 kibana-v2
@@ -43821,8 +43993,10 @@ kr/resources/reports/restricted
 kr_event.xml
 kr_search.xml
 kr_search_plugin.xml
+kraken.json
 krakend.json
 krakend/krakend.json
+krapaongoen.json
 krbylevne.xml
 kredi-hesap-makinesi.xml
 krepselis_json.php
@@ -43996,6 +44170,7 @@ kx-kafkarestproxy-1
 kx-restproxy-customer-0
 ky.xml
 ky_kg.xml
+kyc.json
 kylin/api/admin/config
 kzzv.xml
 l
@@ -44154,6 +44329,7 @@ lan.v1
 lan.v2
 lanai-cms_v1.2.14/module.php
 lanapi
+lander.json
 landing
 landingPage
 landing_fa-en.xml
@@ -44311,6 +44487,7 @@ laravel_api/.env
 laravel_api/public
 laravel_api/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
 last-name
+last.json
 last.xml
 last10.xml
 last_name
@@ -44421,6 +44598,7 @@ leaderboardtop3.xml
 leadsources.xml
 leaflet/geojson-india.json
 leaflet/geojson-india.json 
+leaks.json
 learn
 learn-api
 learn-v1
@@ -44457,6 +44635,7 @@ lecturesv1
 lecturesv2
 lecturev1
 lecturev2
+ledgernano.json
 left
 left_menu.xml
 leftdata108.xml
@@ -45929,6 +46108,7 @@ lists-api
 lists-v1
 lists-v2
 lists.api
+lists.json
 lists.json.php
 lists.v1
 lists.v2
@@ -45985,6 +46165,7 @@ live-api.php
 live-v1
 live-v2
 live.api
+live.json
 live.v1
 live.v2
 live.xml
@@ -46296,8 +46477,10 @@ logfile.json
 logfile.xml
 logfile?d=crossdomain.xml
 logfiles
+logged.json
 logged_in_json.php
 loggedin.json.php
+loggeds.json
 logger
 logger-api
 logger-v1
@@ -46320,6 +46503,7 @@ loggersv2
 loggerv1
 loggerv2
 logging
+logging.json
 logging_config.json
 logging_config.xml
 logging_configs.json
@@ -46348,6 +46532,7 @@ login.v1
 login.v2
 login.view.xml
 login.xml
+login/api
 login/config.json
 login/oauth/v2/yahoo
 login/users.json
@@ -46382,6 +46567,7 @@ logintipjson.do
 loginv1
 loginv2
 logjsonl.js
+logmasuk.json
 logmgmtapi.zip
 logo
 logo-graphic-design-training-courses-bangalore.php
@@ -46417,9 +46603,11 @@ logs.v1
 logs.v2
 logs.xml
 logs/api.log
+logs/debug.json
 logs/dump.json
 logs/error_log.json
 logs/kube-apiserver.log
+logs/traffic.json
 logs/webapi
 logs/webapi-.log
 logs/webapi.log
@@ -46433,6 +46621,7 @@ loker_api.php
 loki
 loki/api/v1/label
 loki/api/v1/label/pod/values
+lol.json
 lol/graphql
 lol_hot_issue.json.php
 lomographicsociety
@@ -46453,6 +46642,7 @@ longtitles.xml
 longv1
 longv2
 longwood.xml
+look.json
 look/xmlrpc.php
 look_761.xml
 lookat_scene_set.xml
@@ -46756,6 +46946,7 @@ mail-api
 mail-v1
 mail-v2
 mail.api
+mail.json
 mail.v1
 mail.v2
 mailapi
@@ -46774,9 +46965,11 @@ mailer-api
 mailer-v1
 mailer-v2
 mailer.api
+mailer.json
 mailer.v1
 mailer.v2
 mailerapi
+mailers.json
 mailerv1
 mailerv2
 mailgate-api
@@ -46820,6 +47013,7 @@ mailing-api
 mailing-v1
 mailing-v2
 mailing.api
+mailing.json
 mailing.v1
 mailing.v2
 mailing.xml
@@ -46851,6 +47045,7 @@ mailout.v2
 mailoutapi
 mailoutv1
 mailoutv2
+mails.json
 mailscanner/docs.php
 mailsentview.xml
 mailserver-api
@@ -47078,6 +47273,7 @@ manager-api
 manager-v1
 manager-v2
 manager.api
+manager.json
 manager.v1
 manager.v2
 manager/manager.xml
@@ -47686,6 +47882,7 @@ menu-xml
 menu-xml.php
 menu.api.php
 menu.ch.xml
+menu.json
 menu.xml
 menu1.xml
 menuJSON.php
@@ -47724,6 +47921,7 @@ menuprincipal.xml
 menus.xml
 menusmysterypotionsui.xml
 menuxml
+meow.json
 merc_energy.xml
 merc_enviro.xml
 merc_fin.xml
@@ -47776,6 +47974,7 @@ message-v1
 message-v2
 message.api
 message.hbm.xml
+message.json
 message.json.php
 message.v1
 message.v2
@@ -47929,6 +48128,7 @@ metronomev1
 metronomev2
 mets.xml
 mev3
+mfa.json
 mfapi.js
 mfh.xml
 mfv3atw
@@ -48059,6 +48259,7 @@ mime.xml
 min()
 minProperties.json
 min_price_json.php
+minanjal.json
 mindbodyapi.aspx
 mindgraph.aspx
 mindgraph.jsf
@@ -49373,8 +49574,10 @@ n4_newsletter_mvtsagc.xml
 n4_newsletter_new.xml
 n4_newsletter_pitchscompet.xml
 n4_newsletter_pitchsgain.xml
+nShell v1.0.php
 n_autosuggest.xml
 na101v1
+naan.json
 naas_index_api1.do
 naas_index_api2.do
 nabava.net-opensearch.xml
@@ -49519,6 +49722,7 @@ nearme.xml
 neatjson.js
 nec-event.xml
 nedirnedemek.xml
+neenga.json
 nemesis.xml
 nemoodessa_u88.xml
 nemsemprealapis
@@ -49673,6 +49877,7 @@ new-v1
 new-v2
 new-vtourskin.xml
 new.api
+new.json
 new.v1
 new.v2
 new.xml
@@ -49924,6 +50129,7 @@ nginx.v2
 nginxapi
 nginxv1
 nginxv2
+ngoen.json
 ngrestful.js
 ngsearchbox.xml
 nhibernate.bytecode.castle.xml
@@ -49958,6 +50164,8 @@ nikoscope_search_plugin_new.xml
 nimatome_cart_api.php
 ninjatraderdb.xml
 ninjawords-opensearch.xml
+nirvagam_seipavar.json
+nirvagi.json
 nishisato-news.xml
 nissan-occasions-os.xml
 nitro/v1/config/ 
@@ -49987,6 +50195,7 @@ nlmdirectoryresult.xml
 nlmnewsresult.xml
 nlmtechnicalbulletinresult.xml
 nlog.xml
+nmap.json
 nms-api
 nms-v1
 nms-v2
@@ -50320,6 +50529,7 @@ nusoapmime.php
 nusoapsoap
 nutrition.json
 nuxt.config.json
+nuzhaivu.json
 nvelocity.xml
 nx.json
 nxapi.yaml
@@ -50727,8 +50937,10 @@ ojspdemos/xml/xmlquery/index.jsp
 ojspdemos/xml/xmlquery/index.php
 ojspdemos/xml/xmlquery/xmlquery.jsp
 ojstrica.xml
+ok.json
 okapi
 okapi.php
+okay.json
 oklar.xml
 okta-api-key.txt
 okta-app-settings.json
@@ -50891,6 +51103,7 @@ oozie-site-secure.xml
 oozie-site.xml
 oozv1657/common/login.php
 op
+op.json
 opac.rero.ch.xml
 opac_ub_freiburg.xml
 opc/services/BrokerServiceIntfPort/wsdl
@@ -51581,6 +51794,7 @@ order-v1
 order-v2
 order.api
 order.hbm.xml
+order.json
 order.v1
 order.v2
 order.xml
@@ -51871,6 +52085,7 @@ owaapi
 owav1
 owav2
 owl_mov_night.xml
+own.json
 owncloud-api
 owncloud-v1
 owncloud-v2
@@ -51988,6 +52203,7 @@ pa_guru.xml
 pa_guru_in.xml
 pa_in.xml
 pa_pk.xml
+paasavard.json
 package-api
 package-info.xml
 package-lock.json
@@ -52043,7 +52259,9 @@ packer_template.json
 pad
 pad.xml
 pad_file.xml
+padangal.json
 padbergkliniek-os.xml
+padivam.json
 padsite.xml
 padxml
 pag_sobre.xml
@@ -52103,9 +52321,11 @@ paginators-1.json
 pagosapi.js
 paiement_mensuel.xml
 pairs
+paisa.json
 paises.xml
 pakeYaml.class.php
 pakistanistores_search.xml
+palagai.json
 palavras.xml
 palete01.xml
 palettes.xml
@@ -52115,6 +52335,8 @@ pals-cgi?palsAction=restart&documentName=/etc/passwd
 pam
 pametno.rs-opensearch.xml
 pametno.si-opensearch.xml
+panam.json
+panapai.json
 pandora_console/attachment/pandora_chat.log.json.txt
 panel
 panel-api
@@ -52217,6 +52439,7 @@ parcel-newroute.xml
 parcelpro_poi_template.xml
 parco_castelli_romani.xml
 parco_veio.xml
+pareeksha.json
 park.and.market.xml
 park.and.market_core.xml
 park.and.market_messages_en.xml
@@ -52418,6 +52641,7 @@ patchworkv2
 patents
 path
 path.api.php
+pathivugal.json
 pathxml
 patient
 patient-id
@@ -52576,6 +52800,8 @@ pedxml.php
 pegjson.js
 penetration_testing_scripts.json
 penetration_testing_scripts.xml
+pentadbir.json
+pentadbirsistem.json
 pentaho/api/userrolelist/systemRoles?require-cfg.js
 pentest
 pentest-api
@@ -52719,7 +52945,12 @@ phantapi.js
 phase
 phi
 philosophersearchdescription.xml
+phish.json
+phished.json
+phisher.json
+phishes.json
 phishing
+phishs.json
 phnl.xml
 phobos-api
 phobos-v1
@@ -52735,14 +52966,18 @@ phone-api
 phone-v1
 phone-v2
 phone.api
+phone.json
 phone.v1
 phone.v2
+phone_numbers.json
 phoneapi
+phonenumbers.json
 phones
 phones-api
 phones-v1
 phones-v2
 phones.api
+phones.json
 phones.v1
 phones.v2
 phonesapi
@@ -52982,6 +53217,8 @@ phpv2
 phpxml
 phpxmlrpc
 phubapi*
+phuborihanrabop.json
+phudulaerabop.json
 physical-therapist-pt-jobs.aspx
 phytotherapie-homeopathie
 pi-api
@@ -53078,6 +53315,7 @@ ping-api
 ping-v1
 ping-v2
 ping.api
+ping.json
 ping.v1
 ping.v2
 ping.xml
@@ -53092,6 +53330,7 @@ pingv2
 pinnacleapi
 pinsTest.geojson.php
 pinterest
+pinterest.txt
 pinterestrateqry.do
 piosenki_osd.xml
 pipe/api/v1/passthrough/pipeinfo/step 
@@ -56290,6 +56529,7 @@ ppqv9mv2.php
 pps-v1.0.pl
 pps-v3.0.pl
 pps-v3.5.pl
+pps-v4.0.pl
 pps-v4.0.pl_
 ppsearch.xml
 ppt/notesMasters/notesMaster1.xml 
@@ -56299,6 +56539,7 @@ ppt/tableStyles.xml
 ppt/viewProps.xml 
 pr
 pr.xml
+praaroop.json
 praca.xml
 practitioner
 practitionerentry
@@ -56306,7 +56547,9 @@ practitionerrole
 prado.xml
 praiseapi.js
 pranaykotapi
+prashaasak.json
 pravda-search_v1.xml
+pravesh.json
 prayer10.xml
 prayertimes.json.txt
 prc_news.xml
@@ -57341,6 +57584,7 @@ provinsi.xml
 provision.json
 provision.xml
 prowrestling_m.zip
+proxied.json
 proxies.json
 proxies.json.backup
 proxies.xml
@@ -57407,6 +57651,7 @@ prtg.maps.xml
 prtg.sensors.xml
 prtg.users.xml
 prtimes.xml
+prueba.json
 prueba_items_json.cfm
 prweb/PRRestService/unauthenticatedAPI/v1/docs
 prxdocs/misc/prxrch.idq?CiTemplate=../../../../../../../../../../winnt/win.ini
@@ -57632,6 +57877,7 @@ pv.xml
 pvi8v1wg.php
 pvt.json
 pw
+pw.json
 pw_api
 pw_api.%EXT%
 pw_api.asp
@@ -57646,6 +57892,7 @@ pwadata.xml
 pwd
 pwd.json
 pwinsider-search.xml
+pwn.json
 pwxml
 pxapi
 pycharm-cache.xml
@@ -57794,6 +58041,7 @@ qnapv1
 qnapv2
 qooccapi.php
 qpxml
+qq.json
 qqapi
 qqsearch.xml
 qrcodeapi
@@ -57865,7 +58113,9 @@ questions/interests
 questzone_games_coms.xml
 queue
 queue-policy.json
+queue.json
 queue_config.json
+queues.json
 queve.xml
 quexmlpdf
 quick-links.xml
@@ -58221,6 +58471,7 @@ rapigator
 rapita
 rapitacampos
 raseiniai_apzvalga.xml
+rat.json
 rate.xml
 rate_limiting_configs.json
 rate_limiting_configs.xml
@@ -58229,6 +58480,7 @@ rates
 rates.xml
 rates_master.xml
 rates_new2.xml
+rathaphan.json
 rating0
 rating_common.xml
 ratings-api
@@ -58309,6 +58561,7 @@ react
 reactivate
 read
 read-xml.php
+read.json
 read.xml
 read/api
 readCvicWaitGroupSetJSON.do
@@ -58334,6 +58587,7 @@ readme.json
 readme.txt.json
 readme.xml
 readmore.xml
+reads.json
 readthedocs
 readxml.php
 real-estate-analytics-market-trends-for-capital-markets.aspx
@@ -58730,6 +58984,7 @@ registrationid
 registrations
 registrationv1
 registrationv2
+registros.json
 registry-api
 registry-configuration.json
 registry-repositories.json
@@ -59127,6 +59382,7 @@ requests-api
 requests-v1
 requests-v2
 requests.api
+requests.json
 requests.v1
 requests.v2
 requestsapi
@@ -60645,6 +60901,7 @@ roundcubev2
 roundster.xml
 route
 route-city-to-state-324.xml
+route.json
 route.php
 route/
 route53-config.json
@@ -60892,6 +61149,7 @@ runtimeconfig.json
 rus.xml
 rushsite.xml
 ruslit.xml
+ruupphaap.json
 rvmap.xml
 rvo-wg-json-data.php
 rvs-grafmonumenten-os.xml
@@ -61020,6 +61278,9 @@ s5.xml
 s6.xml
 s60v3download
 s7.xml
+s72 Shell v1.0 Codinf by Cr@zy_King.php
+s72 Shell v1.1 Coding.php
+s72_Shell_v1.1_Coding.php
 s8.xml
 s9.xml
 s_abu_pms_property_carousel.xml
@@ -61057,6 +61318,7 @@ saasv2
 saetoauthv2
 saetv2
 safari.json
+safe.json
 safebooru.xml
 safety
 saffire.xml
@@ -61145,6 +61407,7 @@ salt_values.json
 salt_values.xml
 salting_parameters.json
 salting_parameters.xml
+samarppikka.json
 samba-api
 samba-v1
 samba-v2
@@ -61365,6 +61628,8 @@ save
 save()
 save-flash-xml
 save-flash-xml.php
+save-karen.json
+save-kiya.json
 save.json
 save.xml
 saveBytes()
@@ -61378,12 +61643,15 @@ saveTable()
 saveXML()
 save_hotspot.xml
 saved
+saved.json
 saved_searches.json
 savedquery.reg.xml
 savedquerytemplate.sq.xml
+saves.json
 savexml
 savings
 savingsinterestcpiJSON.php
+saya.json
 saz-schoolconfig.xml
 sb.xml
 sbJSON.php
@@ -61413,7 +61681,10 @@ scaling_policies.xml
 scaling_scripts.json
 scaling_scripts.xml
 scalr-api.cfg
+scam.json
+scams.json
 scan
+scanned.json
 scanner-api
 scanner-v1
 scanner-v2
@@ -62310,6 +62581,8 @@ sellerapi
 sellerv1
 sellerv2
 sematos_lse.xml
+semikkapattadhu.json
+semikkavum.json
 seminar.xml
 seminar_xml.php
 seminarcalendar_v3.cgi
@@ -62319,6 +62592,7 @@ seminars_json.php
 semrush-opensearch.xml
 senaste.xml
 send
+send.json
 send_confirmation_on_profile_email
 sendcommentmail.xml
 sender
@@ -62407,6 +62681,7 @@ sensu-client.json
 sensu-server.json
 sensu.json
 sent
+sent.json
 sentinelone-api.conf
 sentrifugo/public/uploads/employeedocs/1565996140_5_shell.php
 sentry-api
@@ -62609,6 +62884,7 @@ serverless.yml.json
 serverless_integration.xml
 serverlist.xml
 servers
+servers.json
 servers.xml
 serversJSON.php
 serversideflow_v2_0.cfm
@@ -62742,6 +63018,7 @@ servicesv2
 servicev1
 servicev2
 servlet
+servlet-api-3.04.jar
 servlet-api.jar
 servlet/Oracle.xml.xsql.XSQLServlet/soapdocs/webapps/soap/WEB-INF/config/soapConfig.xml
 servlet/Oracle.xml.xsql.XSQLServlet/xsql/lib/XSQLConfig.xml
@@ -63771,6 +64048,7 @@ simWriteCustomDataBlock
 simWriteTexture
 simbadbasic.xml
 simhandlegraph
+simpan.json
 simple
 simple.json 
 simple.xml
@@ -64248,6 +64526,7 @@ sms-gwv2
 sms-v1
 sms-v2
 sms.api
+sms.json
 sms.v1
 sms.v2
 sms.xml
@@ -64304,6 +64583,7 @@ smtp_auth.json
 smtp_credentials.json
 smtp_credentials.xml
 smtpapi
+smtps.json
 smtpv1
 smtpv2
 snapfishde/crpopularphotographypopup
@@ -65180,7 +65460,9 @@ sok.xml
 sokolmed_3_out.xml
 sokuho.xml
 sokuho_news.xml
+sol.json
 sol_link_00.xml
+solana.json
 solargauge.xml
 solargraph.php
 solaris
@@ -65212,6 +65494,7 @@ sonar-config.xml
 sonar_api
 sonar_api_key
 song_info_xml.inc.php
+songkhaw.json
 songkick-api.php
 songsearch.xml
 sonnmatt-tour2.xml
@@ -65259,6 +65542,7 @@ sophosv2
 soporte_18/api/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
 sort
 sort()
+sothanai.json
 soto.xml
 soto_core.xml
 soto_messages_ja.xml
@@ -65351,6 +65635,7 @@ spam-api
 spam-v1
 spam-v2
 spam.api
+spam.json
 spam.v1
 spam.v2
 spamapi
@@ -66099,6 +66384,7 @@ statusv1
 statusv2
 statv1
 statv2
+statz.json
 staubbeutel_discount_search.xml
 stcsearch.xml
 steamidio.xml
@@ -66546,7 +66832,9 @@ sub_navi.xml
 sub_navi_ft.xml
 subhome.xml
 subject
+subject.json
 subjects-and-courses.xml
+subjects.json
 submenu.xml
 submenu2.xml
 submenu3.xml
@@ -66572,8 +66860,11 @@ submissionv1
 submissionv2
 submit
 submit-biography
+submit.json
 submit_button
 submit_content.xml
+submits.json
+submitted.json
 submitter
 submodel.xml
 subordinate_employees.json
@@ -66612,6 +66903,7 @@ success-api
 success-v1
 success-v2
 success.api
+success.json
 success.json.jsp
 success.v1
 success.v2
@@ -68026,6 +68318,8 @@ telediagnostics/assets/json/version_release.json
 telediagnostics/assets/json/version_release.json 
 telegraf.conf
 telegram_api
+telegram_api.txt
+telegramapi
 telegraph
 telegraph.ashx
 telegraphbusinessclub
@@ -68154,6 +68448,7 @@ terrasse_skin.xml
 territoires.xml
 terrorism
 tesco_api_key
+tesla.json
 test
 test-api
 test-coverage-report.xml
@@ -68263,6 +68558,7 @@ testcafesearch.xml
 testcases.xml
 testclient/api/v1
 testconfig.json
+tested.json
 testenbeddedconfig.cfg.xml
 tester
 testexpectedexception.xml
@@ -68450,6 +68746,7 @@ tevah_chatter_message.xml
 text
 text()
 text-image-name.xml
+text.json
 text.xml
 text/api
 textAlign()
@@ -69097,6 +69394,7 @@ totalKids.json.php
 totalbility-os.xml
 totals
 toth.xml
+totsaawp.json
 tour
 tour-1.xml
 tour-2.xml
@@ -69336,6 +69634,7 @@ transactions-api
 transactions-v1
 transactions-v2
 transactions.api
+transactions.json
 transactions.v1
 transactions.v2
 transactionsapi
@@ -69523,6 +69822,7 @@ ttm-3d-sanal-tur_core.xml
 ttm-3d-sanal-tur_messages_en.xml
 ttm-3d-sanal-tur_skin.xml
 ttshop-osd.xml
+tu.json
 tubitak-konya-bilim-merkezi.xml
 tudosobreplantas.xml
 tuketiciverileri/tuketiciverileri.xml
@@ -69918,6 +70218,7 @@ ui.msgs.json.jsp
 ui.v1
 ui.v2
 ui.xml
+ui/..\src\getSettings.rsb?@json
 ui/api
 ui/api/v1
 ui/api/v1/configmaps
@@ -69992,6 +70293,7 @@ uitspraken.zoeken.xml
 uiv1
 uiv2
 uj_includestv2
+ujian.json
 uk
 uk.xml
 uk/ajax/api
@@ -70110,6 +70412,7 @@ untitled_config.xml
 untrailingslashit
 unzip_file
 up
+up.json
 upb/admin_restore.php
 upd
 update
@@ -70204,6 +70507,7 @@ upgradeapi
 upgradeapi.php
 upgradelog.xml
 upgradelog2.xml
+upgrades.json
 upgradev1.php
 upguard_api.conf
 upguard_api_access.conf
@@ -70321,6 +70625,7 @@ us-api
 us-v1
 us-v2
 us.api
+us.json
 us.v1
 us.v2
 us.xml
@@ -70353,6 +70658,8 @@ usb.v2
 usbapi
 usbv1
 usbv2
+usdc.json
+usdt.json
 use
 used-make-models.json.asp
 uselist.xml
@@ -73128,6 +73435,7 @@ vaccination-manager/api.php
 vaio_owner_3.xml
 vakgarage-os.xml
 val
+valid.json
 validate
 validate-api
 validate-v1
@@ -73142,6 +73450,7 @@ validate_file
 validate_file_to_edit
 validate_username
 validateapi
+validated.json
 validatejson
 validatev1
 validatev2
@@ -73154,6 +73463,7 @@ validations
 validatior
 validator-rules.xml
 validator.xml
+valids.json
 value
 value-Id
 value-id
@@ -74829,6 +75139,7 @@ wallet_public_key.json
 wallet_seed.json
 wallet_transactions.json
 walletapi
+wallets.json
 walletv1
 walletv2
 wallpaper-wrestling21
@@ -74845,6 +75156,7 @@ wampapi
 wampv1
 wampv2
 wandtapijt
+wang.json
 wap-api
 wap-v1
 wap-v2
@@ -76074,6 +76386,7 @@ whitehall.xml
 whitelist
 whitelist.xml
 whitepaper
+whitepaper.json
 whitepapers
 whitlockjc/json-refs
 whmcs/whmcs_v451/whmcs/modules/gateways/boleto/boleto_bb.php
@@ -77667,6 +77980,7 @@ xml.dev
 xml.gif
 xml.group.php
 xml.gw
+xml.html
 xml.inc.php
 xml.jar
 xml.js
@@ -78448,6 +78762,7 @@ xray-config.json
 xray-logback.xml
 xray.xml
 xray/ui/indexV2 
+xrp.json
 xsl
 xslt/search.xml
 xsql
@@ -78609,6 +78924,7 @@ yippy-search.xml
 yllapito
 yml/orderadmitad.xml
 yml/sitemap.xml
+yo.json
 yo.xml
 yo_ng.xml
 yocityws/soapheaderservice.asmx
@@ -78904,6 +79220,7 @@ zip-api
 zip-v1
 zip-v2
 zip.api
+zip.json
 zip.v1
 zip.v2
 zipapi
@@ -79046,3 +79363,4 @@ zz_search.xml
 ~kaper/xml_archief/phpXD/phpxd_0.3.tar.gz
 ~preston
 ‎.mvn/extensions.xml
+木马帮V1.1-火舌版.asp
