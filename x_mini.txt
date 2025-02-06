@@ -1911,11 +1911,14 @@ ${idfwbonavigation}.xml
 .config.swo
 .config.swp
 .config/
+.config/app.config
+.config/azure-credentials.json
 .config/cloudfoundry
 .config/configstore
 .config/configstore/bower-github.json
 .config/configstore/firebase-tools.json
 .config/configstore/snyk.json
+.config/credentials.xml
 .config/deluge
 .config/deluge/
 .config/deluge/auth
@@ -2786,6 +2789,7 @@ ${idfwbonavigation}.xml
 .env/.config
 .env/actuator/env
 .env/config
+.env1
 .env_1
 .env_back
 .env_back.dist
@@ -3991,6 +3995,7 @@ ${idfwbonavigation}.xml
 .idea
 .idea.name
 .idea/
+.idea/.idea
 .idea/.name
 .idea/Sites.iml
 .idea/WebServers.xml
@@ -4323,6 +4328,7 @@ ${idfwbonavigation}.xml
 .key
 .key.yaml
 .key.yml
+.keycloak.json
 .keys
 .keys.yaml
 .keys.yaml.swp
@@ -5443,6 +5449,7 @@ ${idfwbonavigation}.xml
 .rackspace/clouds
 .rackspace/clouds.yaml
 .rackspacecloud/credentials
+.railsrc
 .rakeTasks
 .rake_tasks
 .rakeignore
@@ -5735,7 +5742,9 @@ ${idfwbonavigation}.xml
 .settings.py.env
 .settings.py.local
 .settings/
+.settings/.classpath
 .settings/.jsdtscope
+.settings/.project
 .settings/com.zend.php.javabridge.core.prefs
 .settings/language.settings.xml
 .settings/org.eclipse.core.resources.prefs
@@ -6927,6 +6936,7 @@ ${idfwbonavigation}.xml
 .ztml
 .zuul.yaml
 .zuul.yml
+.~lock
 .Ⓛ𝐨𝗰𝐀𝕝ⅆ𝓸ⓜₐℹⓃ｡Ｐⓦ
 //../../data/config/microsrv.cfg
 //./../.../boot.ini

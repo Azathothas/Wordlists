@@ -215,9 +215,11 @@ ${idfwbonavigation}.xml
 .config
 .config.json
 .config/
+.config/azure-credentials.json
 .config/configstore/bower-github.json
 .config/configstore/firebase-tools.json
 .config/configstore/snyk.json
+.config/credentials.xml
 .config/docker/config.json
 .config/filezilla/filezilla.xml
 .config/filezilla/recentservers.xml
@@ -262,6 +264,7 @@ ${idfwbonavigation}.xml
 .env.production.json
 .env.staging.json
 .env.test.json
+.env1
 .esdoc.json
 .eslintrc.json
 .eslintrc.yaml
@@ -405,6 +408,7 @@ ${idfwbonavigation}.xml
 .jupyter/jupyter_notebook_config.json
 .kdev4
 .kdev4/
+.keycloak.json
 .kube
 .kube/config
 .landscape.yaml
@@ -1674,6 +1678,7 @@ App_Data/Templates/BlankSiteAspx/Data/Site/newsletter_emailtemplate.xml.export
 App_Data/Templates/BlankSiteAspx/Data/Site/newsletter_newsletter.xml.export
 App_Data/Templates/BlankSiteAspx/Data/cms_info.xml.export
 App_Data/Templates/BlankSiteAspx/Data/objecttranslation.xml.export
+App_Data/credentials.json
 App_Data/license.xml
 Apple-pay
 Apple_pay
@@ -13558,8 +13563,11 @@ admin/composer.json
 admin/config.json
 admin/config.xml
 admin/console.json
+admin/crx/.ext.infinity.json
+admin/crx/bin.ext.json
 admin/demo/config.json
 admin/docs
+admin/etc.feed.xml
 admin/ewebeditor_v280_free/admin_login.asp
 admin/ewebeditor_v280_free/admin_login.aspx
 admin/ewebeditor_v280_free/admin_login.php
@@ -14688,6 +14696,7 @@ api-company-index.php
 api-config
 api-config.conf
 api-config.json
+api-config.yml
 api-construction.php
 api-content-more.php
 api-content.cfm
@@ -20084,6 +20093,7 @@ api_config
 api_config.asp
 api_config.conf
 api_config.jsf
+api_config.json
 api_config.py
 api_config_get.php
 api_config_get_rhema.php
@@ -22568,6 +22578,7 @@ appsettings.environment.json
 appsettings.gamma.json
 appsettings.integration.json
 appsettings.json
+appsettings.jsont
 appsettings.json~
 appsettings.k8s.json
 appsettings.local.json
@@ -23082,7 +23093,10 @@ auth.v1
 auth.v2
 auth.xml
 auth/api
+auth/aws_auth.json
+auth/azure_auth.json
 auth/restore
+auth/secrets.json
 auth/v1/features/info 
 auth/v1/oauth/token 
 auth/v1/portal/forgot/passcode/settings 
@@ -23106,8 +23120,10 @@ auth/v1/users/validateSession
 authDump.json
 authError.json.jsp
 authSuccess.json.jsp
+auth_config.json
 auth_credentials.json
 auth_redirect
+auth_settings.json
 auth_token.json
 auth_tokens.json
 auth_tokens.xml
@@ -23332,6 +23348,7 @@ awkwardswagger
 aws-access-key.json
 aws-access-key.xml
 aws-api-gateway-settings.ini
+aws-cli-config.json
 aws-cognito.json
 aws-config.json
 aws-config.xml
@@ -23346,6 +23363,7 @@ aws-elasticsearch-settings.json
 aws-exports.json
 aws-guardduty-config.json
 aws-iam-policy.json
+aws-infra.json
 aws-lambda-tools-defaults.json
 aws-local-config.json
 aws-logs.json
@@ -23374,6 +23392,7 @@ aws-sdk-dynamodb.json
 aws-sdk.json
 aws-secret-key.json
 aws-secret-key.xml
+aws-secrets-manager.json
 aws-secrets.json
 aws-serverless-application-model.json
 aws-sqs-config.json
@@ -23388,6 +23407,7 @@ aws_cloud_api_secret.properties
 aws_cloud_key.xml
 aws_cloud_secret_params.xml
 aws_config.json
+aws_ec2_config.json
 aws_secret_access_key.json
 awscloud.json
 awsconfig.json
@@ -23437,6 +23457,7 @@ azr94v2hh2lg
 azr94v2hh2lg/
 azr94v2hh2lgbbkk
 azrailphp_v1.0.php
+azure-access-keys.json
 azure-blob-storage.json
 azure-config.json
 azure-credentials.json
@@ -23445,12 +23466,14 @@ azure-deploy.json
 azure-deployment.json
 azure-dev-config.json
 azure-keys.json
+azure-keyvault-secrets.json
 azure-local-config.json
 azure-network-security-group.json
 azure-params.json
 azure-pipelines.json
 azure-policies.json
 azure-prod-config.json
+azure-resource-group.json
 azure-resource-manager-template.json
 azure-secrets.json
 azure-service-principal.json
@@ -23468,6 +23491,8 @@ azure-sql-server-logins.json
 azure-sql-service-principal.json
 azure-sql-transparent-data-encryption.json
 azure-staging-config.json
+azure-storage-credentials.json
+azure-subscription.json
 azure-test-config.json
 azure.json
 azure_cloud_api_key.ini
@@ -23477,6 +23502,7 @@ azure_cloud_secret_params.xml
 azure_config.json
 azure_cookies.json
 azure_credentials.json
+azure_secrets.json
 azureaccesstokens.json
 azuredeploy.json
 azuredeploy.parameters.json
@@ -23749,6 +23775,7 @@ backup/restore
 backup/wp-includes/wlwmanifest.xml
 backup_access_controls.json
 backup_access_controls.xml
+backup_config.json
 backup_configs.json
 backup_configs.xml
 backup_credentials.json
@@ -25049,7 +25076,9 @@ bugzillav2
 build
 build-agent-params.json
 build-api
+build-config.json
 build-impl.xml
+build-parameters.json
 build-pear-package.xml
 build-propel.xml
 build-type.xml
@@ -25072,6 +25101,7 @@ build/reference/web-api/explore
 buildIndexXmlData.do
 build_all.json
 build_all.xml
+build_config.json
 build_digir_xml.cfm
 build_docs.sh
 build_from_json.cfm
@@ -26595,11 +26625,14 @@ chunks/pages/apis/new-65191cec72dcb5ff.js
 chuui.xml
 chyrp_v2.0/modules/swfupload/upload_handler.php
 ci-api
+ci-build-config.json
 ci-v1
 ci-v2
 ci.api
 ci.v1
 ci.v2
+ci/ci-config.json
+ci/secrets.json
 ci_restart.ps1
 ci_restart.sh
 ci_restore.ps1
@@ -27067,6 +27100,7 @@ cloudformation-script.xml
 cloudformation.json
 cloudformation_template.json
 cloudfront-distribution.json
+cloudfront-settings.json
 cloudfront_configs.json
 cloudfront_configs.xml
 cloudinary_api_secret
@@ -27148,6 +27182,7 @@ cloudwatch-metrics.json
 cloudwatch_alarms.json
 cloudwatch_alarms.xml
 cloudwatch_cache.xml
+cloudwatch_config.json
 cloudwatch_session_storage.json
 clr-icons-api 
 cls_api
@@ -27539,6 +27574,8 @@ codebuild-environment-variables.json
 codebuild-secrets-manager.json
 codecampserver.xml
 codecept.json
+codedeploy-config.json
+codedeploy-deployment.json
 codeformatterextension.xml
 codegen.json
 codegen.json.php
@@ -28137,6 +28174,8 @@ config.json.jsf
 config.json.jsp
 config.json.php
 config.json.ts
+config.json5
+config.jsont
 config.json~
 config.local.json
 config.perf.json
@@ -28159,6 +28198,7 @@ config.xml.tpl
 config.yaml
 config/api-docker.properties
 config/api_config.json
+config/app-keys.json
 config/app.json
 config/application.json
 config/applicationContext.xml
@@ -28167,8 +28207,10 @@ config/audit.json
 config/auth.json
 config/aws-ec2-instance.json
 config/azure-ad.json
+config/azure-cli/config.json
 config/azure-resource-manager-template.json
 config/azure-vm.json
+config/azure_app_service_settings.json
 config/backofficetours/getting-started.json
 config/backup.json
 config/backup_config.json
@@ -28186,11 +28228,13 @@ config/config.xml
 config/const.json
 config/couchbase.json
 config/credentials.json
+config/credentials.xml
 config/credentials.yml.enc
 config/creds.json
 config/dashboard-statistics.xml
 config/database.create.json
 config/database.json
+config/database_config.json
 config/db.json
 config/db.json.backup
 config/db.xml
@@ -28203,6 +28247,9 @@ config/ehcache.xml
 config/faces-config.xml
 config/filezilla/sitemanager.xml.xml
 config/firebase.json
+config/ftp_config.json
+config/gcloud/config.json
+config/gcloud/credentials.json
 config/gcp-vm-instance.json
 config/gcs.json
 config/generated-schema-transformed.xml
@@ -28240,6 +28287,7 @@ config/lang/sv-se.user.xml
 config/lang/zh-cn.user.xml
 config/ldap.json
 config/local.xml
+config/logger-config.json
 config/logging.json
 config/metadata.xml
 config/monitoring.json
@@ -28357,10 +28405,13 @@ config/routes/dev/web_profiler.xml
 config/routes/dev/web_profiler.yaml
 config/routes/dev/web_profiler.yml
 config/s3.json
+config/s3_config.json
 config/salesforce.json
 config/saml2.xml
 config/search.json
+config/secret-keys.json
 config/secrets.json
+config/secrets/config.json
 config/security.xml
 config/server.json
 config/service-provider.json
@@ -30661,6 +30712,8 @@ crtnav3.jsp
 crudapi.js
 crum-os.xml
 crush
+crx/.ext.infinity.json
+crx/bin.ext.json
 crypto
 crypto.json
 cryptoCurrency
@@ -31437,6 +31490,7 @@ database_backup_credentials.json
 database_backup_credentials.xml
 database_config.json
 database_config.xml
+database_connection.json
 database_connection_strings.json
 database_connection_strings.xml
 database_credentials.json
@@ -31659,6 +31713,7 @@ db_backup.json
 db_backup.xml
 db_bak.json
 db_bak.xml
+db_config.json
 db_credentials.json
 db_credentials.xml
 db_default.json
@@ -32074,6 +32129,7 @@ dependency-reduced-pom.xml
 depiura.xml
 deploy
 deploy-api
+deploy-config.json
 deploy-v1
 deploy-v2
 deploy.api
@@ -32615,6 +32671,7 @@ devop.v1
 devop.v2
 devopapi
 devops-api
+devops-config.json
 devops-v1
 devops-v2
 devops.api
@@ -33060,6 +33117,7 @@ docker-compose.api.yaml
 docker-compose.api.yml
 docker-compose.json
 docker-config.json
+docker-credentials.json
 docker-daemon.json
 docker-entrypoint-initdb.json
 docker-entrypoint-initdb.xml
@@ -33122,8 +33180,10 @@ docker-wait-for-it.xml
 docker.api
 docker.v1
 docker.v2
+docker/config.json
 docker/daemon.json
 docker/dockerhub_api.sh
+docker/secrets.json
 dockerapi
 dockerconfigjson
 dockerhub_api.sh
@@ -33964,6 +34024,7 @@ economia.xml
 ecosystem.json
 ecr-policies.json
 ecr-repository.json
+ecs-cluster-config.json
 ecs-cluster.json
 ecs-service.json
 ecs-task-definition.json
@@ -35929,6 +35990,8 @@ findneareststores.jsp
 findthebutton_v3.zip
 finish
 finnApi.php
+firebase-adminsdk.json
+firebase-service-account.json
 firebase.indexes.json
 firebase.json
 firebase/security.json
@@ -37215,6 +37278,7 @@ gc_XmlParser.php
 gce_haku.xml
 gcinfo
 gcloud-account.json
+gcloud-auth-config.json
 gcloud-auth.json
 gcloud-billing.json
 gcloud-compute.json
@@ -37236,8 +37300,10 @@ gcloud-storage.json
 gcloud-trace.json
 gcloud.json
 gcloud/application_default_credentials.json
+gcloud/credentials.json
 gcloud/jenkins-flatmap.json
 gcloud_credentials.json
+gcloud_keys.json
 gcmodule.xml
 gcp-api-gateway-settings.yml
 gcp-bigtable-configuration.json
@@ -37257,16 +37323,19 @@ gcp-ml-engine-settings.json
 gcp-params.json
 gcp-policies.json
 gcp-prod-config.json
+gcp-project-config.json
 gcp-pubsub-config.json
 gcp-pubsub-lite-settings.json
 gcp-resource-manager-settings.json
 gcp-secrets.json
+gcp-service-account-key.json
 gcp-spanner-config.json
 gcp-staging-config.json
 gcp-test-config.json
 gcp.json
 gcp.xml
 gcp_config.json
+gcp_service_account.json
 gcs_cookies.json
 gcsearch.xml
 gcui-util-user-api.action
@@ -37969,6 +38038,8 @@ gitwebapi
 gitwebv1
 gitwebv2
 giwan_xml.xml
+gke-cluster-config.json
+gke-config.json
 gke-metadata-server-gv4xt
 gke-metadata-server-qfv22
 gke-metadata-server-v2x57
@@ -38134,6 +38205,7 @@ google-credentials.json
 google-credentials.xml
 google-docs
 google-platform.json
+google-service-account.json
 google-services.json
 google-sitemap.xml
 google.json
@@ -38148,6 +38220,7 @@ google_cloud_api_secret.properties
 google_cloud_config.json
 google_cloud_key.xml
 google_cloud_secret_params.xml
+google_cloud_service_account_key.json
 google_map_markers.xml
 google_maps_api_key
 google_oi.xml
@@ -43476,6 +43549,7 @@ k1v1
 k1v2
 k6.config.json
 k8s-api
+k8s-cluster-config.json
 k8s-spot-termination-handler-mvv45
 k8s-v1
 k8s-v2
@@ -46307,6 +46381,7 @@ local-api
 local-v1
 local-v2
 local.api
+local.json
 local.settings.ci.json
 local.settings.development.json
 local.settings.json
@@ -50636,6 +50711,7 @@ oauth2-client-authentication-manager.xml
 oauth2-client-details-service.xml
 oauth2-client-details.json
 oauth2-client.xml
+oauth2-config.json
 oauth2-server-config.xml
 oauth2-token-manager.json
 oauth2-token-store.json
@@ -57300,6 +57376,7 @@ production/api/v1/attachment
 production/api/v2/attachment
 production/api/v3/attachment
 production/api/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+production_config.json
 productionapi
 productioninfo.xml
 productionv1
@@ -62136,6 +62213,7 @@ secret_key.json
 secret_key_here.json
 secret_key_store.json
 secret_keys.json
+secret_keys/config.json
 secret_meeting_records_v2.xlsx
 secret_memorandum_v2.xlsx
 secret_policies_v2.xlsx
@@ -62165,6 +62243,7 @@ secrets.xml~
 secrets/api-key.txt
 secrets/oauth-settings.json
 secrets/oauth-settings.json 
+secrets/secret.json
 secrets_access.json
 secrets_access.xml
 secrets_auditing.json
@@ -62860,6 +62939,7 @@ server.xml
 server.xml.bak
 server/config.json
 server/config.xml
+server/credentials.json
 server/solr.xml
 server/solrconfig.xml
 server/tmp/config.xml
@@ -62894,6 +62974,7 @@ serverv1
 serverv2
 service
 service-account-credentials.json
+service-account-key.json
 service-account.json
 service-api
 service-config.xml
@@ -62951,6 +63032,8 @@ service/swagger-ui/index.html
 service?Wsdl
 service?wsdl
 serviceAccount.json
+serviceAccountCredentials.json
+serviceAccountCredentials.jsont
 service_account.json
 service_accounts.json
 service_accounts.xml
@@ -63114,6 +63197,7 @@ settings.environment.json
 settings.gamma.json
 settings.integration.json
 settings.json
+settings.jsont
 settings.local.json
 settings.local.xml
 settings.perf.json
@@ -63134,6 +63218,7 @@ settings/config.json
 settings/settings.json
 settings_adv.ua.xml
 settings_api.php
+settings_backup.json
 settings_errors
 settings_fields
 settings_json.xml
@@ -65984,6 +66069,7 @@ src/api/config.js
 src/api/keys.js
 src/app/itemCode.json 
 src/config.json 
+src/config/authentication.json
 src/credentials.json
 src/js/jsonrpc.ts
 src/jsonrpc.ts
@@ -68243,7 +68329,9 @@ team.v2
 team_ranking.json.php
 teamapi
 teamcity-server.xml
+teamcity-settings.xml
 teamcity.json
+teamcity/config.json
 teams-api
 teams-v1
 teams-v2
@@ -69217,6 +69305,7 @@ token_content.xml
 tokens
 tokens.json
 tokens.xml
+tokens_backup.json
 tokotoukansearch.xml
 toledocapital
 tolojson.js
@@ -71214,6 +71303,7 @@ v1/add-beneficiary
 v1/add-card
 v1/addresses 
 v1/admin
+v1/admin/keys
 v1/admin/tsdb/snapshot
 v1/ads
 v1/agent/members
@@ -71530,6 +71620,7 @@ v1/invited-users
 v1/iot/secure/getToken
 v1/iot/secure/gettoken
 v1/issues 
+v1/keys
 v1/landing 
 v1/languages
 v1/laundry/status
@@ -72146,6 +72237,7 @@ v2/accounts/mfaEnrollment:withdraw
 v2/accounts/mfaSignIn:finalize 
 v2/accounts/mfaSignIn:start 
 v2/admin
+v2/admin/keys
 v2/admincp
 v2/ajax
 v2/ajax.php
@@ -72543,6 +72635,7 @@ v3/3.1.34.1/styles
 v3/3.1.45.0/styles
 v3/account
 v3/adiframebuster
+v3/admin/keys
 v3/ajax
 v3/altair
 v3/api
@@ -72610,6 +72703,7 @@ v3/home
 v3/html
 v3/iminterested
 v3/interstitial
+v3/keys
 v3/keywordsearch
 v3/leads
 v3/login
@@ -73567,6 +73661,7 @@ vault
 vault-api
 vault-config.json
 vault-id
+vault-secrets.json
 vault-v1
 vault-v2
 vault.api
@@ -75997,6 +76092,7 @@ webhook-discord.json
 webhook-slack.json
 webhook.json
 webhook.xml
+webhook_config.json
 webhooks
 webhooks.json
 webhostingfirm-hostroute.php
