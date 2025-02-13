@@ -22911,6 +22911,7 @@ assets/data/trafficControl.json
 assets/data/users.json
 assets/data/viewDefinition.json
 assets/data/viewDefinition.json 
+assets/environments/environment.json
 assets/images/icons.json
 assets/log-publishers.json
 assets/log-publishers.json 
