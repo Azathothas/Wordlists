@@ -47,8 +47,8 @@ Updating /home/runner/work/Wordlists/Wordlists/main/WordList to @latest
 
 ➼ Fetching & Updating <-- Six2dez/OneListForAll
 ➼ x_lhf_mini.txt  : 0
-➼ x_lhf_large.txt  : 1
-➼ x_massive.txt  : 1
+➼ x_lhf_large.txt  : 0
+➼ x_massive.txt  : 0
 
 ➼ Fetching & Updating <-- rix4uni/WordList
 ➼ x_lhf_mini.txt  : 0 , 0
@@ -63,7 +63,7 @@ Updating /home/runner/work/Wordlists/Wordlists/main/WordList to @latest
 ➼ x_massive.txt   : 0
 
 ➼ Generating x_api.txt 
-➼ Newly added: 1
+➼ Newly added: 0
 
 ➼ Generating x_dns.txt 
 ➼ Newly added: 0
